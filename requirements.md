@@ -16,11 +16,11 @@ Use the matrix below to track requirements throughout the project lifecycle.
 | ID        | Description                                                                                      | Status   | Target Semester | Mapping (source / issue)                     |
 | --------- | ------------------------------------------------------------------------------------------------ | -------- | --------------- | -------------------------------------------- |
 | REQ-F-01  | Passwordless sign-in via email OTP (Better Auth + Nodemailer); OTP emailed to an existing user   | Verified | 2026F           | `server/utils/auth.ts`, `app/pages/auth.vue` |
-| REQ-F-02  | User authetification page, 2 roles (admin and student)    | Verified | 2026F           | `server/utils/auth.ts`, `app/pages/auth.vue` |
+| REQ-F-02  | User authentication page has two roles: admin and student roles    | Verified | 2026F           | `server/utils/auth.ts`, `app/pages/auth.vue` |
 | REQ-F-03  | User dashboard has user's course progress, sections and chapters, completed activities, and earned badge   | Verified | 2026F           | `server/utils/auth.ts`, `app/pages/auth.vue` |
-| REQ-F-04  |  Admins can view users and user progress and allow to accept new users  | Verified | 2026F           | `server/utils/auth.ts`, `app/pages/auth.vue` |
+| REQ-F-04  |  Admins can view users, user progress, and allow to accept new users  | Verified | 2026F           | `server/utils/auth.ts`, `app/pages/auth.vue` |
 | REQ-F-05  |  Authorized admins can assign and modify user roles, including student and administrator roles  | Verified | 2026F           | `server/utils/auth.ts`, `app/pages/auth.vue` |
-| REQ-F-06  |  Resources page allows users to get in contact with other resources  | Verified | 2026F           | `server/utils/auth.ts`, `app/pages/auth.vue` |
+| REQ-F-06  |  Resources page allows users to get in contact with other resources (e.g. hotlines)  | Verified | 2026F           | `server/utils/auth.ts`, `app/pages/auth.vue` |
 | REQ-F-07  |  Contact page displays the approved contact information using a form  | Verified | 2026F           | `server/utils/auth.ts`, `app/pages/auth.vue` |
 | REQ-F-08  | Server API gateway rejects unauthenticated requests to non-public routes with HTTP 401           | Verified | 2026F           | `server/middleware/auth.ts`                  |
 | REQ-F-09  | Client route guard redirects signed-out users to `/auth` and signed-in users away from `/auth`   | Verified | 2026F           | `app/middleware/auth.global.ts`              |
