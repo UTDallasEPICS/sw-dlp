@@ -16,12 +16,18 @@ Use the matrix below to track requirements throughout the project lifecycle.
 | ID        | Description                                                                                      | Status   | Target Semester | Mapping (source / issue)                     |
 | --------- | ------------------------------------------------------------------------------------------------ | -------- | --------------- | -------------------------------------------- |
 | REQ-F-01  | Passwordless sign-in via email OTP (Better Auth + Nodemailer); OTP emailed to an existing user   | Verified | 2026F           | `server/utils/auth.ts`, `app/pages/auth.vue` |
-| REQ-F-02  | Server API gateway rejects unauthenticated requests to non-public routes with HTTP 401           | Verified | 2026F           | `server/middleware/auth.ts`                  |
-| REQ-F-03  | Client route guard redirects signed-out users to `/auth` and signed-in users away from `/auth`   | Verified | 2026F           | `app/middleware/auth.global.ts`              |
-| REQ-F-04  | Authenticated user can upload a profile image, stored per-user under the configured storage path | Verified | 2026F           | `server/api/users/upload.post.ts`            |
-| REQ-F-05  | Profile image is served with its `Content-Type` detected from file contents (magic bytes)        | Verified | 2026F           | `server/api/users/[id]/profile.get.ts`       |
-| REQ-F-06  | User-list endpoint returns only non-sensitive fields and never leaks image storage paths         | Verified | 2026F           | `server/api/users/index.get.ts`              |
-| REQ-F-07  | Unauthenticated `/api/health` endpoint returns HTTP 200 for load-balancer probes                 | Verified | 2026F           | `server/api/health.ts`                       |
+| REQ-F-02  | User authetification page, 2 roles (admin and student)    | Verified | 2026F           | `server/utils/auth.ts`, `app/pages/auth.vue` |
+| REQ-F-03  | User dashboard has user's course progress, sections and chapters, completed activities, and earned badge   | Verified | 2026F           | `server/utils/auth.ts`, `app/pages/auth.vue` |
+| REQ-F-04  |  Admins can view users and user progress and allow to accept new users  | Verified | 2026F           | `server/utils/auth.ts`, `app/pages/auth.vue` |
+| REQ-F-05  |  Authorized admins can assign and modify user roles, including student and administrator roles  | Verified | 2026F           | `server/utils/auth.ts`, `app/pages/auth.vue` |
+| REQ-F-06  |  Resources page allows users to get in contact with other resources  | Verified | 2026F           | `server/utils/auth.ts`, `app/pages/auth.vue` |
+| REQ-F-07  |  Contact page displays the approved contact information using a form  | Verified | 2026F           | `server/utils/auth.ts`, `app/pages/auth.vue` |
+| REQ-F-08  | Server API gateway rejects unauthenticated requests to non-public routes with HTTP 401           | Verified | 2026F           | `server/middleware/auth.ts`                  |
+| REQ-F-09  | Client route guard redirects signed-out users to `/auth` and signed-in users away from `/auth`   | Verified | 2026F           | `app/middleware/auth.global.ts`              |
+| REQ-F-10  | Authenticated user can upload a profile image, stored per-user under the configured storage path | Verified | 2026F           | `server/api/users/upload.post.ts`            |
+| REQ-F-11  | Profile image is served with its `Content-Type` detected from file contents (magic bytes)        | Verified | 2026F           | `server/api/users/[id]/profile.get.ts`       |
+| REQ-F-12  | User-list endpoint returns only non-sensitive fields and never leaks image storage paths         | Verified | 2026F           | `server/api/users/index.get.ts`              |
+| REQ-F-13  | Unauthenticated `/api/health` endpoint returns HTTP 200 for load-balancer probes                 | Verified | 2026F           | `server/api/health.ts`                       |
 | REQ-NF-01 | Persistence is type-safe: Drizzle ORM schema with generated Zod select/insert schemas            | Verified | 2026F           | `server/db/schema.ts`                        |
 | REQ-NF-02 | CI runs lint, type-check, and the Vitest suite on every PR and on `dev`/`stage`/`prod` pushes    | Verified | 2026F           | `.github/workflows/test.yml`                 |
 | REQ-NF-03 | Deploy pipeline order is build → migrate → push → deploy, so a failed migration never ships       | Verified | 2026F           | `.github/workflows/deploy.yml`               |
