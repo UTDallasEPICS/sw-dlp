@@ -7,7 +7,7 @@
   --color-brand-200: #fecdd9;
   --color-brand-300: #fda4bb;
   --color-brand-400: #fb6f97;
-  --color-brand-500: #e0004d;
+  --color-brand-500: #e0004d; /* main accent color */
   --color-brand-600: #c70045;
   --color-brand-700: #a5003a;
   --color-brand-800: #880031;
@@ -22,7 +22,7 @@
   --ui-text: #111827;
   --ui-text-muted: #6b7280;
   --ui-border: #e5e7eb;
-  --ui-primary: #e0004d;
+  --ui-primary: var(--color-brand-500); 
 }
 
 html,
