@@ -114,15 +114,19 @@
     <div class="w-full max-w-4xl">
       <!-- Logo and header -->
       <div class="mb-10 text-center">
-        <h1 class="text-brand-500 text-3xl font-bold">Stronger Women</h1>
+        <div class="mb-2 flex items-center justify-center gap-1">
+          <img src="/logo_not_name.png" alt="Stronger Women" class="h-13 w-auto" />
+          <h1 class="text-brand-500 text-3xl font-bold">Stronger Women</h1>
+        </div>
         <p class="mt-1 text-gray-600">Digital Learning Platform</p>
       </div>
 
       <!-------- Desktop (side-by-side view) --------->
       <div
-        class="hidden overflow-hidden rounded-2xl border border-gray-100 bg-white shadow-xl md:grid md:grid-cols-2"
+        class="relative hidden overflow-hidden rounded-2xl border border-gray-100 bg-white shadow-2xl shadow-brand-500/20 md:grid md:grid-cols-2
+              shadow-[0_0_60px_rgba(224,0,77,0.18)]"
       >
-        <!-- SIGN UP -->
+        <!-- Sign Up -->
         <div class="p-10">
           <h2 class="mb-8 text-center text-xl font-semibold">Sign up</h2>
 
@@ -131,7 +135,7 @@
               <UFormField name="name">
                 <UInput
                   v-model="signup.name"
-                  placeholder="Enter first and last name"
+                  placeholder="Enter name"
                   class="w-full"
                   :ui="inputUi"
                 />
@@ -161,17 +165,18 @@
                 otp
                 v-model="signup.otp"
                 :length="6"
-                size="xl"
+                size="lg"
                 class="flex w-full items-center justify-center"
               />
             </UFormField>
 
             <UButton
-              loading-auto
               type="submit"
+              loading-auto
+              block
               class="bg-brand-500 hover:bg-brand-600 rounded-full py-3 text-sm font-semibold tracking-widest text-white uppercase"
             >
-              {{ isEmailSent ? 'Login' : 'Send OTP' }}
+              {{ isEmailSent ? 'Verify & Create Account' : 'Create Account' }}
             </UButton>
 
             <p v-if="isEmailSent" class="text-center text-sm text-gray-500">
@@ -182,8 +187,8 @@
           </UForm>
         </div>
 
-        <!-- Divider -->
-        <div class="relative border-l border-gray-200">
+        <!-- Vertical Divider -->
+        <div class="absolute inset-y-8 left-1/2 w-px -translate-x-1/2 bg-gray-200">
           <span
             class="absolute top-1/2 left-0 -translate-x-1/2 -translate-y-1/2 bg-white px-3 text-sm text-gray-400"
           >
@@ -191,7 +196,7 @@
           </span>
         </div>
 
-        <!-- LOGIN -->
+        <!-- Login -->
         <div class="p-10">
           <h2 class="mb-8 text-center text-xl font-semibold">Login</h2>
 
@@ -223,7 +228,7 @@
               block
               class="bg-brand-500 hover:bg-brand-600 rounded-full py-3 text-sm font-semibold tracking-widest text-white uppercase"
             >
-              {{ isEmailSent ? 'Login' : 'Send OTP' }}
+              {{ isEmailSent ? 'Login' : 'Login' }}
             </UButton>
 
             <p v-if="isEmailSent" class="text-center text-sm text-gray-500">
@@ -242,27 +247,22 @@
           <button
             class="flex-1 py-4 text-sm font-semibold transition-colors"
             :class="activeTab === 'signup' ? 'bg-brand-500 text-white' : 'bg-gray-50 text-gray-600'"
-            @click="
-              activeTab = 'signup'
-              resetOtp()
-            "
+            @click="activeTab = 'signup'; resetOtp()"
           >
             Sign up
           </button>
           <button
             class="flex-1 py-4 text-sm font-semibold transition-colors"
             :class="activeTab === 'login' ? 'bg-brand-500 text-white' : 'bg-gray-50 text-gray-600'"
-            @click="
-              activeTab = 'login'
-              resetOtp()
-            "
+            @click="activeTab = 'login'; resetOtp()"
           >
             Login
           </button>
         </div>
 
         <div class="p-8">
-          <!-- SIGN UP TAB -->
+
+          <!-- Sign Up Tab -->
           <div v-show="activeTab === 'signup'">
             <UForm :schema="signupSchema" :state="signup" class="space-y-5" @submit="handleSignup">
               <template v-if="!isEmailSent">
@@ -315,7 +315,7 @@
             </UForm>
           </div>
 
-          <!-- LOGIN TAB -->
+          <!-- Login Tab -->
           <div v-show="activeTab === 'login'">
             <UForm :schema="loginSchema" :state="login" class="space-y-5" @submit="handleLogin">
               <UFormField name="email">
@@ -345,7 +345,7 @@
                 block
                 class="bg-brand-500 hover:bg-brand-600 rounded-full py-3 text-sm font-semibold tracking-widest text-white uppercase"
               >
-                {{ isEmailSent ? 'Login' : 'Send OTP' }}
+                {{ isEmailSent ? 'Login' : 'Login' }}
               </UButton>
             </UForm>
           </div>
