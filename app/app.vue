@@ -6,7 +6,9 @@
       <header
         class="sticky top-0 z-50 border-b border-gray-200 bg-gray-900/75 bg-white/75 backdrop-blur-md"
       >
-        <UContainer class="flex h-16 items-center justify-between">
+        <UContainer class="flex h-16 items-center gap-4">
+          <HamburgerMenu />
+
           <NuxtLink to="/" class="flex items-center gap-2 text-xl font-bold">
             <img src="/logo.png" alt="Stronger Women" class="h-15 w-auto" />
           </NuxtLink>
