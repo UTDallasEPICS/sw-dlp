@@ -52,6 +52,15 @@ export const lesson = sqliteTable('lesson', {
     .references(() => chapter.id, { onDelete: 'cascade' }),
 })
 
+export const CourseTitles = sqliteTable('courseTitles', {
+  id: text('id')
+    .primaryKey()
+    .$defaultFn(() => crypto.randomUUID()),
+  Sections: text('name').notNull(),
+  Chapters: text('name', {mode: 'json'}).$type<string[]>().notNull(),
+  description: text('description')
+})
+
 export const chapter = sqliteTable('chapter', {
   id: text('id')
     .primaryKey()
