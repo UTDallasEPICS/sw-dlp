@@ -16,7 +16,7 @@ export const user = sqliteTable('user', {
   updatedAt: integer('updatedAt', { mode: 'timestamp' })
     .notNull()
     .$defaultFn(() => new Date()),
-  phoneNumber: text('phoneNumber').notNull().unique(),
+  phoneNumber: text('phoneNumber').unique(),
   admin: integer('admin', { mode: 'boolean' }).notNull().default(false),
 })
 

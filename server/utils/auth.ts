@@ -19,14 +19,24 @@ export const auth = betterAuth({
   database: drizzleAdapter(db, {
     provider: 'sqlite',
   }),
+  // Added an additional field for phone number 
+  user: {
+    additionalFields: {
+      phoneNumber: {
+        type: 'string',
+        required: false,   
+        input: true,      
+      },
+    },
+  },
   plugins: [
     emailOTP({
       async sendVerificationOTP({ email, otp }) {
         await transporter.sendMail({
           from: env.EMAIL_FROM,
           to: email,
-          subject: 'OTP for nuxt-template',
-          html: `Your OTP is: ${otp}`,
+          subject: 'Your Stronger Women OTP',
+          html: `Your verification code is: ${otp}`,
         })
       },
     }),
