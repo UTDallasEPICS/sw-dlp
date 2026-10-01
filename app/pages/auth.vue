@@ -58,6 +58,8 @@
       const { error } = await authClient.signIn.emailOtp({
         email: signup.email,
         otp: signup.otp.join(''),
+        name: signup.name,
+        phoneNumber: signup.phone,
       })
 
       if (error) {
