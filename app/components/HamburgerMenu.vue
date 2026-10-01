@@ -50,8 +50,6 @@
   </div>
 </template>
 
-
-
 <style scoped>
   .slide-enter-active,
   .slide-leave-active {
@@ -63,8 +61,7 @@
     transform: translateX(-100%);
   }
 
-  HEAD
-  .menu-toggle {
+  HEAD .menu-toggle {
     display: inline-flex;
     width: 48px;
     height: 43px;
@@ -94,7 +91,7 @@
     width: 100%;
     height: 4px;
     border-radius: 999px;
-    background: currentColor;
+    background: #e0004d;
     transition:
       transform 180ms ease,
       opacity 180ms ease;
