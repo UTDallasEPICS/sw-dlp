@@ -4,7 +4,8 @@
 
   const toast = useToast()
 
-  const isEmailSent = ref(false)
+  const isSignupEmailSent = ref(false)
+  const isLoginEmailSent = ref(false)
   const activeTab = ref<'signup' | 'login'>('signup') // mobile only
 
   const signup = reactive({ name: '', email: '', phone: '', otp: [] as string[] })
@@ -12,7 +13,7 @@
 
   //------ Schemas ----------
   const signupSchema = computed(() => {
-    if (!isEmailSent.value) {
+    if (!isSignupEmailSent.value) {
       return z.object({
         name: z.string().min(1, 'Required'),
         email: z.string().email('Invalid email'),
@@ -27,7 +28,7 @@
   })
 
   const loginSchema = computed(() => {
-    if (!isEmailSent.value) {
+    if (!isLoginEmailSent.value) {
       return z.object({
         email: z.string().email('Invalid email'),
       })
@@ -40,7 +41,7 @@
 
   //------------- Signup ---------------
   async function handleSignup() {
-    if (!isEmailSent.value) {
+    if (!isSignupEmailSent.value) {
       // Sends OTP
       const { error } = await authClient.emailOtp.sendVerificationOtp({
         email: signup.email,
@@ -50,7 +51,7 @@
       if (error) {
         toast.add({ title: 'Error', description: error.message, color: 'error' })
       } else {
-        isEmailSent.value = true
+        isSignupEmailSent.value = true
         toast.add({ title: 'Success', description: 'OTP sent to your email', color: 'success' })
       }
     } else {
@@ -72,7 +73,7 @@
 
   //------------- Login ---------------
   async function handleLogin() {
-    if (!isEmailSent.value) {
+    if (!isLoginEmailSent.value) {
       // Sends OTP
       const { error } = await authClient.emailOtp.sendVerificationOtp({
         email: login.email,
@@ -82,7 +83,7 @@
       if (error) {
         toast.add({ title: 'Error', description: error.message, color: 'error' })
       } else {
-        isEmailSent.value = true
+        isLoginEmailSent.value = true
         toast.add({ title: 'Success', description: 'OTP sent to your email', color: 'success' })
       }
     } else {
@@ -100,10 +101,16 @@
     }
   }
 
-  function resetOtp() {
-    isEmailSent.value = false
-    signup.otp = []
-    login.otp = []
+  // No argument = reset both (used by mobile tabs). Pass a form to reset only that one.
+  function resetOtp(form?: 'signup' | 'login') {
+    if (!form || form === 'signup') {
+      isSignupEmailSent.value = false
+      signup.otp = []
+    }
+    if (!form || form === 'login') {
+      isLoginEmailSent.value = false
+      login.otp = []
+    }
   }
 
   const inputUi = {
@@ -133,7 +140,7 @@
           <h2 class="mb-8 text-center text-xl font-semibold">Sign up</h2>
 
           <UForm :schema="signupSchema" :state="signup" class="space-y-5" @submit="handleSignup">
-            <template v-if="!isEmailSent">
+            <template v-if="!isSignupEmailSent">
               <UFormField name="name">
                 <UInput
                   v-model="signup.name"
@@ -162,7 +169,7 @@
               </UFormField>
             </template>
 
-            <UFormField name="otp" v-if="isEmailSent">
+            <UFormField name="otp" v-if="isSignupEmailSent">
               <UPinInput
                 otp
                 v-model="signup.otp"
@@ -178,11 +185,15 @@
               block
               class="bg-brand-500 hover:bg-brand-600 rounded-full py-3 text-sm font-semibold tracking-widest text-white uppercase"
             >
-              {{ isEmailSent ? 'Verify & Create Account' : 'Create Account' }}
+              {{ isSignupEmailSent ? 'Verify & Create Account' : 'Create Account' }}
             </UButton>
 
-            <p v-if="isEmailSent" class="text-center text-sm text-gray-500">
-              <button type="button" class="text-brand-500 hover:underline" @click="resetOtp">
+            <p v-if="isSignupEmailSent" class="text-center text-sm text-gray-500">
+              <button
+                type="button"
+                class="text-brand-500 hover:underline"
+                @click="resetOtp('signup')"
+              >
                 Change email
               </button>
             </p>
@@ -210,11 +221,11 @@
                 placeholder="Enter email"
                 class="w-full"
                 :ui="inputUi"
-                :disabled="isEmailSent"
+                :disabled="isLoginEmailSent"
               />
             </UFormField>
 
-            <UFormField v-if="isEmailSent" name="otp">
+            <UFormField v-if="isLoginEmailSent" name="otp">
               <UPinInput
                 v-model="login.otp"
                 otp
@@ -230,11 +241,15 @@
               block
               class="bg-brand-500 hover:bg-brand-600 rounded-full py-3 text-sm font-semibold tracking-widest text-white uppercase"
             >
-              {{ isEmailSent ? 'Login' : 'Login' }}
+              {{ isLoginEmailSent ? 'Login' : 'Login' }}
             </UButton>
 
-            <p v-if="isEmailSent" class="text-center text-sm text-gray-500">
-              <button type="button" class="text-brand-500 hover:underline" @click="resetOtp">
+            <p v-if="isLoginEmailSent" class="text-center text-sm text-gray-500">
+              <button
+                type="button"
+                class="text-brand-500 hover:underline"
+                @click="resetOtp('login')"
+              >
                 Change email
               </button>
             </p>
@@ -267,7 +282,7 @@
           <!-- Sign Up Tab -->
           <div v-show="activeTab === 'signup'">
             <UForm :schema="signupSchema" :state="signup" class="space-y-5" @submit="handleSignup">
-              <template v-if="!isEmailSent">
+              <template v-if="!isSignupEmailSent">
                 <UFormField name="name">
                   <UInput
                     v-model="signup.name"
@@ -312,7 +327,7 @@
                 block
                 class="bg-brand-500 hover:bg-brand-600 rounded-full py-3 text-sm font-semibold tracking-widest text-white uppercase"
               >
-                {{ isEmailSent ? 'Verify & Create Account' : 'Create Account' }}
+                {{ isSignupEmailSent ? 'Verify & Create Account' : 'Create Account' }}
               </UButton>
             </UForm>
           </div>
@@ -327,11 +342,11 @@
                   placeholder="Enter email"
                   class="w-full"
                   :ui="inputUi"
-                  :disabled="isEmailSent"
+                  :disabled="isLoginEmailSent"
                 />
               </UFormField>
 
-              <UFormField v-if="isEmailSent" name="otp">
+              <UFormField v-if="isLoginEmailSent" name="otp">
                 <UPinInput
                   v-model="login.otp"
                   otp
@@ -347,7 +362,7 @@
                 block
                 class="bg-brand-500 hover:bg-brand-600 rounded-full py-3 text-sm font-semibold tracking-widest text-white uppercase"
               >
-                {{ isEmailSent ? 'Login' : 'Login' }}
+                {{ isLoginEmailSent ? 'Login' : 'Login' }}
               </UButton>
             </UForm>
           </div>
