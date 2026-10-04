@@ -66,17 +66,17 @@
     <div class="w-full max-w-4xl">
       <!-- Logo and header -->
       <div class="mb-10 text-center">
-        <div class="mb-2 flex items-center justify-center gap-1">
-          <img src="/logo_not_name.png" alt="Stronger Women" class="h-13 w-auto" />
-          <h1 class="text-brand-500 text-3xl font-bold">Stronger Women</h1>
+        <div class="mb-2 flex items-center justify-center gap-0">
+          <img src="/logo_not_name.png" alt="Stronger Women" class="h-20 w-auto" />
+          <h1 class="text-brand-500 -ml-2 text-3xl font-bold">Stronger Women</h1>
         </div>
         <p class="mt-1 text-gray-600">Digital Learning Platform</p>
       </div>
 
       <!-------- Desktop (side-by-side view) --------->
       <div
-        class="relative hidden overflow-hidden rounded-2xl border border-gray-100 bg-white shadow-2xl shadow-brand-500/20 md:grid md:grid-cols-2
-              shadow-[0_0_60px_rgba(224,0,77,0.18)]"
+        class="relative hidden overflow-hidden rounded-2xl border border-gray-100 bg-white 
+               shadow-[0_0_60px_rgba(224,0,77,0.18)] md:grid md:grid-cols-2"
       >
         <!-- Sign Up -->
         <div class="p-10">

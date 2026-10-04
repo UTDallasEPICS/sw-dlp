@@ -31,7 +31,6 @@ function goBack() {
 </script>
 
 <template>
-  <!-- same layout as signup.vue, just change the title and button text -->
   <div class="flex min-h-[calc(100vh-4rem)] items-center justify-center px-4 py-12">
     <div class="w-full max-w-md">
       <!-- logo header ... -->

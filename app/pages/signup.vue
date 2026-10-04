@@ -31,14 +31,13 @@ async function handleVerify() {
 }
 
 function goBack() {
-  navigateTo('/auth') // or wherever your auth page lives
+  navigateTo('/auth') 
 }
 </script>
 
 <template>
   <div class="flex min-h-[calc(100vh-4rem)] items-center justify-center px-4 py-12">
     <div class="w-full max-w-md">
-      <!-- same logo header as auth.vue if you want -->
       <div class="mb-10 text-center">
         <div class="mb-2 flex items-center justify-center gap-1">
           <img src="/logo_not_name.png" alt="Stronger Women" class="h-13 w-auto" />
