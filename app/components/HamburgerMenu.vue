@@ -2,8 +2,10 @@
   const isOpen = ref(false)
 
   const links = [
-    { label: 'Dashboard', to: '/dashboard' },
-    { label: 'Sign in', to: '/auth' },
+    { label: 'Course', to: '/course' },
+    { label: 'Profile', to: '/profile' },
+    { label: 'Contact', to: '/contact' },
+    { label: 'Logout', to: '/logout' },
   ]
 
   function closeMenu() {
@@ -33,13 +35,13 @@
         <div
           v-if="isOpen"
           id="mobile-menu"
-          class="fixed top-16 bottom-0 left-0 z-60 w-48 border-r border-gray-200 bg-white p-4 shadow-lg"
+          class="fixed inset-x-0 top-16 bottom-0 z-[40] bg-white p-6"
         >
           <NuxtLink
             v-for="link in links"
             :key="link.to"
             :to="link.to"
-            class="block rounded-md px-3 py-2 text-sm hover:bg-gray-100"
+            class="block rounded-md px-3 py-4 text-center text-xl font-bold hover:bg-gray-100"
             @click="closeMenu"
           >
             {{ link.label }}
@@ -61,7 +63,7 @@
     transform: translateX(-100%);
   }
 
-  HEAD .menu-toggle {
+  .menu-toggle {
     display: inline-flex;
     width: 48px;
     height: 43px;
