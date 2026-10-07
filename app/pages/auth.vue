@@ -24,7 +24,6 @@
         otp: z.array(z.string()).length(6, 'Must be 6 digits'),
       })
     }
-    a
   })
 
   const loginSchema = computed(() => {
