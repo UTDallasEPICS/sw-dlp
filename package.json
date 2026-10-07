@@ -39,7 +39,7 @@
     "@types/better-sqlite3": "^9.6.0",
     "@vue/test-utils": "^2.4.11",
     "better-sqlite3": "12.11.1",
-    "drizzle-kit": "^0.18.1",
+    "drizzle-kit": "^0.31.11",
     "drizzle-orm": "^0.45.2",
     "drizzle-zod": "^0.8.3",
     "eslint": "^10.9.0",

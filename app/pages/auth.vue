@@ -24,6 +24,7 @@
         otp: z.array(z.string()).length(6, 'Must be 6 digits'),
       })
     }
+    a
   })
 
   const loginSchema = computed(() => {
@@ -63,7 +64,7 @@
       if (error) {
         toast.add({ title: 'Error', description: error.message, color: 'error' })
       } else {
-        await navigateTo('/', { external: true })
+        await navigateTo('/dashboard', { external: true })
       }
     }
   }
@@ -93,7 +94,7 @@
       if (error) {
         toast.add({ title: 'Error', description: error.message, color: 'error' })
       } else {
-        await navigateTo('/', { external: true })
+        await navigateTo('/dashboard', { external: true })
       }
     }
   }
@@ -123,8 +124,7 @@
 
       <!-------- Desktop (side-by-side view) --------->
       <div
-        class="relative hidden overflow-hidden rounded-2xl border border-gray-100 bg-white shadow-2xl shadow-brand-500/20 md:grid md:grid-cols-2
-              shadow-[0_0_60px_rgba(224,0,77,0.18)]"
+        class="shadow-brand-500/20 relative hidden overflow-hidden rounded-2xl border border-gray-100 bg-white shadow-2xl shadow-[0_0_60px_rgba(224,0,77,0.18)] md:grid md:grid-cols-2"
       >
         <!-- Sign Up -->
         <div class="p-10">
@@ -247,21 +247,26 @@
           <button
             class="flex-1 py-4 text-sm font-semibold transition-colors"
             :class="activeTab === 'signup' ? 'bg-brand-500 text-white' : 'bg-gray-50 text-gray-600'"
-            @click="activeTab = 'signup'; resetOtp()"
+            @click="
+              activeTab = 'signup'
+              resetOtp()
+            "
           >
             Sign up
           </button>
           <button
             class="flex-1 py-4 text-sm font-semibold transition-colors"
             :class="activeTab === 'login' ? 'bg-brand-500 text-white' : 'bg-gray-50 text-gray-600'"
-            @click="activeTab = 'login'; resetOtp()"
+            @click="
+              activeTab = 'login'
+              resetOtp()
+            "
           >
             Login
           </button>
         </div>
 
         <div class="p-8">
-
           <!-- Sign Up Tab -->
           <div v-show="activeTab === 'signup'">
             <UForm :schema="signupSchema" :state="signup" class="space-y-5" @submit="handleSignup">
