@@ -41,17 +41,35 @@
   //------------- Signup ---------------
   async function handleSignup() {
     if (!isEmailSent.value) {
-      // Sends OTP
-      const { error } = await authClient.emailOtp.sendVerificationOtp({
-        email: signup.email,
-        type: 'sign-in',
-      })
+      try {
+        // Create the custom profile before Better Auth handles OTP verification.
+        await $fetch('/api/users/signup', {
+          method: 'POST',
+          body: {
+            name: signup.name,
+            email: signup.email,
+            phoneNumber: signup.phone,
+          },
+        })
 
-      if (error) {
-        toast.add({ title: 'Error', description: error.message, color: 'error' })
-      } else {
-        isEmailSent.value = true
-        toast.add({ title: 'Success', description: 'OTP sent to your email', color: 'success' })
+        const { error } = await authClient.emailOtp.sendVerificationOtp({
+          email: signup.email,
+          type: 'sign-in',
+        })
+
+        if (error) {
+          toast.add({ title: 'Error', description: error.message, color: 'error' })
+        } else {
+          isEmailSent.value = true
+          toast.add({ title: 'Success', description: 'OTP sent to your email', color: 'success' })
+        }
+      } catch (error: unknown) {
+        const message =
+          error && typeof error === 'object' && 'data' in error
+            ? ((error as { data?: { statusMessage?: string } }).data?.statusMessage ??
+              'Unable to create your account')
+            : 'Unable to create your account'
+        toast.add({ title: 'Error', description: message, color: 'error' })
       }
     } else {
       // Verify OTP and create an account
@@ -63,7 +81,7 @@
       if (error) {
         toast.add({ title: 'Error', description: error.message, color: 'error' })
       } else {
-        await navigateTo('/', { external: true })
+        await navigateTo('/dashboard', { external: true })
       }
     }
   }
@@ -93,7 +111,7 @@
       if (error) {
         toast.add({ title: 'Error', description: error.message, color: 'error' })
       } else {
-        await navigateTo('/', { external: true })
+        await navigateTo('/dashboard', { external: true })
       }
     }
   }
@@ -103,6 +121,8 @@
     signup.otp = []
     login.otp = []
   }
+
+  watch(activeTab, resetOtp, { immediate: true })
 
   const inputUi = {
     base: 'rounded-full bg-gray-50 border border-gray-200 placeholder:text-gray-400 focus:border-brand-500 focus:ring-0',
@@ -123,8 +143,7 @@
 
       <!-------- Desktop (side-by-side view) --------->
       <div
-        class="relative hidden overflow-hidden rounded-2xl border border-gray-100 bg-white shadow-2xl shadow-brand-500/20 md:grid md:grid-cols-2
-              shadow-[0_0_60px_rgba(224,0,77,0.18)]"
+        class="shadow-brand-500/20 relative hidden overflow-hidden rounded-2xl border border-gray-100 bg-white shadow-2xl md:grid md:grid-cols-2"
       >
         <!-- Sign Up -->
         <div class="p-10">
@@ -247,21 +266,20 @@
           <button
             class="flex-1 py-4 text-sm font-semibold transition-colors"
             :class="activeTab === 'signup' ? 'bg-brand-500 text-white' : 'bg-gray-50 text-gray-600'"
-            @click="activeTab = 'signup'; resetOtp()"
+            @click="activeTab = 'signup'"
           >
             Sign up
           </button>
           <button
             class="flex-1 py-4 text-sm font-semibold transition-colors"
             :class="activeTab === 'login' ? 'bg-brand-500 text-white' : 'bg-gray-50 text-gray-600'"
-            @click="activeTab = 'login'; resetOtp()"
+            @click="activeTab = 'login'"
           >
             Login
           </button>
         </div>
 
         <div class="p-8">
-
           <!-- Sign Up Tab -->
           <div v-show="activeTab === 'signup'">
             <UForm :schema="signupSchema" :state="signup" class="space-y-5" @submit="handleSignup">

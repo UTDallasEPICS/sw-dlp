@@ -1,4 +1,4 @@
-import { sqliteTable, text, integer, index } from 'drizzle-orm/sqlite-core'
+import { sqliteTable, text, integer, index, uniqueIndex } from 'drizzle-orm/sqlite-core'
 import { createSelectSchema, createInsertSchema } from 'drizzle-zod'
 import { relations } from 'drizzle-orm'
 
@@ -60,17 +60,23 @@ export const chapter = sqliteTable('chapter', {
   description: text('description'),
 })
 
-export const userLesson = sqliteTable('userLesson', {
-  id: text('id')
-    .primaryKey()
-    .notNull()
-    .references(() => lesson.id, { onDelete: 'cascade' }),
-  userId: text('userId')
-    .notNull()
-    .references(() => user.id, { onDelete: 'cascade' }),
-  completed: integer('completed', { mode: 'boolean' }).notNull().default(false),
-  completedAt: integer('completedAt', { mode: 'timestamp' }),
-})
+export const userLesson = sqliteTable(
+  'userLesson',
+  {
+    id: text('id')
+      .primaryKey()
+      .$defaultFn(() => crypto.randomUUID()),
+    userId: text('userId')
+      .notNull()
+      .references(() => user.id, { onDelete: 'cascade' }),
+    lessonId: text('lessonId')
+      .notNull()
+      .references(() => lesson.id, { onDelete: 'cascade' }),
+    completed: integer('completed', { mode: 'boolean' }).notNull().default(false),
+    completedAt: integer('completedAt', { mode: 'timestamp' }),
+  },
+  (table) => [uniqueIndex('userLesson_userId_lessonId_unique').on(table.userId, table.lessonId)],
+)
 
 export const session = sqliteTable(
   'session',
