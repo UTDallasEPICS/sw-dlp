@@ -2,6 +2,7 @@ import 'dotenv/config'
 import Database from 'better-sqlite3'
 import { drizzle } from 'drizzle-orm/better-sqlite3'
 import * as schema from './schema'
+import { seedCourses } from '../data/lessons.ts'
 
 const connectionString = process.env.DATABASE_URL!.replace('file:', '')
 const sqlite = new Database(connectionString)
@@ -27,6 +28,9 @@ async function main() {
   } else {
     console.log({ user: existingUser })
   }
+
+  // Seed the courses defined in the lessons.ts file
+  await seedCourses()
 
   console.log('Seeding finished.')
 }
