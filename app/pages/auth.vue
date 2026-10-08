@@ -122,6 +122,8 @@
     login.otp = []
   }
 
+  watch(activeTab, resetOtp, { immediate: true })
+
   const inputUi = {
     base: 'rounded-full bg-gray-50 border border-gray-200 placeholder:text-gray-400 focus:border-brand-500 focus:ring-0',
   }
@@ -264,20 +266,14 @@
           <button
             class="flex-1 py-4 text-sm font-semibold transition-colors"
             :class="activeTab === 'signup' ? 'bg-brand-500 text-white' : 'bg-gray-50 text-gray-600'"
-            @click="
-              activeTab = 'signup'
-              resetOtp()
-            "
+            @click="activeTab = 'signup'"
           >
             Sign up
           </button>
           <button
             class="flex-1 py-4 text-sm font-semibold transition-colors"
             :class="activeTab === 'login' ? 'bg-brand-500 text-white' : 'bg-gray-50 text-gray-600'"
-            @click="
-              activeTab = 'login'
-              resetOtp()
-            "
+            @click="activeTab = 'login'"
           >
             Login
           </button>
