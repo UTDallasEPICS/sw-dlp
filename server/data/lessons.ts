@@ -81,51 +81,14 @@ const courseData: Sections[] = [
   },
 ]
 
-/*const Chapters: string[] = [
-  'Overview',
-  'Chapter 1: Espresso and You',
-  'Chapter 2: You "Aha" Moment',
-  'Chapter 3: Feelings Assessment',
-  'Chapter 4: Coping Mechanisms',
-  'Section One Summary',
-  'Overview',
-  'Chapter 5: Reoccurring Themes',
-  'Chapter 6: Your Behaviors, Set Boundaries',
-  'Chapter 7: Inner Music',
-  'Chapter 8: Communication Hooks, Medical Impact',
-  'Section Two Summary',
-  'Overview',
-  'Chapter 9: Powerless, Forgiveness, Bitterness',
-  'Chapter 10: Types of Abuse, Cycles, Safety, Legal',
-  'Section Three Summary',
-  'Overview',
-  'Chapter 11: Self—­esteem Defined',
-  'Chapter 12: Self—­esteem: What erodes? How to enhance?',
-  'Section Four Summary',
-  'Overview',
-  'Chapter 13: Seven Ingredients to Perfection, #1 God, #2 Body',
-  'Chapter 14: Seven Ingredients of Perfection, #3 Soul, #4 Mind',
-  'Chapter 15: Seven Ingredients, #5 Words, #6 Lessons, #7 Relationships',
-  'Section Five Summary',
-]
-
-const Sections: string[] = [
-  'Section 1: The Awakening: You Are Not Alone',
-  'Section 2: Recognizing Patterns of Behavior',
-  'Section 3: Understanding Abusive Relationships',
-  'Section 4: Build Your Self-­Esteem',
-  'Section 5: Redefine Your Life',
-]
-*/
-
-async function seedCourses() {
+export async function seedCourses() {
   console.log('Seeding courses...')
 
   const CourseTitlesData = courseData.map((section) => ({
     Sections: section.title,
-    Chapters: section.chapters.map((chapter) => chapter.title)
+    Chapters: section.chapters.map((chapter) => chapter.title),
   }))
-  
+
   await db.insert(CourseTitles).values(CourseTitlesData)
 
   console.log('Database seeded successfully.')
