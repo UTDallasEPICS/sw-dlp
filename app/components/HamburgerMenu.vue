@@ -1,30 +1,33 @@
 <script setup lang="ts">
+  import { authClient } from '../utils/auth-client'
+
+  const { data: session } = await authClient.useSession(useFetch)
   const isOpen = ref(false)
 
   const links = [
-<<<<<<< HEAD
-    { label: 'Course', to: '/course' },
+    { label: 'Dashboard', to: '/dashboard' },
     { label: 'Profile', to: '/profile' },
     { label: 'Contact', to: '/contact' },
-    { label: 'Logout', to: '/logout' },
-=======
-    { label: 'Dashboard', to: '/dashboard' },
-    { label: 'Sign in', to: '/auth' },
     { label: 'Resources', to: '/resources' },
-    { label: 'Contact', to: '/contact' },
->>>>>>> 05107eb10ebff1cbb49d45d26455c3b1c3a96969
   ]
 
   function closeMenu() {
     isOpen.value = false
+  }
+
+  async function logout() {
+    await authClient.signOut()
+    closeMenu()
+    await navigateTo('/auth')
   }
 </script>
 
 <template>
   <div class="relative">
     <button
+      v-if="session"
       type="button"
-      class="inline-flex h-[43px] w-12 cursor-pointer items-center justify-center rounded-lg border-0 bg-white text-[#e0004d] focus-visible:outline-2 focus-visible:outline-current focus-visible:outline-offset-[3px] md:hidden"
+      class="inline-flex h-[43px] w-12 cursor-pointer items-center justify-center rounded-lg border-0 bg-white text-[#e0004d] focus-visible:outline-2 focus-visible:outline-offset-[3px] focus-visible:outline-current lg:hidden"
       :aria-label="isOpen ? 'Close menu' : 'Open menu'"
       :aria-expanded="isOpen"
       aria-controls="mobile-menu"
@@ -57,11 +60,7 @@
         <div
           v-if="isOpen"
           id="mobile-menu"
-<<<<<<< HEAD
           class="fixed inset-x-0 top-16 bottom-0 z-[40] bg-white p-6"
-=======
-          class="fixed top-16 bottom-0 left-0 z-60 w-48 border-r border-gray-200 bg-white p-4 shadow-lg md:hidden"
->>>>>>> 05107eb10ebff1cbb49d45d26455c3b1c3a96969
         >
           <NuxtLink
             v-for="link in links"
@@ -72,12 +71,18 @@
           >
             {{ link.label }}
           </NuxtLink>
+          <button
+            type="button"
+            class="block w-full rounded-md px-3 py-4 text-center text-xl font-bold hover:bg-gray-100"
+            @click="logout"
+          >
+            Logout
+          </button>
         </div>
       </Transition>
     </Teleport>
   </div>
 </template>
-<<<<<<< HEAD
 
 <style scoped>
   .slide-enter-active,
@@ -139,5 +144,3 @@
     transform: translateY(-10px) rotate(-45deg);
   }
 </style>
-=======
->>>>>>> 05107eb10ebff1cbb49d45d26455c3b1c3a96969

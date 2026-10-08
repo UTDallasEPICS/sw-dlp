@@ -1,68 +1,69 @@
 <script setup lang="ts">
+  import { authClient } from './utils/auth-client'
+
+  const { data: session } = await authClient.useSession(useFetch)
+
+  async function logout() {
+    await authClient.signOut()
+    await navigateTo('/auth')
+  }
 </script>
 
 <template>
   <UApp>
     <div class="flex min-h-screen flex-col bg-[#f9fafb] text-gray-900">
-      <header
-        class="sticky top-0 z-50 border-b border-gray-200 bg-white/75 backdrop-blur-md"
-      >
-        <UContainer class="relative flex min-h-16 items-center gap-4 px-4 py-2 sm:px-6 lg:px-8">
-          <HamburgerMenu />
+      <header class="sticky top-0 z-50 border-b border-gray-200 bg-white/75 backdrop-blur-md">
+        <UContainer
+          class="relative grid min-h-16 grid-cols-[minmax(0,1fr)_auto_minmax(0,1fr)] items-center gap-2 px-4 py-2 sm:px-6 lg:px-8"
+        >
+          <HamburgerMenu class="absolute left-4 lg:hidden" />
 
-          <nav class="hidden items-center gap-6 md:flex" aria-label="Main navigation">
+          <nav
+            class="hidden min-w-0 items-center gap-1 justify-self-start lg:flex"
+            aria-label="Main navigation"
+          >
             <NuxtLink
               to="/dashboard"
-              class="text-base font-medium text-gray-700 transition-colors hover:text-[#e0004d]"
+              class="rounded-md px-4 py-2 font-bold whitespace-nowrap text-[#e0004d] hover:bg-gray-100"
             >
               Dashboard
             </NuxtLink>
             <NuxtLink
-              to="/auth"
-              class="text-base font-medium text-gray-700 transition-colors hover:text-[#e0004d]"
+              to="/contact"
+              class="rounded-md px-4 py-2 font-bold whitespace-nowrap text-[#e0004d] hover:bg-gray-100"
             >
-              Sign in
+              Contact
             </NuxtLink>
             <NuxtLink
               to="/resources"
-              class="text-base font-medium text-gray-700 transition-colors hover:text-[#e0004d]"
+              class="rounded-md px-4 py-2 font-bold whitespace-nowrap text-[#e0004d] hover:bg-gray-100"
             >
               Resources
             </NuxtLink>
-            <NuxtLink
-              to="/contact"
-              class="text-base font-medium text-gray-700 transition-colors hover:text-[#e0004d]"
-            >
-              Contact
-            </NuxtLink>
           </nav>
 
-          <NuxtLink
-            to="/"
-            class="absolute left-1/2 flex -translate-x-1/2 translate-y-1 items-center gap-2 text-xl font-bold md:static md:ml-auto md:translate-x-0"
-          >
-            <img src="/logo.png" alt="Stronger Women" class="h-15 w-auto" />
+          <NuxtLink to="/" class="justify-self-center">
+            <img src="/logo.png" alt="Stronger Women" class="h-14 w-55 object-contain" />
           </NuxtLink>
 
-          <nav class="ml-auto hidden items-center gap-3 md:flex" aria-label="Main navigation">
-            <NuxtLink
-              to="/course"
-              class="rounded-md px-4 py-2 font-bold text-[#e0004d] hover:bg-gray-100"
-            >
-              Course
-            </NuxtLink>
+          <nav
+            class="hidden min-w-0 items-center gap-1 justify-self-end lg:flex"
+            aria-label="Account navigation"
+          >
             <NuxtLink
               to="/profile"
-              class="rounded-md px-4 py-2 font-bold text-[#e0004d] hover:bg-gray-100"
+              class="rounded-md px-4 py-2 font-bold whitespace-nowrap text-[#e0004d] hover:bg-gray-100"
             >
               Profile
             </NuxtLink>
-            <NuxtLink
-              to="/contact"
-              class="rounded-md px-4 py-2 font-bold text-[#e0004d] hover:bg-gray-100"
+            <button
+              v-if="session"
+              type="button"
+              class="rounded-md px-4 py-2 font-bold whitespace-nowrap text-[#e0004d] hover:bg-gray-100"
+              @click="logout"
             >
-              Contact
-            </NuxtLink>
+              Logout
+            </button>
           </nav>
         </UContainer>
       </header>
