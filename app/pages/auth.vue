@@ -41,17 +41,35 @@
   //------------- Signup ---------------
   async function handleSignup() {
     if (!isEmailSent.value) {
-      // Sends OTP
-      const { error } = await authClient.emailOtp.sendVerificationOtp({
-        email: signup.email,
-        type: 'sign-in',
-      })
+      try {
+        // Create the custom profile before Better Auth handles OTP verification.
+        await $fetch('/api/users/signup', {
+          method: 'POST',
+          body: {
+            name: signup.name,
+            email: signup.email,
+            phoneNumber: signup.phone,
+          },
+        })
 
-      if (error) {
-        toast.add({ title: 'Error', description: error.message, color: 'error' })
-      } else {
-        isEmailSent.value = true
-        toast.add({ title: 'Success', description: 'OTP sent to your email', color: 'success' })
+        const { error } = await authClient.emailOtp.sendVerificationOtp({
+          email: signup.email,
+          type: 'sign-in',
+        })
+
+        if (error) {
+          toast.add({ title: 'Error', description: error.message, color: 'error' })
+        } else {
+          isEmailSent.value = true
+          toast.add({ title: 'Success', description: 'OTP sent to your email', color: 'success' })
+        }
+      } catch (error: unknown) {
+        const message =
+          error && typeof error === 'object' && 'data' in error
+            ? ((error as { data?: { statusMessage?: string } }).data?.statusMessage ??
+              'Unable to create your account')
+            : 'Unable to create your account'
+        toast.add({ title: 'Error', description: message, color: 'error' })
       }
     } else {
       // Verify OTP and create an account
@@ -246,20 +264,14 @@
           <button
             class="flex-1 py-4 text-sm font-semibold transition-colors"
             :class="activeTab === 'signup' ? 'bg-brand-500 text-white' : 'bg-gray-50 text-gray-600'"
-            @click="
-              activeTab = 'signup'
-              resetOtp()
-            "
+            @click="activeTab = 'signup'; resetOtp()"
           >
             Sign up
           </button>
           <button
             class="flex-1 py-4 text-sm font-semibold transition-colors"
             :class="activeTab === 'login' ? 'bg-brand-500 text-white' : 'bg-gray-50 text-gray-600'"
-            @click="
-              activeTab = 'login'
-              resetOtp()
-            "
+            @click="activeTab = 'login'; resetOtp()"
           >
             Login
           </button>
