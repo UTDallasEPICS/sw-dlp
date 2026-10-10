@@ -2,6 +2,7 @@
   type CourseTab = 'videos' | 'chapter' | 'activity'
 
   const activeTab = ref<CourseTab>('videos')
+  const selectedAnswer = ref<boolean | null>(null)
 
   const tabs = [
     { id: 'videos', label: 'Videos' },
@@ -29,14 +30,54 @@
 </script>
 
 <template>
-  <div class="p-6 pb-24">
+  <div class="p-6 pb-24 md:pb-6">
     <h1 class="text-3xl font-bold">Course Page</h1>
-    <p class="mt-2 text-gray-600">Selected section: {{ activeTab }}</p>
+    <p v-if="activeTab !== 'activity'" class="mt-2 text-gray-600">
+      Selected section: {{ activeTab }}
+    </p>
+
+    <section v-else class="mt-6 rounded-xl border border-gray-200 bg-white p-5">
+      <h2 class="text-xl font-semibold">Quick check-in</h2>
+
+      <p class="mt-3 text-gray-700">
+        True or False: I understand the purpose and main idea of this course.
+      </p>
+
+      <div class="mt-4 grid grid-cols-2 gap-3">
+        <button
+          type="button"
+          :aria-pressed="selectedAnswer === true"
+          :class="[
+            'rounded-lg border px-4 py-3 font-medium',
+            selectedAnswer === true
+              ? 'border-[#e0004d] bg-pink-50 text-[#e0004d]'
+              : 'border-gray-300 text-gray-700',
+          ]"
+          @click="selectedAnswer = true"
+        >
+          True
+        </button>
+
+        <button
+          type="button"
+          :aria-pressed="selectedAnswer === false"
+          :class="[
+            'rounded-lg border px-4 py-3 font-medium',
+            selectedAnswer === false
+              ? 'border-[#e0004d] bg-pink-50 text-[#e0004d]'
+              : 'border-gray-300 text-gray-700',
+          ]"
+          @click="selectedAnswer = false"
+        >
+          False
+        </button>
+      </div>
+    </section>
   </div>
 
   <nav
     aria-label="Course sections"
-    class="fixed inset-x-0 bottom-0 z-40 border-t border-gray-200 bg-white"
+    class="fixed inset-x-0 bottom-0 z-40 border-t border-gray-200 bg-white md:hidden"
   >
     <div class="mx-auto flex max-w-3xl items-center">
       <button
