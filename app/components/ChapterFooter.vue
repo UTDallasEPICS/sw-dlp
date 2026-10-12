@@ -40,10 +40,10 @@
             :key="step.id"
             class="flex h-10 w-10 items-center justify-center rounded-full border-2 transition"
             :class="{
-              // Completed → dark pink
-              'border-brand-600 bg-brand-600 text-white': step.status === 'completed',
-              // Current → light pink
-              'border-brand-400 bg-brand-100 text-brand-600': step.status === 'current',
+              // Completed → light pink 
+              'border-brand-400 bg-brand-100 text-brand-600': step.status === 'completed',
+              // Current → dark pink
+              'border-brand-600 bg-brand-600 text-white': step.status === 'current',
               // Upcoming → outline only
               'border-gray-300 bg-white text-gray-400': step.status === 'upcoming',
             }"

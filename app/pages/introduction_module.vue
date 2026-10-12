@@ -5,8 +5,6 @@
         { id: 'video', icon: 'i-lucide-video', label: 'Video', status: 'current' },
         { id: 'reading', icon: 'i-lucide-book-open', label: 'Reading', status: 'upcoming' },
         { id: 'quiz', icon: 'i-lucide-list-checks', label: 'Quiz', status: 'upcoming' },
-        { id: 'book', icon: 'i-lucide-book-open-text', label: 'Book', status: 'upcoming' },
-        { id: 'idea', icon: 'i-lucide-lightbulb', label: 'Idea', status: 'upcoming' },
     ])
 
     function goPrevious() {
