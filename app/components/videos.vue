@@ -1,5 +1,4 @@
 <script setup lang = 'js'>
-    //import {ref} from 'vue'
 
     /* Props for video URL and title used for embedding the variables from the pages folder into the video component. 
     This allows for dynamic video embedding based on the page context. */
@@ -14,8 +13,6 @@
             required: true
         }
     })
-    //const videoUrl = ref("https://www.youtube.com/watch?v=RhZZ0whiuT8")
-    //const videoTitle = ref("Introduction");
 
     useHead({
         bodyAttrs: {
