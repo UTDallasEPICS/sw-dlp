@@ -1,24 +1,5 @@
 <script setup lang="ts">
-    import type { Step } from '~/components/ChapterFooter.vue'
-
-    const steps = ref<Step[]>([
-        { id: 'video', icon: 'i-lucide-video', label: 'Video', status: 'current' },
-        { id: 'reading', icon: 'i-lucide-book-open', label: 'Reading', status: 'upcoming' },
-        { id: 'quiz', icon: 'i-lucide-list-checks', label: 'Quiz', status: 'upcoming' },
-    ])
-
-    function goPrevious() {
-    // navigate to previous section
-    }
-
-    function goNext() {
-    // navigate to next section
-    }
-
-    function onStepClick(stepId: string) {
-    // navigate to that specific step
-    console.log('Clicked step:', stepId)
-    }
+    const activeStep = ref('video')
 </script>
 
 <template>
@@ -416,12 +397,6 @@
     </div>
 
     <!-- Footer progress bar -->
-    <ChapterFooter
-        chapter-title="Introduction"
-        :steps="steps"
-        @previous="goPrevious"
-        @next="goNext"
-        @step-click="onStepClick"
-    />
+    <ChapterFooter v-model="activeStep" chapter-title="Introduction" />
   </div>
 </template>
