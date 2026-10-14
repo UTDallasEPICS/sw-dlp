@@ -15,8 +15,8 @@
 
         <div class="w-full max-w-sm sm:max-w-md md:max-w-2xl lg:max-w-4xl ">
           <Videos 
-            videoUrl="https://youtu.be/3VZFpwlXKpg?si=KWmBr-VXtyWSE7xo" 
-            videoTitle="Dummy Video"
+            video-url="https://www.youtube.com/embed/3VZFpwlXKpg" 
+            video-title="Dummy Video"
           />
         </div>
       </div>
