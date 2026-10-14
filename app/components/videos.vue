@@ -22,7 +22,7 @@
 </script>
 
 <template>
-    <div class="flex min-h-screen items-center p-4 justify-center lg:justify-end lg:pr-16">
+    <div class="flex max-w-screen items-center p-4 justify-center lg:justify-end lg:pr-16">
         <div class="bg-white p-5 rounded-[10px] w-full max-w-sm aspect-video shadow-md md:max-w-3xl">
             <iframe 
             class = "w-full h-full rounded-md"

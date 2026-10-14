@@ -3,7 +3,24 @@
 </script>
 
 <template>
-  <div class="pb-28">   <!-- extra bottom padding so content isn’t hidden behind the bar -->
+    <div 
+      v-if="activeStep === 'video'"
+      class="min-h-screen w-full flex flex-col items-center justify-center pb-25 px-4 sm:px-6 md:px-8"
+    >
+      <h2 class="text-lg sm:text-xl md:text-2xl font-bold text-gray-900 text-left max-w-sm md:max-w-3xl">
+        Test Video Title
+      </h2>
+
+
+      <div class="w-full max-w-sm sm:max-w-md md:max-w-2xl lg:max-w-4xl ">
+        <Videos 
+          videoUrl="https://youtu.be/3VZFpwlXKpg?si=KWmBr-VXtyWSE7xo" 
+          videoTitle="Dummy Video"
+        />
+      </div>
+    </div>
+
+  <div v-else-if="activeStep === 'chapter'" class="pb-28">   <!-- extra bottom padding so content isn’t hidden behind the bar -->
     <div class="mx-auto max-w-6xl px-4 pb-32 pt-8">
       <h1 class="mb-6 text-3xl font-bold text-brand-500">
         Introduction
@@ -394,6 +411,10 @@
         </table>
         </div>
       </div>
+    </div>
+
+    <div v-else-if="activeStep === 'activity' ">
+      This is for activity component
     </div>
 
     <!-- Footer progress bar -->
