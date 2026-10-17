@@ -21,7 +21,7 @@ Domestic  violence happens  in  every  race,  religion,  culture, economic  and 
 > *“Survivors of domestic violence and patterns of abuse live all around us, and they fail to recognize how beautiful they are. We need to get the word out… We must help women know they are worthy of being loved.”*   
 > — Brooke Jones, Author, Stronger than Espresso
 
-### Who will benefit from this book? ![Scripture Reference](../../../public/textbook-images/introduction/pink_heart_mug.png)
+### Who will benefit from this book? ![Scripture Reference](../../../public/pink_heart_mug.png)
 Women who:
 
 • Have left their abusive relationship(s) but still cannot reach their full potential. You are still holding on to low self-esteem and other hurtful behaviors due to the abuse you survived. Even still, you have hope that your life can be transformed.\
@@ -34,7 +34,7 @@ As you begin to change patterns and break away, your risks can increase signific
 > *“Then you will call, and the Lord will answer; you will cry for help, and he will say: Here am I.”*  
 **— Isaiah 58:9 (New International Version)**
 
-### How to use this book? ![Scripture Reference](../../../public/textbook-images/introduction/pink_heart_mug.png)
+### How to use this book? ![Scripture Reference](../../../public/pink_heart_mug.png)
 Each Chapter includes activities designed to teach and discover your thoughts and feelings. Distinguishing the many facets of abuse and understanding your role in the cycle can lead to healing. By the conclusion of this program, you will be armed with answers and insights to build a new foundation. Creating your action plan will begin your freedom from your past.
 
 God’s healing power is amazing. Self-dedication and commitment will be required to complete this transformation. This workbook can be used independently by an individual, by a leader who conducts small groups, or online where available. For online groups see [Stronger Women](https://www.strongerwomen.com) for more details.
@@ -59,9 +59,9 @@ Icons are used throughout the book to help organize the information:
 
 | Icon | Purpose |
 |------|---------|
-| ![Learning Activity](../../../public/textbook-images/introduction/two_hands_mug.png) | Learning Activity |
-| ![Testimonial Quote](../../../public/textbook-images/introduction/broken_mug.png) | Testimonial Quote |
-| ![Scripture Reference](../../../public/textbook-images/introduction/pink_heart_mug.png) | Scripture Reference |
+| ![Learning Activity](../../../public/two_hands_mug.png) | Learning Activity |
+| ![Testimonial Quote](../../../public/broken_mug.png) | Testimonial Quote |
+| ![Scripture Reference](../../../public/pink_heart_mug.png) | Scripture Reference |
 
 ### Why I wrote this book?
 This book is about hope.
@@ -77,7 +77,7 @@ Infused with God’s love our lives change. God is the one of miracles, forgiven
 > *“Once He changes you, you are never, ever the same.”*  
 — Brooke Jones
 
-### Your great work ![Scripture Reference](../../../public/textbook-images/introduction/pink_heart_mug.png)
+### Your great work ![Scripture Reference](../../../public/pink_heart_mug.png)
 > *“For it is by grace you have been saved, through faith – and this not from yourselves, it is the gift of God – not by works, so that no one can boast. For we are God’s workmanship, created in Christ Jesus to do good works, which God prepared in advance for us to do.”*  
 **— Ephesians 2:8–10 (NIV)**
 
@@ -86,7 +86,7 @@ Remember:\
 • God made you, and He does great work, so You = Great work\
 • You were created for a purpose
 
-### Objectives of this book ![Scripture Reference](../../../public/textbook-images/introduction/pink_heart_mug.png)
+### Objectives of this book ![Scripture Reference](../../../public/pink_heart_mug.png)
 The Stronger than Espresso® program can be used several ways:
 
 1. Individuals can study the Participant Guide independently.
@@ -94,7 +94,7 @@ The Stronger than Espresso® program can be used several ways:
 3. Women can train to be a leader and launch STE classes in a new area. Leader guide and training is available.
 
 The Lessons will contribute to the following learning objectives:\
-![Learning objectives diagram](../../../public/textbook-images/introduction/introduction_objectives.png)
+![Learning objectives diagram](../../../public/introduction_objectives.png)
 
 At  Stronger  than  Espresso® our  programs  are  based  on  these  objectives and founded  on  this  scripture: 
 > *“This is the message we have heard from him and declare to you: God is light; in him there is no darkness at all. If we claim to have fellowship with him yet walk in the darkness, we lie and do not live by truth. But if we walk in the light, as he is in the light, we have fellowship with one another, and the blood of Jesus, his Son, purifies us from all sin.”*  
