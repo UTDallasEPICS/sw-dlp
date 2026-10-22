@@ -8,7 +8,7 @@ The purpose of Chapter 1 is to introduce you to the Stronger than Espresso progr
 
 Espresso is a complex beverage with three vital parts the heart, body, and crema.1 The crema’ is the reddish brown foam that floats on the top and is the distinguishing part of an authentic espresso. It is what gives each cup life and uniqueness. You are like a complex cup of espresso with a heart, body and your spirit is the crema that gives life and uniqueness.
 
-> *“The key to espresso is to realize that it always has further potential. By changing any one factor you can improve or diminish its potential. Espresso preparation is an art that demands the precision and dedication of science. I have never achieved, nor have ever seen a perfect espresso. A perfect espresso is more of a concept than an actuality. The beauty is that espresso is volatile and difficult. If it were easy we would develop a machine that can brew perfect espresso every time. There are so many factors involved in espresso preparation that only a human mind and passionate heart can begin to understand and control its complexity.”*
+> _“The key to espresso is to realize that it always has further potential. By changing any one factor you can improve or diminish its potential. Espresso preparation is an art that demands the precision and dedication of science. I have never achieved, nor have ever seen a perfect espresso. A perfect espresso is more of a concept than an actuality. The beauty is that espresso is volatile and difficult. If it were easy we would develop a machine that can brew perfect espresso every time. There are so many factors involved in espresso preparation that only a human mind and passionate heart can begin to understand and control its complexity.”_
 
 ### Crafting a better you
 
@@ -22,8 +22,8 @@ You are much more valuable than a cup of coffee, but this analogy shows us that 
 
 God made you and has a description of you too.
 
-> *“For you created my inmost being; you knit me together in my mother’s womb. I praise you because I am fearfully and wonderfully made; your works are wonderful, I know that full well.. My frame was not hidden from you when I was made in the secret place. When I was woven together in the depths of the earth, your eyes saw my unformed body. All the days ordained for me were written in your book before one of them came to be.”*  
-**— Psalms 139:13–16 (NIV)**
+> _“For you created my inmost being; you knit me together in my mother’s womb. I praise you because I am fearfully and wonderfully made; your works are wonderful, I know that full well.. My frame was not hidden from you when I was made in the secret place. When I was woven together in the depths of the earth, your eyes saw my unformed body. All the days ordained for me were written in your book before one of them came to be.”_  
+> **— Psalms 139:13–16 (NIV)**
 
 • Describe areas in your life where it is difficult for you to accept that you are fearfully and wonderfully made?
 
@@ -82,5 +82,5 @@ When you have spent too much time being alone and isolated; connecting with othe
 
 If you are in a STE class share your phone number with individuals that you feel comfortable with to begin connecting and building your support system. Throughout the week you can send encouraging notes to one another or contact each other when you have a difficult problem to face and need help. Seek out women in your church or community as well. If you are online there are other ways to connect with other women; go to www.strongerthanespresso.com for more information.
 
-> *“A person standing alone can be attacked and defeated, but two can stand back-to-back and conquer. Three are even better, for a triple-braided cord is not easily broken.”*  
-**— Ecclesiastes 4:12 (New Living Translation)**
+> _“A person standing alone can be attacked and defeated, but two can stand back-to-back and conquer. Three are even better, for a triple-braided cord is not easily broken.”_  
+> **— Ecclesiastes 4:12 (New Living Translation)**
