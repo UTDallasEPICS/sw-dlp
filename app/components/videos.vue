@@ -14,11 +14,6 @@
         }
     })
 
-    useHead({
-        bodyAttrs: {
-            class: 'bg-gray-50 overflow-y-hidden h-screen'
-        }
-    })
 </script>
 
 <template>

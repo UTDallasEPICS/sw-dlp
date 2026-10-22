@@ -6,12 +6,11 @@
   <div class="pb-28">   <!-- extra bottom padding so content isn’t hidden behind the bar -->
       <div 
         v-if="activeStep === 'video'"
-        class="min-h-screen w-full flex flex-col items-center justify-center pb-35 px-4 sm:px-6 md:px-8"
+        class="flex w-full flex-col items-center pb-36 px-4 pt-12 sm:px-6 md:px-8"
       >
         <h2 class="text-lg sm:text-xl md:text-2xl font-bold text-gray-900 text-left max-w-sm md:max-w-3xl">
           Test Video Title
         </h2>
-
 
         <div class="w-full max-w-sm sm:max-w-md md:max-w-2xl lg:max-w-4xl ">
           <Videos 
