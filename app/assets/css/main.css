@@ -25,8 +25,16 @@
   --ui-primary: var(--color-brand-500); 
 }
 
-html,
-body,
+html {
+  overscroll-behavior: none;
+}
+
+body {
+  overscroll-behavior: none;
+  overflow-x: clip;
+  touch-action: pan-y pinch-soom;
+}
+
 #__nuxt {
   min-height: 100%;
   background-color: #f9fafb;
