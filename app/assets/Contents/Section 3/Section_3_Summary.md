@@ -1,0 +1,46 @@
+# Section Three Summary
+
+### In review
+
+It is your time to throw out the old grounds and start brewing up a fresh cup of java! You are wide awake and Stronger than Espresso.
+
+As a woman you are special, unique and wonderfully made. You have now learned detailed and specific information about the signs of an abuser, types of abuse, safety plans and resources available to assist you.
+
+### Actions
+
+Take control:\
+• Are you clear how you got here in the first place?\
+• How is your forgiveness for them? For yourself?\
+• Do you understand the status of your current relationship?\
+• Did you complete the exercises and assess your level of danger?\
+• Have you created your safety plan?\
+• Have you made contact with an outside resource to discuss your current situation?\
+• Make sure that you educate before you activate so you can remove yourself from the danger zone safely.\
+• Before accepting the abuser back, make sure to review the Can They Change section.\
+• Do you fully understand your legal rights?
+
+### Study
+
+Scripture review of the Section. Use this list for further personal study to understand God’s word:
+
+### Scripture 1 Peter 2:9
+
+Objective Personal Thoughts Respect — Self
+
+|  | Scripture |  | Objective | Personal Thoughts |
+|------|-----------|------|-----------|-------------------|
+| 1 Peter 2:9 |  | Respect — Self |  |  |
+| Isaiah 1:18 |  | Forgiveness |  |  |
+| Psalms 51:7 |  | Forgiveness |  |  |
+| 2 Corinthians 1:3–4 |  | Connections |  |  |
+| Matthew 6:9-13 |  | Forgiveness |  |  |
+| Matthew 5:22–24 |  | Forgiveness |  |  |
+| Matthew 5:44 |  | Forgiveness |  |  |
+| Proverbs 19:11 |  | Forgiveness |  |  |
+| Psalms 103:12 |  | Forgiveness |  |  |
+| 1 Corinthians 13:4–8 |  | Spirituality — Love |  |  |
+| John 13:6, 38 John 18: 25-27 John 21:12, 15 |  | Forgiveness |  |  |
+| Psalms 27 |  | Self-esteem — Confidence |  |  |
+| Psalms 28 |  | Self-esteem — Confidence |  |  |
+| Psalms 37 |  | Self-esteem — Confidence |  |  |
+| Psalms 102 |  | Self-esteem — Confidence |  |  |
