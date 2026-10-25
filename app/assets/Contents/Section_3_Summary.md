@@ -1,4 +1,6 @@
-https://youtu.be/jZkjPTdvt-o
+title: section 3
+videoUrl: https://youtu.be/jZkjPTdvt-o
+videoTitle: Section 3: Summary 
 
 # Section Three Summary
 

@@ -1,4 +1,7 @@
-https://youtu.be/h7gGZ5QdRHA
+title: chapter 3
+videoUrl: https://youtu.be/h7gGZ5QdRHA
+videoTitle: Chapter 3: Feelings Assessment
+
 
 # Chapter 3: Feelings Assessment
 

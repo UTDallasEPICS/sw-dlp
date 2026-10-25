@@ -1,4 +1,6 @@
-https://youtu.be/xW0Z2O1qSSc
+title: chapter 11
+videoUrl: https://youtu.be/xW0Z2O1qSSc
+videoTitle: Chapter 11: Self Esteem
 
 # Chapter 11: Self-esteem Defined
 

@@ -1,4 +1,6 @@
-https://youtu.be/I6ChIIBcWXg
+title: chapter 2
+videoUrl: https://youtu.be/I6ChIIBcWXg
+videoTitle: Chapter 2: Your Aha Moment
 
 # Chapter 2: Your “Aha” Moment
 

@@ -1,4 +1,6 @@
-https://youtu.be/putepofg-pg
+title: chapter 5
+videoUrl: https://youtu.be/putepofg-pg
+videoTitle: Chapter 5: Reoccurring Themes
 
 # Chapter 5: Reoccurring Themes
 

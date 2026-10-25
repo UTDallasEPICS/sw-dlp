@@ -1,4 +1,7 @@
-https://youtu.be/VNdT6psdDm8
+title: chapter 10
+videoUrl: https://youtu.be/VNdT6psdDm8
+videoTitle: Chapter 10: Self Esteem Defined
+
 
 # Chapter 10: Types of Abuse, Cycles, Safety, Legal
 
