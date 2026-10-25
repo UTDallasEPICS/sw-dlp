@@ -1,3 +1,5 @@
+https://youtu.be/h7gGZ5QdRHA
+
 # Chapter 3: Feelings Assessment
 
 ### Purpose

@@ -1,3 +1,5 @@
+https://youtu.be/VNdT6psdDm8
+
 # Chapter 10: Types of Abuse, Cycles, Safety, Legal
 
 ### Purpose

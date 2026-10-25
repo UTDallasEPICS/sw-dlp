@@ -1,3 +1,5 @@
+https://youtu.be/Dw9vtTNxPKw
+
 # Chapter 9: Powerless, Forgiveness, Bitterness
 
 ### Purpose

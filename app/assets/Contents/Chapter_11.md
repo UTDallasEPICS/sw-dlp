@@ -1,3 +1,5 @@
+https://youtu.be/xW0Z2O1qSSc
+
 # Chapter 11: Self-esteem Defined
 
 ### Purpose

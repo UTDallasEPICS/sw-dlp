@@ -1,3 +1,5 @@
+https://youtu.be/Hpx5dQBkaW0
+
 # Chapter 1: Espresso and You
 
 ### Purpose

@@ -1,3 +1,5 @@
+https://youtu.be/I6ChIIBcWXg
+
 # Chapter 2: Your “Aha” Moment
 
 ### Purpose

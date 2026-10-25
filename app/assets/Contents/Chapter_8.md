@@ -1,3 +1,5 @@
+https://youtu.be/cVVAaP0nEaU
+
 # Chapter 8: Communication Hooks, Medical Impact
 
 ### Purpose

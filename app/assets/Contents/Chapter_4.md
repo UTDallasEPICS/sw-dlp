@@ -1,3 +1,5 @@
+https://youtu.be/Svo-SjRDPKQ
+
 # Chapter 4: Coping Mechanisms
 
 ### Introduction

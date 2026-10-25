@@ -1,3 +1,5 @@
+https://youtu.be/ZemhEq5vEkc
+
 # Chapter 12: Self-esteem: What erodes? How to enhance?
 
 ### Purpose
