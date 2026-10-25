@@ -1,4 +1,5 @@
 
+---
 title: welcome
 videoUrl: https://youtu.be/8eRwBZm3qXM
 videoTitle: Welcome to Stronger
@@ -10,7 +11,7 @@ videoTitle: What is Stronger than Espresso
 title: welcome
 videoUrl: https://youtu.be/hsI8DTHDBBY
 videoTitle: 12 Week Overview of the class
-
+---
 
 
 # Overview

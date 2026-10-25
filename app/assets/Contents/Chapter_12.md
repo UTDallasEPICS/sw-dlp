@@ -1,6 +1,8 @@
+---
 title: chapter 12
 videoUrl: https://youtu.be/ZemhEq5vEkc
-videoTitle: Chapter 12: Finding Your God Virtues
+videoTitle: Chapter 12 Finding Your God Virtues
+---
 
 # Chapter 12: Self-esteem: What erodes? How to enhance?
 

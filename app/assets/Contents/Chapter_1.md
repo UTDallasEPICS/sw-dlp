@@ -1,6 +1,8 @@
+---
 title: chapter 1
 videoUrl: https://youtu.be/Hpx5dQBkaW0 
-videoTitle: Chapter 1: Espresso and You
+videoTitle: Chapter 1 Espresso and You
+---
 
 # Chapter 1: Espresso and You
 

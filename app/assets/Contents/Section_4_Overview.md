@@ -1,6 +1,8 @@
+---
 title: section 4
 videoUrl: https://youtu.be/ALQ65ghmtD0
-videoTitle: Section 4: Overview
+videoTitle: Section 4 Overview
+---
 
 # Section 4: Build Your Self-Esteem
 

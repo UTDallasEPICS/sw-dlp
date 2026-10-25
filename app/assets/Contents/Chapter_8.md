@@ -1,6 +1,8 @@
+---
 title: chapter 8
 videoUrl: https://youtu.be/cVVAaP0nEaU
-videoTitle: Chapter 8: Emotives
+videoTitle: Chapter 8 Emotives
+---
 
 # Chapter 8: Communication Hooks, Medical Impact
 

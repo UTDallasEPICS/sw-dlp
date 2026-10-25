@@ -1,7 +1,8 @@
+---
 title: chapter 9
 videoUrl: https://youtu.be/Dw9vtTNxPKw
-videoTitle: Chapter 9: Emotives
-
+videoTitle: Chapter 9 From Powerless to Powerful
+---
 
 # Chapter 9: Powerless, Forgiveness, Bitterness
 

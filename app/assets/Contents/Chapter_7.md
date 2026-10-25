@@ -1,6 +1,8 @@
+---
 title: chapter 7
 videoUrl: https://youtu.be/k3JJZDiteY0
-videoTitle: Chapter 7: Inner Music
+videoTitle: Chapter 7 Inner Music
+---
 
 # Chapter 7: Inner Music
 
@@ -145,9 +147,11 @@ When you trust in spiritual wisdom and learn to accept that you are a beautiful 
 > *“But Jesus looked at them and said, ‘With men it is impossible, but not with God; for with God all things are possible.”*  
 **— Mark 10:27 (NKJV)**
 
+---
 title: chapter 7
 videoUrl: https://youtu.be/qH3SP9dOpvc
 videoTitle: The Sorry Cup Challenge
+---
 
 ### Sorry cup
 
