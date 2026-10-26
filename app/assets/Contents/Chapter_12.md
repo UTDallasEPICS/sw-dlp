@@ -1,5 +1,5 @@
 ---
-title: chapter 12
+title: Chapter 12
 videoUrl: https://youtu.be/ZemhEq5vEkc
 videoTitle: Chapter 12 Finding Your God Virtues
 ---

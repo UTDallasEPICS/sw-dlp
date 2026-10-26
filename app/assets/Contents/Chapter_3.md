@@ -1,5 +1,5 @@
 ---
-title: chapter 3
+title: Chapter 3
 videoUrl: https://youtu.be/h7gGZ5QdRHA
 videoTitle: Chapter 3 Feelings Assessment
 ---

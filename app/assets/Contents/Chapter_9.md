@@ -1,5 +1,5 @@
 ---
-title: chapter 9
+title: Chapter 9
 videoUrl: https://youtu.be/Dw9vtTNxPKw
 videoTitle: Chapter 9 From Powerless to Powerful
 ---

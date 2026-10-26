@@ -1,5 +1,5 @@
 ---
-title: chapter 10
+title: Chapter 10
 videoUrl: https://youtu.be/VNdT6psdDm8
 videoTitle: Chapter 10 Self Esteem Defined
 ---

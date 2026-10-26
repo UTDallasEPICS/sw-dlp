@@ -1,5 +1,5 @@
 ---
-title: chapter 6
+title: Chapter 6
 videoUrl: https://youtu.be/9uOAeOs5OtY
 videoTitle: Chapter 6 Boundaries
 ---

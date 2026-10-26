@@ -1,5 +1,5 @@
 ---
-title: chapter 5
+title: Chapter 5
 videoUrl: https://youtu.be/putepofg-pg
 videoTitle: Chapter 5 Reoccurring Themes
 ---

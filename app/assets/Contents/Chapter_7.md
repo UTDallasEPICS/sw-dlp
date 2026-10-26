@@ -1,5 +1,5 @@
 ---
-title: chapter 7
+title: Chapter 7
 videoUrl: https://youtu.be/k3JJZDiteY0
 videoTitle: Chapter 7 Inner Music
 ---

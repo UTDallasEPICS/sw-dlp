@@ -1,5 +1,5 @@
 ---
-title: chapter 8
+title: Chapter 8
 videoUrl: https://youtu.be/cVVAaP0nEaU
 videoTitle: Chapter 8 Emotives
 ---

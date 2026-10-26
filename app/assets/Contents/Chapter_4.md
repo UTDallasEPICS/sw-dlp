@@ -1,5 +1,5 @@
 ---
-title: chapter 4
+title: Chapter 4
 videoUrl: https://youtu.be/Svo-SjRDPKQ
 videoTitle: Chapter 4 Coping Mechanisms
 ---

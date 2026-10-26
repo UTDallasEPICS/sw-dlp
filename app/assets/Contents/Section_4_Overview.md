@@ -1,5 +1,5 @@
 ---
-title: section 4
+title: Section 4
 videoUrl: https://youtu.be/ALQ65ghmtD0
 videoTitle: Section 4 Overview
 ---

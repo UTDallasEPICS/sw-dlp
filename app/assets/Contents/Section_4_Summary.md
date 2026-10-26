@@ -1,5 +1,5 @@
 ---
-title: section 4
+title: Section 4
 videoUrl: https://youtu.be/4bhbYA3ag-w
 videoTitle: Chapter 4 Summary and Wrap Up
 ---
