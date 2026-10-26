@@ -4,6 +4,7 @@
   // Hardcoded book structure ( swap with real API data later )
   interface Chapter {
     title: string
+    slug: string
     read: boolean
   }
 
@@ -15,73 +16,74 @@
   const bookSections: Section[] = [
     {
       title: 'Welcome',
-      chapters: [{ title: 'Overview', read: true }],
+      chapters: [{ title: 'Overview', slug: 'welcome', read: true }],
     },
     {
       title: 'Introduction',
       chapters: [
-        { title: 'Introduction', read: true },
-        { title: 'Sections Summary', read: true },
+        { title: 'Introduction', slug: 'introduction', read: true },
+        { title: 'Sections Summary', slug: 'sections-summary', read: true },
       ],
     },
     {
       title: 'Section 1: The Awakening: You Are Not Alone',
       chapters: [
-        { title: 'Overview', read: true },
-        { title: 'Chapter 1: Espresso and You', read: true },
-        { title: 'Chapter 2: Your “Aha” Moment', read: true },
-        { title: 'Chapter 3: Feelings Assessment', read: false },
-        { title: 'Chapter 4: Coping Mechanisms', read: true },
-        { title: 'Section One Summary', read: false },
+        { title: 'Overview', slug: 'section-1-overview', read: true },
+        { title: 'Chapter 1: Espresso and You', slug: 'chapter-1', read: true },
+        { title: 'Chapter 2: Your “Aha” Moment', slug: 'chapter-2', read: true },
+        { title: 'Chapter 3: Feelings Assessment', slug: 'chapter-3', read: false },
+        { title: 'Chapter 4: Coping Mechanisms', slug: 'chapter-4', read: true },
+        { title: 'Section One Summary', slug: 'section-1-summary', read: false },
       ],
     },
     {
       title: 'Section 2: Recognizing Patterns of Behavior',
       chapters: [
-        { title: 'Overview', read: false },
-        { title: 'Chapter 5: Reoccurring Themes', read: false },
-        { title: 'Chapter 6: Your Behaviors, Set Boundaries', read: false },
-        { title: 'Chapter 7: Inner Music', read: false },
-        { title: 'Chapter 8: Communication Hooks, Medical Impact', read: false },
-        { title: 'Section Two Summary', read: false },
+        { title: 'Overview', slug: 'section-2-overview', read: false },
+        { title: 'Chapter 5: Reoccurring Themes', slug: 'chapter-5', read: false },
+        { title: 'Chapter 6: Your Behaviors, Set Boundaries', slug: 'chapter-6', read: false },
+        { title: 'Chapter 7: Inner Music', slug: 'chapter-7', read: false },
+        { title: 'Chapter 8: Communication Hooks, Medical Impact', slug: 'chapter-8', read: false },
+        { title: 'Section Two Summary', slug: 'section-2-summary', read: false },
       ],
     },
     {
       title: 'Section 3: Understanding Abusive Relationships',
       chapters: [
-        { title: 'Overview', read: false },
-        { title: 'Chapter 9: Powerless, Forgiveness, Bitterness', read: false },
-        { title: 'Chapter 10: Types of Abuse, Cycles, Safety, Legal', read: false },
-        { title: 'Section Three Summary', read: false },
+        { title: 'Overview', slug: 'section-3-overview', read: false },
+        { title: 'Chapter 9: Powerless, Forgiveness, Bitterness', slug: 'chapter-9', read: false },
+        { title: 'Chapter 10: Types of Abuse, Cycles, Safety, Legal', slug: 'chapter-10', read: false },
+        { title: 'Section Three Summary', slug: 'section-3-summary', read: false },
       ],
     },
     {
       title: 'Section 4: Build Your Self-Esteem',
       chapters: [
-        { title: 'Overview', read: false },
-        { title: 'Chapter 11: Self-Esteem Defined', read: false },
-        { title: 'Chapter 12: Self-Esteem: What erodes? How to enhance?', read: false },
-        { title: 'Section Four Summary', read: false },
+        { title: 'Overview', slug: 'section-4-overview', read: false },
+        { title: 'Chapter 11: Self-Esteem Defined', slug: 'chapter-11', read: false },
+        { title: 'Chapter 12: Self-Esteem: What erodes? How to enhance?', slug: 'chapter-12', read: false },
+        { title: 'Section Four Summary', slug: 'section-4-summary', read: false },
       ],
     },
     {
       title: 'Section 5: Redefine Your Life',
       chapters: [
-        { title: 'Overview', read: false },
-        { title: 'Chapter 13: Seven Ingredients to Perfection, #1 God, #2 Body', read: false },
-        { title: 'Chapter 14: Seven Ingredients of Perfection, #3 Soul, #4 Mind', read: false },
+        { title: 'Overview', slug: 'section-5-overview', read: false },
+        { title: 'Chapter 13: Seven Ingredients to Perfection, #1 God, #2 Body', slug: 'chapter-13', read: false },
+        { title: 'Chapter 14: Seven Ingredients of Perfection, #3 Soul, #4 Mind', slug: 'chapter-14', read: false },
         {
           title: 'Chapter 15: Seven Ingredients, #5 Words, #6 Lessons, #7 Relationships',
+          slug: 'chapter-15',
           read: false,
         },
-        { title: 'Section Five Summary', read: false },
+        { title: 'Section Five Summary', slug: 'section-5-summary', read: false },
       ],
     },
     {
       title: 'Wrap Up',
       chapters: [
-        { title: 'Wrap Up', read: false },
-        { title: 'Action Plan', read: false },
+        { title: 'Wrap Up', slug: 'wrap-up', read: false },
+        { title: 'Action Plan', slug: 'action-plan', read: false },
       ],
     },
   ]
@@ -165,7 +167,12 @@
                   class="mr-2 h-4 w-4 text-xs sm:mr-3"
                   :class="chapter.read ? 'text-brand-500' : 'text-gray-300'"
                 />
-                {{ chapter.title }}
+                <NuxtLink
+                  :to="`/chapters/${chapter.slug}`"
+                  class="flex-1"
+                >
+                  {{ chapter.title }}
+                </NuxtLink>
               </li>
             </ul>
           </div>
