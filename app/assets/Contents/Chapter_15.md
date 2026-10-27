@@ -8,7 +8,11 @@ The purpose of Chapter 15 is to help women realize what you say about you and ot
 
 The #5 Ingredient to the Seven Ingredients of Perfection is the Power of Your Words.
 
-Redefining and respecting the power of your words is vital to your healing process. You communicate internally and externally with your words. Your internal words are your self-talk; and the external words are the words you use in public. To begin to direct your self-image in the way that you desire, you must recognize the importance of your words. Self-talk is the thoughts you think, the mutterings under your breath, and the utterances you speak when you are alone. These messages are what you have learned about yourself from your family, friends, school, and the socialization of your society. These beliefs will include influences of religion, culture, financial status, racial prejudice and stigmas specific to our society.70 Impressions of self are added to this compilation in a “tape” that repeats when feeling down and self-esteem is low. Unfortunately, this mental exercise is extremely damaging and is very difficult to pause, stop, and erase. The goal with this section is to record new tapes and replace the old worn-out, obsolete versions. The difficulty with self-talk is that it is not based in reality and it does not matter if it is real or untrue. To replace this self-talk, begin with carrying a small notepad in your purse. Every time you notice that you are thinking a negative thought, write it down. Get with a trusted friend and ask them if this thought is true or untrue. Then begin the process of rewriting each statement from positive to negative.
+Redefining and respecting the power of your words is vital to your healing process. You communicate internally and externally with your words. Your internal words are your self-talk; and the external words are the words you use in public. To begin to direct your self-image in the way that you desire, you must recognize the importance of your words.
+
+Self-talk is the thoughts you think, the mutterings under your breath, and the utterances you speak when you are alone. These messages are what you have learned about yourself from your family, friends, school, and the socialization of your society. These beliefs will include influences of religion, culture, financial status, racial prejudice and stigmas specific to our society.70 Impressions of self are added to this compilation in a “tape” that repeats when feeling down and self-esteem is low. Unfortunately, this mental exercise is extremely damaging and is very difficult to pause, stop, and erase. The goal with this section is to record new tapes and replace the old worn-out, obsolete versions.
+
+The difficulty with self-talk is that it is not based in reality and it does not matter if it is real or untrue. To replace this self-talk, begin with carrying a small notepad in your purse. Every time you notice that you are thinking a negative thought, write it down. Get with a trusted friend and ask them if this thought is true or untrue. Then begin the process of rewriting each statement from positive to negative.
 
 ### Continued
 
@@ -20,46 +24,40 @@ Yes, your tongue!
 
 Throughout this book we discussed the power of the tongue. Two additional scriptures support the importance of keeping a watch over this powerful weapon.
 
-> *“Death and life are in the power of the tongue, And those who love it will eat its fruit.”*  
-**— Proverbs 18:21 (NKJV)**
+> _“Death and life are in the power of the tongue, And those who love it will eat its fruit.”_  
+> **— Proverbs 18:21 (NKJV)**
 
-> *“Even so the tongue is a little member and boasts great things. See how great a forest a little fire kindles!”*  
-**— James 3:5 (NKJV)**
-
-When has your tongue ever got you into trouble?
-
-What are things you say that you want to change?
-
-### Continued
-
-### Continued
+> _“Even so the tongue is a little member and boasts great things. See how great a forest a little fire kindles!”_  
+> **— James 3:5 (NKJV)**
 
 ### Your words in a group
 
 The words you use externally can tell others how you believe in yourself:
 
 • When you are in a group, do you put yourself down?\
+\
 • Do you speak with foul language to set yourself aside from others?\
+\
 • Do you let others make fun of who you are and talk about you incorrectly?\
+\
 • How well do you communicate with others?\
+\
 • Do you take the time to communicate your feelings so that you can be understood?
 
 Learn to be an advocate for yourself and be comfortable asking for what you need. If you need more education for your work or for personal enjoyment, then ask and find out what programs are available. If you want help understanding a physical condition or problem, then ask your physician to help you research.
 
 Any topic that impacts you and that you wish to know more about, ask others. Learn what information is available and work towards your goal. Do not be afraid to ask questions and talk to others so that you will make the best decisions for you.
 
-List statements you say about yourself in a group that you will change.
+### God answers you
 
-### God answers you ![Scripture Reference](../../../public/pink_heart_mug.png)
+![Scripture Reference](../../../public/pink_heart_mug.png)
 
 The requests of your tongue are heard by God.
 
-> *“The preparations of the heart belong to [woman]. But the answer of the tongue is from the Lord.”*  
-**— Proverbs 16:1 (NKJV)**
+> _“The preparations of the heart belong to [woman]. But the answer of the tongue is from the Lord.”_  
+> **— Proverbs 16:1 (NKJV)**
 
 What ideas in your heart do you want God to bless?
-
-### Continued
 
 ### Power of Your Lessons Ingredient #6
 
@@ -83,51 +81,12 @@ When deciding where you want to go, you must first clearly understand what lesso
 
 Often after spending years dedicated to a relationship it is common to feel a huge loss or grief emotions when it ends. The time spent. The regrets. The only ifs can drive you crazy. Remember, God is one of mercy and He has made a promise to you.
 
-> *“I will repay you for the years the locusts have eaten...”*  
-**— Joel 2:25 (NIV)**
-
-### Continued
-
-### Continued
-
-As we emerge from our transformational processes we begin to see ourselves in a different light. Recently, have you learned new things about yourself that are wonderful, exciting and need to be celebrated?
-
-Make time to applaud your growth.
-
-On the previous page there was a list of suggested lessons you may have learned, but think about your life and identify what you have learned.
-
-Create your own list of lessons you have learned and things you know you CAN do now.
-
-I CAN:
-
-### Lessons yet to be learned:
-
-You will have your own unique set of lessons learned and lessons that need to be learned.
-
-What lessons remain for you to learn?
-
-Here is sample list to review:\
-• Avoid toxic behavior.\
-• Setting boundaries.\
-• Over controlling actions, decisions, reactions.\
-• Develop a solid foundation of self purpose, values, acceptable behaviors.\
-• Create dreams for self.\
-• Be honest.\
-• Learn how to trust again.\
-• Learn how to walk away not run away.\
-• Improve self-esteem.\
-• Stop the automatic protective walls that come up.\
-• Stop the destructive self talk.
-
-### Continued
-
-Now your turn. List the lesson to learn and what steps you will take:
-
-Lesson Steps to take to Achieve
+> _“I will repay you for the years the locusts have eaten...”_  
+> **— Joel 2:25 (NIV)**
 
 ### Stay connected Ingredient #7
 
-The #7 Ingredient to the Seven Measures of Perfection is the Power of Your Relationships. Your lessons have power to guide you, support you and hold you accountable. It is vital you select friends, partners and build a spiritual support team to maintain your new healthy lifestyle. You are on a new path on the next phase of your life journey. You have the power to choose healthy relationships in all areas: personal, family, friendships, work, intimate, etc.
+The #7 Ingredient to the Seven Measures of Perfection is the **Power of Your Relationships.** Your lessons have power to guide you, support you and hold you accountable. It is vital you select friends, partners and build a spiritual support team to maintain your new healthy lifestyle. You are on a new path on the next phase of your life journey. You have the power to choose healthy relationships in all areas: personal, family, friendships, work, intimate, etc.
 
 ### God as your protector ![Scripture Reference](../../../public/pink_heart_mug.png)
 
@@ -135,49 +94,27 @@ God is always with you. He is never far. Just call His voice and He will answer 
 
 Review the following three scripture to see what God’s word says about how He will stand by you:
 
-> *“Keep me as the apple of Your eye; Hide me under the shadow of Your wings, From the wicked who oppress me, From my deadly enemies who surround me.”*  
-**— Psalms 17:8 (NKJV)**
+> _“Keep me as the apple of Your eye; Hide me under the shadow of Your wings, From the wicked who oppress me, From my deadly enemies who surround me.”_  
+> **— Psalms 17:8 (NKJV)**
 
-> *“Your word is a lamp to my feet and a light to my path.”*  
-**— Psalms 119:105 (NKJV)**
+> _“Your word is a lamp to my feet and a light to my path.”_  
+> **— Psalms 119:105 (NKJV)**
 
-> *“He who dwells in the secret place of the Most High Shall abide under the shadow of the Almighty…2‘He is my refuge and my fortress; My God, in Him I will trust.’ 3…He shall deliver you from the snare of the fowler and from the perilous pestilence. He shall cover you with His feathers, And under His wings you shall take refuge; His truth shall be your shield and buckler. You shall not be afraid of the terror by night, nor of the arrow that flies by day, Nor of the pestilence that walk in darkness, nor of the destruction that lays waste at noonday…. No evil shall befall you, nor shall any plague come near your dwelling; For he shall give His angels charge over you.. In their hands they shall bear you up…15 He shall call upon Me, and I will answer him. I will be with him in trouble; I will deliver him and honor him With long life I will satisfy him…”*  
-**— Psalms 91:1–16 (NKJV)**
-
-### Continued
+> _“He who dwells in the secret place of the Most High Shall abide under the shadow of the Almighty…2‘He is my refuge and my fortress; My God, in Him I will trust.’ 3…He shall deliver you from the snare of the fowler and from the perilous pestilence. He shall cover you with His feathers, And under His wings you shall take refuge; His truth shall be your shield and buckler. You shall not be afraid of the terror by night, nor of the arrow that flies by day, Nor of the pestilence that walk in darkness, nor of the destruction that lays waste at noonday…. No evil shall befall you, nor shall any plague come near your dwelling; For he shall give His angels charge over you.. In their hands they shall bear you up…15 He shall call upon Me, and I will answer him. I will be with him in trouble; I will deliver him and honor him With long life I will satisfy him…”_  
+> **— Psalms 91:1–16 (NKJV)**
 
 ### Stay connected
 
 As you embark on your new journey in life, it is so important to stay connected.
 
-> *“Two people are better off than one, for they can help each other succeed. If one person falls, the other can reach out and help. But someone who falls alone is in real trouble…12 A person standing alone can be attacked and defeated, but two can stand back-to-back and conquer. Three are even better, for a triple-braided cord is not easily broken.”*  
-**— Ecclesiastes 4:9–12 (NIV)**
+> _“Two people are better off than one, for they can help each other succeed. If one person falls, the other can reach out and help. But someone who falls alone is in real trouble…12 A person standing alone can be attacked and defeated, but two can stand back-to-back and conquer. Three are even better, for a triple-braided cord is not easily broken.”_  
+> **— Ecclesiastes 4:9–12 (NIV)**
 
-The three braided cord is you, others and God. When you have that winning relationship in your life, it cannot easily be broken.
-
-### How to Connect
-
-How are you going to connect with others?
-
-### Service to others
-
-When you grow beyond your circumstances your story becomes a living testimony that can inspire others. Once you have had time to heal, you need to give back to others. Ask God how He wants your experiences to be used to help others.
-
-What areas do you feel called to serve others?
+**The three braided cord is you, others and God. When you have that winning relationship in your life, it cannot easily be broken.**
 
 ### Healthy relationship inventory
 
 At some point in time, you will begin to think about starting a new relationship. In order to ensure that you will find a healthy partner you must first identify what you want. Create a healthy relationship inventory to identify what you and what God has defined for your next partner.
-
-### Continued
-
-### Perfect mate
-
-Pretend that you had a perfect world and could have a perfect relationship.
-
-Describe your new partner? (Include physical characteristics, emotional requirements, education, finances, hobbies, habits. State exactly what this person will be like and how the relationship roles would be divided and shared. Keep in mind to include feelings, levels of respect, autonomy, religion, family history, etc.)
-
-Now what qualities would God give your perfect mate?
 
 ### How people measure up
 
@@ -187,34 +124,47 @@ For example, say you are developing your spirituality, enjoy your meditation and
 
 It is important to find the areas that are critical: religious preferences, money philosophy, physical characteristics, mannerisms, social and relationships, drug and alcohol use, geographical location, family values, criminal activity, and abusive traits.
 
-### Continued
-
 ### Check for warning signs
 
 The following is a sample checklist to review when you meet new people:
 
 • Does he want me to make a commitment right away?\
+\
 • Do I see myself in this relationship for the long term?\
+\
 • Do I feel respected in this relationship?\
+\
 • Is their value system similar to mine?\
+\
 • Is their religious belief similar to mine?\
+\
 • Do I feel that my needs are heard?\
+\
 • Is my individuality supported?\
+\
 • Are my feelings considered in this relationship?\
+\
 • Do I have my own free time?\
+\
 • Am I encouraged to have personal growth?\
+\
 • Can I say “No” in this relationship?\
+\
 • Do I like the way they relate to my children, family and friends?\
+\
 • Do they ask a lot of questions or look through my personal belongings?\
+\
 • Do they seem moody or erratic?\
+\
 • Do they have any substance abuse problems?\
+\
 • How do I feel when I try to communicate my boundaries? Am I scared to say anything? Do I just let it go and keep quiet?\
+\
 • Do I feel uncomfortable confronting them when I don’t like something?\
+\
 • Does s/he blame others and not take responsibility for their mistakes?
 
 If you are comfortable with your responses, that is good. If there are areas that concern you, then you need to dig deeper. Ask God to give you guidance in this decision.
-
-### Continued
 
 ### The Whirlwind
 
@@ -225,11 +175,12 @@ At the beginning of a new relationship, often you become so enthralled in love t
 When a relationship begins to solidify and becomes more serious, you have the right to ask or review the following information:
 
 • You can run a background check with their name, date of birth and address. This can be done by an attorney, private investigator, or information service. The attorney’s version will be much more comprehensive and reliable than any information found on the internet.\
+\
 • You can also check any criminal history by logging on to the County Court website where they live and searching the case history for civil or criminal actions.\
+\
 • You can ask to see their driver’s license, financial records, credit report or resume. This may be uncomfortable for both of you to request, but if you are getting serious, you should review that information.\
+\
 • Search for them on the internet. See what you find about them.
-
-### Continued
 
 ### Girl to Girl Advice
 

@@ -22,38 +22,26 @@ You will be forever grateful that you have been jolted awake, because now God ca
 
 When this shift occurs, we begin to deny, justify, make excuses and shift blame. Often in abusive relationships, we learn to run from, stuff down or hide our emotions. You learn that these are safer responses to confronting those that hurt us. We learn quickly that confrontation leads to danger. We develop techniques to survive including detachment and we learn how to become emotionally numb.
 
-### Share and connect
-
-Have you ever told anyone about your unhealthy behaviors?
-
-If you answered, “Yes,” who did you tell? What happened when you did?
-
-If “No,” why have you kept it hidden?
-
 ### Confess to one another ![Scripture Reference](../../../public/pink_heart_mug.png)
 
 True healing can occur when we confess to one another and receive the full blessing of Jesus.
 
-> *“Therefore, confess your sins to each other and pray for each other so that you may be healed. The prayer of a righteous man is powerful and effective.”*  
-**— James 5:16 (NIV)**
+> _“Therefore, confess your sins to each other and pray for each other so that you may be healed. The prayer of a righteous man is powerful and effective.”_  
+> **— James 5:16 (NIV)**
 
 ### Secrets ![Scripture Reference](../../../public/pink_heart_mug.png)
 
 You are as vulnerable as your deepest secret. By confessing areas where you are unhealthy, you are released to receive God’s mercy.
 
-> *“[She] who conceals [her] sins does not prosper, but [she who] confesses and renounces them finds mercy.”*  
-**— Proverbs 28:13 (NIV)**
-
-What secrets would you like to get rid of today?
+> _“[She] who conceals [her] sins does not prosper, but [she who] confesses and renounces them finds mercy.”_  
+> **— Proverbs 28:13 (NIV)**
 
 ### Ask God to help ![Scripture Reference](../../../public/pink_heart_mug.png)
 
 God reveals vulnerable areas, bad habits or behaviors that need to change.
 
-> *“…Wash me, and I will be whiter than snow.” — Psalms 51: (NIV) “Direct my footsteps according to your word; let no sin rule over me.”*  
-**— Psalms 119:133 (NIV)**
-
-What is God revealing to you that need to change?
+> _“…Wash me, and I will be whiter than snow.” — Psalms 51: (NIV) “Direct my footsteps according to your word; let no sin rule over me.”_  
+> **— Psalms 119:133 (NIV)**
 
 ### Unlock the potential
 
@@ -63,8 +51,8 @@ Women need to understand the depth of God’s love for them. Many of you still f
 
 He who began a good work in you should complete that work until the finish.
 
-> *“Be confident in this, that He who began a good work in you will carry it on to completion until the day of Christ Jesus.”*”*  
-**— Philippians 1:6 (NIV)**
+> _“Be confident in this, that He who began a good work in you will carry it on to completion until the day of Christ Jesus.”_”*  
+> **— Philippians 1:6 (NIV)**
 
 ### Spiritual awakening ![Testimonial Quote](../../../public/broken_mug.png)
 
@@ -78,35 +66,33 @@ Since that day, I have made it my priority to surround myself with good people a
 
 God’s love for you has no limits.
 
-> *“But because of his great love for us, God who is rich in mercy, made us alive with Christ even when we were dead in transgressions – it is by grace you have been saved. And God raised us up with Christ and seated us with him in the heavenly realms in Christ Jesus, in order that in the coming ages he might show the incomparable riches of his grace, expressed in his kindness to us in Christ Jesus.”*”*  
-**— Ephesians 2:4–7 (NIV)**
+> _“But because of his great love for us, God who is rich in mercy, made us alive with Christ even when we were dead in transgressions – it is by grace you have been saved. And God raised us up with Christ and seated us with him in the heavenly realms in Christ Jesus, in order that in the coming ages he might show the incomparable riches of his grace, expressed in his kindness to us in Christ Jesus.”_”*  
+> **— Ephesians 2:4–7 (NIV)**
 
 ### How to accept God’s love ![Scripture Reference](../../../public/pink_heart_mug.png)
 
 After so many years of not feeling worthy of love, it can be difficult to accept God’s love. A simple prayer can release God’s blessing and favor over your life. Just say this prayer aloud.
 
-> *“That if you confess with your mouth, ‘Jesus is Lord,’ and believe in your heart that God raised him from the dead, you will be saved.”*  
-**— Romans 10:9 (NIV)**
+> _“That if you confess with your mouth, ‘Jesus is Lord,’ and believe in your heart that God raised him from the dead, you will be saved.”_  
+> **— Romans 10:9 (NIV)**
 
 ### Priestly blessing ![Scripture Reference](../../../public/pink_heart_mug.png)
 
 Bringing God into your life can release blessings over all areas in your life. This is a wonderful blessing to say daily or when you need relief from a difficult and stressful situation.
 
-> *“The Lord bless you and keep you; May the Lord make his face shine upon you and be gracious to you; the Lord turn his face toward you and give you peace.”*  
-**— Numbers 6:24–26 (NIV)**
+> _“The Lord bless you and keep you; May the Lord make his face shine upon you and be gracious to you; the Lord turn his face toward you and give you peace.”_  
+> **— Numbers 6:24–26 (NIV)**
 
 ### You have strength in God ![Scripture Reference](../../../public/pink_heart_mug.png)
 
 It can be scary to break away from old behaviors. New emotions of joy and feelings of strength do not feel comfortable. Low self-esteem and past hurts have held you back from growing. Know that you have a strong God and cannot be bullied. With Him in your life you have the strength to conquer any challenge that is presented in your life.
 
-> *“The Lord is my rock, my fortress and my deliverer; my God is my rock, in whom I take refuge. He is my shield and the horn of my salvation, my stronghold. I call to the Lord, who is worthy of praise, and I am saved from my enemies.”*”*  
-**— Psalms 18:2–3 (NIV)**
+> _“The Lord is my rock, my fortress and my deliverer; my God is my rock, in whom I take refuge. He is my shield and the horn of my salvation, my stronghold. I call to the Lord, who is worthy of praise, and I am saved from my enemies.”_”*  
+> **— Psalms 18:2–3 (NIV)**
 
 ### God your protector ![Scripture Reference](../../../public/pink_heart_mug.png)
 
 No longer will you face a hurt alone. As a child of God you are protected by his covering. This does not mean bad things won’t happen to us; it does mean that when they do we can ask for His protection to carry us through the challenge.
 
-> *“How is your view of your Heavenly Father different than your earthy father?”*
-
-> *“Keep me as the apple of your eye; hide me in the shadow of your wings from the wicked who assail me, from my mortal enemies who surround me.”*  
-**— Psalms 17:8–9 (NIV)**
+> _“Keep me as the apple of your eye; hide me in the shadow of your wings from the wicked who assail me, from my mortal enemies who surround me.”_  
+> **— Psalms 17:8–9 (NIV)**

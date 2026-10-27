@@ -8,17 +8,22 @@ The next step to the recovery process is to identify how you got here. This Sect
 
 This section contains the following topics:
 
-| Topic | See Page |
-|-------|----------|
-| Chapter 9: Powerless, Forgiveness, Bitterness | 155 |
-| Chapter 10: Types of Abuse, Cycles, Safety, Legal | 173 |
-| Section Three Summary | 211 |
+| Topic                                             | See Page |
+| ------------------------------------------------- | -------- |
+| Chapter 9: Powerless, Forgiveness, Bitterness     | 155      |
+| Chapter 10: Types of Abuse, Cycles, Safety, Legal | 173      |
+| Section Three Summary                             | 211      |
 
 ### Objectives
 
 Upon completion of this Section, you will be able to:\
+\
 • Describe the status of current relationships.\
+\
 • Demonstrate the ability to assess levels of danger.\
+\
 • Develop methods to overcome bitterness and forgiveness.\
+\
 • Identify types of abuse.\
+\
 • Define cycle of violence.

@@ -13,10 +13,15 @@ You feel trapped by your inability to grow beyond the hurt and to fully restore 
 Domestic violence happens in every race, religion, culture, economic and gender group:
 
 • One out of every three women will be abused at some point in her life.\
+\
 • Battery is the single major cause of injury to women.\
+\
 • A woman is more likely to be killed by a male partner (or former partner) than any other person.\
+\
 • About 4,000 women die each year due to domestic violence.\
+\
 • Of the total domestic violence homicides, about 75% of the victims were killed as they attempted to leave the relationship or after the relationship had ended.\
+\
 • On average, a woman will leave an abusive relationship seven times before she leaves for good.
 
 **If you are currently being abused or have survived abuse, you are not alone.**
@@ -29,11 +34,12 @@ Domestic violence happens in every race, religion, culture, economic and gender 
 Women who:
 
 • Have left their abusive relationship(s) but still cannot reach their full potential. You are still holding on to low self-esteem and other hurtful behaviors due to the abuse you survived. Even still, you have hope that your life can be transformed.\
+\
 • Are still in an abusive relationship, but are ready to emerge. This book can help you, but you still need emergency/critical care at this time.
 
-> **If you are in danger, contact a local family justice center, women’s shelter, or dial 911.**
-> You can also contact the National Domestic Violence Hotline at **1-800-799-7233** to find resources in your area.  
-> As you begin to change patterns and break away, your risks can increase significantly.
+**If you are in danger, contact a local family justice center, women’s shelter, or dial 911.**
+You can also contact the National Domestic Violence Hotline at **1-800-799-7233** to find resources in your area.  
+As you begin to change patterns and break away, your risks can increase significantly.
 
 > _“Then you will call, and the Lord will answer; you will cry for help, and he will say: Here am I.”_  
 > **— Isaiah 58:9 (New International Version)**
@@ -121,15 +127,3 @@ The key ingredient to this program is God’s love and the ability to heal with 
 I have now become Stronger than Espresso, and so can you. Get ready and drink up. You are Stronger than Espresso® and can claim victory over adversity!
 
 — Brooke Jones, Author & Founder, Stronger than Espresso®
-
-### Scripture summary
-
-A list of scriptures will be noted at the end of each Chapter. Reference to the learning objective they support will be identified. Use these scriptures for personal study, reflection and prayer time. Ask God to reveal to you areas that need prayer and healing.
-
-| Scripture            | Objective                | Personal Thoughts |
-| -------------------- | ------------------------ | ----------------- |
-| Isaiah 58:9          | Self-esteem — Confidence |                   |
-| Matthew 19:26        | Self-esteem — Confidence |                   |
-| Isaiah 57:14, 18, 19 | Spirituality — Love      |                   |
-| Ephesians 2:8–10     | Spirituality — Love      |                   |
-| 1 John 1:5–7         | Connections — Coach      |                   |

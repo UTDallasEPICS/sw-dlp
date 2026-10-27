@@ -8,19 +8,22 @@ The next step to your recovery is to rebuild your self-esteem. Learning what sel
 
 This section contains the following topics:
 
-| Topic | See Page |
-|-------|----------|
-| Chapter 11: Self-esteem Defined | 215 |
-| Chapter 12: Self-esteem: What erodes? How to enhance? | 227 |
-| Section Four Summary | 246 |
-
-Topic See Page Chapter 11: Self-esteem Defined Chapter 12: Self-esteem: What erodes? How to enhance? Section Four Summary
+| Topic                                                 | See Page |
+| ----------------------------------------------------- | -------- |
+| Chapter 11: Self-esteem Defined                       | 215      |
+| Chapter 12: Self-esteem: What erodes? How to enhance? | 227      |
+| Section Four Summary                                  | 246      |
 
 ### Objectives
 
 Upon completion of this Section, you will be able to:\
+\
 • Identify characteristics of low self-esteem.\
+\
 • Create new strategies to enhance self-esteem.\
+\
 • Describe how to use scriptures to restore hurts in your life.\
+\
 • Define causes of low self-esteem.\
+\
 • Demonstrate the ability to establish boundaries.

@@ -6,7 +6,7 @@ The purpose of Chapter 14 is to help you create goals and redefine your vision a
 
 ### Power of Your Soul Ingredient #3
 
-The #3 Ingredient to the Seven Ingredients of Perfection is the Power of Your Soul. Your soul is a gift from God. It is unique. There has never been, nor never will be another soul like yours. Your soul should have the freedom to be all God created you to be.
+The #3 Ingredient to the Seven Ingredients of Perfection is the Power of Your **Soul**. Your soul is a gift from God. It is unique. There has never been, nor never will be another soul like yours. Your soul should have the freedom to be all God created you to be.
 
 ### Definition: Gyroscope
 
@@ -26,7 +26,7 @@ good girlfriend. Honest feedback to help you get better and get on with your lif
 
 ### Girl to Girl Rule #1 ![Scripture Reference](../../../public/pink_heart_mug.png)
 
-Focus on your dreams, spiritual gifting and what you like to do!
+**Focus on your dreams, spiritual gifting and what you like to do!**
 
 Get to know yourself. It is time for you to accumulate all of the information that you have gleaned from this book and begin to generate a plan of action. Any good plan states a goal and the baby steps required to meet that goal.
 
@@ -47,22 +47,13 @@ It could be when you are baking bread at Christmas, when you developed a complic
 
 You are wonderfully made and our Creator has given you a special set of traits and characteristics, unique to only you.
 
-These are the actions, activities and skills that you do effortlessly. Search your past and make a list of these moments, describe what you were doing and why you felt so happy. You will begin to see correlations to these memories that can lead you to understand what special strengths you possess. 63
+These are the actions, activities and skills that you do effortlessly. Search your past and make a list of these moments, describe what you were doing and why you felt so happy. You will begin to see correlations to these memories that can lead you to understand what special strengths you possess.
 
-Describe your gifts:
+> _“There are different kinds of spiritual gifts, but the same Spirit is the source of them all.”_  
+> **— 1 Corinthians 12:1–12 (NLT)**
 
-> *“There are different kinds of spiritual gifts, but the same Spirit is the source of them all.”*  
-**— 1 Corinthians 12:1–12 (NLT)**
-
-> *“Do not neglect the gift that is in you, which was given to you by prophecy…”*  
-**— 1 Timothy 4:14 (NKJV)**
-
-Select future pursuits that include these natural strengths allow you to feel complete and whole.
-
-Spending time on getting to know you is the best foundation you can set for your future:
-
-• Describe what action frees you to “play”?\
-• Describe your favorite daily habits or rituals.
+> _“Do not neglect the gift that is in you, which was given to you by prophecy…”_  
+> **— 1 Timothy 4:14 (NKJV)**
 
 Understanding your habits and desires can help you begin to live more comfortably as the new you. Each of you has different ways to learn or complete tasks. There are many correct ways to achieve the same objective.
 
@@ -70,15 +61,9 @@ Imagine the simple task of tying your shoes. Some people make two loops and then
 
 It is also easier to communicate to others your preferences when you have identified them for yourself. For success in a future relationship, it is important for you to establish an individual style now. You will be able to communicate your preferences so they can choose to conform to your needs as much as you will to meet their needs.
 
-• List a consistent group of people in your life that have been stable and loved you unconditionally. What traits do these people share?
-
-If you want this list of people to grow, start to include in your daily affirmations or prayers that this group is being formed -even now for you to access.
-
 • Being alone is not the same as being lonely. Part of the trick when you break off any relationship is to learn to be alone with yourself.
 
 When you are quiet, what sounds do you hear? Do you hear the whispers of God? Do you hear how bad you are? Do you fill your room with noise of TV, radio, friends? Do you drink alcohol to excess? Are you uncomfortable that you have no one to blame anymore?
-
-Describe all of the emotions or fears that you are experiencing right now or are afraid of.
 
 ### External trust
 
@@ -90,8 +75,8 @@ Trust in others for a support system is very different then the trust level requ
 
 Once you let go and let God rule your thoughts, emotions, choices and actions, your life can really begin to grow.
 
-> *“Trust in the Lord with all your heart, And lean not on your own understanding; In all your ways acknowledge Him, And He shall direct your paths.”*  
-**— Proverbs 3:5,6 (NKJV)**
+> _“Trust in the Lord with all your heart, And lean not on your own understanding; In all your ways acknowledge Him, And He shall direct your paths.”_  
+> **— Proverbs 3:5,6 (NKJV)**
 
 ### Trust is earned
 
@@ -117,13 +102,43 @@ When you stop going around pleasing people, you free yourself from that unattain
 
 What things in your life do you need to let go of because it is not your burden anymore?
 
-List steps you can take to make a change in that area.
+### Girl to Girl Rule #6
+
+**Don’t sweat the relapse. Regroup and try again.**
+
+Addictive behaviors surface. Survivors of trauma often turn to substances to receive relief from their suffering. Should you find  
+yourself turning to alcohol, food, gambling, prescription or illegal  
+drugs or other vices be quick to pull yourself back. Do not feel  
+shamed if you fall down. Pick yourself up, dust off and get back on  
+your road to recovery.
+
+• Selecting new abusive or unsupportive relationships. Be quick to  
+recognize the people around you and make changes to those  
+relationships if you feel they are abusive or unsupportive. The longer  
+you wait the higher the risk you will begin to slip further into this  
+pattern. Ask the opinion of the few trusted individuals you have  
+close to you, and listen to their wisdom. If they have a bad feeling  
+about someone, do not be blinded by the excitement of a new  
+relationship, be honest with your own instincts and open to the  
+wisdom of friends and family.
+
+• Self destructive behaviors. If you begin to speak destructively to  
+yourself, to not eat properly, or to not take care of yourself, then  
+action should be taken immediately. Seek help from your therapist, a  
+support group or seek out self-­‐help material on how to turn this  
+behavior around. Be honest about your behavior, do not beat  
+yourself up and wallow in your failure. Make efforts to get back on  
+the right path and try to articulate why you fell back.
+
+Understand this journey is not a straight line. You are crawling from the  
+valley to the mountain and it will not be easy. You can release yourself from  
+shame when you are honest about where you are in your healing process. If  
+you make a mistake, correct it and move on, always keep your eyes on your  
+goals.
 
 ### Girl to Girl Rule #7
 
-Don’t Go it Alone.
-
-Let Friends, Family and Support Networks Know They Can Help!
+**Don’t Go it Alone. Let Friends, Family and Support Networks Know They Can Help!**
 
 Much of your emotional growth will be done internally, but it is vital that you build your own support system. Begin to surround yourself with people that you can trust. You should look for new friends that have the habits and values of people you want to have. Start learning something new and it will expose you to new people with a common interest. Join the Stronger than Espresso® connect groups. Go to a local library for a class or join a church for fellowship and activities. Enjoy meeting new people and be mindful of your inner wisdom on how you feel around these new people and situations.
 
@@ -134,10 +149,15 @@ Friends and family may want to help, but may be at a loss as to how to help you 
 How to help a loved one that has experienced trauma? 65
 
 • Ask — Ask if help is needed for mundane tasks, errands or just to lend a hand.\
+\
 • Empower — Aide in establishing routines to bring life back into control.\
+\
 • Listen — When ready, let the survivor talk about the experience to acknowledge, validate and reduce isolation.\
+\
 • Reassure — Affirm you are not to blame for abuse and are not alone.\
+\
 • Research – Offer help finding answers and resources.\
+\
 • Support with patience — There is not pre-determined healing timeline.
 
 ### Girl to Girl Tips
@@ -172,19 +192,15 @@ For centuries people believed that the world was flat and that you would fall of
 
 Creating our goals is the first challenge. The next hurdle is to incorporate our written goals into measurable daily choices. Only when changes to our choices are made, can our lives move in a new direction.
 
-Describe ways you will check back to reach your goals.
-
 ### Stockdale Paradox
 
-James Bond Stockdale was one of the most highly decorated officers in U.S. Navy history. He was shot down in 1965 and a prisoner of war in Vietnam until 1973. During his captivity, he was locked in leg irons and was routinely tortured and beaten. To protect his life, he purposely beat, cut and disfigured himself so that his captors could not use him as propaganda. When asked how he survived, he replied, ‘I never lost faith in the end of the story; I never doubted not only that I would get out, but also that I would prevail in the end and turn the experience into the defining even of my life, which, in retrospect, I would not trade.” 66
+James Bond Stockdale was one of the most highly decorated officers in U.S. Navy history. He was shot down in 1965 and a prisoner of war in Vietnam until 1973. During his captivity, he was locked in leg irons and was routinely tortured and beaten. To protect his life, he purposely beat, cut and disfigured himself so that his captors could not use him as propaganda. When asked how he survived, he replied, ‘I never lost faith in the end of the story; I never doubted not only that I would get out, but also that I would prevail in the end and turn the experience into the defining even of my life, which, in retrospect, I would not trade.”
 
-In Jim Collins’ book, Good to Great, he describes Stockdale’s coping strategy during his eight years in the Vietnamese POW camp as the Stockdale Paradox. The Stockdale Paradox defined,
-
-> *“Confront the brutal facts…retain unwavering faith that you can and will prevail in the end, regardless of the difficulties, and at the same time, have the discipline to confront the most brutal facts of your current reality, whatever they might be.”*
+In Jim Collins’ book, Good to Great, he describes Stockdale’s coping strategy during his eight years in the Vietnamese POW camp as the Stockdale Paradox. The Stockdale Paradox defined, _“Confront the brutal facts…retain unwavering faith that you can and will prevail in the end, regardless of the difficulties, and at the same time, have the discipline to confront the most brutal facts of your current reality, whatever they might be.”_
 
 When Collins interviewed Stockdale and asked who didn’t make it out, Stockdale replied:
 
-> *“Oh, that’s easy, the optimists. Oh, they were the ones who said, “We’re going to be out by Christmas.’ And Christmas would come, and Christmas would go. Then they’d say, ‘We’re going to be out by Easter.” And Easter would come, and Easter would go. And then Thanksgiving, and then it would be Christmas again. And they died of a broken heart.”*
+_“Oh, that’s easy, the optimists. Oh, they were the ones who said, “We’re going to be out by Christmas.’ And Christmas would come, and Christmas would go. Then they’d say, ‘We’re going to be out by Easter.” And Easter would come, and Easter would go. And then Thanksgiving, and then it would be Christmas again. And they died of a broken heart.”_
 
 Stockdale created a tap alphabet so inmates could communicate with one another and break the isolation, and rules to help them deal with the torture and set goals to survive. He was able to create a secret code that allowed him to send messages to his wife, and during the same time, she created The League of American Families of POW's and MIA's in the States, an instrumental organization in assisting prisoners of war. 67 Collins likened the perseverance of Stockdale in surviving the atrocities of war to the same behavior required to grow a company from good to great.68
 
@@ -218,4 +234,14 @@ First, think you can succeed. Second focus on your goal. Third never let the tho
 
 Many professional athletes actively visualize receiving the gold medal or winning first place to reprogram their thoughts and set them apart from those in second place.
 
-When an emotional response is created, it directs behavior. The choices you make will then begin to reflect the outcomes in accordance with your original thoughts. You will become what you think. Start thinking right about yourself so your outcomes will be a fulfillment of your greatest desires! The Bible teaches us to pray as if we have already received the gift from God. Believe and it shall be so!
+When an emotional response is created, it directs behavior. The choices you make will then begin to reflect the outcomes in accordance with your original thoughts. You will become what you think. Start thinking right about yourself so your outcomes will be a fulfillment of your greatest desires!
+
+The Bible teaches us to pray as if we have already received the gift from God. Believe and it shall be so!
+
+### Power of your Soul and your Mind
+
+By redefining the power of your soul and your mind you begin to align  
+yourself more closely with God’s purpose in your life. When you focus on  
+glorifying God in your actions and thoughts your life will begin to flourish in a  
+new way. Blessings and favor can be poured out upon you as a daughter of  
+the great King!

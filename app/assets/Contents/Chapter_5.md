@@ -14,7 +14,7 @@ You pull open the glass door of your corner coffee shop filling your lungs with 
 
 You order,
 
-> *“Good morning, I will have the usual.”*
+> _“Good morning, I will have the usual.”_
 
 The barista smiles, creates your customized coffee creation and says, “One usual to go.” You grab your “usual” and go about your day.
 
@@ -22,17 +22,15 @@ A “Barista" is one who has acquired some level of expertise in the preparation
 
 They can make endless varieties of drinks, yet they
 
-> *“serve what you order.”*
+> _“serve what you order.”_
 
 ### Try something new
 
 Life is a continued repetition of learned patterns of behavior. If you continue to ask for the same thing every day, then you will continue to receive the same outcome. Only when you begin to branch out and try something new can a different outcome occur.
 
-What are the benefits if you tried something new today?
-
 ### 3-Legged stool ![Testimonial Quote](../../../public/broken_mug.png)
 
-> *“For years I sat on a three-legged stool. Partners would kick out one of the legs just when I began to succeed. I continued to fall in love with men that were emotionally, verbally, physically and financially abusive. Why?”*
+> _“For years I sat on a three-legged stool. Partners would kick out one of the legs just when I began to succeed. I continued to fall in love with men that were emotionally, verbally, physically and financially abusive. Why?”_
 
 ### What are my patterns?
 
@@ -44,27 +42,21 @@ You must identify your patterns of behavior. This awareness allows you to correc
 
 For everything God has a time and your time is now!
 
-> *“There is a time for everything, and a season for every activity under heaven: a time to be born and a time to die, a time to plant and a time to uproot, a time to kill and a time to heal, a time to tear down and time to build, a time to weep and a time to laugh, a time to mourn and a time to dance, a time to scatter stones and a time to gather them, a time to embrace and a time to refrain, a time to search and a time to give up, a time to keep and a time to throw away, a time to tear and a time to mend, a time to be silent and a time to speak, a time to love and a time to hate, a time for war and a time for peace.”*  
-**— Ecclesiastes 3:1–8 (NIV)**
-
-• Describe what season you are in right now?\
-• Where do you want to be?\
-• List one thing you can change today to begin moving toward where you want to be.
+> _“There is a time for everything, and a season for every activity under heaven: a time to be born and a time to die, a time to plant and a time to uproot, a time to kill and a time to heal, a time to tear down and time to build, a time to weep and a time to laugh, a time to mourn and a time to dance, a time to scatter stones and a time to gather them, a time to embrace and a time to refrain, a time to search and a time to give up, a time to keep and a time to throw away, a time to tear and a time to mend, a time to be silent and a time to speak, a time to love and a time to hate, a time for war and a time for peace.”_  
+> **— Ecclesiastes 3:1–8 (NIV)**
 
 Remember, every day YOU have a choice of how you will feel and how you will spend your time or energy.
 
 ### Purpose ![Scripture Reference](../../../public/pink_heart_mug.png)
 
-> *“Ask and it will be given to you, seek and you will find; knock and the door will be opened to you. For everyone who asks receives; [she] who seeks finds, and to [her] who knocks, the door will be opened.”*  
-**— Matthew 7:7–8 (New King James Version)**
+> _“Ask and it will be given to you, seek and you will find; knock and the door will be opened to you. For everyone who asks receives; [she] who seeks finds, and to [her] who knocks, the door will be opened.”_  
+> **— Matthew 7:7–8 (New King James Version)**
 
 Have you ever been told God has a purpose for your life? If yes, good for you, but honestly, most of us don’t have a clue what our purpose is.
 
 One way to find your purpose is to think of moments, memories, activities or specific settings when you are the happiest. The good news is these activities often represent God’s purpose in your life through your unique gifts.
 
 Describe activities or settings when you are filled with joy and peace.
-
-What are three actions you can take to begin incorporating these into your weekly activities?
 
 If you are saying, “I can’t do that” remember just ask and you shall receive.
 
@@ -89,22 +81,18 @@ These statements can:\
 • Restrict God’s grace from fully working in your life\
 • Keep you from changing your life
 
-List words that you would like to avoid:
-
-List words you would like to add to have healthier conversations:
-
 ### Power of your tongue ![Scripture Reference](../../../public/pink_heart_mug.png)
 
 Be mindful of the words you say. Your tongue is a powerful tool. It can speak praise or it can speak negativity over your life.
 
-> *“He who guards his mouth and his tongue keeps himself from calamity.”*  
-**— Proverbs 21:23 (New International Version)**
+> _“He who guards his mouth and his tongue keeps himself from calamity.”_  
+> **— Proverbs 21:23 (New International Version)**
 
 Later in this book, in the Seven Measures of Perfection, Ingredient #5 Power of Your Words, we dig deeper into understanding the role of the tongue in your life.
 
 ### Fake appearances ![Testimonial Quote](../../../public/broken_mug.png)
 
-> *“I had a college degree, professional career, came from a middle class background. From the outside it looked like I had the world on a platter. Yet, I chose to surround myself with destructive partners.”*
+> _“I had a college degree, professional career, came from a middle class background. From the outside it looked like I had the world on a platter. Yet, I chose to surround myself with destructive partners.”_
 
 ### Courage
 
@@ -130,24 +118,10 @@ If you are in a current relationship with someone who is abusing you, then you n
 
 Abuse is not okay. It is against the law.
 
-### Intimacy
-
-In-To-Me-See. Sounds like intimacy. Beginning as a child, our relationships define our patterns of intimacy. As we grow older, intimacy can define our relationships. Describe how your intimacy and sex life has been impacted by abuse?
-
-How does the statement, “Sex is a currency” make you feel?
-
-When the same words pop up in your responses, these emotions and hurts are unique to you. They are your repetitive patterns. These emotions will continue to perpetuate in your relationships unless you make a change.
-
-Look for similarities and list them below:
-
-### Relationship name
-
-Courting Style Emotion Hurt
-
 ### Self-check
 
 Ask yourself, why are you drawn to these characteristics? Healthy relationships foster mutual respect, love and nurturing. In the next Chapter we learn about how our behaviors can impact our ability to set boundaries.
 
 ### Teasing isn’t for everyone ![Testimonial Quote](../../../public/broken_mug.png)
 
-> *“One day my husband started teasing me in a way that really hurt my feelings. He began to do this behavior when we were in front of other people. He would pat my head and say, “good girl” especially in front of other women he was trying to impress. I felt like a fool. Like a dog he was patting me on the head. It was demeaning and he would just laugh at me. Even when I asked him to stop, he just said, “I’m only teasing” and continued to do it. I got angry because I already told him and he wasn’t listening. When I tried to describe my hurt, humiliation, anger, or frustration, he did not validate my feelings nor take them seriously. He thought it was funny and tried even harder to get others to laugh when he did it to me.”*
+> _“One day my husband started teasing me in a way that really hurt my feelings. He began to do this behavior when we were in front of other people. He would pat my head and say, “good girl” especially in front of other women he was trying to impress. I felt like a fool. Like a dog he was patting me on the head. It was demeaning and he would just laugh at me. Even when I asked him to stop, he just said, “I’m only teasing” and continued to do it. I got angry because I already told him and he wasn’t listening. When I tried to describe my hurt, humiliation, anger, or frustration, he did not validate my feelings nor take them seriously. He thought it was funny and tried even harder to get others to laugh when he did it to me.”_
