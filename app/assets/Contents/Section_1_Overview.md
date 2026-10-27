@@ -1,3 +1,9 @@
+---
+title: Section 1
+videoUrl: https://youtu.be/Y2O6ElQRbwE
+videoTitle: Section 1 Overview
+---
+
 # Section 1: The Awakening: You Are Not Alone
 
 ### Introduction

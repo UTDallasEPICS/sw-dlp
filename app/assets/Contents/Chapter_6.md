@@ -1,3 +1,9 @@
+---
+title: Chapter 6
+videoUrl: https://youtu.be/9uOAeOs5OtY
+videoTitle: Chapter 6 Boundaries
+---
+
 # Chapter 6: Your Behaviors, Set Boundaries
 
 ### Introduction
