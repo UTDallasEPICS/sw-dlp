@@ -29,11 +29,11 @@
     <div class="mx-auto max-w-6xl px-4 pb-32 pt-8 sm:px-6">
       <article
         v-if="chapter"
-        class="bg-white text-base leading-relaxed !text-gray-900 sm:text-lg dark:bg-white dark:!text-gray-900"
+        class="bg-white text-base leading-relaxed text-gray-900 sm:text-lg dark:bg-white dark:text-gray-900"
       >
         <ContentRenderer
           :value="chapter"
-          class="!text-gray-900 dark:!text-gray-900"
+          class="text-gray-900 dark:text-gray-900"
           prose
         />
       </article>
