@@ -1,5 +1,5 @@
 {
-  "name": "nuxt-template",
+  "name": "sw-dlp",
   "type": "module",
   "private": true,
   "scripts": {
@@ -21,6 +21,7 @@
     "db:push": "drizzle-kit push"
   },
   "dependencies": {
+    "@nuxt/content": "^3.16.2",
     "@nuxt/image": "2.1.0",
     "@nuxt/ui": "^4.11.0",
     "@types/nodemailer": "^8.0.1",
@@ -39,7 +40,7 @@
     "@types/better-sqlite3": "^9.6.0",
     "@vue/test-utils": "^2.4.11",
     "better-sqlite3": "12.11.1",
-    "drizzle-kit": "^0.31.10",
+    "drizzle-kit": "^0.31.11",
     "drizzle-orm": "^0.45.2",
     "drizzle-zod": "^0.8.3",
     "eslint": "^10.9.0",
