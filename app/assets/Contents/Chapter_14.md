@@ -1,3 +1,7 @@
+---
+title: Chapter 14
+---
+
 # Chapter 14: Seven Ingredients of Perfection, #3 Soul, #4 Mind
 
 ### Purpose

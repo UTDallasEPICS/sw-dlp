@@ -1,3 +1,7 @@
+---
+title: Chapter 15
+---
+
 # Chapter 15: Seven Ingredients, #5 Words, #6 Lessons, #7 Relationships
 
 ### Purpose

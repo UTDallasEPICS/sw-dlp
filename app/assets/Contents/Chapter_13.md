@@ -1,3 +1,7 @@
+---
+title: Chapter 13
+---
+
 # Chapter 13: Seven Ingredients to Perfection, #1 God, #2 Body
 
 ### Jolt awake
