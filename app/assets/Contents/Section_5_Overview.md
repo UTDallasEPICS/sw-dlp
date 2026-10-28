@@ -1,4 +1,6 @@
-# Section 5: Redefine Your Life
+---
+title: "Section 5: Redefine Your Life"
+---
 
 ### Overview
 

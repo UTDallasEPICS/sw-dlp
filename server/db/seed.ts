@@ -3,6 +3,7 @@ import Database from 'better-sqlite3'
 import { drizzle } from 'drizzle-orm/better-sqlite3'
 import * as schema from './schema'
 import { seedCourses } from '../data/lessons.ts'
+import { seedMarkdown } from './seedMarkdown.ts'
 
 const connectionString = process.env.DATABASE_URL!.replace('file:', '')
 const sqlite = new Database(connectionString)
@@ -10,6 +11,7 @@ const db = drizzle(sqlite, { schema })
 
 async function main() {
   console.log('Start seeding...')
+
 
   const existingUser = await db.query.user.findFirst({
     where: (user, { eq }) => eq(user.email, 'seeded-user@email.com'),
@@ -30,7 +32,8 @@ async function main() {
   }
 
   // Seed the courses defined in the lessons.ts file
-  await seedCourses()
+  await seedCourses(db)
+  await seedMarkdown(db)
 
   console.log('Seeding finished.')
 }

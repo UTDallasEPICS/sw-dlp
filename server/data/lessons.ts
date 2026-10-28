@@ -1,9 +1,7 @@
-import { drizzle } from 'drizzle-orm/better-sqlite3'
-import Database from 'better-sqlite3'
 import { CourseTitles } from '../db/schema'
 
-const sqlite = new Database('database.db')
-const db = drizzle(sqlite)
+import type { BetterSQLite3Database } from 'drizzle-orm/better-sqlite3'
+import * as schema from '../db/schema'
 
 interface Chapters {
   title: string
@@ -81,7 +79,9 @@ const courseData: Sections[] = [
   },
 ]
 
-export async function seedCourses() {
+export async function seedCourses(
+  db: BetterSQLite3Database<typeof schema>
+) {
   console.log('Seeding courses...')
 
   const CourseTitlesData = courseData.map((section) => ({
@@ -89,11 +89,10 @@ export async function seedCourses() {
     Chapters: section.chapters.map((chapter) => chapter.title),
   }))
 
-  await db.insert(CourseTitles).values(CourseTitlesData)
+  // Clear old course navigation records before reseeding
+  await db.delete(schema.CourseTitles)
+
+  await db.insert(schema.CourseTitles).values(CourseTitlesData)
 
   console.log('Database seeded successfully.')
 }
-
-seedCourses().catch((error) => {
-  console.error('Seeding failed:', error)
-})

@@ -15,6 +15,20 @@
       "when": 1791416436390,
       "tag": "0001_good_maximus",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "6",
+      "when": 1793070672740,
+      "tag": "0002_wet_human_torch",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "6",
+      "when": 1793218327178,
+      "tag": "0003_wakeful_loners",
+      "breakpoints": true
     }
   ]
 }

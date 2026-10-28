@@ -1,4 +1,6 @@
-# Jolt Awake!
+---
+title: Jolt Awake!
+---
 
 ## Your Guide to Victory Over Domestic Violence
 

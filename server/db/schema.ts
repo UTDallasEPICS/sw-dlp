@@ -66,7 +66,23 @@ export const chapter = sqliteTable('chapter', {
     .primaryKey()
     .$defaultFn(() => crypto.randomUUID()),
   name: text('name').notNull(),
+  slug: text('slug').notNull().unique(),
   description: text('description'),
+  content: text('content').notNull().default(''),
+})
+
+export const chapterVideo = sqliteTable('chapterVideo', {
+  id: text('id')
+    .primaryKey()
+    .$defaultFn(() => crypto.randomUUID()),
+  chapterId: text('chapterId')
+    .notNull()
+    .references(() => chapter.id, {
+      onDelete: 'cascade',
+    }),
+  videoTitle: text('title').notNull(),
+  videoUrl: text('url').notNull(),
+  position: integer('position').notNull().default(0),
 })
 
 export const userLesson = sqliteTable(
