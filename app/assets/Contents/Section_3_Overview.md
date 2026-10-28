@@ -1,7 +1,8 @@
 ---
 title: Section 3
-videoUrl: https://youtu.be/myogV1mFQLM
-videoTitle: Section 3 Overview 
+videos:
+  - videoUrl: https://youtu.be/myogV1mFQLM
+    videoTitle: Section 3 Overview 
 ---
 
 # Section 3: Understanding Abusive Relationships

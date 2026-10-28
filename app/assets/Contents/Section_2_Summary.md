@@ -1,7 +1,8 @@
 ---
 title: Section 2
-videoUrl: https://youtu.be/Y4yQfNpMqLc
-videoTitle: Section 2 Summary 
+videos:
+  - videoUrl: https://youtu.be/Y4yQfNpMqLc
+    videoTitle: Section 2 Summary 
 ---
 
 # Section Two Summary

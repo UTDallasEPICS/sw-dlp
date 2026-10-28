@@ -1,7 +1,8 @@
 ---
 title: Chapter 7
-videoUrl: https://youtu.be/k3JJZDiteY0
-videoTitle: Chapter 7 Inner Music
+videos:
+  - videoUrl: https://youtu.be/k3JJZDiteY0
+    videoTitle: Chapter 7 Inner Music
 ---
 
 # Chapter 7: Inner Music

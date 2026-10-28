@@ -1,7 +1,8 @@
 ---
 title: Chapter 4
-videoUrl: https://youtu.be/Svo-SjRDPKQ
-videoTitle: Chapter 4 Coping Mechanisms
+videos:
+  - videoUrl: https://youtu.be/Svo-SjRDPKQ
+    videoTitle: Chapter 4 Coping Mechanisms
 ---
 
 # Chapter 4: Coping Mechanisms
