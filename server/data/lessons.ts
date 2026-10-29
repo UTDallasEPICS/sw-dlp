@@ -1,7 +1,6 @@
-import { CourseTitles } from '../db/schema'
-
 import type { BetterSQLite3Database } from 'drizzle-orm/better-sqlite3'
-import * as schema from '../db/schema'
+import type * as schema from '../db/schema'
+import { CourseTitles } from '../db/schema'
 
 interface Chapters {
   title: string
@@ -28,6 +27,7 @@ const courseData: Sections[] = [
   {
     title: 'Section 1: The Awakening: You Are Not Alone',
     chapters: [
+      { title: 'Overview', read: false },
       { title: 'Chapter 1: Espresso and You', read: false },
       { title: 'Chapter 2: You "Aha" Moment', read: false },
       { title: 'Chapter 3: Feelings Assessment', read: false },
@@ -77,11 +77,16 @@ const courseData: Sections[] = [
       { title: 'Section Five Summary', read: false },
     ],
   },
+  {
+    title: 'Wrap Up',
+    chapters: [
+      { title: 'Wrap Up', read: false },
+      { title: 'Action Plan', read: false },
+    ],
+  },
 ]
 
-export async function seedCourses(
-  db: BetterSQLite3Database<typeof schema>
-) {
+export async function seedCourses(db: BetterSQLite3Database<typeof schema>) {
   console.log('Seeding courses...')
 
   const CourseTitlesData = courseData.map((section) => ({
@@ -89,10 +94,10 @@ export async function seedCourses(
     Chapters: section.chapters.map((chapter) => chapter.title),
   }))
 
-  // Clear old course navigation records before reseeding
-  await db.delete(schema.CourseTitles)
-
-  await db.insert(schema.CourseTitles).values(CourseTitlesData)
+  const existing = await db.select({ id: CourseTitles.id }).from(CourseTitles).limit(1)
+  if (existing.length === 0) {
+    await db.insert(CourseTitles).values(CourseTitlesData)
+  }
 
   console.log('Database seeded successfully.')
 }

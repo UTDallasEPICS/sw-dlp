@@ -57,8 +57,8 @@ export const CourseTitles = sqliteTable('courseTitles', {
     .primaryKey()
     .$defaultFn(() => crypto.randomUUID()),
   Sections: text('name').notNull(),
-  Chapters: text('name', {mode: 'json'}).$type<string[]>().notNull(),
-  description: text('description')
+  Chapters: text('chapters', { mode: 'json' }).$type<string[]>().notNull(),
+  description: text('description'),
 })
 
 export const chapter = sqliteTable('chapter', {
@@ -100,7 +100,7 @@ export const userLesson = sqliteTable(
     completed: integer('completed', { mode: 'boolean' }).notNull().default(false),
     completedAt: integer('completedAt', { mode: 'timestamp' }),
   },
-  (table) => [uniqueIndex('userLesson_userId_lessonId_unique').on(table.userId, table.lessonId)],
+  (table) => [uniqueIndex('userLesson_userId_lessonId_unique').on(table.userId, table.lessonId)]
 )
 
 export const session = sqliteTable(

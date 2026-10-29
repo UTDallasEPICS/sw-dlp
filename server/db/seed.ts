@@ -12,7 +12,6 @@ const db = drizzle(sqlite, { schema })
 async function main() {
   console.log('Start seeding...')
 
-
   const existingUser = await db.query.user.findFirst({
     where: (user, { eq }) => eq(user.email, 'seeded-user@email.com'),
   })

@@ -29,6 +29,13 @@
       "when": 1793218327178,
       "tag": "0003_wakeful_loners",
       "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "6",
+      "when": 1793305624076,
+      "tag": "0004_good_wild_pack",
+      "breakpoints": true
     }
   ]
 }

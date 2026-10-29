@@ -1,106 +1,17 @@
 <script setup lang="ts">
   import { ref } from 'vue'
 
-  // Hardcoded book structure ( swap with real API data later )
-  interface Chapter {
-    title: string
-    slug: string
-    read: boolean
-  }
+  const { data, status, error, refresh } = await useFetch('/api/course-titles')
+  const bookSections = computed(() => data.value ?? [])
 
-  interface Section {
-    title: string
-    chapters: Chapter[]
-  }
-
-  const bookSections: Section[] = [
-    {
-      title: 'Welcome',
-      chapters: [{ title: 'Overview', slug: 'welcome', read: true }],
+  const openSections = ref<Set<number>>(new Set())
+  watch(
+    bookSections,
+    (sections) => {
+      openSections.value = new Set(sections.map((_, index) => index))
     },
-    {
-      title: 'Introduction',
-      chapters: [
-        { title: 'Introduction', slug: 'introduction', read: true },
-        { title: 'Sections Summary', slug: 'sections-summary', read: true },
-      ],
-    },
-    {
-      title: 'Section 1: The Awakening: You Are Not Alone',
-      chapters: [
-        { title: 'Overview', slug: 'section-1-overview', read: true },
-        { title: 'Chapter 1: Espresso and You', slug: 'chapter-1', read: true },
-        { title: 'Chapter 2: Your “Aha” Moment', slug: 'chapter-2', read: true },
-        { title: 'Chapter 3: Feelings Assessment', slug: 'chapter-3', read: false },
-        { title: 'Chapter 4: Coping Mechanisms', slug: 'chapter-4', read: true },
-        { title: 'Section One Summary', slug: 'section-1-summary', read: false },
-      ],
-    },
-    {
-      title: 'Section 2: Recognizing Patterns of Behavior',
-      chapters: [
-        { title: 'Overview', slug: 'section-2-overview', read: false },
-        { title: 'Chapter 5: Reoccurring Themes', slug: 'chapter-5', read: false },
-        { title: 'Chapter 6: Your Behaviors, Set Boundaries', slug: 'chapter-6', read: false },
-        { title: 'Chapter 7: Inner Music', slug: 'chapter-7', read: false },
-        { title: 'Chapter 8: Communication Hooks, Medical Impact', slug: 'chapter-8', read: false },
-        { title: 'Section Two Summary', slug: 'section-2-summary', read: false },
-      ],
-    },
-    {
-      title: 'Section 3: Understanding Abusive Relationships',
-      chapters: [
-        { title: 'Overview', slug: 'section-3-overview', read: false },
-        { title: 'Chapter 9: Powerless, Forgiveness, Bitterness', slug: 'chapter-9', read: false },
-        { title: 'Chapter 10: Types of Abuse, Cycles, Safety, Legal', slug: 'chapter-10', read: false },
-        { title: 'Section Three Summary', slug: 'section-3-summary', read: false },
-      ],
-    },
-    {
-      title: 'Section 4: Build Your Self-Esteem',
-      chapters: [
-        { title: 'Overview', slug: 'section-4-overview', read: false },
-        { title: 'Chapter 11: Self-Esteem Defined', slug: 'chapter-11', read: false },
-        { title: 'Chapter 12: Self-Esteem: What erodes? How to enhance?', slug: 'chapter-12', read: false },
-        { title: 'Section Four Summary', slug: 'section-4-summary', read: false },
-      ],
-    },
-    {
-      title: 'Section 5: Redefine Your Life',
-      chapters: [
-        { title: 'Overview', slug: 'section-5-overview', read: false },
-        { title: 'Chapter 13: Seven Ingredients to Perfection, #1 God, #2 Body', slug: 'chapter-13', read: false },
-        { title: 'Chapter 14: Seven Ingredients of Perfection, #3 Soul, #4 Mind', slug: 'chapter-14', read: false },
-        {
-          title: 'Chapter 15: Seven Ingredients, #5 Words, #6 Lessons, #7 Relationships',
-          slug: 'chapter-15',
-          read: false,
-        },
-        { title: 'Section Five Summary', slug: 'section-5-summary', read: false },
-      ],
-    },
-    {
-      title: 'Wrap Up',
-      chapters: [
-        { title: 'Wrap Up', slug: 'wrap-up', read: false },
-        { title: 'Action Plan', slug: 'action-plan', read: false },
-      ],
-    },
-  ]
-
-  const isSectionComplete = (chapters: Chapter[]): boolean => {
-    return chapters.length > 0 && chapters.every((chapter) => chapter.read)
-  }
-
-  const openSections = ref<Set<number>>(
-    new Set(
-      bookSections
-        .map((section, index) => ({ section, index }))
-        .filter(({ section }) => !isSectionComplete(section.chapters))
-        .map(({ index }) => index)
-    )
+    { immediate: true }
   )
-
   const isOpen = (index: number): boolean => openSections.value.has(index)
 
   const toggleSection = (index: number): void => {
@@ -110,17 +21,22 @@
     } else {
       next.add(index)
     }
-    //  next.has(index) ? next.delete(index) : next.add(index)
     openSections.value = next
   }
 </script>
 
 <template>
   <nav aria-label="Table of Contents">
-    <div class="overflow-hidden rounded-xl border border-[#e5e7eb] bg-white shadow-xs">
+    <p v-if="status === 'pending'" role="status" class="p-5 text-gray-600">Loading chapters…</p>
+    <div v-else-if="error" role="alert" class="p-5 text-red-600">
+      Unable to load chapters.
+      <button type="button" class="underline" @click="refresh()">Try again</button>
+    </div>
+    <p v-else-if="!bookSections.length" class="p-5 text-gray-600">No chapters are available yet.</p>
+    <div v-else class="overflow-hidden rounded-xl border border-[#e5e7eb] bg-white shadow-xs">
       <section
         v-for="(section, sIndex) in bookSections"
-        :key="`section-${sIndex}`"
+        :key="section.id"
         class="border-b border-[#e5e7eb] last:border-b-0"
       >
         <!-- Section Header -->
@@ -133,10 +49,7 @@
             :id="`accordion-${sIndex}`"
             @click="toggleSection(sIndex)"
           >
-            <span
-              class="text-md font-bold transition-colors sm:text-base md:text-lg"
-              :class="isSectionComplete(section.chapters) ? 'text-brand-500' : 'text-gray-900'"
-            >
+            <span class="text-md font-bold text-gray-900 transition-colors sm:text-base md:text-lg">
               {{ section.title }}
             </span>
 
@@ -160,19 +73,13 @@
               <li
                 v-for="(chapter, cIndex) in section.chapters"
                 :key="`chap-${sIndex}-${cIndex}`"
-                class="group sm:text-md flex items-center px-5 py-2.5 text-sm font-medium transition-colors hover:bg-gray-100 hover:outline-1 hover:outline-gray-400 sm:px-5 sm:py-3"
-                :class="chapter.read ? 'text-brand-500' : 'text-gray-700'"
+                class="group sm:text-md flex items-center px-5 py-2.5 text-sm font-medium text-gray-700 transition-colors hover:bg-gray-100 hover:outline-1 hover:outline-gray-400 sm:px-5 sm:py-3"
               >
-                <IconCheckCircle
-                  class="mr-2 h-4 w-4 text-xs sm:mr-3"
-                  :class="chapter.read ? 'text-brand-500' : 'text-gray-300'"
-                />
-                <NuxtLink
-                  :to="`/chapters/${chapter.slug}`"
-                  class="flex-1"
-                >
+                <IconCheckCircle class="mr-2 h-4 w-4 text-xs text-gray-300 sm:mr-3" />
+                <NuxtLink v-if="chapter.slug" :to="`/chapters/${chapter.slug}`" class="flex-1">
                   {{ chapter.title }}
                 </NuxtLink>
+                <span v-else class="flex-1">{{ chapter.title }}</span>
               </li>
             </ul>
           </div>
