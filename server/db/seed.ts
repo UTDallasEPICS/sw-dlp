@@ -30,7 +30,7 @@ async function main() {
   }
 
   // Seed the courses defined in the lessons.ts file
-  await seedCourses()
+  await seedCourses(db)
 
   console.log('Seeding finished.')
 }
