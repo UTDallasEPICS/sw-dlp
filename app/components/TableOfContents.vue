@@ -1,10 +1,10 @@
 <script setup lang="ts">
   import { ref } from 'vue'
 
-  // Hardcoded book structure ( swap with real API data later )
+  const { data: chapterProgress, error: progressError } = await useFetch('/api/userlessons')
+
   interface Chapter {
     title: string
-    read: boolean
   }
 
   interface Section {
@@ -15,79 +15,97 @@
   const bookSections: Section[] = [
     {
       title: 'Welcome',
-      chapters: [{ title: 'Overview', read: true }],
+      chapters: [{ title: 'Overview' }],
     },
     {
       title: 'Introduction',
-      chapters: [
-        { title: 'Introduction', read: true },
-        { title: 'Sections Summary', read: true },
-      ],
+      chapters: [{ title: 'Introduction' }, { title: 'Sections Summary' }],
     },
     {
       title: 'Section 1: The Awakening: You Are Not Alone',
       chapters: [
-        { title: 'Overview', read: true },
-        { title: 'Chapter 1: Espresso and You', read: true },
-        { title: 'Chapter 2: Your “Aha” Moment', read: true },
-        { title: 'Chapter 3: Feelings Assessment', read: false },
-        { title: 'Chapter 4: Coping Mechanisms', read: true },
-        { title: 'Section One Summary', read: false },
+        { title: 'Overview' },
+        { title: 'Chapter 1: Espresso and You' },
+        { title: 'Chapter 2: Your “Aha” Moment' },
+        { title: 'Chapter 3: Feelings Assessment' },
+        { title: 'Chapter 4: Coping Mechanisms' },
+        { title: 'Section One Summary' },
       ],
     },
     {
       title: 'Section 2: Recognizing Patterns of Behavior',
       chapters: [
-        { title: 'Overview', read: false },
-        { title: 'Chapter 5: Reoccurring Themes', read: false },
-        { title: 'Chapter 6: Your Behaviors, Set Boundaries', read: false },
-        { title: 'Chapter 7: Inner Music', read: false },
-        { title: 'Chapter 8: Communication Hooks, Medical Impact', read: false },
-        { title: 'Section Two Summary', read: false },
+        { title: 'Overview' },
+        { title: 'Chapter 5: Reoccurring Themes' },
+        { title: 'Chapter 6: Your Behaviors, Set Boundaries' },
+        { title: 'Chapter 7: Inner Music' },
+        { title: 'Chapter 8: Communication Hooks, Medical Impact' },
+        { title: 'Section Two Summary' },
       ],
     },
     {
       title: 'Section 3: Understanding Abusive Relationships',
       chapters: [
-        { title: 'Overview', read: false },
-        { title: 'Chapter 9: Powerless, Forgiveness, Bitterness', read: false },
-        { title: 'Chapter 10: Types of Abuse, Cycles, Safety, Legal', read: false },
-        { title: 'Section Three Summary', read: false },
+        { title: 'Overview' },
+        { title: 'Chapter 9: Powerless, Forgiveness, Bitterness' },
+        { title: 'Chapter 10: Types of Abuse, Cycles, Safety, Legal' },
+        { title: 'Section Three Summary' },
       ],
     },
     {
       title: 'Section 4: Build Your Self-Esteem',
       chapters: [
-        { title: 'Overview', read: false },
-        { title: 'Chapter 11: Self-Esteem Defined', read: false },
-        { title: 'Chapter 12: Self-Esteem: What erodes? How to enhance?', read: false },
-        { title: 'Section Four Summary', read: false },
+        { title: 'Overview' },
+        { title: 'Chapter 11: Self-Esteem Defined' },
+        { title: 'Chapter 12: Self-Esteem: What erodes? How to enhance?' },
+        { title: 'Section Four Summary' },
       ],
     },
     {
       title: 'Section 5: Redefine Your Life',
       chapters: [
-        { title: 'Overview', read: false },
-        { title: 'Chapter 13: Seven Ingredients to Perfection, #1 God, #2 Body', read: false },
-        { title: 'Chapter 14: Seven Ingredients of Perfection, #3 Soul, #4 Mind', read: false },
+        { title: 'Overview' },
+        { title: 'Chapter 13: Seven Ingredients to Perfection, #1 God, #2 Body' },
+        { title: 'Chapter 14: Seven Ingredients of Perfection, #3 Soul, #4 Mind' },
         {
           title: 'Chapter 15: Seven Ingredients, #5 Words, #6 Lessons, #7 Relationships',
-          read: false,
         },
-        { title: 'Section Five Summary', read: false },
+        { title: 'Section Five Summary' },
       ],
     },
     {
       title: 'Wrap Up',
-      chapters: [
-        { title: 'Wrap Up', read: false },
-        { title: 'Action Plan', read: false },
-      ],
+      chapters: [{ title: 'Wrap Up' }, { title: 'Action Plan' }],
     },
   ]
 
+  const normalizeTitle = (title: string): string =>
+    title
+      .normalize('NFKC')
+      .toLowerCase()
+      .replace(/[^\p{L}\p{N}]/gu, '')
+
+  const chapterNumber = (title: string): string | undefined =>
+    /^chapter\s+(\d+)\b/i.exec(title)?.[1]
+
+  const isChapterComplete = (title: string): boolean => {
+    const chapters = chapterProgress.value?.chapters
+    if (!chapters) return false
+
+    const matchingChapter = chapters.find(
+      (chapter) => normalizeTitle(chapter.name) === normalizeTitle(title)
+    )
+    if (matchingChapter) return matchingChapter.completed
+
+    const number = chapterNumber(title)
+    return (
+      chapters.find((chapter) => number !== undefined && chapterNumber(chapter.name) === number)
+        ?.completed ?? false
+    )
+  }
+
   const isSectionComplete = (chapters: Chapter[]): boolean => {
-    return chapters.length > 0 && chapters.every((chapter) => chapter.read)
+    return chapters.length > 0 && chapters.every((chapter) => isChapterComplete(chapter.title))
   }
 
   const openSections = ref<Set<number>>(
@@ -115,6 +133,9 @@
 
 <template>
   <nav aria-label="Table of Contents">
+    <p v-if="progressError" role="alert" class="mb-3 text-sm text-red-600">
+      Unable to load course progress. Please try again later.
+    </p>
     <div class="overflow-hidden rounded-xl border border-[#e5e7eb] bg-white shadow-xs">
       <section
         v-for="(section, sIndex) in bookSections"
@@ -159,11 +180,11 @@
                 v-for="(chapter, cIndex) in section.chapters"
                 :key="`chap-${sIndex}-${cIndex}`"
                 class="group sm:text-md flex items-center px-5 py-2.5 text-sm font-medium transition-colors hover:bg-gray-100 hover:outline-1 hover:outline-gray-400 sm:px-5 sm:py-3"
-                :class="chapter.read ? 'text-brand-500' : 'text-gray-700'"
+                :class="isChapterComplete(chapter.title) ? 'text-brand-500' : 'text-gray-700'"
               >
                 <IconCheckCircle
                   class="mr-2 h-4 w-4 text-xs sm:mr-3"
-                  :class="chapter.read ? 'text-brand-500' : 'text-gray-300'"
+                  :class="isChapterComplete(chapter.title) ? 'text-brand-500' : 'text-gray-300'"
                 />
                 {{ chapter.title }}
               </li>

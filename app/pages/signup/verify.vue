@@ -1,42 +1,42 @@
 <script setup lang="ts">
-import { z } from 'zod'
-import { authClient } from '../utils/auth-client'
+  import { z } from 'zod'
+  import { authClient } from '../../utils/auth-client'
 
-const route = useRoute()
-const toast = useToast()
+  const route = useRoute()
+  const toast = useToast()
 
-const email = computed(() => route.query.email as string)
-const name = computed(() => route.query.name as string)
-const phone = computed(() => route.query.phone as string)
+  const email = computed(() => route.query.email as string)
+  const name = computed(() => route.query.name as string)
+  const phone = computed(() => route.query.phone as string)
 
-const otp = ref<string[]>([])
+  const otp = ref<string[]>([])
 
-const schema = z.object({
-  otp: z.array(z.string()).length(6, 'Must be 6 digits'),
-})
-
-async function handleVerify() {
-  const { error } = await authClient.signIn.emailOtp({
-    email: email.value,
-    otp: otp.value.join(''),
-    name: name.value,
-    phoneNumber: phone.value,
+  const schema = z.object({
+    otp: z.array(z.string()).length(6, 'Must be 6 digits'),
   })
 
-  if (error) {
-    toast.add({ title: 'Error', description: error.message, color: 'error' })
-  } else {
-    await navigateTo('/', { external: true })
-  }
-}
+  async function handleVerify() {
+    const { error } = await authClient.signIn.emailOtp({
+      email: email.value,
+      otp: otp.value.join(''),
+      name: name.value,
+      phoneNumber: phone.value,
+    })
 
-function goBack() {
-  navigateTo('/auth') 
-}
+    if (error) {
+      toast.add({ title: 'Error', description: error.message, color: 'error' })
+    } else {
+      await navigateTo('/dashboard')
+    }
+  }
+
+  function goBack() {
+    navigateTo('/signup')
+  }
 </script>
 
 <template>
-  <div class="flex min-h-[calc(100vh-4rem)] items-center justify-center px-4 py-12">
+  <div class="flex min-h-[calc(100vh-4rem)] items-center justify-center px-4 py-12 text-black">
     <div class="w-full max-w-md">
       <div class="mb-10 text-center">
         <div class="mb-2 flex items-center justify-center gap-1">
@@ -59,7 +59,7 @@ function goBack() {
               otp
               :length="6"
               size="lg"
-              class="flex w-full items-center justify-center"
+              class="otp-input flex w-full items-center justify-center"
             />
           </UFormField>
 
@@ -82,3 +82,11 @@ function goBack() {
     </div>
   </div>
 </template>
+
+<style scoped>
+  .otp-input :deep(input) {
+    color: #000 !important;
+    -webkit-text-fill-color: #000;
+    caret-color: #000;
+  }
+</style>

@@ -2,8 +2,8 @@
 //
 // A component test for the application shell (app/app.vue). It renders the real
 // component in the Nuxt environment, stubs out page routing, and proves the two
-// always-present pieces of the shell work: the brand link points home, and the
-// theme toggle is reachable by assistive technology.
+// always-present pieces of the shell work: the logo links home, and the main
+// navigation exposes the dashboard route.
 //
 // This test never opens the database, reads an env file, sends email, or makes a
 // network request. Those integrations are intentionally out of scope for the
@@ -27,28 +27,24 @@ describe('application shell (app.vue)', () => {
     fetchSpy.mockRestore()
   })
 
-  it('links the brand to the home route', async () => {
+  it('links the logo to the home route', async () => {
     // Act: mount the shell, stubbing <NuxtPage /> so no page/route is loaded.
     const wrapper = await mountSuspended(App, {
       global: { stubs: { NuxtPage: true } },
     })
 
-    // Assert: the brand link shows "Nuxt Template" and targets "/".
-    const brandLink = wrapper.get('a')
-    expect(brandLink.text()).toContain('Nuxt Template')
-    expect(brandLink.attributes('href')).toBe('/')
+    const logoLink = wrapper.get('a[href="/"]')
+    expect(logoLink.get('img').attributes('alt')).toBe('Stronger Women')
     expect(fetchSpy).not.toHaveBeenCalled()
   })
 
-  it('exposes an accessible "Toggle Theme" control', async () => {
-    // Act
+  it('exposes the dashboard in the main navigation', async () => {
     const wrapper = await mountSuspended(App, {
       global: { stubs: { NuxtPage: true } },
     })
 
-    // Assert: the theme toggle is present and labelled for screen readers.
-    const toggle = wrapper.find('[aria-label="Toggle Theme"]')
-    expect(toggle.exists()).toBe(true)
+    const mainNavigation = wrapper.get('nav[aria-label="Main navigation"]')
+    expect(mainNavigation.get('a[href="/dashboard"]').text()).toBe('Dashboard')
     expect(fetchSpy).not.toHaveBeenCalled()
   })
 })

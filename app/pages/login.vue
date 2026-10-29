@@ -31,7 +31,7 @@ function goBack() {
 </script>
 
 <template>
-  <div class="flex min-h-[calc(100vh-4rem)] items-center justify-center px-4 py-12">
+  <div class="flex min-h-[calc(100vh-4rem)] items-center justify-center px-4 py-12 text-black">
     <div class="w-full max-w-md">
       <!-- logo header ... -->
       <div class="rounded-2xl border border-gray-100 bg-white p-10 shadow-2xl shadow-brand-500/20">
@@ -47,7 +47,7 @@ function goBack() {
               otp
               :length="6"
               size="lg"
-              class="flex w-full items-center justify-center"
+              class="otp-input flex w-full items-center justify-center"
             />
           </UFormField>
 
@@ -70,3 +70,11 @@ function goBack() {
     </div>
   </div>
 </template>
+
+<style scoped>
+  .otp-input :deep(input) {
+    color: #000 !important;
+    -webkit-text-fill-color: #000;
+    caret-color: #000;
+  }
+</style>
