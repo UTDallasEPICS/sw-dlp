@@ -15,7 +15,9 @@ export default defineEventHandler(async (event) => {
     .from(CourseTitles)
     .orderBy(sql`${CourseTitles}.rowid`)
 
-  const chapters = await db.select({ name: chapter.name, slug: chapter.slug }).from(chapter)
+  const chapters = await db
+    .select({ id: chapter.id, name: chapter.name, slug: chapter.slug })
+    .from(chapter)
   const normalize = (value: string) =>
     value
       .normalize('NFKC')
@@ -43,6 +45,7 @@ export default defineEventHandler(async (event) => {
         chapters.find((entry) => normalize(entry.name) === normalize(title))
 
       return {
+        id: match?.id ?? null,
         title,
         slug: match ? match.slug.replaceAll('_', '-').toLowerCase() : null,
       }

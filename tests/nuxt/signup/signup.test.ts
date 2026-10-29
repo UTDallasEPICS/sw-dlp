@@ -2,7 +2,7 @@
 
 import { describe, it, expect, vi, beforeEach } from 'vitest'
 import { mountSuspended, mockNuxtImport, registerEndpoint } from '@nuxt/test-utils/runtime'
-import Signup from '../../../app/pages/signup.vue'
+import Signup from '../../../app/pages/signup/verify.vue'
 
 // Mock functions
 const mocks = vi.hoisted(() => ({
@@ -45,7 +45,7 @@ describe('Signup Page', () => {
   // Test 2: Email address
   it('displays the user email address', async () => {
     const wrapper = await mountSuspended(Signup, {
-      route: '/signup?email=sally@example.com',
+      route: '/signup/verify?email=sally@example.com',
     })
 
     expect(wrapper.text()).toContain('sally@example.com')
@@ -68,7 +68,7 @@ describe('Signup Page', () => {
   // Test 5: OTP and account information
   it('submits the OTP and user information', async () => {
     const wrapper = await mountSuspended(Signup, {
-      route: '/signup?email=sally@example.com&name=Sally&phone=1234567890',
+      route: '/signup/verify?email=sally@example.com&name=Sally&phone=1234567890',
     })
 
     await wrapper.findComponent({ name: 'UPinInput' }).setValue(['1', '2', '3', '4', '5', '6'])
@@ -86,9 +86,9 @@ describe('Signup Page', () => {
   })
 
   // Test 6: Successful signup
-  it('redirects home after successful verification', async () => {
+  it('redirects to the dashboard after successful verification', async () => {
     const wrapper = await mountSuspended(Signup, {
-      route: '/signup?email=sally@example.com',
+      route: '/signup/verify?email=sally@example.com',
     })
 
     await wrapper.findComponent({ name: 'UPinInput' }).setValue(['1', '2', '3', '4', '5', '6'])
@@ -96,9 +96,7 @@ describe('Signup Page', () => {
     await wrapper.find('form').trigger('submit')
 
     await vi.waitFor(() => {
-      expect(mocks.navigate).toHaveBeenCalledWith('/', {
-        external: true,
-      })
+      expect(mocks.navigate).toHaveBeenCalledWith('/dashboard')
     })
   })
 
@@ -109,7 +107,7 @@ describe('Signup Page', () => {
     })
 
     const wrapper = await mountSuspended(Signup, {
-      route: '/signup?email=sally@example.com',
+      route: '/signup/verify?email=sally@example.com',
     })
 
     await wrapper.findComponent({ name: 'UPinInput' }).setValue(['1', '2', '3', '4', '5', '6'])
@@ -131,6 +129,6 @@ describe('Signup Page', () => {
 
     await wrapper.get('button[type="button"]').trigger('click')
 
-    expect(mocks.navigate).toHaveBeenCalledWith('/auth')
+    expect(mocks.navigate).toHaveBeenCalledWith('/signup')
   })
 })

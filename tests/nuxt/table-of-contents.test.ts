@@ -5,8 +5,16 @@ import { mount, flushPromises } from '@vue/test-utils'
 import { ref } from 'vue'
 import TableOfContents from '../../app/components/TableOfContents.vue'
 
-const { fetchCatalogue } = vi.hoisted(() => ({ fetchCatalogue: vi.fn() }))
-mockNuxtImport('useFetch', () => fetchCatalogue)
+const { fetchCatalogue, fetchProgress } = vi.hoisted(() => ({
+  fetchCatalogue: vi.fn(),
+  fetchProgress: vi.fn(),
+}))
+mockNuxtImport(
+  'useFetch',
+  () =>
+    (...args: unknown[]) =>
+      args[0] === '/api/userlessons' ? fetchProgress(...args) : fetchCatalogue(...args)
+)
 mockComponent('NuxtLink', () => ({ props: ['to'], template: '<a :href="to"><slot /></a>' }))
 async function mountCatalogue() {
   const wrapper = mount({
@@ -18,12 +26,13 @@ async function mountCatalogue() {
 }
 describe('database course catalogue', () => {
   beforeEach(() => {
+    fetchProgress.mockReturnValue({ data: ref({ chapters: [] }), error: ref(null) })
     fetchCatalogue.mockReturnValue({
       data: ref([
         {
           id: 'section-id',
           title: 'Database section',
-          chapters: [{ title: 'Database chapter', slug: 'chapter-1' }],
+          chapters: [{ id: 'chapter-id', title: 'Database chapter', slug: 'chapter-1' }],
         },
       ]),
       status: ref('success'),
@@ -49,6 +58,27 @@ describe('database course catalogue', () => {
     const wrapper = await mountCatalogue()
     expect(wrapper.text()).toContain('No chapters are available yet.')
     expect(wrapper.find('li').exists()).toBe(false)
+  })
+
+  it('combines database chapter links with completion progress by chapter ID', async () => {
+    fetchProgress.mockReturnValue({
+      data: ref({
+        chapters: [{ id: 'chapter-id', name: 'Different stored name', completed: true }],
+      }),
+      error: ref(null),
+    })
+    const wrapper = await mountCatalogue()
+    expect(wrapper.get('li').classes()).toContain('text-brand-500')
+    expect(wrapper.get('li a').attributes('href')).toBe('/chapters/chapter-1')
+    expect(wrapper.get('h2 button').attributes('aria-expanded')).toBe('false')
+  })
+
+  it('keeps the database catalogue visible if progress fails', async () => {
+    fetchProgress.mockReturnValue({ data: ref(null), error: ref(new Error('Unavailable')) })
+    const wrapper = await mountCatalogue()
+    expect(wrapper.get('[role="alert"]').text()).toContain('Unable to load course progress.')
+    expect(wrapper.get('li a').text()).toBe('Database chapter')
+    expect(wrapper.get('li').classes()).toContain('text-gray-700')
   })
 
   it('offers a retry when fetching fails', async () => {
