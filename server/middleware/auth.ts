@@ -4,16 +4,6 @@ import { auth } from '~~/server/utils/auth'
 // endpoints (sign-in, email OTP, get-session, etc.) live under /api/auth.
 const PUBLIC_PREFIXES = ['/api/auth', '/api/health', '/api/_nuxt_icon', '/api/users/signup']
 
-// Make the resolved session available to every downstream handler so routes
-// can read event.context.user / event.context.session instead of calling
-// auth.api.getSession() themselves.
-declare module 'h3' {
-  interface H3EventContext {
-    user?: typeof auth.$Infer.Session.user
-    session?: typeof auth.$Infer.Session.session
-  }
-}
-
 export default defineEventHandler(async (event) => {
   // Only guard server API routes. Page navigation and assets are handled by
   // the client route middleware (app/middleware/auth.global.ts).

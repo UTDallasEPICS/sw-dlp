@@ -1,7 +1,15 @@
 <script setup lang="ts">
   import { authClient } from '../utils/auth-client'
 
-  const { data: users, pending, error } = await useFetch('/api/users')
+  interface User {
+    id: string
+    email: string
+    name: string
+    emailVerified: boolean
+    image: boolean
+  }
+
+  const { data: users, pending, error } = await useFetch<User[]>('/api/users')
 
   const selectedFile = ref<File | null>(null)
   const imagePreview = ref<string>('')
@@ -13,7 +21,7 @@
     await navigateTo('/auth', { external: true })
   }
 
-  function getImageLink(user: { image: boolean; id: string }) {
+  function getImageLink(user: User) {
     return user.image ? 'api/users/' + user.id + '/profile' : undefined
   }
 
