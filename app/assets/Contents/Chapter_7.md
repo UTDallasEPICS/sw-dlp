@@ -6,6 +6,58 @@ videos:
   
   - videoUrl: https://youtu.be/qH3SP9dOpvc
     videoTitle: The Sorry Cup Challenge
+
+activity:
+  title: Chapter 7 Activity
+  questions:
+    - id: q1
+      type: mcq
+      prompt: "What does the chapter describe as \"inner music\"?"
+      options:
+        - id: "a"
+          label: "Music that helps you relax"
+        - id: "b"
+          label: "Automatic thoughts and self-talk that repeat in your mind"
+        - id: "c"
+          label: "Songs associated with childhood memories"
+        - id: "d"
+          label: "Conversations with other people"
+      correctOptionId: ["b"]
+      description: "Inner music describes automatic thoughts and self-talk that repeat in your mind and influence your self-belief."
+
+    - id: q2
+      type: mcq
+      prompt: "What is the purpose of positive affirmations?"
+      options:
+        - id: "a"
+          label: "To ignore difficult emotions"
+        - id: "b"
+          label: "To gain approval from others"
+        - id: "c"
+          label: "To change how you view yourself and build self-esteem"
+        - id: "d"
+          label: "To avoid making mistakes"
+      correctOptionId: ["c"]
+      description: "Positive affirmations help change how you view yourself and build self-esteem through encouraging self-talk."
+
+    - id: q3
+      type: mcq
+      prompt: "Negative self-talk can become automatic and go unnoticed because it often begins in childhood."
+      options:
+        - id: "a"
+          label: "True"
+        - id: "b"
+          label: "False"
+      correctOptionId: ["a"]
+      description: "Negative self-talk often begins in childhood and can repeat automatically without being noticed."
+
+    - id: q4
+      type: short_answer
+      prompt: "How can changing your inner music help improve your self-esteem?"
+
+    - id: q5
+      type: short_answer
+      prompt: "Write one example of negative self-talk and explain how you could turn it into a positive affirmation."
 ---
 
 # Chapter 7: Inner Music

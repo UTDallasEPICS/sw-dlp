@@ -3,6 +3,58 @@ title: Chapter 11
 videos:
   - videoUrl: https://youtu.be/xW0Z2O1qSSc
     videoTitle: Chapter 11 Self Esteem
+
+activity:
+  title: Chapter 11 Activity
+  questions:
+    - id: q1
+      type: mcq
+      prompt: "How does the chapter define self-esteem?"
+      options:
+        - id: "a"
+          label: "The amount of approval someone receives from others"
+        - id: "b"
+          label: "A person's perception or emotional point of view of themselves"
+        - id: "c"
+          label: "The ability to succeed without making mistakes"
+        - id: "d"
+          label: "A person's physical appearance"
+      correctOptionId: ["b"]
+      description: "Self-esteem is a person's perception or emotional point of view of themselves."
+
+    - id: q2
+      type: mcq
+      prompt: "According to the chapter's self-esteem assessment, which of the following reflects healthy self-respect?"
+      options:
+        - id: "a"
+          label: "Feeling confident and competent"
+        - id: "b"
+          label: "Depending entirely on others for approval"
+        - id: "c"
+          label: "Avoiding responsibility for mistakes"
+        - id: "d"
+          label: "Believing your needs are less important than everyone else's"
+      correctOptionId: ["a"]
+      description: "Feeling confident and competent reflects healthy self-respect rather than dependence on others' approval."
+
+    - id: q3
+      type: mcq
+      prompt: "The chapter teaches that self-esteem can be restored even after years of abuse."
+      options:
+        - id: "a"
+          label: "True"
+        - id: "b"
+          label: "False"
+      correctOptionId: ["a"]
+      description: "The chapter teaches that self-esteem can be restored and strengthened even after years of abuse."
+
+    - id: q4
+      type: short_answer
+      prompt: "What is the difference between self-respect and seeking respect or approval from others?"
+
+    - id: q5
+      type: short_answer
+      prompt: "What are two healthy ways someone can begin rebuilding their self-esteem?"
 ---
 
 # Chapter 11: Self-esteem Defined

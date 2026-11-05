@@ -3,6 +3,58 @@ title: Chapter 8
 videos:
   - videoUrl: https://youtu.be/cVVAaP0nEaU
     videoTitle: Chapter 8 Emotives
+
+activity:
+  title: Chapter 8 Activity
+  questions:
+    - id: q1
+      type: mcq
+      prompt: "What is a communication \"hook\"?"
+      options:
+        - id: "a"
+          label: "A way to begin a friendly conversation"
+        - id: "b"
+          label: "Something someone says or does that triggers an automatic emotional reaction"
+        - id: "c"
+          label: "A method for memorizing conversations"
+        - id: "d"
+          label: "A technique for avoiding all disagreements"
+      correctOptionId: ["b"]
+      description: "A communication hook triggers an automatic emotional reaction through something another person says or does."
+
+    - id: q2
+      type: mcq
+      prompt: "According to the chapter, which response demonstrates communication from the Adult state?"
+      options:
+        - id: "a"
+          label: "Reacting with anger and blaming others"
+        - id: "b"
+          label: "Refusing to listen to another person"
+        - id: "c"
+          label: "Responding calmly and focusing on the situation without emotional blame"
+        - id: "d"
+          label: "Bringing up past disagreements"
+      correctOptionId: ["c"]
+      description: "Communicating from the Adult state means responding calmly to the situation rather than reacting with emotional blame."
+
+    - id: q3
+      type: mcq
+      prompt: "Recognizing your automatic emotional responses can help you begin changing unhealthy communication patterns."
+      options:
+        - id: "a"
+          label: "True"
+        - id: "b"
+          label: "False"
+      correctOptionId: ["a"]
+      description: "Recognizing automatic emotional responses is a first step toward changing unhealthy communication patterns."
+
+    - id: q4
+      type: short_answer
+      prompt: "What can you do when you recognize that someone has triggered a communication hook?"
+
+    - id: q5
+      type: short_answer
+      prompt: "Why is it important to recognize repeated communication patterns in relationships?"
 ---
 
 # Chapter 8: Communication Hooks, Medical Impact

@@ -3,6 +3,58 @@ title: Chapter 9
 videos:
   - videoUrl: https://youtu.be/Dw9vtTNxPKw
     videoTitle: Chapter 9 From Powerless to Powerful
+
+activity:
+  title: Chapter 9 Activity
+  questions:
+    - id: q1
+      type: mcq
+      prompt: "According to the chapter, what can happen when a person experiences abuse repeatedly?"
+      options:
+        - id: "a"
+          label: "Their understanding of acceptable behavior may gradually shift"
+        - id: "b"
+          label: "They automatically become more confident"
+        - id: "c"
+          label: "They stop experiencing emotional pain"
+        - id: "d"
+          label: "They immediately recognize every unhealthy behavior"
+      correctOptionId: ["a"]
+      description: "Repeated abuse can gradually shift a person's understanding of acceptable behavior and lead them to tolerate harmful treatment."
+
+    - id: q2
+      type: mcq
+      prompt: "According to the chapter, which question should people focus on instead of asking why someone stays in an abusive relationship?"
+      options:
+        - id: "a"
+          label: "Why don't they forgive sooner?"
+        - id: "b"
+          label: "Why do they abuse?"
+        - id: "c"
+          label: "Why don't they change their personality?"
+        - id: "d"
+          label: "Why don't they forget the past?"
+      correctOptionId: ["b"]
+      description: "The chapter shifts attention from blaming someone for staying to asking why the other person abuses."
+
+    - id: q3
+      type: mcq
+      prompt: "The chapter explains that isolation from friends and family can make it harder for someone experiencing abuse to recognize the reality of their situation."
+      options:
+        - id: "a"
+          label: "True"
+        - id: "b"
+          label: "False"
+      correctOptionId: ["a"]
+      description: "Isolation from friends and family can make it harder to recognize abuse and gain outside perspective."
+
+    - id: q4
+      type: short_answer
+      prompt: "How can repeated abuse affect someone's understanding of what is normal in a relationship?"
+
+    - id: q5
+      type: short_answer
+      prompt: "What does the chapter teach about forgiveness and moving forward from past hurts?"
 ---
 
 # Chapter 9: Powerless, Forgiveness, Bitterness

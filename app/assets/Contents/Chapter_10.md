@@ -3,6 +3,58 @@ title: Chapter 10
 videos:
   - videoUrl: https://youtu.be/VNdT6psdDm8
     videoTitle: Chapter 10 Self Esteem Defined
+
+activity:
+  title: Chapter 10 Activity
+  questions:
+    - id: q1
+      type: mcq
+      prompt: "Which of the following is an example of financial abuse?"
+      options:
+        - id: "a"
+          label: "Discussing household expenses together"
+        - id: "b"
+          label: "Encouraging a partner to pursue employment"
+        - id: "c"
+          label: "Restricting a partner's access to money or preventing them from working"
+        - id: "d"
+          label: "Making financial decisions together"
+      correctOptionId: ["c"]
+      description: "Restricting access to money or preventing a partner from working are examples of financial abuse."
+
+    - id: q2
+      type: mcq
+      prompt: "According to the Cycle of Violence model discussed in the chapter, what are the three basic phases?"
+      options:
+        - id: "a"
+          label: "Conflict, separation, and recovery"
+        - id: "b"
+          label: "Tension building, acting out, and reconciliation/honeymoon"
+        - id: "c"
+          label: "Anger, forgiveness, and friendship"
+        - id: "d"
+          label: "Disagreement, communication, and resolution"
+      correctOptionId: ["b"]
+      description: "The three basic phases are tension building, acting out, and reconciliation or honeymoon."
+
+    - id: q3
+      type: mcq
+      prompt: "The chapter explains that physical abuse can include indirect actions, such as destroying belongings or abusing pets."
+      options:
+        - id: "a"
+          label: "True"
+        - id: "b"
+          label: "False"
+      correctOptionId: ["a"]
+      description: "The chapter includes indirect actions such as destroying belongings or abusing pets as forms of physical abuse."
+
+    - id: q4
+      type: short_answer
+      prompt: "What are two characteristics of a healthy relationship discussed in the chapter?"
+
+    - id: q5
+      type: short_answer
+      prompt: "Why is creating a safety plan important for someone experiencing abuse?"
 ---
 
 # Chapter 10: Types of Abuse, Cycles, Safety, Legal
