@@ -1,5 +1,57 @@
 ---
 title: Chapter 14
+
+activity:
+  title: Chapter 14 Activity
+  questions:
+    - id: q1
+      type: short_answer
+      prompt: "Spending time on getting to know you is the best foundation you can set for your future. Describe your favorite daily habits or rituals."
+
+    - id: q2
+      type: short_answer
+      prompt: "When it feels good for you – do it. When it does not feel good – do not do it.” God made your body to work to communicate in a way so you can listen for messages and trust your inner wisdom. Know when something feels good or not to you before saying yes. Describe a time when you listened to your inner voice or chose to distance yourself from a situation or person, and later realized that your decision helped protect you from harm."
+
+    - id: q3
+      type: mcq
+      prompt: "According to Chapter 14, what does creating a “personal gyroscope” represent?"
+      options:
+        - id: "a"
+          label: "Learning to follow other people's decisions"
+        - id: "b"
+          label: "Avoiding challenges and difficult situations"
+        - id: "c"
+          label: "Developing the confidence and direction to stay on course despite life's challenges"
+        - id: "d"
+          label: "Changing your goals whenever difficulties arise"
+      correctOptionIds: ["c"]
+      description: "It is a device that once it spins, it tends to resist changes to its orientation. Learn to have the self-confidence to allow you the ability to resist being thrown off course."
+
+    - id: q4
+      type: mcq
+      prompt: "Building a support system of trusted friends, family, and community members can help with healing."
+      options:
+        - id: "a"
+          label: "True"
+        - id: "b"
+          label: "False"
+      correctOptionIds: ["a"]
+      description: "Girl to Girl Rule #7 emphasizes accepting help and building healthy support networks."
+
+    - id: q5
+      type: mcq
+      prompt: "According to the “Girl to Girl Rules,” what should you do if you experience a setback during your healing journey?"
+      options:
+        - id: "a"
+          label: "Give up on your goals"
+        - id: "b"
+          label: "Feel ashamed of your mistakes"
+        - id: "c"
+          label: "Ignore the setback completely"
+        - id: "d"
+          label: "Regroup, learn from the experience, and try again"
+      correctOptionIds: ["d"]
+      description: "Girl to Girl Rule #6 teaches that setbacks are a normal part of the healing journey and that you should keep moving forward rather than give up."
 ---
 
 # Chapter 14: Seven Ingredients of Perfection, #3 Soul, #4 Mind

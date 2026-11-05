@@ -1,5 +1,64 @@
 ---
 title: Chapter 15
+
+activity:
+  title: Chapter 15 Activity
+  questions:
+    - id: q1
+      type: short_answer
+      prompt: "Reflect on your personal growth. What new things have you learned about yourself throughout your healing journey? Think about your strengths, accomplishments, and the things you are now capable of doing. List five things you have learned about yourself or can now confidently say, “I CAN.”"
+
+    - id: q2
+      type: mcq
+      prompt: "You should ignore uncomfortable feelings or concerns about a new relationship if the other person seems loving."
+      options:
+        - id: "a"
+          label: "True"
+        - id: "b"
+          label: "False"
+      correctOptionIds: ["b"]
+      description: "This chapter encourages paying attention to concerns, taking time to observe behavior, and maintaining personal boundaries."
+
+    - id: q3
+      type: mcq
+      prompt: "What does Chapter 15 encourage you to do before entering a new relationship?"
+      options:
+        - id: "a"
+          label: "Commit immediately to avoid losing the opportunity"
+        - id: "b"
+          label: "Ignore concerns if you have strong feelings"
+        - id: "c"
+          label: "Change your personal values to match your partner's"
+        - id: "d"
+          label: "Identify your values, boundaries, and expectations for a healthy relationship"
+      correctOptionIds: ["d"]
+      description: "Develop a solid foundation of self-purpose, values, and acceptable behaviors before entering a new relationship."
+
+    - id: q4
+      type: mcq
+      prompt: "A partner who constantly checks your messages, demands passwords, or isolates you from loved ones may be showing warning signs of controlling behavior."
+      options:
+        - id: "a"
+          label: "True"
+        - id: "b"
+          label: "False"
+      correctOptionIds: ["a"]
+      description: "These are some relationship warning signs identified in Girl to Girl advice."
+
+    - id: q5
+      type: mcq
+      prompt: "Which of the following is a sign of a healthy relationship?"
+      options:
+        - id: "a"
+          label: "One person makes all the decisions"
+        - id: "b"
+          label: "Both individuals respect each other's boundaries, feelings, and independence"
+        - id: "c"
+          label: "One person must constantly seek permission"
+        - id: "d"
+          label: "A partner discourages personal growth"
+      correctOptionIds: ["b"]
+      description: "This chapter emphasizes that both individuals should feel respected, have their boundaries honored, and be encouraged to grow as individuals."
 ---
 
 # Chapter 15: Seven Ingredients, #5 Words, #6 Lessons, #7 Relationships

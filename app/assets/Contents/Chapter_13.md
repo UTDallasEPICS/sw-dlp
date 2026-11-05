@@ -1,5 +1,50 @@
 ---
 title: Chapter 13
+
+activity:
+  title: Chapter 13 Activity
+  questions:
+    - id: q1
+      type: short_answer
+      prompt: "Our burdens can feel so heavy. We carry them around unaware that God’s promise is that he will carry those burdens for us. All we have to do is give them away. Describe the burdens you are carrying right now."
+
+    - id: q2
+      type: mcq
+      prompt: "What common message is shared in Isaiah 40:27-31, Psalm 121, and Matthew 11:28–30?"
+      options:
+        - id: "a"
+          label: "We must overcome every challenge without assistance."
+        - id: "b"
+          label: "Strength comes only from physical endurance."
+        - id: "c"
+          label: "Difficult experiences should always be ignored."
+        - id: "d"
+          label: "God offers strength, protection, and comfort during difficult times."
+      correctOptionIds: ["d"]
+      description: "These scriptures emphasize trusting God for strength, protection, and support when facing life's challenges."
+
+    - id: q3
+      type: short_answer
+      prompt: "Think about your five senses: sight, sound, smell, taste, and touch. What is one small change you can make using any of these senses to improve your daily well-being?"
+
+    - id: q4
+      type: mcq
+      prompt: "What does Chapter 13 teach about respecting and caring for your body?"
+      options:
+        - id: "a"
+          label: "Self-care is an important part of rebuilding self-respect and well-being"
+        - id: "b"
+          label: "Physical appearance determines personal worth"
+        - id: "c"
+          label: "Taking care of others should always come before personal needs"
+        - id: "d"
+          label: "Healthy habits are only useful after completing the healing journey"
+      correctOptionIds: ["a"]
+      description: "The Power of Your Body emphasizes healthy habits, self-love, and treating your body with respect."
+
+    - id: q5
+      type: short_answer
+      prompt: "What would you like to accomplish now that you are beginning to let go of your burdens?"
 ---
 
 # Chapter 13: Seven Ingredients to Perfection, #1 God, #2 Body

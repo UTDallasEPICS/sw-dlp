@@ -15,7 +15,7 @@ activity:
         - id: "c"
           label: "Rarely / Never"
       correctOptionIds: none
-      description: none
+      description: null
 
     - id: q2
       type: mcq
@@ -28,7 +28,7 @@ activity:
         - id: "c"
           label: "Rarely / Never"
       correctOptionIds: none
-      description: none
+      description: null
     
     - id: q3
       type: mcq
@@ -41,7 +41,7 @@ activity:
         - id: "c"
           label: "Unsure"
       correctOptionIds: none
-      description: none
+      description: null
 
     - id: q4
       type: short_answer
