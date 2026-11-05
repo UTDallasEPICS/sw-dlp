@@ -10,7 +10,7 @@ activity:
 
     - id: q2
       type: short_answer
-      prompt: "When it feels good for you – do it. When it does not feel good – do not do it.” God made your body to work to communicate in a way so you can listen for messages and trust your inner wisdom. Know when something feels good or not to you before saying yes. Describe a time when you listened to your inner voice or chose to distance yourself from a situation or person, and later realized that your decision helped protect you from harm."
+      prompt: "When it feels good for you – do it. When it does not feel good – do not do it. God made your body to work to communicate in a way so you can listen for messages and trust your inner wisdom. Know when something feels good or not to you before saying yes. Describe a time when you listened to your inner voice or chose to distance yourself from a situation or person, and later realized that your decision helped protect you from harm."
 
     - id: q3
       type: mcq
