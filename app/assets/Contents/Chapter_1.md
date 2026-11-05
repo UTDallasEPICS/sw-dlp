@@ -3,6 +3,51 @@ title: Chapter 1
 videos:
   - videoUrl: https://youtu.be/Hpx5dQBkaW0 
     videoTitle: Chapter 1 Espresso and You
+
+activity:
+  title: Chapter 1 Activity
+  questions:
+    - id: q1
+      type: short_answer
+      prompt: "Describe areas where you have further potential."
+
+    - id: q2
+      type: short_answer
+      prompt: "What would you change to improve your potential?"
+
+    - id: q3
+      type: short_answer
+      prompt: "What is the risk if you expect perfection of yourself?"
+
+    - id: q4
+      type: mcq
+      prompt: "Identify areas in your life where you demonstrate precision and dedication."
+      options:
+        - id: "a"
+          label: "Areas where you demonstrate precision and dedication"
+        - id: "b"
+          label: "Areas where you have already achieved a perfect espresso"
+        - id: "c"
+          label: "Areas where you avoid using any factors or variables"
+        - id: "d"
+          label: "Areas where you look for the quick and easy way out"
+      correctOptionIds: ["a"]
+      description: 
+
+    - id: q5
+      type: mcq
+      prompt: "Describe areas in your life where you are volatile and difficult."
+      options:
+        - id: "a"
+          label: "Areas where you are volatile and difficult"
+        - id: "b"
+          label: "Areas where everything is completely stable and predictable"
+        - id: "c"
+          label: "Areas where science has replaced the human mind"
+        - id: "d"
+          label: "Areas where you have successfully found a machine to brew perfection"
+      correctOptionIds: ["a"]   
+      description:  
 ---
 
 # Chapter 1: Espresso and You

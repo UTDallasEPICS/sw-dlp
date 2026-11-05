@@ -1,5 +1,57 @@
 ---
 title: Introduction
+
+activity:
+    title: Introduction Activity
+    questions:
+    - id: q1
+      type: mcq
+      prompt: "(Abusive or Not Abusive) Do you “stuff” your pain deep inside?"
+      options:
+        - id: "a"
+          label: "Yes, frequently"
+        - id: "b"
+          label: "Sometimes"
+        - id: "c"
+          label: "Rarely / Never"
+      correctOptionIds: none
+      description: none
+
+    - id: q2
+      type: mcq
+      prompt: "(Abusive or Not Abusive) Have you told lies to your family and friends about the relationship?"
+      options:
+        - id: "a"
+          label: "Yes, frequently"
+        - id: "b"
+          label: "Sometimes"
+        - id: "c"
+          label: "Rarely / Never"
+      correctOptionIds: none
+      description: none
+    
+    - id: q3
+      type: mcq
+      prompt: "Are you confused about why you keep repeating the same bad relationships?"
+      options:
+        - id: "a"
+          label: "Yes"
+        - id: "b"
+          label: "No"
+        - id: "c"
+          label: "Unsure"
+      correctOptionIds: none
+      description: none
+
+    - id: q4
+      type: short_answer
+      section: "Are you still in an abusive relationship?"
+      prompt: "Do you feel you can no longer continue to exist this way?"
+      
+    - id: q5
+      type: short_answer
+      section: "Are you out of the relationship, but still held captive by your past?"
+      prompt: "Do you struggle believing you are worthy of a new life?"
 ---
 
 ### You can be free
