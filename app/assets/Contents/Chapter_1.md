@@ -31,7 +31,7 @@ activity:
           label: "Cultivating a stronger mindset of daily resilience and self-advocacy"
         - id: "d"
           label: "Lowering my personal goals to avoid the possibility of failure"
-      correctOptionIds: ["c"]
+      correctOptionId: ["c"]
       description: "Building resilience and speaking up for oneself actively improves personal growth"
 
     - id: q5
@@ -46,7 +46,7 @@ activity:
           label: "Experiencing a life entirely free of conflict or friction"
         - id: "d"
           label: "Sustaining a completely stagnant and emotionless daily routine"
-      correctOptionIds: ["b"]   
+      correctOptionId: ["b"]   
       description: "Holding firm boundaries can sometimes feel challenging or intense to others during transitions."
 ---
 

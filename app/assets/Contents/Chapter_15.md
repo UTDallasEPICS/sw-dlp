@@ -16,7 +16,7 @@ activity:
           label: "True"
         - id: "b"
           label: "False"
-      correctOptionIds: ["b"]
+      correctOptionId: ["b"]
       description: "This chapter encourages paying attention to concerns, taking time to observe behavior, and maintaining personal boundaries."
 
     - id: q3
@@ -31,7 +31,7 @@ activity:
           label: "Change your personal values to match your partner's"
         - id: "d"
           label: "Identify your values, boundaries, and expectations for a healthy relationship"
-      correctOptionIds: ["d"]
+      correctOptionId: ["d"]
       description: "Develop a solid foundation of self-purpose, values, and acceptable behaviors before entering a new relationship."
 
     - id: q4
@@ -42,7 +42,7 @@ activity:
           label: "True"
         - id: "b"
           label: "False"
-      correctOptionIds: ["a"]
+      correctOptionId: ["a"]
       description: "These are some relationship warning signs identified in Girl to Girl advice."
 
     - id: q5
@@ -57,7 +57,7 @@ activity:
           label: "One person must constantly seek permission"
         - id: "d"
           label: "A partner discourages personal growth"
-      correctOptionIds: ["b"]
+      correctOptionId: ["b"]
       description: "This chapter emphasizes that both individuals should feel respected, have their boundaries honored, and be encouraged to grow as individuals."
 ---
 

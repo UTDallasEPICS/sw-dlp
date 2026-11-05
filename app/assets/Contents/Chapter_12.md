@@ -31,7 +31,7 @@ activity:
           label: "Listening to your instincts and recognizing what your body and mind need"
         - id: "d"
           label: "Avoiding situations that require personal decisions"
-      correctOptionIds: ["c"]
+      correctOptionId: ["c"]
       description: "Chapter 12 encourages listening to your inner wisdom, recognizing your needs, and making choices that support your well-being."
 
     - id: q5
@@ -46,7 +46,7 @@ activity:
           label: "Measuring your worth through other people's opinions"
         - id: "d"
           label: "Avoiding activities that feel unfamiliar"
-      correctOptionIds: ["b"]
+      correctOptionId: ["b"]
       description: "The chapter recommends journaling, recognizing natural talents, and reflecting on personal progress as ways to support self-esteem."
 ---
 
