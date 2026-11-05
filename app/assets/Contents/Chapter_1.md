@@ -13,7 +13,7 @@ activity:
 
     - id: q2
       type: short_answer
-      prompt: "What would you change to improve your potential?"
+      prompt: "Identify areas in your life where you demonstrate precision and dedication."
 
     - id: q3
       type: short_answer
@@ -21,33 +21,33 @@ activity:
 
     - id: q4
       type: mcq
-      prompt: "Identify areas in your life where you demonstrate precision and dedication."
+      prompt: "What would you change to improve your potential?"
       options:
         - id: "a"
-          label: "Areas where you demonstrate precision and dedication"
+          label: "Relying completely on external validation to define my self-worth"
         - id: "b"
-          label: "Areas where you have already achieved a perfect espresso"
+          label: "Eliminating all forms of constructive feedback from mentors"
         - id: "c"
-          label: "Areas where you avoid using any factors or variables"
+          label: "Cultivating a stronger mindset of daily resilience and self-advocacy"
         - id: "d"
-          label: "Areas where you look for the quick and easy way out"
-      correctOptionIds: ["a"]
-      description: 
+          label: "Lowering my personal goals to avoid the possibility of failure"
+      correctOptionIds: ["c"]
+      description: "Building resilience and speaking up for oneself actively improves personal growth"
 
     - id: q5
       type: mcq
       prompt: "Describe areas in your life where you are volatile and difficult."
       options:
         - id: "a"
-          label: "Areas where you are volatile and difficult"
+          label: "Achieving absolute harmony and predictable smoothness in every action"
         - id: "b"
-          label: "Areas where everything is completely stable and predictable"
+          label: "Navigating intense boundary-setting during high-stress personal transitions"
         - id: "c"
-          label: "Areas where science has replaced the human mind"
+          label: "Experiencing a life entirely free of conflict or friction"
         - id: "d"
-          label: "Areas where you have successfully found a machine to brew perfection"
-      correctOptionIds: ["a"]   
-      description:  
+          label: "Sustaining a completely stagnant and emotionless daily routine"
+      correctOptionIds: ["b"]   
+      description: "Holding firm boundaries can sometimes feel challenging or intense to others during transitions."
 ---
 
 # Chapter 1: Espresso and You
