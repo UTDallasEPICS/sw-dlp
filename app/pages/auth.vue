@@ -3,6 +3,7 @@
   import { authClient } from '../utils/auth-client'
 
   const toast = useToast()
+  const fieldError = ref<string>()
 
   const login = reactive({ email: '' })
 
@@ -11,13 +12,14 @@
   })
 
   async function handleLogin() {
+    fieldError.value = undefined
     const { error } = await authClient.emailOtp.sendVerificationOtp({
       email: login.email,
       type: 'sign-in',
     })
 
     if (error) {
-      toast.add({ title: 'Error', description: error.message, color: 'error' })
+      fieldError.value = error.message || 'Something went wrong. Please try again.'
     } else {
       toast.add({ title: 'Success', description: 'OTP sent to your email', color: 'success' })
       await navigateTo({
@@ -48,7 +50,7 @@
         <h2 class="mb-8 text-center text-xl font-semibold">Login</h2>
 
         <UForm :schema="loginSchema" :state="login" class="space-y-5" @submit="handleLogin">
-          <UFormField name="email">
+          <UFormField name="email" :error="fieldError">
             <UInput
               v-model="login.email"
               type="email"

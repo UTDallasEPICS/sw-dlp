@@ -8,7 +8,6 @@ import Signup from '../../../app/pages/signup/verify.vue'
 const mocks = vi.hoisted(() => ({
   verify: vi.fn(),
   navigate: vi.fn(),
-  toast: vi.fn(),
 }))
 
 // Mock authentication
@@ -20,11 +19,8 @@ vi.mock('../../../app/utils/auth-client', () => ({
   },
 }))
 
-// Mock navigation and notifications
+// Mock navigation
 mockNuxtImport('navigateTo', () => mocks.navigate)
-mockNuxtImport('useToast', () => () => ({
-  add: mocks.toast,
-}))
 
 // Mock session endpoint for authentication middleware
 registerEndpoint('/api/auth/get-session', () => null)
@@ -81,6 +77,7 @@ describe('Signup Page', () => {
         otp: '123456',
         name: 'Sally',
         phoneNumber: '1234567890',
+        fetchOptions: { headers: { 'x-auth-intent': 'signup' } },
       })
     })
   })
@@ -115,11 +112,7 @@ describe('Signup Page', () => {
     await wrapper.find('form').trigger('submit')
 
     await vi.waitFor(() => {
-      expect(mocks.toast).toHaveBeenCalledWith({
-        title: 'Error',
-        description: 'Invalid verification code',
-        color: 'error',
-      })
+      expect(wrapper.get('[data-slot="error"]').text()).toBe('Invalid verification code')
     })
   })
 

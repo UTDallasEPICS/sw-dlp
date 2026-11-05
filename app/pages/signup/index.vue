@@ -3,6 +3,7 @@
   import { authClient } from '../../utils/auth-client'
 
   const toast = useToast()
+  const fieldError = ref<string>()
   const signup = reactive({ name: '', email: '', phone: '' })
 
   const signupSchema = z.object({
@@ -12,13 +13,15 @@
   })
 
   async function handleSignup() {
+    fieldError.value = undefined
     const { error } = await authClient.emailOtp.sendVerificationOtp({
       email: signup.email,
       type: 'sign-in',
+      fetchOptions: { headers: { 'x-auth-intent': 'signup' } },
     })
 
     if (error) {
-      toast.add({ title: 'Error', description: error.message, color: 'error' })
+      fieldError.value = error.message || 'Something went wrong. Please try again.'
     } else {
       toast.add({ title: 'Success', description: 'OTP sent to your email', color: 'success' })
       await navigateTo({
@@ -60,7 +63,7 @@
               :ui="inputUi"
             />
           </UFormField>
-          <UFormField name="email">
+          <UFormField name="email" :error="fieldError">
             <UInput
               v-model="signup.email"
               type="email"

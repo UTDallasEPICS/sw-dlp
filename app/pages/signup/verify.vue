@@ -3,7 +3,7 @@
   import { authClient } from '../../utils/auth-client'
 
   const route = useRoute()
-  const toast = useToast()
+  const fieldError = ref<string>()
 
   const email = computed(() => route.query.email as string)
   const name = computed(() => route.query.name as string)
@@ -16,15 +16,17 @@
   })
 
   async function handleVerify() {
+    fieldError.value = undefined
     const { error } = await authClient.signIn.emailOtp({
       email: email.value,
       otp: otp.value.join(''),
       name: name.value,
       phoneNumber: phone.value,
+      fetchOptions: { headers: { 'x-auth-intent': 'signup' } },
     })
 
     if (error) {
-      toast.add({ title: 'Error', description: error.message, color: 'error' })
+      fieldError.value = error.message || 'Something went wrong. Please try again.'
     } else {
       await navigateTo('/dashboard')
     }
@@ -53,7 +55,7 @@
         </p>
 
         <UForm :schema="schema" :state="{ otp }" class="space-y-6" @submit="handleVerify">
-          <UFormField name="otp">
+          <UFormField name="otp" :error="fieldError">
             <UPinInput
               v-model="otp"
               otp

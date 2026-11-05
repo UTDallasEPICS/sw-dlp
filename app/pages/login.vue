@@ -3,7 +3,7 @@ import { z } from 'zod'
 import { authClient } from '../utils/auth-client'
 
 const route = useRoute()
-const toast = useToast()
+const fieldError = ref<string>()
 
 const email = computed(() => route.query.email as string)
 const otp = ref<string[]>([])
@@ -13,13 +13,14 @@ const schema = z.object({
 })
 
 async function handleVerify() {
+  fieldError.value = undefined
   const { error } = await authClient.signIn.emailOtp({
     email: email.value,
     otp: otp.value.join(''),
   })
 
   if (error) {
-    toast.add({ title: 'Error', description: error.message, color: 'error' })
+    fieldError.value = error.message || 'Something went wrong. Please try again.'
   } else {
     await navigateTo('/dashboard')
   }
@@ -41,7 +42,7 @@ function goBack() {
         </p>
 
         <UForm :schema="schema" :state="{ otp }" class="space-y-6" @submit="handleVerify">
-          <UFormField name="otp">
+          <UFormField name="otp" :error="fieldError">
             <UPinInput
               v-model="otp"
               otp
