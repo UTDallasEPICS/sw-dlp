@@ -3,6 +3,58 @@ title: Chapter 5
 videos:
   - videoUrl: https://youtu.be/putepofg-pg
     videoTitle: Chapter 5 Reoccurring Themes
+
+activity:
+  title: Chapter 5 Activity
+  questions:
+    - id: q1
+      type: mcq
+      prompt: 'According to Chapter 5, recurring negative self-talk can affect which areas of your life?'
+      options:
+        - id: 'a'
+          label: 'Only your physical appearance'
+        - id: 'b'
+          label: 'Your self-esteem, relationships, and boundaries'
+        - id: 'c'
+          label: 'Only your daily schedule'
+        - id: 'd'
+          label: 'Only your financial decisions'
+      correctOptionId: 'b'
+      description: 'Recurring negative self-talk can affect how individuals view themselves, interact with others, and establish healthy boundaries.'
+
+    - id: q2
+      type: short_answer
+      prompt: 'Identify one area of your life where you would like to see a different outcome. What is one new approach you could try?'
+
+    - id: q3
+      type: mcq
+      prompt: 'Repeating the same behaviors without making changes is likely to produce different results.'
+      options:
+        - id: 'a'
+          label: 'True'
+        - id: 'b'
+          label: 'False'
+      correctOptionId: 'b'
+      description: 'Repeating the same behaviors without making changes often leads to similar outcomes. Breaking unhealthy patterns requires recognizing them and trying different approaches.'
+
+    - id: q4
+      type: mcq
+      prompt: 'What is an important first step toward changing recurring unhealthy patterns?'
+      options:
+        - id: 'a'
+          label: 'Recognizing and acknowledging those patterns'
+        - id: 'b'
+          label: 'Pretending the patterns do not exist'
+        - id: 'c'
+          label: 'Waiting for someone else to change'
+        - id: 'd'
+          label: 'Avoiding self-reflection'
+      correctOptionId: 'a'
+      description: 'Recognizing and acknowledging recurring unhealthy patterns is an important first step toward changing behaviors and creating healthier outcomes.'
+
+    - id: q5
+      type: short_answer
+      prompt: 'Describe what positive change or personal freedom would look like in an area of your life where you have experienced repeated challenges.'
 ---
 
 # Chapter 5: Reoccurring Themes

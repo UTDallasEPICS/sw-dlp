@@ -3,6 +3,58 @@ title: Chapter 2
 videos:
   - videoUrl: https://youtu.be/I6ChIIBcWXg
     videoTitle: Chapter 2 Your Aha Moment
+
+activity:
+  title: Chapter 2 Activity
+  questions:
+    - id: q1
+      type: mcq
+      prompt: "What does an 'aha' moment represent in the healing process?"
+      options:
+        - id: 'a'
+          label: 'Forgetting everything that happened in the past'
+        - id: 'b'
+          label: 'Recognizing an abusive situation for what it is'
+        - id: 'c'
+          label: 'Waiting for someone else to make a change'
+        - id: 'd'
+          label: 'Believing that unhealthy behavior is normal'
+      correctOptionId: 'b'
+      description: "An 'aha' moment is when someone recognizes an abusive situation for what it is, helping them understand their experiences and begin making positive changes."
+
+    - id: q2
+      type: short_answer
+      prompt: 'Think about a moment when you realized something in your life needed to change. What did you learn from that realization, and how did it affect your perspective?'
+
+    - id: q3
+      type: mcq
+      prompt: 'According to Chapter 2, experiencing fear after recognizing an abusive situation is a normal response.'
+      options:
+        - id: 'a'
+          label: 'True'
+        - id: 'b'
+          label: 'False'
+      correctOptionId: 'a'
+      description: 'Fear is a natural response to recognizing an abusive situation, especially when someone is uncertain about what comes next.'
+
+    - id: q4
+      type: mcq
+      prompt: 'According to Romans 12:2, what helps bring about personal transformation?'
+      options:
+        - id: 'a'
+          label: 'Ignoring difficult emotions'
+        - id: 'b'
+          label: 'Seeking approval from others'
+        - id: 'c'
+          label: 'Renewing your mind'
+        - id: 'd'
+          label: 'Avoiding all change'
+      correctOptionId: 'c'
+      description: 'Romans 12:2 emphasizes renewing your mind as a way to transform your thinking and make positive changes in your life.'
+
+    - id: q5
+      type: short_answer
+      prompt: 'Identify three positive actions you can begin taking to change how you think about yourself and your future.'
 ---
 
 # Chapter 2: Your “Aha” Moment

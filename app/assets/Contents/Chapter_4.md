@@ -3,6 +3,58 @@ title: Chapter 4
 videos:
   - videoUrl: https://youtu.be/Svo-SjRDPKQ
     videoTitle: Chapter 4 Coping Mechanisms
+
+activity:
+  title: Chapter 4 Activity
+  questions:
+    - id: q1
+      type: mcq
+      prompt: 'What is the purpose of identifying unhealthy coping mechanisms?'
+      options:
+        - id: 'a'
+          label: 'To blame yourself for past experiences'
+        - id: 'b'
+          label: 'To understand behaviors that may need to change'
+        - id: 'c'
+          label: 'To avoid acknowledging difficult emotions'
+        - id: 'd'
+          label: 'To continue repeating familiar patterns'
+      correctOptionId: 'b'
+      description: 'Identifying unhealthy coping mechanisms helps individuals recognize behaviors developed in response to difficult experiences and determine which ones they may want to change.'
+
+    - id: q2
+      type: short_answer
+      prompt: 'Describe two or three ways you respond to stressful situations or confrontation. How do these responses affect your emotions or well-being?'
+
+    - id: q3
+      type: mcq
+      prompt: 'Avoiding, suppressing, or hiding emotions can become coping mechanisms developed in response to unsafe situations.'
+      options:
+        - id: 'a'
+          label: 'True'
+        - id: 'b'
+          label: 'False'
+      correctOptionId: 'a'
+      description: 'Avoiding, suppressing, or hiding emotions can become coping mechanisms when someone has experienced stressful or unsafe situations.'
+
+    - id: q4
+      type: short_answer
+      prompt: 'Identify one coping mechanism you would like to improve. What are two steps you could take to develop a healthier response?'
+
+    - id: q5
+      type: mcq
+      prompt: 'Which response best demonstrates a healthier way of handling difficult emotions?'
+      options:
+        - id: 'a'
+          label: 'Ignoring your feelings until they disappear'
+        - id: 'b'
+          label: 'Blaming yourself for every conflict'
+        - id: 'c'
+          label: 'Recognizing your feelings and seeking appropriate support'
+        - id: 'd'
+          label: 'Hiding your emotions from everyone'
+      correctOptionId: 'c'
+      description: 'Recognizing your emotions and seeking appropriate support encourages healthier coping habits rather than ignoring or suppressing difficult feelings.'
 ---
 
 # Chapter 4: Coping Mechanisms

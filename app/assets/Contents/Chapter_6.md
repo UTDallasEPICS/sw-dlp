@@ -3,6 +3,58 @@ title: Chapter 6
 videos:
   - videoUrl: https://youtu.be/9uOAeOs5OtY
     videoTitle: Chapter 6 Boundaries
+
+activity:
+  title: Chapter 6 Activity
+  questions:
+    - id: q1
+      type: mcq
+      prompt: 'What is one purpose of establishing healthy boundaries?'
+      options:
+        - id: 'a'
+          label: 'Controlling every decision another person makes'
+        - id: 'b'
+          label: 'Avoiding all relationships'
+        - id: 'c'
+          label: 'Communicating personal limits and protecting your well-being'
+        - id: 'd'
+          label: 'Always agreeing with others'
+      correctOptionId: 'c'
+      description: 'Healthy boundaries help individuals communicate their personal limits, protect their well-being, and establish healthier relationships.'
+
+    - id: q2
+      type: mcq
+      prompt: 'Your self-worth should be determined by how much you do for others and whether they approve of you.'
+      options:
+        - id: 'a'
+          label: 'True'
+        - id: 'b'
+          label: 'False'
+      correctOptionId: 'b'
+      description: "A person's self-worth should not depend on constantly meeting others' needs or receiving their approval. Healthy relationships involve mutual respect and personal independence."
+
+    - id: q3
+      type: short_answer
+      prompt: 'Think about responsibilities you regularly take on. Are there any tasks you would like others to manage for themselves? Explain how sharing responsibilities could benefit your well-being.'
+
+    - id: q4
+      type: mcq
+      prompt: 'Which action demonstrates a healthier response to feeling overwhelmed?'
+      options:
+        - id: 'a'
+          label: 'Taking on additional responsibilities'
+        - id: 'b'
+          label: 'Ignoring your need for rest'
+        - id: 'c'
+          label: 'Setting reasonable limits and asking for help'
+        - id: 'd'
+          label: 'Feeling guilty whenever you say no'
+      correctOptionId: 'c'
+      description: 'Setting reasonable limits and asking for help can reduce stress, prevent overwhelming responsibilities, and support personal well-being.'
+
+    - id: q5
+      type: short_answer
+      prompt: 'Identify one responsibility or habit you could reduce or change to make more time for rest and personal well-being. What would be your first step?'
 ---
 
 # Chapter 6: Your Behaviors, Set Boundaries
