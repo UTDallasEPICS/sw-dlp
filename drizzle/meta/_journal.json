@@ -36,6 +36,20 @@
       "when": 1793305624076,
       "tag": "0004_good_wild_pack",
       "breakpoints": true
+    },
+    {
+      "idx": 5,
+      "version": "6",
+      "when": 1793854828561,
+      "tag": "0005_nice_fabian_cortez",
+      "breakpoints": true
+    },
+    {
+      "idx": 6,
+      "version": "6",
+      "when": 1793935223962,
+      "tag": "0006_massive_snowbird",
+      "breakpoints": true
     }
   ]
 }

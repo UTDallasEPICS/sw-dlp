@@ -19,7 +19,7 @@ activity:
           label: "Restricting a partner's access to money or preventing them from working"
         - id: "d"
           label: "Making financial decisions together"
-      correctOptionId: ["c"]
+      correctOptionId: "c"
       description: "Restricting access to money or preventing a partner from working are examples of financial abuse."
 
     - id: q2
@@ -34,7 +34,7 @@ activity:
           label: "Anger, forgiveness, and friendship"
         - id: "d"
           label: "Disagreement, communication, and resolution"
-      correctOptionId: ["b"]
+      correctOptionId: "b"
       description: "The three basic phases are tension building, acting out, and reconciliation or honeymoon."
 
     - id: q3
@@ -45,7 +45,7 @@ activity:
           label: "True"
         - id: "b"
           label: "False"
-      correctOptionId: ["a"]
+      correctOptionId: "a"
       description: "The chapter includes indirect actions such as destroying belongings or abusing pets as forms of physical abuse."
 
     - id: q4

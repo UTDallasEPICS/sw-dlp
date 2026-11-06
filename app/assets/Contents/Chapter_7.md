@@ -22,7 +22,7 @@ activity:
           label: "Songs associated with childhood memories"
         - id: "d"
           label: "Conversations with other people"
-      correctOptionId: ["b"]
+      correctOptionId: "b"
       description: "Inner music describes automatic thoughts and self-talk that repeat in your mind and influence your self-belief."
 
     - id: q2
@@ -37,7 +37,7 @@ activity:
           label: "To change how you view yourself and build self-esteem"
         - id: "d"
           label: "To avoid making mistakes"
-      correctOptionId: ["c"]
+      correctOptionId: "c"
       description: "Positive affirmations help change how you view yourself and build self-esteem through encouraging self-talk."
 
     - id: q3
@@ -48,7 +48,7 @@ activity:
           label: "True"
         - id: "b"
           label: "False"
-      correctOptionId: ["a"]
+      correctOptionId: "a"
       description: "Negative self-talk often begins in childhood and can repeat automatically without being noticed."
 
     - id: q4

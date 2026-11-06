@@ -19,7 +19,7 @@ activity:
           label: "A method for memorizing conversations"
         - id: "d"
           label: "A technique for avoiding all disagreements"
-      correctOptionId: ["b"]
+      correctOptionId: "b"
       description: "A communication hook triggers an automatic emotional reaction through something another person says or does."
 
     - id: q2
@@ -34,7 +34,7 @@ activity:
           label: "Responding calmly and focusing on the situation without emotional blame"
         - id: "d"
           label: "Bringing up past disagreements"
-      correctOptionId: ["c"]
+      correctOptionId: "c"
       description: "Communicating from the Adult state means responding calmly to the situation rather than reacting with emotional blame."
 
     - id: q3
@@ -45,7 +45,7 @@ activity:
           label: "True"
         - id: "b"
           label: "False"
-      correctOptionId: ["a"]
+      correctOptionId: "a"
       description: "Recognizing automatic emotional responses is a first step toward changing unhealthy communication patterns."
 
     - id: q4

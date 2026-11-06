@@ -20,7 +20,7 @@ activity:
           label: "Difficult experiences should always be ignored."
         - id: "d"
           label: "God offers strength, protection, and comfort during difficult times."
-      correctOptionId: ["d"]
+      correctOptionId: "d"
       description: "These scriptures emphasize trusting God for strength, protection, and support when facing life's challenges."
 
     - id: q3
@@ -39,7 +39,7 @@ activity:
           label: "Taking care of others should always come before personal needs"
         - id: "d"
           label: "Healthy habits are only useful after completing the healing journey"
-      correctOptionId: ["a"]
+      correctOptionId: "a"
       description: "The Power of Your Body emphasizes healthy habits, self-love, and treating your body with respect."
 
     - id: q5

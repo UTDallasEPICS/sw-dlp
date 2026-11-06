@@ -85,6 +85,82 @@ export const chapterVideo = sqliteTable('chapterVideo', {
   position: integer('position').notNull().default(0),
 })
 
+export const activity = sqliteTable('activity', {
+  id: text('id')
+    .primaryKey()
+    .$defaultFn(() => crypto.randomUUID()),
+  chapterId: text('chapter_id')
+    .notNull()
+    .unique()
+    .references(() => chapter.id, {
+      onDelete: 'cascade',
+    }),
+  title: text('title').notNull(),
+})
+
+export const activityQuestion = sqliteTable(
+  'activity_question',
+  {
+    id: text('id')
+      .primaryKey()
+      .$defaultFn(() => crypto.randomUUID()),
+    activityId: text('activity_id')
+      .notNull()
+      .references(() => activity.id, {
+        onDelete: 'cascade',
+      }),
+    key: text('key').notNull(),
+    type: text('type', {
+      enum: ['mcq', 'short_answer'],
+    }).notNull(),
+    prompt: text('prompt').notNull(),
+    description: text('description'),
+    options: text('options', {
+      mode: 'json',
+    }).$type<{
+      id: string
+      label: string
+    }[]>(),
+    correctOptionId: text('correct_option_id'),
+    position: integer('position').notNull(),
+  },
+  (table) => [
+    uniqueIndex('activity_question_key_unique')
+      .on(table.activityId, table.key),
+  ],
+)
+
+export const userQuestionResponse = sqliteTable(
+  'user_question_response',
+  {
+    id: text('id')
+      .primaryKey()
+      .$defaultFn(() => crypto.randomUUID()),
+    userId: text('user_id')
+      .notNull()
+      .references(() => user.id, {
+        onDelete: 'cascade',
+      }),
+    questionId: text('question_id')
+      .notNull()
+      .references(() => activityQuestion.id, {
+        onDelete: 'cascade',
+      }),
+    selectedOptionId: text('selected_option_id'),
+    writtenAnswers: text('written_answers', {
+      mode: 'json',
+    }).$type<string[]>(),
+    submittedAt: integer('submitted_at', {
+      mode: 'timestamp',
+    }).notNull().$defaultFn(() => new Date()),
+  },
+  (table) => [
+    uniqueIndex('user_question_unique')
+      .on(table.userId, table.questionId),
+  ],
+)
+
+
 export const userLesson = sqliteTable(
   'userLesson',
   {

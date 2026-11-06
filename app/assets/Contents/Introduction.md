@@ -14,7 +14,7 @@ activity:
           label: "Sometimes"
         - id: "c"
           label: "Rarely / Never"
-      correctOptionId: none
+      correctOptionId: null
       description: null
 
     - id: q2
@@ -27,7 +27,7 @@ activity:
           label: "Sometimes"
         - id: "c"
           label: "Rarely / Never"
-      correctOptionId: none
+      correctOptionId: null
       description: null
     
     - id: q3
@@ -40,7 +40,7 @@ activity:
           label: "No"
         - id: "c"
           label: "Unsure"
-      correctOptionId: none
+      correctOptionId: null
       description: null
 
     - id: q4

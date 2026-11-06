@@ -19,7 +19,7 @@ activity:
           label: "They stop experiencing emotional pain"
         - id: "d"
           label: "They immediately recognize every unhealthy behavior"
-      correctOptionId: ["a"]
+      correctOptionId: "a"
       description: "Repeated abuse can gradually shift a person's understanding of acceptable behavior and lead them to tolerate harmful treatment."
 
     - id: q2
@@ -34,7 +34,7 @@ activity:
           label: "Why don't they change their personality?"
         - id: "d"
           label: "Why don't they forget the past?"
-      correctOptionId: ["b"]
+      correctOptionId: "b"
       description: "The chapter shifts attention from blaming someone for staying to asking why the other person abuses."
 
     - id: q3
@@ -45,7 +45,7 @@ activity:
           label: "True"
         - id: "b"
           label: "False"
-      correctOptionId: ["a"]
+      correctOptionId: "a"
       description: "Isolation from friends and family can make it harder to recognize abuse and gain outside perspective."
 
     - id: q4

@@ -1,0 +1,1 @@
+ALTER TABLE `activity_question` DROP COLUMN `section`;

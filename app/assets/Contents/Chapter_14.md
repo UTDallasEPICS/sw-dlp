@@ -24,7 +24,7 @@ activity:
           label: "Developing the confidence and direction to stay on course despite life's challenges"
         - id: "d"
           label: "Changing your goals whenever difficulties arise"
-      correctOptionId: ["c"]
+      correctOptionId: "c"
       description: "It is a device that once it spins, it tends to resist changes to its orientation. Learn to have the self-confidence to allow you the ability to resist being thrown off course."
 
     - id: q4
@@ -35,7 +35,7 @@ activity:
           label: "True"
         - id: "b"
           label: "False"
-      correctOptionId: ["a"]
+      correctOptionId: "a"
       description: "Girl to Girl Rule #7 emphasizes accepting help and building healthy support networks."
 
     - id: q5
@@ -50,7 +50,7 @@ activity:
           label: "Ignore the setback completely"
         - id: "d"
           label: "Regroup, learn from the experience, and try again"
-      correctOptionId: ["d"]
+      correctOptionId: "d"
       description: "Girl to Girl Rule #6 teaches that setbacks are a normal part of the healing journey and that you should keep moving forward rather than give up."
 ---
 

@@ -19,7 +19,7 @@ activity:
           label: "The ability to succeed without making mistakes"
         - id: "d"
           label: "A person's physical appearance"
-      correctOptionId: ["b"]
+      correctOptionId: "b"
       description: "Self-esteem is a person's perception or emotional point of view of themselves."
 
     - id: q2
@@ -34,7 +34,7 @@ activity:
           label: "Avoiding responsibility for mistakes"
         - id: "d"
           label: "Believing your needs are less important than everyone else's"
-      correctOptionId: ["a"]
+      correctOptionId: "a"
       description: "Feeling confident and competent reflects healthy self-respect rather than dependence on others' approval."
 
     - id: q3
@@ -45,7 +45,7 @@ activity:
           label: "True"
         - id: "b"
           label: "False"
-      correctOptionId: ["a"]
+      correctOptionId: "a"
       description: "The chapter teaches that self-esteem can be restored and strengthened even after years of abuse."
 
     - id: q4
