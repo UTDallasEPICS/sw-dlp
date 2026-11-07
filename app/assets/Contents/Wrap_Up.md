@@ -14,14 +14,14 @@ Congratulations!
 
 As you move through this healing journey you will need courage and persistence. If you get discouraged and want to give up this is normal, but keep going. Celebrate the successes you have already experienced. If you fall nine times, you get up ten.
 
-### You are blessed ![Scripture Reference](../../../public/pink_heart_mug.png)
+### You are blessed ![Scripture Reference](/pink_heart_mug.png)
 
 God encourages us to never give up.
 
 > _“God blesses the people who patiently endure testing. Afterward they will receive the crown of life that God has promised to those who love him.”_  
 > **— James 1:12 (NLT)**
 
-### Your new life ![Scripture Reference](../../../public/pink_heart_mug.png)
+### Your new life ![Scripture Reference](/pink_heart_mug.png)
 
 God shares with us the sweetness of living in his word.
 

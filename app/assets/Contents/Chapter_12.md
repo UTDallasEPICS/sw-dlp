@@ -108,7 +108,7 @@ Seek the help of a medical doctor to discuss your situation and treatment option
 
 After spending time identifying what erodes self-esteem, now you are ready to begin to learn new ways to enhance your self-esteem.
 
-### Loving God is your first right step ![Scripture Reference](../../../public/pink_heart_mug.png)
+### Loving God is your first right step ![Scripture Reference](/pink_heart_mug.png)
 
 You can be assured that the first step to improving your self-esteem is to accept God’s love for you. There is no one else in this world like you. You are unique and wonderfully made.
 
@@ -127,7 +127,7 @@ There are self-esteem changes that you can put into place in your heart and mind
 
 What are you doing now to feel good about yourself?
 
-### Identify God’s blessing over your life ![Scripture Reference](../../../public/pink_heart_mug.png)
+### Identify God’s blessing over your life ![Scripture Reference](/pink_heart_mug.png)
 
 Reviewing God’s word is the best way to start your restoration. Understanding what he has in store for you and the blessings he has granted over your life can help. Taking verses and discovering their application to your life is where God can transform your life through the Bible.
 
@@ -149,7 +149,7 @@ You might be saying things like,
 
 If you struggle with loving yourself, just begin your new self-talk to say, “God loves me just as I am,” which releases His blessings over you and releases you from the destructive influence of your damaging words.
 
-### Associations ![Scripture Reference](../../../public/pink_heart_mug.png)
+### Associations ![Scripture Reference](/pink_heart_mug.png)
 
 Associate with people that have a positive outlook on life and different interests than what you have been doing in the past. Even if new people seem dorky, strange or weird, it is good to branch out and make new associations at this time. Places to find new groups: public library, local state park nature course, church, local community charity or clean-up day, and other volunteer efforts. Stay clear of“singles” groups at this time as you are developing a love affair with your new self, not another partner. Scripture tells us that it is important for us to select our associates carefully:
 
@@ -181,7 +181,7 @@ Make these food choices healthy and stay away from junk food. Removing junk food
 
 The goal is to offer a diet that provides the fuel you need to heal emotionally, and restore your body ravaged by years of unhealthy and toxic environments. The best part, you might even lose a few pounds of fat or find it easier to build muscle tone too!
 
-### Connect ![Scripture Reference](../../../public/pink_heart_mug.png)
+### Connect ![Scripture Reference](/pink_heart_mug.png)
 
 Finding that you are not alone and sharing your concerns can validate your feelings. When your emotions are validated, you can begin healing and this will boost your self-esteem.
 
@@ -223,7 +223,7 @@ Check your insurance coverage to see if preventative care visits are covered. Ch
 
 Check a local thrift store, church or women’s shelter for low cost or free clothing to bring a new item to your wardrobe. Creating these habits will teach you how to respect yourself and help others respect you.
 
-### Reading ![Scripture Reference](../../../public/pink_heart_mug.png)
+### Reading ![Scripture Reference](/pink_heart_mug.png)
 
 What you read can transform your spirit.
 
@@ -292,7 +292,7 @@ Listen and change your self-talk. Be mindful that you must work hard to make thi
 
 Having support during this time is very important. Often you will turn inward because you have been doing that for so many years. Avoiding support at this time can stagnate healing. You need to make sure that you focus on individual activities that promote healing and self-respect, and pair them with group activities and counseling. As a victim of abuse, you have been isolated in many ways and you need to learn to reach out, communicate and trust other people again. This allows you to restore who you are and rebuild new relationships.
 
-### Fear ![Scripture Reference](../../../public/pink_heart_mug.png)
+### Fear ![Scripture Reference](/pink_heart_mug.png)
 
 Remember, while in or under the fear of an abusive relationship, the crawl to healthy self-esteem can seem unattainable. It can feel like you are sitting on a three-legged stool, and every time you get just about there, a leg gets kicked out from underneath you. You can work on your self-esteem, but you will be continually bombarded by influences that distract you or make you feel you can’t do this. Recognize that this will happen. Believe it will not be forever. Trust that you can do this and anything you wish.
 

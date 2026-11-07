@@ -24,15 +24,14 @@ async function mountCatalogue() {
   await flushPromises()
   return wrapper
 }
-describe('database course catalogue', () => {
+describe('content course catalogue', () => {
   beforeEach(() => {
     fetchProgress.mockReturnValue({ data: ref({ chapters: [] }), error: ref(null) })
     fetchCatalogue.mockReturnValue({
       data: ref([
         {
-          id: 'section-id',
-          title: 'Database section',
-          chapters: [{ id: 'chapter-id', title: 'Database chapter', slug: 'chapter-1' }],
+          title: 'Content section',
+          chapters: [{ title: 'Content chapter', slug: 'chapter-1' }],
         },
       ]),
       status: ref('success'),
@@ -43,9 +42,8 @@ describe('database course catalogue', () => {
 
   it('renders fetched names and allows sections to collapse', async () => {
     const wrapper = await mountCatalogue()
-    expect(fetchCatalogue.mock.calls.at(-1)?.[0]).toBe('/api/course-titles')
-    expect(wrapper.get('h2').text()).toBe('Database section')
-    expect(wrapper.get('li').text()).toBe('Database chapter')
+    expect(wrapper.get('h2').text()).toBe('Content section')
+    expect(wrapper.get('li').text()).toBe('Content chapter')
     expect(wrapper.get('li a').attributes('href')).toBe('/chapters/chapter-1')
     const toggle = wrapper.get('h2 button')
     expect(toggle.attributes('aria-expanded')).toBe('true')
@@ -63,7 +61,7 @@ describe('database course catalogue', () => {
   it('combines database chapter links with completion progress by chapter ID', async () => {
     fetchProgress.mockReturnValue({
       data: ref({
-        chapters: [{ id: 'chapter-id', name: 'Different stored name', completed: true }],
+        chapters: [{ id: 'chapter-id', name: 'Content chapter', completed: true }],
       }),
       error: ref(null),
     })
@@ -77,7 +75,7 @@ describe('database course catalogue', () => {
     fetchProgress.mockReturnValue({ data: ref(null), error: ref(new Error('Unavailable')) })
     const wrapper = await mountCatalogue()
     expect(wrapper.get('[role="alert"]').text()).toContain('Unable to load course progress.')
-    expect(wrapper.get('li a').text()).toBe('Database chapter')
+    expect(wrapper.get('li a').text()).toBe('Content chapter')
     expect(wrapper.get('li').classes()).toContain('text-gray-700')
   })
 

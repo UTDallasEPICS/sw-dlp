@@ -83,7 +83,7 @@ Domestic violence happens in every race, religion, culture, economic and gender 
 > _“Survivors of domestic violence and patterns of abuse live all around us, and they fail to recognize how beautiful they are. We need to get the word out… We must help women know they are worthy of being loved.”_  
 > — Brooke Jones, Author, Stronger than Espresso
 
-### Who will benefit from this book? ![Scripture Reference](../../../public/pink_heart_mug.png)
+### Who will benefit from this book? ![Scripture Reference](/pink_heart_mug.png)
 
 Women who:
 
@@ -98,7 +98,7 @@ As you begin to change patterns and break away, your risks can increase signific
 > _“Then you will call, and the Lord will answer; you will cry for help, and he will say: Here am I.”_  
 > **— Isaiah 58:9 (New International Version)**
 
-### How to use this book? ![Scripture Reference](../../../public/pink_heart_mug.png)
+### How to use this book? ![Scripture Reference](/pink_heart_mug.png)
 
 Each Chapter includes activities designed to teach and discover your thoughts and feelings. Distinguishing the many facets of abuse and understanding your role in the cycle can lead to healing. By the conclusion of this program, you will be armed with answers and insights to build a new foundation. Creating your action plan will begin your freedom from your past.
 
@@ -125,9 +125,9 @@ Icons are used throughout the book to help organize the information:
 
 | Icon                                                       | Purpose             |
 | ---------------------------------------------------------- | ------------------- |
-| ![Learning Activity](../../../public/two_hands_mug.png)    | Learning Activity   |
-| ![Testimonial Quote](../../../public/broken_mug.png)       | Testimonial Quote   |
-| ![Scripture Reference](../../../public/pink_heart_mug.png) | Scripture Reference |
+| ![Learning Activity](/two_hands_mug.png)    | Learning Activity   |
+| ![Testimonial Quote](/broken_mug.png)       | Testimonial Quote   |
+| ![Scripture Reference](/pink_heart_mug.png) | Scripture Reference |
 
 ### Why I wrote this book?
 
@@ -144,7 +144,7 @@ Infused with God’s love our lives change. God is the one of miracles, forgiven
 > _“Once He changes you, you are never, ever the same.”_  
 > — Brooke Jones
 
-### Your great work ![Scripture Reference](../../../public/pink_heart_mug.png)
+### Your great work ![Scripture Reference](/pink_heart_mug.png)
 
 > _“For it is by grace you have been saved, through faith – and this not from yourselves, it is the gift of God – not by works, so that no one can boast. For we are God’s workmanship, created in Christ Jesus to do good works, which God prepared in advance for us to do.”_  
 > **— Ephesians 2:8–10 (NIV)**
@@ -154,7 +154,7 @@ Remember:\
 • God made you, and He does great work, so You = Great work\
 • You were created for a purpose
 
-### Objectives of this book ![Scripture Reference](../../../public/pink_heart_mug.png)
+### Objectives of this book ![Scripture Reference](/pink_heart_mug.png)
 
 The Stronger than Espresso® program can be used several ways:
 
@@ -163,7 +163,7 @@ The Stronger than Espresso® program can be used several ways:
 3. Women can train to be a leader and launch STE classes in a new area. Leader guide and training is available.
 
 The Lessons will contribute to the following learning objectives:\
-![Learning objectives diagram](../../../public/introduction_objectives.png)
+![Learning objectives diagram](/introduction_objectives.png)
 
 At Stronger than Espresso® our programs are based on these objectives and founded on this scripture:
 

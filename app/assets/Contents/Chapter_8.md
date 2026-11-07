@@ -137,14 +137,14 @@ As people become aware of their games and scripts, and the destructive consequen
 
 As long as the interactions are complementary everything is smooth<sup>13</sup>:
 
-![Equal states](../../../public/Chapter_08_Figure_5.png)
+![Equal states](/Chapter_08_Figure_5.png)
 
 Adult asks a question and receives a simple response from the other Adult. There is no emotion, no blame, no hidden agenda, just the answer to the question. When both individuals are in the parent or child states there is no problem.
 
 ### Different states
 
 Problems occur when these lines cross over.
-![Different states](../../../public/Chapter_08_06.png)
+![Different states](/Chapter_08_06.png)
 
 | Question in Adult Ego State       | Response in Various Ego States                                                                                                                                     |
 | --------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -211,7 +211,7 @@ It will take time, practice and prayer. You can do it. With God’s help — you
 > _“With God all things are possible.”_  
 > **— Matthew 19:26**
 
-### You can reestablish a new parent ![Scripture Reference](../../../public/pink_heart_mug.png)
+### You can reestablish a new parent ![Scripture Reference](/pink_heart_mug.png)
 
 You carry an understanding of what a Parent should be based on the role models and your experiences growing up. As an adult you hold the hurts of your inner child and disappointments in the parenting you received. Let God’s grace heal you:
 
@@ -296,7 +296,7 @@ When you stuff feelings down, tension builds inside. At the foundation of your p
 
 > _“About Mental Illness: Major Depression,”_
 
-### Get help ![Testimonial Quote](../../../public/broken_mug.png)
+### Get help ![Testimonial Quote](/broken_mug.png)
 
 Don’t be ashamed. Get the help you need.
 
@@ -486,7 +486,7 @@ When certain conditions exist, the Syndrome can cripple the victim’s ability t
 
 Understanding that you may be affected by this Syndrome, may allow you to work through breaking away. Recognize that your love and loyalty is not something you have done wrong or should be ashamed of. Discuss this with your therapist or counselor so they can assist you in recovery.
 
-### Post-Traumatic Stress Disorder (PTSD) ![Testimonial Quote](../../../public/broken_mug.png)
+### Post-Traumatic Stress Disorder (PTSD) ![Testimonial Quote](/broken_mug.png)
 
 Everyday life contains stress and there are many ways you can choose to deal with it. Post-Traumatic Stress Disorder (PTSD) is a result of extreme stress and trauma and can be caused by a personal tragedy, accident, war, abuse or violent occurrence. PTSD is diagnosed when trauma escalates the normal reactions to stress into a
 _“super-stress.”_
@@ -515,7 +515,7 @@ To be restored ask God to shine His light on your next right step. Learning to t
 
 Living with chronic anxiety and tension is exhausting. Intensive attempts to people please, strive for perfectionism, and components of fear create cycling patterns of lack of control in our own lives and in our relationships. Despite your circumstances by identifying today your own behavior and making a few changes, you will be able to reduce chronic anxiety and tension.
 
-### Don’t be anxious ![Scripture Reference](../../../public/pink_heart_mug.png)
+### Don’t be anxious ![Scripture Reference](/pink_heart_mug.png)
 
 We have God’s word concerning anxiousness —don’t do it!
 
@@ -524,7 +524,7 @@ What a promise! The peace of God. How comforting, how easy would it be to lean i
 > _“Be anxious for nothing, but in everything by prayer and supplication, with thanksgiving, let your request be made known to God; and the peace of God, which surpasses all understanding, will guard your hearts and minds through Christ Jesus.”_  
 > **— Philippians 4:6,7 (NKJV)**
 
-### What to Do When Symptoms Happen? ![Scripture Reference](../../../public/pink_heart_mug.png)
+### What to Do When Symptoms Happen? ![Scripture Reference](/pink_heart_mug.png)
 
 When the anxiety begins, your heart pounds, your hands clam up and you frantically look for the exits. Here are three medicine-free ways to try to calm and soothe yourself.
 
@@ -548,7 +548,7 @@ Negative Thoughts to Positive Thoughts.
 
 and support.
 
-![Diagram](../../../public/chapter_08_p149_fig.png)
+![Diagram](/chapter_08_p149_fig.png)
 
 3. Phone a friend, coach, mentor, counselor, sponsor, accountability partner, neighbor, or coworker. Don’t be alone; reach out for help and support.
 

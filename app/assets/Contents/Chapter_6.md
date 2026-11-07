@@ -67,7 +67,7 @@ In this Chapter we will first review common coping behaviors and then methods to
 
 The purpose of Chapter 6 is to help you identify your behaviors that contribute to your inability to set healthy boundaries. Once you realize you have a part in this process, you can begin to choose to think and react differently. Setting healthy boundaries is a simple four-step process to define what you want, communicate those rights, know when those boundaries are crossed and identifying self-sabotage.
 
-### Main categories ![Scripture Reference](../../../public/pink_heart_mug.png)
+### Main categories ![Scripture Reference](/pink_heart_mug.png)
 
 Coping behaviors are different for everyone. They are done to comfort and ease the pain that we feel. Do you give-up, blame, fight, run, hide? Others might eat, drink, smoke, toke, shop, eat, have sex or spend.
 
@@ -100,7 +100,7 @@ This behavior is called **codependency**. Codependents attempt to control others
 • If you are feeling overwhelmed, ask for help.\
 • You do not need to be a martyr, miserable and silent.
 
-### Overwhelmed ![Scripture Reference](../../../public/pink_heart_mug.png)
+### Overwhelmed ![Scripture Reference](/pink_heart_mug.png)
 
 Do you feel like you are a slave? Do you feel no one notices you or cares about your feelings? Do you feel exhausted because you must get everything finished? The harder you work the more empty you feel. No one sees your pain and how you suffer. You often feel that if only you could do more or try harder. This is a form of codependent behavior. Feeling codependent is a coping mechanism. It requires you to work toward creating a new response alternative.
 
@@ -113,7 +113,7 @@ There is freedom:\
 > _“Come to me, all you who are weary and burdened, and I will give you rest. Take my yoke upon you and learn from me, for I am gentle and humble in heart, and you will find rest for your souls.. For my yoke is easy and my burden is light.”_  
 > **— Matthew 11:28–30 (NIV)**
 
-### Tired ![Testimonial Quote](../../../public/broken_mug.png)
+### Tired ![Testimonial Quote](/broken_mug.png)
 
 > _“I am tired of being a chameleon to fit in and find love and approval. My gift, my life, must not be wasted. My purpose will unfold if I am true to self. I need to stop being afraid.”_
 
@@ -153,7 +153,7 @@ This is codependent behavior and is not healthy:\
 \
 • Learning that you are not responsible for the happiness of someone else is the place to start. Until you can accept that fact, you will continue to be caught up in this cycle.
 
-### Scurry to placate ![Testimonial Quote](../../../public/broken_mug.png)
+### Scurry to placate ![Testimonial Quote](/broken_mug.png)
 
 > _“I would drop whatever I was doing and scurry to placate any of his demands. He would be on my heels screaming at me, so I would work hard to just make him stop yelling. It was conditioning. He would scream and his needs would be met. He got the attention and control he desired. I got him to stop yelling. It was a tragic, unhealthy cycle.”_
 
@@ -189,7 +189,7 @@ It doesn’t have to be that way:\
 
 4. Allow them to respond. If they throw out a sidetrack, return back to the point. Blame and disrespect are their problem.
 
-### Relationships highs and lows ![Scripture Reference](../../../public/pink_heart_mug.png)
+### Relationships highs and lows ![Scripture Reference](/pink_heart_mug.png)
 
 Do your relationships always have highs and lows? Do they start out great, then something happens and you are back where you started, fighting and in another broken relationship.
 
@@ -234,7 +234,7 @@ Have you considered:\
 
 Obsessions
 
-### Obsessive behaviors ![Scripture Reference](../../../public/pink_heart_mug.png)
+### Obsessive behaviors ![Scripture Reference](/pink_heart_mug.png)
 
 What drives your behavior? Is it: fear, food, sex, alcohol, drugs, money, anger, rebellion, control, anxiety, perfectionism, or something else? What unhealthy behaviors do you choose to fill-up your emptiness inside?
 
@@ -267,7 +267,7 @@ The need to be constantly in touch is a part of codependency, and can be an auto
 
 Hypersensitivity: Self-doubt, anxiety, blame, shame
 
-### Trust your instincts ![Scripture Reference](../../../public/pink_heart_mug.png)
+### Trust your instincts ![Scripture Reference](/pink_heart_mug.png)
 
 Do you feel that your emotions are out of balance? Are you frustrated because you cannot control or understand the abuser’s reactions? Are you overwhelmed by self-doubt, anxiety, blame and shame for mistakes that are not your fault?
 
@@ -314,7 +314,7 @@ Receiving respect from others:
 
 4. When you treat yourself with respect, others will follow. Work with a counselor, sponsor, friend or mentor to help.
 
-### Fight or flight ![Scripture Reference](../../../public/pink_heart_mug.png)
+### Fight or flight ![Scripture Reference](/pink_heart_mug.png)
 
 As humans we are designed with a natural “fight or flight” response to protect us from danger. Unfortunately, in abusive relationships the “fight or flight” response switch is left in the “on” position and has a significant health impact. Answer the following questions:
 
@@ -352,7 +352,7 @@ You are only responsible for your own actions and not to blame for any abuse:
 • If you are stressed — begin praying that God gives you all the strength you need to find your way out of this valley.\
 • Reflect on your God given purpose — try to apply some of those activities which will reduce stress.
 
-### Feel ashamed ![Scripture Reference](../../../public/pink_heart_mug.png)
+### Feel ashamed ![Scripture Reference](/pink_heart_mug.png)
 
 Have you ever felt:\
 • Ashamed of things you have done in the past and actions you continue to do?\

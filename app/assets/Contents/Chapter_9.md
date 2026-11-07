@@ -63,14 +63,14 @@ activity:
 
 The purpose of Chapter 9 is for you to recognize that even though abuse in your life left a residual impact you are no longer powerless to your past. You CAN forgive and remove bitterness from your heart. By releasing these toxic emotions and burdens from the past you can become independent of your past and let God move more freely in your life.
 
-### Change ![Scripture Reference](../../../public/pink_heart_mug.png)
+### Change ![Scripture Reference](/pink_heart_mug.png)
 
 You cannot change the abuser, but you can change yourself. Arm yourself with knowledge so you can understand what you can change, and what you cannot. You do not have to repeat the past but in order to grow beyond it you must face the truth and learn from it.
 
 > _“…His own special people, that you may proclaim the praises of Him who called you out of darkness into His marvelous light.”_  
 > **— 1 Peter 2:9 (NKJV)**
 
-### The Fence: ![Testimonial Quote](../../../public/broken_mug.png)
+### The Fence: ![Testimonial Quote](/broken_mug.png)
 
 There was a little boy with a bad temper. His father gave him a bag of nails and told him to hammer a nail in the back fence every time he lost control of his temper. The first day the boy drove 37 nails into the fence. Then it gradually dwindled down. He discovered that it was easier to hold his temper than to drive those nails into the fence. Finally the day came when the boy didn’t lose his temper at all.
 
@@ -81,11 +81,11 @@ The father led his son to the fence.
 > _“You have done well, but look at the holes in the fence,” he said, “When you say things in anger, they leave a scar just like these nail holes. You can put a knife in a person and draw it out. It won’t matter how many times you say, I am sorry. The wound is still there. A verbal wound is as bad as a physical one.””_
 > — Author Unknown
 
-### I was embarrassed ![Testimonial Quote](../../../public/broken_mug.png)
+### I was embarrassed ![Testimonial Quote](/broken_mug.png)
 
 > _“My pattern of abusive relationships was kept hidden because I was an educated, smart woman, too ashamed to let everyone know how awful it was. I was always gullible or captivated by their promises and “grass is greener story”— and every time I would fall in love with the wrong kind of man. After it occurred so many times, I was embarrassed to admit my mistake to myself, family or friends. I felt alone and unable to share my true feelings with anyone I could trust.”_
 
-### God never waste a hurt ![Scripture Reference](../../../public/pink_heart_mug.png)
+### God never waste a hurt ![Scripture Reference](/pink_heart_mug.png)
 
 Your experiences matter to God. He never wastes a hurt.
 
@@ -96,7 +96,7 @@ Your experiences matter to God. He never wastes a hurt.
 
 _“Why Do You Stay?”_ A continuous question that so many of us have and we struggle as we watch women we love battle this problem. Stay for fear, stay for love, stay to avoid shame. Helping women see that their sense of normal has shifted can help them explain why they do what they do. The real question we should be asking is, _“Why they abuse?”_
 
-### No one understood ![Testimonial Quote](../../../public/broken_mug.png)
+### No one understood ![Testimonial Quote](/broken_mug.png)
 
 Many people said to my face,
 
@@ -125,7 +125,7 @@ When you are subjected to abuse day after day your tolerance level increases and
 
 Remember Figure 3. When “Normal” Shifts from Chapter 4?
 
-![Diagram](../../../public/chapter_09_p162_fig.png)
+![Diagram](/chapter_09_p162_fig.png)
 
 The abuse increases gradually. You would likely head for the exit door if you were subject to a higher level of abuse immediately.
 
@@ -200,7 +200,7 @@ Will you become bitter or better? The root of bitterness produces fruit of anger
 > _“See to it that no one falls short of the grace of God and that no bitter root grows up to cause trouble and defile many.”_  
 > **— Hebrews 12:15 (NIV)**
 
-### God helps us forgive ![Scripture Reference](../../../public/pink_heart_mug.png)
+### God helps us forgive ![Scripture Reference](/pink_heart_mug.png)
 
 God has a clear message on forgiveness:
 
@@ -250,7 +250,7 @@ Often the guilt can get worse as you get further away from the abusive lifestyle
 
 Forgiveness is often your regret. Sadness that you did….or did not ...
 
-### God’s beat you to it ![Scripture Reference](../../../public/pink_heart_mug.png)
+### God’s beat you to it ![Scripture Reference](/pink_heart_mug.png)
 
 God has already forgiven all your transgressions.
 

@@ -70,7 +70,7 @@ If you consider the life cycle of a coffee bean. It is picked off the tree. Then
 
 You are much more valuable than a cup of coffee, but this analogy shows us that even in a simple cup of coffee there are many factors in play to craft perfection. You are a complex being and there are many factors that must be taken into consideration. Similarly, the art to crafting a better you must be perfected through similar commitment, dedication, hard work and practice.
 
-### God definition of you ![Scripture Reference](../../../public/pink_heart_mug.png)
+### God definition of you ![Scripture Reference](/pink_heart_mug.png)
 
 God made you and has a description of you too.
 
@@ -126,7 +126,7 @@ If you do not have a safe computer to use, then you can go to a local library, f
 
 When you break the cycle, the cycle cannot continue. Understand with an abusive relationship safety is vital. If you are still in your abusive relationship once you react differently the power they have begins to crack. The risks in your situation are very real. Once the control the abuser has over you begins to diminish or change it becomes a very dangerous time for you. Have a heightened awareness of your surroundings and safety. Be smart and safe. In Chapter Ten we learn more about creating a safety plan or visit [Stronger than Espresso website](https://strongerwomen.com/) for more information.
 
-### Connections ![Scripture Reference](../../../public/pink_heart_mug.png)
+### Connections ![Scripture Reference](/pink_heart_mug.png)
 
 When you have spent too much time being alone and isolated; connecting with others is an important part of the healing process.
 
