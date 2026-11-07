@@ -7,6 +7,7 @@
   const links = [
     { label: 'Dashboard', to: '/dashboard' },
     { label: 'Profile', to: '/profile' },
+    { label: 'Prayer Request', to: '/prayer-request' },
     { label: 'Contact', to: '/contact' },
     { label: 'Resources', to: '/resources' },
   ]
@@ -27,7 +28,7 @@
     <button
       v-if="session"
       type="button"
-      class="inline-flex h-10.75 w-12 cursor-pointer items-center justify-center rounded-lg border-0 bg-white color-brand-500 focus-visible:outline-2 focus-visible:outline-offset-[3px] focus-visible:outline-current lg:hidden"
+      class="color-brand-500 inline-flex h-10.75 w-12 cursor-pointer items-center justify-center rounded-lg border-0 bg-white focus-visible:outline-2 focus-visible:outline-offset-[3px] focus-visible:outline-current lg:hidden"
       :aria-label="isOpen ? 'Close menu' : 'Open menu'"
       :aria-expanded="isOpen"
       aria-controls="mobile-menu"
@@ -36,15 +37,15 @@
       <span class="sr-only">Menu</span>
       <span class="grid h-6 w-7.5 justify-items-center gap-1.5" aria-hidden="true">
         <span
-          class="h-1 w-full rounded-full color-brand-500 transition-all duration-300"
+          class="color-brand-500 h-1 w-full rounded-full transition-all duration-300"
           :class="{ 'translate-y-2.5 rotate-45': isOpen }"
         />
         <span
-          class="h-1 w-full rounded-full color-brand-500 transition-all duration-300"
+          class="color-brand-500 h-1 w-full rounded-full transition-all duration-300"
           :class="{ 'scale-x-0': isOpen }"
         />
         <span
-          class="h-1 w-full rounded-full color-brand-500 transition-all duration-300"
+          class="color-brand-500 h-1 w-full rounded-full transition-all duration-300"
           :class="{ '-translate-y-2.5 -rotate-45': isOpen }"
         />
       </span>
