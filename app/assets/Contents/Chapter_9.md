@@ -9,44 +9,44 @@ activity:
   questions:
     - id: q1
       type: mcq
-      prompt: "According to the chapter, what can happen when a person experiences abuse repeatedly?"
+      prompt: 'According to the chapter, what can happen when a person experiences abuse repeatedly?'
       options:
-        - id: "a"
-          label: "Their understanding of acceptable behavior may gradually shift"
-        - id: "b"
-          label: "They automatically become more confident"
-        - id: "c"
-          label: "They stop experiencing emotional pain"
-        - id: "d"
-          label: "They immediately recognize every unhealthy behavior"
-      correctOptionId: "a"
+        - id: 'a'
+          label: 'Their understanding of acceptable behavior may gradually shift'
+        - id: 'b'
+          label: 'They automatically become more confident'
+        - id: 'c'
+          label: 'They stop experiencing emotional pain'
+        - id: 'd'
+          label: 'They immediately recognize every unhealthy behavior'
+      correctOptionId: 'a'
       description: "Repeated abuse can gradually shift a person's understanding of acceptable behavior and lead them to tolerate harmful treatment."
 
     - id: q2
       type: mcq
-      prompt: "According to the chapter, which question should people focus on instead of asking why someone stays in an abusive relationship?"
+      prompt: 'According to the chapter, which question should people focus on instead of asking why someone stays in an abusive relationship?'
       options:
-        - id: "a"
+        - id: 'a'
           label: "Why don't they forgive sooner?"
-        - id: "b"
-          label: "Why do they abuse?"
-        - id: "c"
+        - id: 'b'
+          label: 'Why do they abuse?'
+        - id: 'c'
           label: "Why don't they change their personality?"
-        - id: "d"
+        - id: 'd'
           label: "Why don't they forget the past?"
-      correctOptionId: "b"
-      description: "The chapter shifts attention from blaming someone for staying to asking why the other person abuses."
+      correctOptionId: 'b'
+      description: 'The chapter shifts attention from blaming someone for staying to asking why the other person abuses.'
 
     - id: q3
       type: mcq
-      prompt: "The chapter explains that isolation from friends and family can make it harder for someone experiencing abuse to recognize the reality of their situation."
+      prompt: 'The chapter explains that isolation from friends and family can make it harder for someone experiencing abuse to recognize the reality of their situation.'
       options:
-        - id: "a"
-          label: "True"
-        - id: "b"
-          label: "False"
-      correctOptionId: "a"
-      description: "Isolation from friends and family can make it harder to recognize abuse and gain outside perspective."
+        - id: 'a'
+          label: 'True'
+        - id: 'b'
+          label: 'False'
+      correctOptionId: 'a'
+      description: 'Isolation from friends and family can make it harder to recognize abuse and gain outside perspective.'
 
     - id: q4
       type: short_answer
@@ -54,7 +54,7 @@ activity:
 
     - id: q5
       type: short_answer
-      prompt: "What does the chapter teach about forgiveness and moving forward from past hurts?"
+      prompt: 'What does the chapter teach about forgiveness and moving forward from past hurts?'
 ---
 
 # Chapter 9: Powerless, Forgiveness, Bitterness
@@ -199,6 +199,8 @@ Will you become bitter or better? The root of bitterness produces fruit of anger
 
 > _“See to it that no one falls short of the grace of God and that no bitter root grows up to cause trouble and defile many.”_  
 > **— Hebrews 12:15 (NIV)**
+
+<---next--->
 
 ### God helps us forgive ![Scripture Reference](../../../public/pink_heart_mug.png)
 

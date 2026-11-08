@@ -6,52 +6,52 @@ activity:
   questions:
     - id: q1
       type: short_answer
-      prompt: "Spending time on getting to know you is the best foundation you can set for your future. Describe your favorite daily habits or rituals."
+      prompt: 'Spending time on getting to know you is the best foundation you can set for your future. Describe your favorite daily habits or rituals.'
 
     - id: q2
       type: short_answer
-      prompt: "When it feels good for you – do it. When it does not feel good – do not do it. God made your body to work to communicate in a way so you can listen for messages and trust your inner wisdom. Know when something feels good or not to you before saying yes. Describe a time when you listened to your inner voice or chose to distance yourself from a situation or person, and later realized that your decision helped protect you from harm."
+      prompt: 'When it feels good for you – do it. When it does not feel good – do not do it. God made your body to work to communicate in a way so you can listen for messages and trust your inner wisdom. Know when something feels good or not to you before saying yes. Describe a time when you listened to your inner voice or chose to distance yourself from a situation or person, and later realized that your decision helped protect you from harm.'
 
     - id: q3
       type: mcq
-      prompt: "According to Chapter 14, what does creating a “personal gyroscope” represent?"
+      prompt: 'According to Chapter 14, what does creating a “personal gyroscope” represent?'
       options:
-        - id: "a"
+        - id: 'a'
           label: "Learning to follow other people's decisions"
-        - id: "b"
-          label: "Avoiding challenges and difficult situations"
-        - id: "c"
+        - id: 'b'
+          label: 'Avoiding challenges and difficult situations'
+        - id: 'c'
           label: "Developing the confidence and direction to stay on course despite life's challenges"
-        - id: "d"
-          label: "Changing your goals whenever difficulties arise"
-      correctOptionId: "c"
-      description: "It is a device that once it spins, it tends to resist changes to its orientation. Learn to have the self-confidence to allow you the ability to resist being thrown off course."
+        - id: 'd'
+          label: 'Changing your goals whenever difficulties arise'
+      correctOptionId: 'c'
+      description: 'It is a device that once it spins, it tends to resist changes to its orientation. Learn to have the self-confidence to allow you the ability to resist being thrown off course.'
 
     - id: q4
       type: mcq
-      prompt: "Building a support system of trusted friends, family, and community members can help with healing."
+      prompt: 'Building a support system of trusted friends, family, and community members can help with healing.'
       options:
-        - id: "a"
-          label: "True"
-        - id: "b"
-          label: "False"
-      correctOptionId: "a"
-      description: "Girl to Girl Rule #7 emphasizes accepting help and building healthy support networks."
+        - id: 'a'
+          label: 'True'
+        - id: 'b'
+          label: 'False'
+      correctOptionId: 'a'
+      description: 'Girl to Girl Rule #7 emphasizes accepting help and building healthy support networks.'
 
     - id: q5
       type: mcq
-      prompt: "According to the “Girl to Girl Rules,” what should you do if you experience a setback during your healing journey?"
+      prompt: 'According to the “Girl to Girl Rules,” what should you do if you experience a setback during your healing journey?'
       options:
-        - id: "a"
-          label: "Give up on your goals"
-        - id: "b"
-          label: "Feel ashamed of your mistakes"
-        - id: "c"
-          label: "Ignore the setback completely"
-        - id: "d"
-          label: "Regroup, learn from the experience, and try again"
-      correctOptionId: "d"
-      description: "Girl to Girl Rule #6 teaches that setbacks are a normal part of the healing journey and that you should keep moving forward rather than give up."
+        - id: 'a'
+          label: 'Give up on your goals'
+        - id: 'b'
+          label: 'Feel ashamed of your mistakes'
+        - id: 'c'
+          label: 'Ignore the setback completely'
+        - id: 'd'
+          label: 'Regroup, learn from the experience, and try again'
+      correctOptionId: 'd'
+      description: 'Girl to Girl Rule #6 teaches that setbacks are a normal part of the healing journey and that you should keep moving forward rather than give up.'
 ---
 
 # Chapter 14: Seven Ingredients of Perfection, #3 Soul, #4 Mind
@@ -157,6 +157,8 @@ At first, when you begin making this transformation, you may feel agitated, awkw
 When you stop going around pleasing people, you free yourself from that unattainable goal. This behavior is also called being codependent and is a coping mechanism that you developed over your lifetime. You can be free!
 
 What things in your life do you need to let go of because it is not your burden anymore?
+
+<---next--->
 
 ### Girl to Girl Rule #6
 

@@ -9,52 +9,52 @@ activity:
   questions:
     - id: q1
       type: mcq
-      prompt: "Which of the following is an example of financial abuse?"
+      prompt: 'Which of the following is an example of financial abuse?'
       options:
-        - id: "a"
-          label: "Discussing household expenses together"
-        - id: "b"
-          label: "Encouraging a partner to pursue employment"
-        - id: "c"
+        - id: 'a'
+          label: 'Discussing household expenses together'
+        - id: 'b'
+          label: 'Encouraging a partner to pursue employment'
+        - id: 'c'
           label: "Restricting a partner's access to money or preventing them from working"
-        - id: "d"
-          label: "Making financial decisions together"
-      correctOptionId: "c"
-      description: "Restricting access to money or preventing a partner from working are examples of financial abuse."
+        - id: 'd'
+          label: 'Making financial decisions together'
+      correctOptionId: 'c'
+      description: 'Restricting access to money or preventing a partner from working are examples of financial abuse.'
 
     - id: q2
       type: mcq
-      prompt: "According to the Cycle of Violence model discussed in the chapter, what are the three basic phases?"
+      prompt: 'According to the Cycle of Violence model discussed in the chapter, what are the three basic phases?'
       options:
-        - id: "a"
-          label: "Conflict, separation, and recovery"
-        - id: "b"
-          label: "Tension building, acting out, and reconciliation/honeymoon"
-        - id: "c"
-          label: "Anger, forgiveness, and friendship"
-        - id: "d"
-          label: "Disagreement, communication, and resolution"
-      correctOptionId: "b"
-      description: "The three basic phases are tension building, acting out, and reconciliation or honeymoon."
+        - id: 'a'
+          label: 'Conflict, separation, and recovery'
+        - id: 'b'
+          label: 'Tension building, acting out, and reconciliation/honeymoon'
+        - id: 'c'
+          label: 'Anger, forgiveness, and friendship'
+        - id: 'd'
+          label: 'Disagreement, communication, and resolution'
+      correctOptionId: 'b'
+      description: 'The three basic phases are tension building, acting out, and reconciliation or honeymoon.'
 
     - id: q3
       type: mcq
-      prompt: "The chapter explains that physical abuse can include indirect actions, such as destroying belongings or abusing pets."
+      prompt: 'The chapter explains that physical abuse can include indirect actions, such as destroying belongings or abusing pets.'
       options:
-        - id: "a"
-          label: "True"
-        - id: "b"
-          label: "False"
-      correctOptionId: "a"
-      description: "The chapter includes indirect actions such as destroying belongings or abusing pets as forms of physical abuse."
+        - id: 'a'
+          label: 'True'
+        - id: 'b'
+          label: 'False'
+      correctOptionId: 'a'
+      description: 'The chapter includes indirect actions such as destroying belongings or abusing pets as forms of physical abuse.'
 
     - id: q4
       type: short_answer
-      prompt: "What are two characteristics of a healthy relationship discussed in the chapter?"
+      prompt: 'What are two characteristics of a healthy relationship discussed in the chapter?'
 
     - id: q5
       type: short_answer
-      prompt: "Why is creating a safety plan important for someone experiencing abuse?"
+      prompt: 'Why is creating a safety plan important for someone experiencing abuse?'
 ---
 
 # Chapter 10: Types of Abuse, Cycles, Safety, Legal
@@ -320,6 +320,8 @@ What love is it supposed to be:
 > _“Love is long suffering and kind. Love is not jealous, it does not brag, does not get puffed up, does not behave indecently, does not look for its own interests, does not become provoked. It does not keep account of injury. It does not rejoice over unrighteousness, but rejoices with the truth. It bears all things, believes all things, hopes all things, endures all things. Love never fails…”_  
 > **— 1 Corinthians 13:4–8 (NLT)**
 
+<---next--->
+
 ### Healthy Relationship Comparison
 
 Review the comparison of healthy to unhealthy relationships:
@@ -410,6 +412,8 @@ _Batterers have common behaviors that are warning signs you should know. If you 
 _Remember that abuse escalates. What might be limited to emotional and/or verbal abuse can easily escalate._
 
 _Think about a small child’s behavior when they get angry. He/she may throw a toy across the room when they get frustrated. When an adult maintains these childish behaviors and does not “get their way,” this can mean violence directed towards you when they are frustrated._
+
+<---next--->
 
 ### What to look for
 

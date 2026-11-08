@@ -6,59 +6,59 @@ activity:
   questions:
     - id: q1
       type: short_answer
-      prompt: "Reflect on your personal growth. What new things have you learned about yourself throughout your healing journey? Think about your strengths, accomplishments, and the things you are now capable of doing. List five things you have learned about yourself or can now confidently say, “I CAN.”"
+      prompt: 'Reflect on your personal growth. What new things have you learned about yourself throughout your healing journey? Think about your strengths, accomplishments, and the things you are now capable of doing. List five things you have learned about yourself or can now confidently say, “I CAN.”'
 
     - id: q2
       type: mcq
-      prompt: "You should ignore uncomfortable feelings or concerns about a new relationship if the other person seems loving."
+      prompt: 'You should ignore uncomfortable feelings or concerns about a new relationship if the other person seems loving.'
       options:
-        - id: "a"
-          label: "True"
-        - id: "b"
-          label: "False"
-      correctOptionId: "b"
-      description: "This chapter encourages paying attention to concerns, taking time to observe behavior, and maintaining personal boundaries."
+        - id: 'a'
+          label: 'True'
+        - id: 'b'
+          label: 'False'
+      correctOptionId: 'b'
+      description: 'This chapter encourages paying attention to concerns, taking time to observe behavior, and maintaining personal boundaries.'
 
     - id: q3
       type: mcq
-      prompt: "What does Chapter 15 encourage you to do before entering a new relationship?"
+      prompt: 'What does Chapter 15 encourage you to do before entering a new relationship?'
       options:
-        - id: "a"
-          label: "Commit immediately to avoid losing the opportunity"
-        - id: "b"
-          label: "Ignore concerns if you have strong feelings"
-        - id: "c"
+        - id: 'a'
+          label: 'Commit immediately to avoid losing the opportunity'
+        - id: 'b'
+          label: 'Ignore concerns if you have strong feelings'
+        - id: 'c'
           label: "Change your personal values to match your partner's"
-        - id: "d"
-          label: "Identify your values, boundaries, and expectations for a healthy relationship"
-      correctOptionId: "d"
-      description: "Develop a solid foundation of self-purpose, values, and acceptable behaviors before entering a new relationship."
+        - id: 'd'
+          label: 'Identify your values, boundaries, and expectations for a healthy relationship'
+      correctOptionId: 'd'
+      description: 'Develop a solid foundation of self-purpose, values, and acceptable behaviors before entering a new relationship.'
 
     - id: q4
       type: mcq
-      prompt: "A partner who constantly checks your messages, demands passwords, or isolates you from loved ones may be showing warning signs of controlling behavior."
+      prompt: 'A partner who constantly checks your messages, demands passwords, or isolates you from loved ones may be showing warning signs of controlling behavior.'
       options:
-        - id: "a"
-          label: "True"
-        - id: "b"
-          label: "False"
-      correctOptionId: "a"
-      description: "These are some relationship warning signs identified in Girl to Girl advice."
+        - id: 'a'
+          label: 'True'
+        - id: 'b'
+          label: 'False'
+      correctOptionId: 'a'
+      description: 'These are some relationship warning signs identified in Girl to Girl advice.'
 
     - id: q5
       type: mcq
-      prompt: "Which of the following is a sign of a healthy relationship?"
+      prompt: 'Which of the following is a sign of a healthy relationship?'
       options:
-        - id: "a"
-          label: "One person makes all the decisions"
-        - id: "b"
+        - id: 'a'
+          label: 'One person makes all the decisions'
+        - id: 'b'
           label: "Both individuals respect each other's boundaries, feelings, and independence"
-        - id: "c"
-          label: "One person must constantly seek permission"
-        - id: "d"
-          label: "A partner discourages personal growth"
-      correctOptionId: "b"
-      description: "This chapter emphasizes that both individuals should feel respected, have their boundaries honored, and be encouraged to grow as individuals."
+        - id: 'c'
+          label: 'One person must constantly seek permission'
+        - id: 'd'
+          label: 'A partner discourages personal growth'
+      correctOptionId: 'b'
+      description: 'This chapter emphasizes that both individuals should feel respected, have their boundaries honored, and be encouraged to grow as individuals.'
 ---
 
 # Chapter 15: Seven Ingredients, #5 Words, #6 Lessons, #7 Relationships
@@ -179,6 +179,8 @@ As you embark on your new journey in life, it is so important to stay connected.
 
 At some point in time, you will begin to think about starting a new relationship. In order to ensure that you will find a healthy partner you must first identify what you want. Create a healthy relationship inventory to identify what you and what God has defined for your next partner.
 
+<---next--->
+
 ### How people measure up
 
 When you evaluate and meet new people, see how close they come to your important characteristics. No one will be 100% perfect, but if the areas that are most vital to you are compatible, then perhaps this individual desires the time for a friendship to see what happens.
@@ -245,6 +247,8 @@ When a relationship begins to solidify and becomes more serious, you have the ri
 \
 • Search for them on the internet. See what you find about them.
 
+<---next--->
+
 ### Girl to Girl Advice
 
 They say love is blind. You need your girlfriend to give you straight advice.
@@ -270,8 +274,6 @@ Red Flag Tips:
 9. Requires you accommodate them all the time. Ask yourself, what would happen if someone else changed for you instead of you doing all the changing to accommodate them? Spend time determining how rigid their views and opinions are.
 
 10. Be wary of the “carrot.” Like a horse that follows a carrot, you may have a tendency to focus on the illusion and hope that they can make all your dreams come true. This “bait” can mislead you, cloud your judgment, and leave you vulnerable. Make sure that have mutual respect as the basis for the relationship.
-
-### Continued
 
 11. Are you serving or helping so they will love you? Make sure that when you say, “I’ll help” you really understand your motivation. You can set a precedence that keeps you constantly “serving” to meet their needs because it is comfortable for you to do so. You do not need to serve another to receive love. Mutually healthy relationships work to meet the needs of both partners.
 

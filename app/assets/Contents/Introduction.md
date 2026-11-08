@@ -2,56 +2,56 @@
 title: Introduction
 
 activity:
-    title: Introduction Activity
-    questions:
+  title: Introduction Activity
+  questions:
     - id: q1
       type: mcq
-      prompt: "(Abusive or Not Abusive) Do you “stuff” your pain deep inside?"
+      prompt: '(Abusive or Not Abusive) Do you “stuff” your pain deep inside?'
       options:
-        - id: "a"
-          label: "Yes, frequently"
-        - id: "b"
-          label: "Sometimes"
-        - id: "c"
-          label: "Rarely / Never"
+        - id: 'a'
+          label: 'Yes, frequently'
+        - id: 'b'
+          label: 'Sometimes'
+        - id: 'c'
+          label: 'Rarely / Never'
       correctOptionId: null
       description: null
 
     - id: q2
       type: mcq
-      prompt: "(Abusive or Not Abusive) Have you told lies to your family and friends about the relationship?"
+      prompt: '(Abusive or Not Abusive) Have you told lies to your family and friends about the relationship?'
       options:
-        - id: "a"
-          label: "Yes, frequently"
-        - id: "b"
-          label: "Sometimes"
-        - id: "c"
-          label: "Rarely / Never"
+        - id: 'a'
+          label: 'Yes, frequently'
+        - id: 'b'
+          label: 'Sometimes'
+        - id: 'c'
+          label: 'Rarely / Never'
       correctOptionId: null
       description: null
-    
+
     - id: q3
       type: mcq
-      prompt: "Are you confused about why you keep repeating the same bad relationships?"
+      prompt: 'Are you confused about why you keep repeating the same bad relationships?'
       options:
-        - id: "a"
-          label: "Yes"
-        - id: "b"
-          label: "No"
-        - id: "c"
-          label: "Unsure"
+        - id: 'a'
+          label: 'Yes'
+        - id: 'b'
+          label: 'No'
+        - id: 'c'
+          label: 'Unsure'
       correctOptionId: null
       description: null
 
     - id: q4
       type: short_answer
-      section: "Are you still in an abusive relationship?"
-      prompt: "Do you feel you can no longer continue to exist this way?"
-      
+      section: 'Are you still in an abusive relationship?'
+      prompt: 'Do you feel you can no longer continue to exist this way?'
+
     - id: q5
       type: short_answer
-      section: "Are you out of the relationship, but still held captive by your past?"
-      prompt: "Do you struggle believing you are worthy of a new life?"
+      section: 'Are you out of the relationship, but still held captive by your past?'
+      prompt: 'Do you struggle believing you are worthy of a new life?'
 ---
 
 ### You can be free
@@ -120,6 +120,8 @@ The guarantee:\
 ### What to expect
 
 This workbook guides you on a personal journey to discover your patterns of behavior, to identify abusive relationships, to restore self-esteem and to build a plan of action to redefine your life. What makes this book different is that it is based on God’s word. It allows God’s love to emerge during the healing process to make your transformation last for a lifetime.
+
+<---next--->
 
 Icons are used throughout the book to help organize the information:
 

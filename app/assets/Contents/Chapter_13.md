@@ -6,45 +6,45 @@ activity:
   questions:
     - id: q1
       type: short_answer
-      prompt: "Our burdens can feel so heavy. We carry them around unaware that God’s promise is that he will carry those burdens for us. All we have to do is give them away. Describe the burdens you are carrying right now."
+      prompt: 'Our burdens can feel so heavy. We carry them around unaware that God’s promise is that he will carry those burdens for us. All we have to do is give them away. Describe the burdens you are carrying right now.'
 
     - id: q2
       type: mcq
-      prompt: "What common message is shared in Isaiah 40:27-31, Psalm 121, and Matthew 11:28–30?"
+      prompt: 'What common message is shared in Isaiah 40:27-31, Psalm 121, and Matthew 11:28–30?'
       options:
-        - id: "a"
-          label: "We must overcome every challenge without assistance."
-        - id: "b"
-          label: "Strength comes only from physical endurance."
-        - id: "c"
-          label: "Difficult experiences should always be ignored."
-        - id: "d"
-          label: "God offers strength, protection, and comfort during difficult times."
-      correctOptionId: "d"
+        - id: 'a'
+          label: 'We must overcome every challenge without assistance.'
+        - id: 'b'
+          label: 'Strength comes only from physical endurance.'
+        - id: 'c'
+          label: 'Difficult experiences should always be ignored.'
+        - id: 'd'
+          label: 'God offers strength, protection, and comfort during difficult times.'
+      correctOptionId: 'd'
       description: "These scriptures emphasize trusting God for strength, protection, and support when facing life's challenges."
 
     - id: q3
       type: short_answer
-      prompt: "Think about your five senses: sight, sound, smell, taste, and touch. What is one small change you can make using any of these senses to improve your daily well-being?"
+      prompt: 'Think about your five senses: sight, sound, smell, taste, and touch. What is one small change you can make using any of these senses to improve your daily well-being?'
 
     - id: q4
       type: mcq
-      prompt: "What does Chapter 13 teach about respecting and caring for your body?"
+      prompt: 'What does Chapter 13 teach about respecting and caring for your body?'
       options:
-        - id: "a"
-          label: "Self-care is an important part of rebuilding self-respect and well-being"
-        - id: "b"
-          label: "Physical appearance determines personal worth"
-        - id: "c"
-          label: "Taking care of others should always come before personal needs"
-        - id: "d"
-          label: "Healthy habits are only useful after completing the healing journey"
-      correctOptionId: "a"
-      description: "The Power of Your Body emphasizes healthy habits, self-love, and treating your body with respect."
+        - id: 'a'
+          label: 'Self-care is an important part of rebuilding self-respect and well-being'
+        - id: 'b'
+          label: 'Physical appearance determines personal worth'
+        - id: 'c'
+          label: 'Taking care of others should always come before personal needs'
+        - id: 'd'
+          label: 'Healthy habits are only useful after completing the healing journey'
+      correctOptionId: 'a'
+      description: 'The Power of Your Body emphasizes healthy habits, self-love, and treating your body with respect.'
 
     - id: q5
       type: short_answer
-      prompt: "What would you like to accomplish now that you are beginning to let go of your burdens?"
+      prompt: 'What would you like to accomplish now that you are beginning to let go of your burdens?'
 ---
 
 # Chapter 13: Seven Ingredients to Perfection, #1 God, #2 Body
@@ -214,6 +214,8 @@ When you awaken the spiritual part of you there is a transformation that occurs.
 > _“Don’t put your confidence in powerful people; there is no help for you there. When their breathing stops, they return to the earth, and in a moment all their plans come to an end. But happy are those who have the God of Israel as their helper, whose hope is in the Lord their God. He is the one who made heaven and earth, the sea, and everything in them. He is the one who keeps every promise forever, who gives justice to the oppressed and food to the hungry. The Lord frees the prisoners. The Lord opens the eyes of the blind. The Lord lifts the burdens of those bent beneath their loads. The Lord loves the righteous. The Lord protects the foreigners among us. He cares for the orphans and widows, but he frustrates the plans of the wicked. The Lord will reign forever. O Jerusalem, your God is King in every generation! Praise the Lord.”_  
 > **— Psalms 146:3–10 (NLT)**
 
+<---next--->
+
 ### Security ![Scripture Reference](../../../public/pink_heart_mug.png)
 
 When you believe that you are a beautiful child of God, you begin a spiritual path that will heighten your self-worth.
@@ -346,7 +348,9 @@ Select sounds around you that are uplifting and refreshing:\
 \
 • Find new sounds that you like: such as, birds outside your window, the sound of your child’s voice, your heartbeat and the simple act of listening to your own breath. Listen to your voice when you sing a particular tune and you may realize you really can sing after all. You might also find that having no sound and quiet moments will bring you the most comfort at this time. Try both.
 
-_“As I began to heal, the strangest thing happened. I must have been releasing toxins from bad choices, hurts and deep emotional pain that had been stored in my cells, muscles and organs. As I healed, my joints ached and for weeks I had a cough that tasted like anesthesia flavor. As I spent time daily in prayer, I would ask God to cleanse my body of this toxicity. It was similar coughing out a mist. It was my body healing. This lasted for weeks and then it stopped. God confirmed that he needed room for his Holy Spirit to work in my life and I was too full of the past for him to move freely in my soul.“_
+> “As I began to heal, the strangest thing happened. I must have been releasing toxins from bad choices, hurts and deep emotional pain that had been stored in my cells, muscles and organs. As I healed, my joints ached and for weeks I had a cough that tasted like anesthesia flavor. As I spent time daily in prayer, I would ask God to cleanse my body of this toxicity. It was similar coughing out a mist. It was my body healing. This lasted for weeks and then it stopped. God confirmed that he needed room for his Holy Spirit to work in my life and I was too full of the past for him to move freely in my soul.“
+
+<---next--->
 
 ### Taste
 

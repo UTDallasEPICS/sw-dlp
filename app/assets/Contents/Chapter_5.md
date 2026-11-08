@@ -106,6 +106,8 @@ For everything God has a time and your time is now!
 
 Remember, every day YOU have a choice of how you will feel and how you will spend your time or energy.
 
+<---next--->
+
 ### Purpose ![Scripture Reference](../../../public/pink_heart_mug.png)
 
 > _“Ask and it will be given to you, seek and you will find; knock and the door will be opened to you. For everyone who asks receives; [she] who seeks finds, and to [her] who knocks, the door will be opened.”_  

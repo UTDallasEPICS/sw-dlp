@@ -232,6 +232,8 @@ Have you considered:\
 • When you blame others you give up the control to change and manage your own behavior.\
 • Remove blame from your actions, thoughts and words. When you do this, you are free because you have claimed back control of your emotional state. Change begins in you.
 
+<---next--->
+
 Obsessions
 
 ### Obsessive behaviors ![Scripture Reference](../../../public/pink_heart_mug.png)
@@ -351,6 +353,8 @@ You are only responsible for your own actions and not to blame for any abuse:
 • If you need sleep — try to find a way to get some.\
 • If you are stressed — begin praying that God gives you all the strength you need to find your way out of this valley.\
 • Reflect on your God given purpose — try to apply some of those activities which will reduce stress.
+
+<---next--->
 
 ### Feel ashamed ![Scripture Reference](../../../public/pink_heart_mug.png)
 

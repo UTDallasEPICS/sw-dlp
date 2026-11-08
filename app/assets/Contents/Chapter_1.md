@@ -1,7 +1,7 @@
 ---
 title: Chapter 1
 videos:
-  - videoUrl: https://youtu.be/Hpx5dQBkaW0 
+  - videoUrl: https://youtu.be/Hpx5dQBkaW0
     videoTitle: Chapter 1 Espresso and You
 
 activity:
@@ -9,45 +9,45 @@ activity:
   questions:
     - id: q1
       type: short_answer
-      prompt: "Describe areas where you have further potential."
+      prompt: 'Describe areas where you have further potential.'
 
     - id: q2
       type: short_answer
-      prompt: "Identify areas in your life where you demonstrate precision and dedication."
+      prompt: 'Identify areas in your life where you demonstrate precision and dedication.'
 
     - id: q3
       type: short_answer
-      prompt: "What is the risk if you expect perfection of yourself?"
+      prompt: 'What is the risk if you expect perfection of yourself?'
 
     - id: q4
       type: mcq
-      prompt: "What would you change to improve your potential?"
+      prompt: 'What would you change to improve your potential?'
       options:
-        - id: "a"
-          label: "Relying completely on external validation to define my self-worth"
-        - id: "b"
-          label: "Eliminating all forms of constructive feedback from mentors"
-        - id: "c"
-          label: "Cultivating a stronger mindset of daily resilience and self-advocacy"
-        - id: "d"
-          label: "Lowering my personal goals to avoid the possibility of failure"
-      correctOptionId: "c"
-      description: "Building resilience and speaking up for oneself actively improves personal growth"
+        - id: 'a'
+          label: 'Relying completely on external validation to define my self-worth'
+        - id: 'b'
+          label: 'Eliminating all forms of constructive feedback from mentors'
+        - id: 'c'
+          label: 'Cultivating a stronger mindset of daily resilience and self-advocacy'
+        - id: 'd'
+          label: 'Lowering my personal goals to avoid the possibility of failure'
+      correctOptionId: 'c'
+      description: 'Building resilience and speaking up for oneself actively improves personal growth'
 
     - id: q5
       type: mcq
-      prompt: "Describe areas in your life where you are volatile and difficult."
+      prompt: 'Describe areas in your life where you are volatile and difficult.'
       options:
-        - id: "a"
-          label: "Achieving absolute harmony and predictable smoothness in every action"
-        - id: "b"
-          label: "Navigating intense boundary-setting during high-stress personal transitions"
-        - id: "c"
-          label: "Experiencing a life entirely free of conflict or friction"
-        - id: "d"
-          label: "Sustaining a completely stagnant and emotionless daily routine"
-      correctOptionId: "b"   
-      description: "Holding firm boundaries can sometimes feel challenging or intense to others during transitions."
+        - id: 'a'
+          label: 'Achieving absolute harmony and predictable smoothness in every action'
+        - id: 'b'
+          label: 'Navigating intense boundary-setting during high-stress personal transitions'
+        - id: 'c'
+          label: 'Experiencing a life entirely free of conflict or friction'
+        - id: 'd'
+          label: 'Sustaining a completely stagnant and emotionless daily routine'
+      correctOptionId: 'b'
+      description: 'Holding firm boundaries can sometimes feel challenging or intense to others during transitions.'
 ---
 
 # Chapter 1: Espresso and You
@@ -112,6 +112,8 @@ Over time what is “normal” shifts and the victim develops coping mechanisms 
 When you finally break free from an abusive relationship, scars remain and new coping mechanisms must be established for your patterns to change.
 
 Chapter Ten of this workbook has detailed information about the characteristics of each type of abuse. You will learn about each type in detail to understand what you endured and what normal should look like.
+
+<--- Next --->
 
 ### Action
 

@@ -113,6 +113,8 @@ He who began a good work in you should complete that work until the finish.
 > _“Be confident in this, that He who began a good work in you will carry it on to completion until the day of Christ Jesus.”_”*  
 > **— Philippians 1:6 (NIV)**
 
+<---next--->
+
 ### Spiritual awakening ![Testimonial Quote](../../../public/broken_mug.png)
 
 One day, after finishing a three-day Christian women’s conference, I went to the ocean to swim. During that swim I was surrounded by angels and they were laughing and playing in the water with me. The water turned a fluorescent turquoise. I was surrounded by other people in the water but I saw no one else during this surreal experience. As each wave passed over me, I heard God’s voice whispering in my ear, “I love you, and I forgive you. Let it go.” I played in the water, laughed and cried washing away years of shame. I felt cleansed surrounded by the love of God and the angels.

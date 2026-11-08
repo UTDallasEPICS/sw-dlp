@@ -9,45 +9,45 @@ activity:
   questions:
     - id: q1
       type: short_answer
-      prompt: "Have no doubt, you have survived an abusive relationship, you are already full of dedication and perseverance and can change anything. You just have to begin. List 3 to 5 words that describe you as a child. Next to each one, write the emotion it brings up for you now. How many of your descriptive words were positive? Negative?"
+      prompt: 'Have no doubt, you have survived an abusive relationship, you are already full of dedication and perseverance and can change anything. You just have to begin. List 3 to 5 words that describe you as a child. Next to each one, write the emotion it brings up for you now. How many of your descriptive words were positive? Negative?'
 
     - id: q2
       type: short_answer
-      prompt: "As long as we hold onto the past, we cannot grab onto the future. God has blessings in store for you. In that you can trust. Taking actions every day you can begin to restore your self-esteem. What are ways that we can begin to restore our self-esteem? In your response mention a major hurt/memory, the people involved, your feelings, and the actions you will take today to overcome this."
+      prompt: 'As long as we hold onto the past, we cannot grab onto the future. God has blessings in store for you. In that you can trust. Taking actions every day you can begin to restore your self-esteem. What are ways that we can begin to restore our self-esteem? In your response mention a major hurt/memory, the people involved, your feelings, and the actions you will take today to overcome this.'
 
     - id: q3
       type: short_answer
-      prompt: "Don’t forget the good that has happened in your life. The GOOD in your life is very important to focus on! Reflect on WHY it was good, and the feelings you experienced then and now as you remember. To remember and replace is an action. Action requires work, but it is worth it. Describe the memories, people or events that helped you feel good about yourself."
+      prompt: 'Don’t forget the good that has happened in your life. The GOOD in your life is very important to focus on! Reflect on WHY it was good, and the feelings you experienced then and now as you remember. To remember and replace is an action. Action requires work, but it is worth it. Describe the memories, people or events that helped you feel good about yourself.'
 
     - id: q4
       type: mcq
-      prompt: "According to Chapter 12, what does it mean to trust your inner self?"
+      prompt: 'According to Chapter 12, what does it mean to trust your inner self?'
       options:
-        - id: "a"
-          label: "Ignoring your feelings and needs"
-        - id: "b"
-          label: "Allowing others to make every decision for you"
-        - id: "c"
-          label: "Listening to your instincts and recognizing what your body and mind need"
-        - id: "d"
-          label: "Avoiding situations that require personal decisions"
-      correctOptionId: "c"
-      description: "Chapter 12 encourages listening to your inner wisdom, recognizing your needs, and making choices that support your well-being."
+        - id: 'a'
+          label: 'Ignoring your feelings and needs'
+        - id: 'b'
+          label: 'Allowing others to make every decision for you'
+        - id: 'c'
+          label: 'Listening to your instincts and recognizing what your body and mind need'
+        - id: 'd'
+          label: 'Avoiding situations that require personal decisions'
+      correctOptionId: 'c'
+      description: 'Chapter 12 encourages listening to your inner wisdom, recognizing your needs, and making choices that support your well-being.'
 
     - id: q5
       type: mcq
-      prompt: "Which activity is recommended in Chapter 12 as a way to strengthen self-esteem?"
+      prompt: 'Which activity is recommended in Chapter 12 as a way to strengthen self-esteem?'
       options:
-        - id: "a"
-          label: "Keeping all difficult feelings to yourself"
-        - id: "b"
-          label: "Journaling about feelings, progress, and personal strengths"
-        - id: "c"
+        - id: 'a'
+          label: 'Keeping all difficult feelings to yourself'
+        - id: 'b'
+          label: 'Journaling about feelings, progress, and personal strengths'
+        - id: 'c'
           label: "Measuring your worth through other people's opinions"
-        - id: "d"
-          label: "Avoiding activities that feel unfamiliar"
-      correctOptionId: "b"
-      description: "The chapter recommends journaling, recognizing natural talents, and reflecting on personal progress as ways to support self-esteem."
+        - id: 'd'
+          label: 'Avoiding activities that feel unfamiliar'
+      correctOptionId: 'b'
+      description: 'The chapter recommends journaling, recognizing natural talents, and reflecting on personal progress as ways to support self-esteem.'
 ---
 
 # Chapter 12: Self-esteem: What erodes? How to enhance?
@@ -214,6 +214,8 @@ Some other ideas:\
 • If you are a mom, model how to ask and set healthy boundaries. Using clear communication and respect is an important lesson to demonstrate to your kids.\
 \
 • Invite someone to talk a walk. Fresh air can do wonders.
+
+<---next--->
 
 ### Personal Hygiene
 

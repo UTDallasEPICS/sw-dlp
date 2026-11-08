@@ -9,52 +9,52 @@ activity:
   questions:
     - id: q1
       type: mcq
-      prompt: "What is a communication \"hook\"?"
+      prompt: 'What is a communication "hook"?'
       options:
-        - id: "a"
-          label: "A way to begin a friendly conversation"
-        - id: "b"
-          label: "Something someone says or does that triggers an automatic emotional reaction"
-        - id: "c"
-          label: "A method for memorizing conversations"
-        - id: "d"
-          label: "A technique for avoiding all disagreements"
-      correctOptionId: "b"
-      description: "A communication hook triggers an automatic emotional reaction through something another person says or does."
+        - id: 'a'
+          label: 'A way to begin a friendly conversation'
+        - id: 'b'
+          label: 'Something someone says or does that triggers an automatic emotional reaction'
+        - id: 'c'
+          label: 'A method for memorizing conversations'
+        - id: 'd'
+          label: 'A technique for avoiding all disagreements'
+      correctOptionId: 'b'
+      description: 'A communication hook triggers an automatic emotional reaction through something another person says or does.'
 
     - id: q2
       type: mcq
-      prompt: "According to the chapter, which response demonstrates communication from the Adult state?"
+      prompt: 'According to the chapter, which response demonstrates communication from the Adult state?'
       options:
-        - id: "a"
-          label: "Reacting with anger and blaming others"
-        - id: "b"
-          label: "Refusing to listen to another person"
-        - id: "c"
-          label: "Responding calmly and focusing on the situation without emotional blame"
-        - id: "d"
-          label: "Bringing up past disagreements"
-      correctOptionId: "c"
-      description: "Communicating from the Adult state means responding calmly to the situation rather than reacting with emotional blame."
+        - id: 'a'
+          label: 'Reacting with anger and blaming others'
+        - id: 'b'
+          label: 'Refusing to listen to another person'
+        - id: 'c'
+          label: 'Responding calmly and focusing on the situation without emotional blame'
+        - id: 'd'
+          label: 'Bringing up past disagreements'
+      correctOptionId: 'c'
+      description: 'Communicating from the Adult state means responding calmly to the situation rather than reacting with emotional blame.'
 
     - id: q3
       type: mcq
-      prompt: "Recognizing your automatic emotional responses can help you begin changing unhealthy communication patterns."
+      prompt: 'Recognizing your automatic emotional responses can help you begin changing unhealthy communication patterns.'
       options:
-        - id: "a"
-          label: "True"
-        - id: "b"
-          label: "False"
-      correctOptionId: "a"
-      description: "Recognizing automatic emotional responses is a first step toward changing unhealthy communication patterns."
+        - id: 'a'
+          label: 'True'
+        - id: 'b'
+          label: 'False'
+      correctOptionId: 'a'
+      description: 'Recognizing automatic emotional responses is a first step toward changing unhealthy communication patterns.'
 
     - id: q4
       type: short_answer
-      prompt: "What can you do when you recognize that someone has triggered a communication hook?"
+      prompt: 'What can you do when you recognize that someone has triggered a communication hook?'
 
     - id: q5
       type: short_answer
-      prompt: "Why is it important to recognize repeated communication patterns in relationships?"
+      prompt: 'Why is it important to recognize repeated communication patterns in relationships?'
 ---
 
 # Chapter 8: Communication Hooks, Medical Impact
@@ -176,7 +176,9 @@ The games played go hand in hand with the coping behaviors learned earlier. They
 
 > _“hooked.”_
 
-Once you identify the source, the scripts can be redesigned and rewritten to bring a new outcome.
+Once you identify the source, the scripts can be redesigned and rewritten to bring a new outcome
+
+<---next--->
 
 ### Impact on relationships
 
@@ -390,6 +392,8 @@ You wait in line for your coffee, tapping your toes incessantly, agitated becaus
 ### It’s real not just in your head
 
 Premenstrual Syndrome (PMS) and Premenstrual Dysphonic Disorder (PMDD) are very real conditions and must be embraced with love and understanding. If you remain at odds with your body and ignore your monthly cycles, it can be very damaging. Regardless of what jokes can be made, you need to understand that women, namely you, need self-love during this time. Some women may not be affected, others have mild symptoms, but many women become so affected that their daily lives are interrupted with their menses cycle. It is vital that you look at this monthly event as a part of your patterns of behavior. Like it or not, you must embrace your womanhood and understand times when you need to demand more self-love and love from others.
+
+<---next--->
 
 ### Definition: PMS
 
