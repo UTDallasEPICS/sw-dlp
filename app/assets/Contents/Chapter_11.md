@@ -63,7 +63,7 @@ activity:
 
 The purpose of Chapter 11 is to help you understand what self-esteem is and why it is so important for you to nurture and develop.
 
-### I was worthy ![Testimonial Quote](../../../public/broken_mug.png)
+### I was worthy ![Testimonial Quote](/broken_mug.png)
 
 _“My self-esteem had to be rebuilt so that I could believe that I was worthy of creating a plan of action. The results from the rebuilding process have allowed me to believe in myself and to heal from the pain.”_
 
@@ -99,13 +99,13 @@ Experts disagree over an exact definition; however, Branden’s appears to be wi
 
 Abraham Maslow defined self-esteem to include two kinds of esteem needs, the need for self-respect and the need for respect from others. When these needs are not being met, the individual feels discouraged, inferior and weak.
 
-![Diagram](../../../public/chapter_11_p217_fig.png)
+![Diagram](/chapter_11_p217_fig.png)
 
 ### Self respect
 
 When you possess self-respect, you have a sense of personal achievement. You believe you are competent and have confidence in your ability to perform daily duties successfully, at home or at work. Will you make mistakes? Of course, but that’s all it is. You become free from the ups and downs that pull you from euphoria to despair based on the actions of others. It takes time to master this skill, but it can be yours. God made a promise to you and to us all that he would be our strength, our shelter, our rock.
 
-### God’s promise to you ![Scripture Reference](../../../public/pink_heart_mug.png)
+### God’s promise to you ![Scripture Reference](/pink_heart_mug.png)
 
 Our God is strong and you can have confidence in Him. Part of having a healthy self-esteem is being confident that you can weather the bad times and are still worthy of love and acceptance.
 
@@ -148,7 +148,7 @@ Self-esteem is the responsibility of the individual, no one else. You are not re
 
 Working toward achieving a healthy level of self-esteem is very important, and understanding the pitfalls you may experience can guard you from setbacks. This is the beginning of a new journey for you and the first day of the rest of your life.
 
-### My self-esteem ![Testimonial Quote](../../../public/broken_mug.png)
+### My self-esteem ![Testimonial Quote](/broken_mug.png)
 
 How do you know the level of your self-esteem?
 

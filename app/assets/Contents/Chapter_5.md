@@ -87,7 +87,7 @@ They can make endless varieties of drinks, yet they
 
 Life is a continued repetition of learned patterns of behavior. If you continue to ask for the same thing every day, then you will continue to receive the same outcome. Only when you begin to branch out and try something new can a different outcome occur.
 
-### 3-Legged stool ![Testimonial Quote](../../../public/broken_mug.png)
+### 3-Legged stool ![Testimonial Quote](/broken_mug.png)
 
 > _“For years I sat on a three-legged stool. Partners would kick out one of the legs just when I began to succeed. I continued to fall in love with men that were emotionally, verbally, physically and financially abusive. Why?”_
 
@@ -97,7 +97,7 @@ The first step to any recovery process is to identify where you are right now. U
 
 You must identify your patterns of behavior. This awareness allows you to correct and never say, “Oh, here, I go” again. A skill you must develop is how to identify those reoccurring patterns again in your life, and how to make different choices. Inviting God into your daily life and accepting His divine love will make this process easier. Rest assured that you have been “wonderfully made” by your God and with that mindset you can begin.
 
-### Timing ![Scripture Reference](../../../public/pink_heart_mug.png)
+### Timing ![Scripture Reference](/pink_heart_mug.png)
 
 For everything God has a time and your time is now!
 
@@ -108,7 +108,7 @@ Remember, every day YOU have a choice of how you will feel and how you will spen
 
 <---next--->
 
-### Purpose ![Scripture Reference](../../../public/pink_heart_mug.png)
+### Purpose ![Scripture Reference](/pink_heart_mug.png)
 
 > _“Ask and it will be given to you, seek and you will find; knock and the door will be opened to you. For everyone who asks receives; [she] who seeks finds, and to [her] who knocks, the door will be opened.”_  
 > **— Matthew 7:7–8 (New King James Version)**
@@ -142,7 +142,7 @@ These statements can:\
 • Restrict God’s grace from fully working in your life\
 • Keep you from changing your life
 
-### Power of your tongue ![Scripture Reference](../../../public/pink_heart_mug.png)
+### Power of your tongue ![Scripture Reference](/pink_heart_mug.png)
 
 Be mindful of the words you say. Your tongue is a powerful tool. It can speak praise or it can speak negativity over your life.
 
@@ -151,7 +151,7 @@ Be mindful of the words you say. Your tongue is a powerful tool. It can speak pr
 
 Later in this book, in the Seven Measures of Perfection, Ingredient #5 Power of Your Words, we dig deeper into understanding the role of the tongue in your life.
 
-### Fake appearances ![Testimonial Quote](../../../public/broken_mug.png)
+### Fake appearances ![Testimonial Quote](/broken_mug.png)
 
 > _“I had a college degree, professional career, came from a middle class background. From the outside it looked like I had the world on a platter. Yet, I chose to surround myself with destructive partners.”_
 
@@ -183,6 +183,6 @@ Abuse is not okay. It is against the law.
 
 Ask yourself, why are you drawn to these characteristics? Healthy relationships foster mutual respect, love and nurturing. In the next Chapter we learn about how our behaviors can impact our ability to set boundaries.
 
-### Teasing isn’t for everyone ![Testimonial Quote](../../../public/broken_mug.png)
+### Teasing isn’t for everyone ![Testimonial Quote](/broken_mug.png)
 
 > _“One day my husband started teasing me in a way that really hurt my feelings. He began to do this behavior when we were in front of other people. He would pat my head and say, “good girl” especially in front of other women he was trying to impress. I felt like a fool. Like a dog he was patting me on the head. It was demeaning and he would just laugh at me. Even when I asked him to stop, he just said, “I’m only teasing” and continued to do it. I got angry because I already told him and he wasn’t listening. When I tried to describe my hurt, humiliation, anger, or frustration, he did not validate my feelings nor take them seriously. He thought it was funny and tried even harder to get others to laugh when he did it to me.”_

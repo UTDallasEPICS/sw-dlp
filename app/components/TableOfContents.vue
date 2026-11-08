@@ -1,11 +1,20 @@
 <script setup lang="ts">
   import { ref } from 'vue'
 
-  const { data, status, error, refresh } = await useFetch('/api/course-titles')
+  interface Chapter {
+    title: string
+    slug: string
+  }
+
+  interface Section {
+    title: string
+    chapters: Chapter[]
+  }
+
+  const { data, status, error, refresh } = await useFetch<Section[]>('/api/course-titles')
   const { data: chapterProgress, error: progressError } = await useFetch('/api/userlessons')
   const bookSections = computed(() => data.value ?? [])
 
-  type Chapter = { id: string | null; title: string }
   const normalizeTitle = (title: string): string =>
     title
       .normalize('NFKC')
@@ -17,9 +26,9 @@
   const isChapterComplete = (chapter: Chapter): boolean => {
     const progress = chapterProgress.value?.chapters
     if (!progress || progressError.value) return false
-    const match = chapter.id
-      ? progress.find((entry) => entry.id === chapter.id)
-      : progress.find((entry) => normalizeTitle(entry.name) === normalizeTitle(chapter.title))
+    const match = progress.find(
+      (entry) => normalizeTitle(entry.name) === normalizeTitle(chapter.title)
+    )
     if (match) return match.completed
     const number = chapterNumber(chapter.title)
     return (
@@ -68,7 +77,7 @@
     <div v-else class="overflow-hidden rounded-xl border border-[#e5e7eb] bg-white shadow-xs">
       <section
         v-for="(section, sIndex) in bookSections"
-        :key="section.id"
+        :key="section.title"
         class="border-b border-[#e5e7eb] last:border-b-0"
       >
         <!-- Section Header -->
@@ -106,8 +115,8 @@
           <div class="overflow-hidden">
             <ul class="divide-y divide-gray-200 border-t border-[#e5e7eb]">
               <li
-                v-for="(chapter, cIndex) in section.chapters"
-                :key="`chap-${sIndex}-${cIndex}`"
+                v-for="chapter in section.chapters"
+                :key="chapter.slug"
                 class="group sm:text-md flex items-center px-5 py-2.5 text-sm font-medium transition-colors hover:bg-gray-100 hover:outline-1 hover:outline-gray-400 sm:px-5 sm:py-3"
                 :class="isChapterComplete(chapter) ? 'text-brand-500' : 'text-gray-700'"
               >

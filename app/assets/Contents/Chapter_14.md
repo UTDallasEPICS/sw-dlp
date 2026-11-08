@@ -80,7 +80,7 @@ The next few pages will contain information that you can receive from a
 
 good girlfriend. Honest feedback to help you get better and get on with your life!
 
-### Girl to Girl Rule #1 ![Scripture Reference](../../../public/pink_heart_mug.png)
+### Girl to Girl Rule #1 ![Scripture Reference](/pink_heart_mug.png)
 
 **Focus on your dreams, spiritual gifting and what you like to do!**
 

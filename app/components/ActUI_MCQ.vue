@@ -1,31 +1,84 @@
+<script setup lang="ts">
+    import {ref} from 'vue'
 
+    /* Props for question number, total questions, and prompt used for embedding the variables from the pages folder into the multiple-choice question component.
+    This allows for dynamic question rendering based on the page context. */
+    defineProps({
+        questionNumber: {
+            type: Number,
+            required: true
+        },
+        totalQuestions: {
+            type: Number,
+            required: true
+        },
+        prompt: {
+            type: String,
+            required: true
+        },
+        options: {
+            type: Array as () => string[],
+            required: true
+        }
+    })
+
+    /* Emits for updating the selected option in the parent component. 
+    This allows for two-way data binding between the multiple-choice question component and its parent. */
+
+    const emit = defineEmits(['update:modelValue'])
+
+    /* Ref for the selected option. 
+    This is used to track which option the user has selected and to apply appropriate styling. */
+
+    const selectedOption = ref<string | null>(null)
+    
+    const selectOption = (option: string) => {
+        selectedOption.value = option
+        emit('update:modelValue', option)
+    }
+    
+
+</script>
 
 <template>
-        <div class="m-8 rounded-2xl border border-pink-100 bg-white p-6 shadow-[0_0_24px_rgba(224,0,77,0.12)]">
+        <div class="rounded-2xl border border-pink-100 bg-white p-6 shadow-[0_0_24px_rgba(224,0,77,0.12)]">
             <h1 class = "text-lg text-gray-900">
-                <b>Question 1 of 5:</b>
+                <b>Question {{ questionNumber }} of {{ totalQuestions }}:</b>
             </h1>
 
             <h3 class = "mt-3 text-base leading-relaxed text-black">
-                Which of the following best describes your current level of proficiency in the subject matter?
+                {{ prompt }}
             </h3>
 
             <div class = "flex flex-col space-y-3 mt-5">
-                <Ubutton class="w-full md:w-auto border border-gray-300 rounded-lg hover:border-brand-500 hover:ring-2 hover:ring-brand-500/30 px-3 py-2"> 
-                    Option 1 
-                </Ubutton>
+                <button 
+                class="text-left w-full md:w-auto border border-gray-300 rounded-lg hover:border-brand-500 hover:ring-2 hover:ring-brand-500/30 px-3 py-2"
+                :class="selectedOption === 'a' ? 'bg-brand-500 text-white' : ''"
+                @click="selectOption('a')">
+                    {{ options[0] }}
+                </button>
 
-                <Ubutton class="w-full md:w-auto border border-gray-300 rounded-lg hover:border-brand-500 hover:ring-2 hover:ring-brand-500/30 px-3 py-2"> 
-                    Option 2 
-                </Ubutton>
+                <button 
+                class="text-left w-full md:w-auto border border-gray-300 rounded-lg hover:border-brand-500 hover:ring-2 hover:ring-brand-500/30 px-3 py-2 " 
+                :class="selectedOption === 'b' ? 'bg-brand-500 text-white' : ''"
+                @click="selectOption('b')">
+                    {{ options[1] }}
+                </button>
 
-                <Ubutton class="w-full md:w-auto border border-gray-300 rounded-lg hover:border-brand-500 hover:ring-2 hover:ring-brand-500/30 px-3 py-2"> 
-                    super is a long word that is often used to describe something that is extraordinary or impressive. It is a made-up word that was popularized by the 1964 Disney musical film "Mary Poppins." The word has since become a part of popular culture and is often used in a playful or humorous way.                   
-                </Ubutton>
+                <button 
+                class="text-left w-full md:w-auto border border-gray-300 rounded-lg hover:border-brand-500 hover:ring-2 hover:ring-brand-500/30 px-3 py-2 " 
+                :class="selectedOption === 'c' ? 'bg-brand-500 text-white' : ''"
+                @click="selectOption('c')">
+                    {{ options[2] }}
+                </button>
 
-                <Ubutton class="w-full md:w-auto border border-gray-300 rounded-lg hover:border-brand-500 hover:ring-2 hover:ring-brand-500/30 px-3 py-2"> 
-                    Option 4 
-                </Ubutton>
+                <button 
+                class="text-left w-full md:w-auto border border-gray-300 rounded-lg hover:border-brand-500 hover:ring-2 hover:ring-brand-500/30 px-3 py-2" 
+                :class="selectedOption === 'd' ? 'bg-brand-500 text-white' : ''"
+                @click="selectOption('d')"
+                >
+                    {{ options[3] }}
+                </button>
             </div>
         </div>
 

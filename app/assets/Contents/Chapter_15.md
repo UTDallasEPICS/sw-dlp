@@ -79,7 +79,7 @@ The difficulty with self-talk is that it is not based in reality and it does not
 
 ### Continued
 
-### You have a small but mighty weapon ![Scripture Reference](../../../public/pink_heart_mug.png)
+### You have a small but mighty weapon ![Scripture Reference](/pink_heart_mug.png)
 
 You have a small but mighty powerful weapon. What can build, destroy, edify, and damage relationships in one swift move?
 
@@ -113,7 +113,7 @@ Any topic that impacts you and that you wish to know more about, ask others. Lea
 
 ### God answers you
 
-![Scripture Reference](../../../public/pink_heart_mug.png)
+![Scripture Reference](/pink_heart_mug.png)
 
 The requests of your tongue are heard by God.
 
@@ -151,7 +151,7 @@ Often after spending years dedicated to a relationship it is common to feel a hu
 
 The #7 Ingredient to the Seven Measures of Perfection is the **Power of Your Relationships.** Your lessons have power to guide you, support you and hold you accountable. It is vital you select friends, partners and build a spiritual support team to maintain your new healthy lifestyle. You are on a new path on the next phase of your life journey. You have the power to choose healthy relationships in all areas: personal, family, friendships, work, intimate, etc.
 
-### God as your protector ![Scripture Reference](../../../public/pink_heart_mug.png)
+### God as your protector ![Scripture Reference](/pink_heart_mug.png)
 
 God is always with you. He is never far. Just call His voice and He will answer you. He will guide your path and protect you.
 

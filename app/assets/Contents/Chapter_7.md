@@ -169,7 +169,7 @@ What does your inner music play? Have you ever said:\
 
 10. I will answer you.
 
-### What should your music say? ![Scripture Reference](../../../public/pink_heart_mug.png)
+### What should your music say? ![Scripture Reference](/pink_heart_mug.png)
 
 Self-talk can be so destructive if allowed to play on repeat without intervention. Consciously decide what you want your music to say. You can change your music.
 
@@ -186,7 +186,7 @@ Listen to these encouraging statements of self-love:\
 > _“Set your mind on things above, not on things on the earth.”_  
 > **— Colossians 3:2 (NKJV)**
 
-### Acceptance ![Scripture Reference](../../../public/pink_heart_mug.png)
+### Acceptance ![Scripture Reference](/pink_heart_mug.png)
 
 Learn to accept yourselves as God has made you. You are unique and marvelously made. Enjoy your uniqueness, enjoy the fact you have your “quirks,” that is what makes you special.
 
@@ -217,7 +217,7 @@ The key is to read it, say it, and write it. Repeat often.
 
 Over time the affirmations reinforce and re-program the music inside our minds. When you feel that you can shout the affirmation and really believe it is true; pick a new affirmation. Repeat this process for the rest of your life.
 
-### Limitless ![Scripture Reference](../../../public/pink_heart_mug.png)
+### Limitless ![Scripture Reference](/pink_heart_mug.png)
 
 The only limits you set are your own.
 

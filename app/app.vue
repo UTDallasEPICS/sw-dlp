@@ -11,7 +11,7 @@
 
 <template>
   <UApp>
-    <div class="flex min-h-screen flex-col bg-surface text-gray-900">
+    <div class="bg-surface flex min-h-screen flex-col text-gray-900">
       <header class="sticky top-0 z-50 border-b border-gray-200 bg-white/75 backdrop-blur-md">
         <UContainer
           class="relative grid h-16 grid-cols-[minmax(0,1fr)_auto_minmax(0,1fr)] items-center gap-2 px-4 sm:px-6 lg:px-8"
@@ -42,7 +42,7 @@
             </NuxtLink>
           </nav>
 
-          <NuxtLink to="/" class="relative h-16 w-48 overflow-hidden justify-self-center">
+          <NuxtLink to="/" class="relative h-16 w-48 justify-self-center overflow-hidden">
             <img
               src="/logo.png"
               alt="Stronger Women"
@@ -59,6 +59,12 @@
               class="rounded-md px-4 py-2 font-bold whitespace-nowrap text-[#e0004d] hover:bg-gray-100"
             >
               Profile
+            </NuxtLink>
+            <NuxtLink
+              to="/prayer-request"
+              class="rounded-md px-4 py-2 font-bold whitespace-nowrap text-[#e0004d] hover:bg-gray-100"
+            >
+              Prayer Request
             </NuxtLink>
             <button
               v-if="session"

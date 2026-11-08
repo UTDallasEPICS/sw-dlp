@@ -11,7 +11,7 @@ videos:
 
 The purpose of Chapter 3 is to help you identify your emotions, what actions/ reactions they generate, and how these actions/reactions impact your life. Once these are identified you will create 180 degree opposites and begin replacing the current negative feelings with refreshing new solutions.
 
-### Balanced on the Edge of a Knife ![Testimonial Quote](../../../public/broken_mug.png)
+### Balanced on the Edge of a Knife ![Testimonial Quote](/broken_mug.png)
 
 > _“I lived balancing on the edge of a knife. It was years of being with abusers that conditioned me to continually taking the blame for everything. I suffered extreme loneliness and would emotionally detach so that my heart would not be touched. I pushed loved ones away for fear that they might see who I really am and not like me. I did not believe that I was worthy of unconditional love and so history kept repeating itself.”_
 
@@ -27,7 +27,7 @@ Think of this as a process and move from left to right.
 | ----------------- | ---------- | ----------------------------------------------------------------- |
 | Example: Anger    | I shutdown | I live behind a plastic smile and emotionally detach from others. |
 
-### Expect to change ![Scripture Reference](../../../public/pink_heart_mug.png)
+### Expect to change ![Scripture Reference](/pink_heart_mug.png)
 
 One day when you feel the piercing arrow of someone’s words you will no longer revert to that small unimportant child. A child who wants to run, hide, make it stop, or even fight back.
 
@@ -44,7 +44,7 @@ God’s love for us is unending and offers true forgiveness.
 
 Describe areas you want God to change in your life?
 
-### Strength to change ![Scripture Reference](../../../public/pink_heart_mug.png)
+### Strength to change ![Scripture Reference](/pink_heart_mug.png)
 
 Our hurts are so big and overwhelming at times. There is strength of the almighty God that can carry your burden. Sharing burdens aloud can help you begin to heal.
 

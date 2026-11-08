@@ -110,7 +110,7 @@ As you come to the most active part of the Stronger than Espresso® journey, you
 
 Seven Ingredients of Perfection are what you need to restore your life. Each ingredient is required for you to restore and transform.
 
-![Diagram](../../../public/chapter_13_p254_fig.png)
+![Diagram](/chapter_13_p254_fig.png)
 
 1. Ingredient #1, Power of God — Giving power to your God, faith as a tool for survival, setting new standards for self.
 
@@ -132,7 +132,7 @@ The #1 Ingredient to the Seven Measures of Perfection is the Power of God. It is
 
 You don’t see gravity, but you have faith if you drop something it will fall to the ground. You don’t see oxygen molecules, but you have faith that they are present and they will keep you alive when you breathe. As a babe you relied on your parents to teach you what they knew, and had faith that what they taught you was true.
 
-### Our God is strong ![Scripture Reference](../../../public/pink_heart_mug.png)
+### Our God is strong ![Scripture Reference](/pink_heart_mug.png)
 
 Having spiritual faith gives you the support to rely on and security that you are loved. This confidence guides you through this journey to survive your situation. Through faith you can have hope that you will grow beyond this pain and be made whole again.
 
@@ -152,7 +152,7 @@ Throughout this book we have shared numerous scriptures from the Bible that desc
 > _“I am holding you by your right hand – I, the Lord your God. And I say to you, ‘Do not be afraid. I am here to help you…”_  
 > **— Isaiah 42:13 (NLT)**
 
-### A measure of faith ![Scripture Reference](../../../public/pink_heart_mug.png)
+### A measure of faith ![Scripture Reference](/pink_heart_mug.png)
 
 When making a journey of healing, working on your spiritual self is a priority. Having faith plays a vital role in establishing hope and increasing the chances of human survival.
 
@@ -167,11 +167,11 @@ Everyone has a measure of faith. At times in our lives we desire spiritual pathw
 > _“For I say, through the grace given to me, to everyone who is among you, not to think of himself more highly than he ought to think, but to think soberly, as God has dealt to each one a measure of faith.”_  
 > **— Romans 12:3 (NKJV)**
 
-### Tried it all ![Testimonial Quote](../../../public/broken_mug.png)
+### Tried it all ![Testimonial Quote](/broken_mug.png)
 
 > _“I tried everything alcohol, drugs, exercise, journaling, angel cards, praying, daily journals, mediation, yoga, reading spiritual books by the dozen and even took a trip to China to touch the largest Buddhist statue in the world to fill this desire. I finally accepted Jesus into my heart. It was awkward at first but over the years I have been amazed by the blessings he has put into my new life, my new family, my new spiritual growth beyond my dreams. Now I can’t imagine my life without Christ at the core.”_
 
-### God never stops loving you ![Scripture Reference](../../../public/pink_heart_mug.png)
+### God never stops loving you ![Scripture Reference](/pink_heart_mug.png)
 
 God’s love is unbelievable! He loves you just as you are. He loves you for what you have been, all that you are and all that you will be, regardless of the decisions or events you have made.
 
@@ -191,7 +191,7 @@ When you are able to embrace yourself and love yourself like God loves you, an a
 
 Which scripture is your favorite? Why?
 
-### Release your burdens ![Scripture Reference](../../../public/pink_heart_mug.png)
+### Release your burdens ![Scripture Reference](/pink_heart_mug.png)
 
 Our burdens can feel so heavy. We carry them around unaware that God’s promise is He will carry those burdens for us. All we have to do is give them away.
 
@@ -216,7 +216,7 @@ When you awaken the spiritual part of you there is a transformation that occurs.
 
 <---next--->
 
-### Security ![Scripture Reference](../../../public/pink_heart_mug.png)
+### Security ![Scripture Reference](/pink_heart_mug.png)
 
 When you believe that you are a beautiful child of God, you begin a spiritual path that will heighten your self-worth.
 
@@ -240,7 +240,7 @@ With this security of love:\
 > _“Can anything ever separate us from Christ’s love? Does it mean he no longer loves us if we have trouble or calamity, or are persecuted, or are hungry or cold or in danger or threatened with death? (As the Scriptures say, ‘For your sake we are killed every day we are being slaughtered like sheep.’) No, despite all these things, overwhelming victory is ours through Christ, who loved us. And I am convinced that nothing can ever separate us from his love. Neither death nor life, neither angels nor demons, neither our fears for today nor our worries about tomorrow – not even the powers of hell can separate us from God’s love. No power in the sky above or in the earth below – indeed, nothing in all creation will ever be able to separate us from the love of God that is revealed in Christ Jesus our Lord.”_  
 > **— Romans 8:35–39 (NLT)**
 
-### Glorious shifts ![Scripture Reference](../../../public/pink_heart_mug.png)
+### Glorious shifts ![Scripture Reference](/pink_heart_mug.png)
 
 Awakening your faith and spiritual self will begin a shift in your moral guidelines.
 
@@ -252,7 +252,7 @@ Your moral compass will naturally shift due to the influence of the Holy Spirit.
 
 As you spend more time with God, what shifts have you noticed in your life?
 
-### How to pray ![Scripture Reference](../../../public/pink_heart_mug.png)
+### How to pray ![Scripture Reference](/pink_heart_mug.png)
 
 Prayer is very personal and is different for everyone. There is no wrong way to pray, but sometimes people are confused as how to pray.
 

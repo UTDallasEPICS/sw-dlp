@@ -75,7 +75,7 @@ Victims of domestic violence can be both men and women, and can occur in same-se
 
 Domestic violence is defined as, “abusive behavior – emotional, psychological, physical, or sexual – that one person in an intimate relationship uses in order to control the other.”
 
-### Abuse escalates ![Testimonial Quote](../../../public/broken_mug.png)
+### Abuse escalates ![Testimonial Quote](/broken_mug.png)
 
 _“Years of emotional and verbal abuse finally escalated to physical abuse, and I had to go to the emergency room for treatment.”_
 
@@ -117,7 +117,7 @@ Physical abuse — Indirect
 \
 • Withholds medicine you require
 
-### Just to cope ![Testimonial Quote](../../../public/broken_mug.png)
+### Just to cope ![Testimonial Quote](/broken_mug.png)
 
 _“To cope with the abuse I was experiencing, often my soul would separate from my body. So that I could remove myself from the “machine gun spray” of words. My skin transformed into an empty shell and my inner soul would dissociate to escape from the abuse.”_
 
@@ -193,7 +193,7 @@ Emotional abuse can be Verbal or Non-verbal:
 \
 • Withholds praise or good feelings from you.
 
-### Brainwashed ![Testimonial Quote](../../../public/broken_mug.png)
+### Brainwashed ![Testimonial Quote](/broken_mug.png)
 
 > _“Emotional abuse can be compared with intentional brainwashing. Emotional abusers usually leave the victim confused, weak, depressed, angry, and numb with unclear thinking — and yet loyal to their abusers, hoping the abusive behavior will change…Emotional abuse can produce scars that will remain with you for years.”_
 
@@ -309,7 +309,7 @@ Even if you are physically separated from the abuser, you may still feel they ar
 
 2. Start connecting with people: Stronger than Espresso®, church activities or individuals with similar interests.
 
-### God’s intention ![Scripture Reference](../../../public/pink_heart_mug.png)
+### God’s intention ![Scripture Reference](/pink_heart_mug.png)
 
 Healthy relationships are designed differently. Unfortunately, many of us who experience abuse as adults experienced abuse as a child. Healthy and normal were not words we would have used to describe our family relationships growing up.
 
@@ -389,17 +389,17 @@ Lenore Walker, a legend in the field of domestic violence, constructed the model
 
 ### Let’s break down the cycle even more:
 
-![Diagram](../../../public/chapter_10_p189_fig.png)
+![Diagram](/chapter_10_p189_fig.png)
 
 ### How the process continues:
 
-![Table 3](../../../public/10_table3.png)
+![Table 3](/10_table3.png)
 
 ### Your new standard
 
 The whirlwind romance followed by a roller-coaster relationship is not healthy. Set new standards for healthy relationships. Accept nothing less.
 
-### Oh no, not again! ![Testimonial Quote](../../../public/broken_mug.png)
+### Oh no, not again! ![Testimonial Quote](/broken_mug.png)
 
 _“Once away from the emotional and physical abuse, I sought support and tried to trust new people. Being raw, weak, and vulnerable, I played right into the hands of another person who was a new type of abuser. This person gained my trust, and then stole financially from me during the time I was trying to rebuild.”_
 
@@ -666,7 +666,7 @@ God forgives those that have hurt us. He models the behavior he expects us to pe
 
 This is just a basic overview of the legal basics. If you have someone who is in need of legal help, refer them to legal counsel. Locate resources in your area and have those ready to provide for women in your group.
 
-### Police warning ![Testimonial Quote](../../../public/broken_mug.png)
+### Police warning ![Testimonial Quote](/broken_mug.png)
 
 _“Our case was dismissed when the defense lawyer found a loophole in the charges and we left the courtroom. The female police officer pulled me aside and told me that she spent time around my husband during these proceedings and said, ‘He is crazy. I’ve seen too many things like this and I don’t want you to end up dead somewhere. Buy a gun and learn how to use it. He just isn’t right.”_
 
