@@ -55,16 +55,16 @@
             aria-label="Account navigation"
           >
             <NuxtLink
-              to="/profile"
-              class="rounded-md px-4 py-2 font-bold whitespace-nowrap text-[#e0004d] hover:bg-gray-100"
-            >
-              Profile
-            </NuxtLink>
-            <NuxtLink
               to="/prayer-request"
               class="rounded-md px-4 py-2 font-bold whitespace-nowrap text-[#e0004d] hover:bg-gray-100"
             >
               Prayer Request
+            </NuxtLink>
+            <NuxtLink
+              to="/profile"
+              class="rounded-md px-4 py-2 font-bold whitespace-nowrap text-[#e0004d] hover:bg-gray-100"
+            >
+              Profile
             </NuxtLink>
             <button
               v-if="session"

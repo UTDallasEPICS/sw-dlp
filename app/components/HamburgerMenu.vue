@@ -6,8 +6,8 @@
 
   const links = [
     { label: 'Dashboard', to: '/dashboard' },
-    { label: 'Profile', to: '/profile' },
     { label: 'Prayer Request', to: '/prayer-request' },
+    { label: 'Profile', to: '/profile' },
     { label: 'Contact', to: '/contact' },
     { label: 'Resources', to: '/resources' },
   ]
