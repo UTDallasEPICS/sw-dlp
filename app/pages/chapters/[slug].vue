@@ -54,12 +54,39 @@
  
   const readingPageCount = computed(() => readingPages.value.length)
 
-  // --- Activity ---
+  // ---- Activity ----
   const { data: activityMeta } = await useFetch<{ hasActivity: boolean }>(
     `/api/chapters/${slug}/activity-exists`
   )
 
   const hasActivity = computed(() => activityMeta.value?.hasActivity === true)
+
+  const { data: activityData } = await useFetch<{
+    title: string | null
+    questions: ActivityQuestion[]
+  }>(`/api/chapters/${slug}/activity`)
+
+  const activityQuestions = computed(() => activityData.value?.questions ?? [])
+  const activityTitle = computed(() => activityData.value?.title ?? 'Activity')
+
+  // answers keyed by question key (q1, q2, ...)
+  const mcqAnswers = ref<Record<string, string>>({})
+  const shortAnswers = ref<Record<string, string[]>>({})
+
+  watch(
+    activityQuestions,
+    (qs) => {
+      for (const q of qs) {
+        if (q.type === 'short_answer' && !shortAnswers.value[q.key]) {
+          shortAnswers.value[q.key] = ['']
+        }
+        if (q.type === 'mcq' && mcqAnswers.value[q.key] === undefined) {
+        mcqAnswers.value[q.key] = null
+        }
+      }
+    },
+    { immediate: true }
+  )
 
   const steps = computed(() => {
     const list: { id: string; icon: string; label: string }[] = []
@@ -145,7 +172,38 @@
       </div>
     </div>
 
-    <div v-else-if="activeStep === 'activity' && hasActivity" class="min-h-screen bg-gray-50" />
+    <div v-else-if="activeStep === 'activity' && hasActivity" class="mx-auto max-w-2xl flex flex-col space-y-4">
+      <h1 class="m-5 mb-8 text-2xl font-bold text-brand-500">
+        {{ activityTitle }}</h1>
+
+      <template v-for="(q, index) in activityQuestions" :key="q.id">
+        <!-- Short Answer -->
+        <ActivityShortAnswer
+          v-if="q.type === 'short_answer'"
+          v-model="shortAnswers[q.key]"
+          :question-number="index + 1"
+          :total-questions="activityQuestions.length"
+          :prompt="q.prompt"
+        />
+
+        <!-- MCQ -->
+        <ActUI_Mcq
+          v-else-if="q.type === 'mcq'"
+          v-model="mcqAnswers[q.key]"
+          :question-number="index + 1"
+          :total-questions="activityQuestions.length"
+          :prompt="q.prompt"
+          :options="q.options ?? []"
+        />
+      </template>
+
+      <UButton
+        class="rounded-full bg-brand-500 px-4 py-2 font-semibold text-white hover:bg-brand-600"
+        @click="onSubmitActivity"
+      >
+        Submit
+      </UButton>
+    </div>
 
     <div v-else class="mx-auto max-w-6xl px-4 pt-8 pb-32 sm:px-6">
       <article
