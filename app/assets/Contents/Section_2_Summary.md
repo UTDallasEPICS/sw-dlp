@@ -1,5 +1,5 @@
 ---
-title: Section 2
+title: Section 2 Summary
 videos:
   - videoUrl: https://youtu.be/Y4yQfNpMqLc
     videoTitle: Section 2 Summary 

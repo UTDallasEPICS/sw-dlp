@@ -1,5 +1,5 @@
 ---
-title: Section 1
+title: Section 1 Overview
 videos:
   - videoUrl: https://youtu.be/Y2O6ElQRbwE
     videoTitle: Section 1 Overview

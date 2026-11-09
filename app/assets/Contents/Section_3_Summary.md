@@ -1,5 +1,5 @@
 ---
-title: Section 3
+title: Section 3 Summary
 videos:
   - videoUrl: https://youtu.be/jZkjPTdvt-o
     videoTitle: Section 3 Summary 

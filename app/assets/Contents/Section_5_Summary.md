@@ -1,5 +1,5 @@
 ---
-title: Section Five Summary
+title: Section 5 Summary
 ---
 
 ### In review
