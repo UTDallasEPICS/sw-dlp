@@ -140,7 +140,7 @@
       <div class="space-y-8">
         <section v-for="video in videos" :key="video.videoUrl" class="space-y-3">
           <h2 class="text-xl font-semibold text-gray-900">{{ video.videoTitle }}</h2>
-          <Videos :video-url="videoEmbedUrl(video.videoUrl)" :video-title="video.videoTitle" />
+          <VideoPlayer :video-url="videoEmbedUrl(video.videoUrl)" :video-title="video.videoTitle" />
         </section>
       </div>
     </div>
