@@ -18,7 +18,10 @@
         },
         options: {
             type: Array as () => string[],
-            required: true
+            required: true,
+            validator: (value: string[]) => {
+                return value.length >= 2
+            }
         }
     })
 
@@ -52,32 +55,12 @@
 
             <div class = "flex flex-col space-y-3 mt-5">
                 <button 
+                v-for="(option, index) in options"
+                :key="index"
                 class="text-left w-full md:w-auto border border-gray-300 rounded-lg hover:border-brand-500 hover:ring-2 hover:ring-brand-500/30 px-3 py-2"
-                :class="selectedOption === 'a' ? 'bg-brand-500 text-white' : ''"
-                @click="selectOption('a')">
-                    {{ options[0] }}
-                </button>
-
-                <button 
-                class="text-left w-full md:w-auto border border-gray-300 rounded-lg hover:border-brand-500 hover:ring-2 hover:ring-brand-500/30 px-3 py-2 " 
-                :class="selectedOption === 'b' ? 'bg-brand-500 text-white' : ''"
-                @click="selectOption('b')">
-                    {{ options[1] }}
-                </button>
-
-                <button 
-                class="text-left w-full md:w-auto border border-gray-300 rounded-lg hover:border-brand-500 hover:ring-2 hover:ring-brand-500/30 px-3 py-2 " 
-                :class="selectedOption === 'c' ? 'bg-brand-500 text-white' : ''"
-                @click="selectOption('c')">
-                    {{ options[2] }}
-                </button>
-
-                <button 
-                class="text-left w-full md:w-auto border border-gray-300 rounded-lg hover:border-brand-500 hover:ring-2 hover:ring-brand-500/30 px-3 py-2" 
-                :class="selectedOption === 'd' ? 'bg-brand-500 text-white' : ''"
-                @click="selectOption('d')"
-                >
-                    {{ options[3] }}
+                :class="selectedOption === option ? 'bg-brand-500 text-white' : ''"
+                @click="selectOption(option)">
+                    {{ option }}
                 </button>
             </div>
         </div>
