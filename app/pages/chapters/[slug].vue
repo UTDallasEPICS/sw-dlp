@@ -258,6 +258,12 @@
       typeof selected.id === 'string' ? selected.id : null
   }
 
+  function scrollToTop() {
+    if (import.meta.client){
+      window.scrollTo({ top: 0, behavior: 'smooth' })
+    }
+  }
+
   async function onSubmitActivity() {
     if (isSubmitting.value) return
 
@@ -314,6 +320,8 @@
       )
 
       submitSuccess.value = true
+      await nextTick() // Wait for DOM update before scrolling
+      scrollToTop()
     } catch (error: unknown) {
       console.error('Activity submission failed:', error)
 
