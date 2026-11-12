@@ -9,8 +9,6 @@
   const props = withDefaults(
     defineProps<{
       chapterTitle: string
-      previousChapter: string | undefined
-      nextChapter: string | undefined
       steps?: Omit<Step, 'status'>[]
       modelValue?: string
     }>(),
@@ -34,6 +32,8 @@
     return index === -1 ? 0 : index
   })
 
+  const isLast = computed(() => currentIndex.value === props.steps.length - 1)
+
   const stepsWithStatus = computed<Step[]>(() =>
     props.steps.map((step, index) => ({
       ...step,
@@ -52,11 +52,25 @@
     }
   }
 
-  function onStepClick(stepId: string) {
+  function goPrevious() {
+    const previousStep = props.steps[currentIndex.value - 1]
+    if (previousStep) {
+      emit('update:modelValue', previousStep.id)
+    }
+  }
+
+  function goNext() {
     const currentStep = props.steps[currentIndex.value]
-    if (currentStep && props.steps[currentIndex.value + 1]?.id === stepId) {
+    if (currentStep) {
       markDone(currentStep.id)
     }
+    const nextStep = props.steps[currentIndex.value + 1]
+    if (nextStep) {
+      emit('update:modelValue', nextStep.id)
+    }
+  }
+
+  function onStepClick(stepId: string) {
     emit('update:modelValue', stepId)
   }
 </script>
@@ -66,10 +80,10 @@
     <div class="mx-auto flex max-w-4xl items-center justify-between px-4 py-3">
       <button
         type="button"
-        class="border-brand-500 text-brand-500 hover:bg-brand-50 flex h-10 w-10 items-center justify-center rounded-full border-2 transition disabled:opacity-40"
-        aria-label="Previous chapter"
-        :disabled="!previousChapter"
-        @click="navigateTo(`/chapters/${previousChapter}`)"
+        class="border-brand-500 text-brand-500 hover:bg-brand-50 flex h-10 w-10 items-center justify-center rounded-full border-2 transition"
+        aria-label="Previous"
+        :disabled="currentIndex === 0"
+        @click="goPrevious"
       >
         <UIcon name="i-lucide-arrow-left" class="h-7 w-7" />
       </button>
@@ -99,10 +113,10 @@
 
       <button
         type="button"
-        class="border-brand-500 text-brand-500 hover:bg-brand-50 flex h-10 w-10 items-center justify-center rounded-full border-2 transition disabled:opacity-40"
-        aria-label="Next chapter"
-        :disabled="!nextChapter"
-        @click="navigateTo(`/chapters/${nextChapter}`)"
+        class="border-brand-500 text-brand-500 hover:bg-brand-50 flex h-10 w-10 items-center justify-center rounded-full border-2 transition"
+        aria-label="Next"
+        :disabled="isLast"
+        @click="goNext"
       >
         <UIcon name="i-lucide-arrow-right" class="h-7 w-7" />
       </button>
