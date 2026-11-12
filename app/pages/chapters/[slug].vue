@@ -8,6 +8,8 @@
     type: 'mcq' | 'short_answer'
     prompt: string
     options?: unknown
+    correctOptionId?: string | null
+    description?: string
   }
 
   const { data: chapter } = await useAsyncData(`chapter-${slug}`, async () => {
@@ -115,10 +117,33 @@
       return opts as string[]
     }
 
-    // DB shape: [{ id: "a", label: "True" }, ...]
     return (opts as { id?: string; label?: string }[])
       .map((o) => o.label)
       .filter((label): label is string => typeof label === 'string' && label.length > 0)
+  }
+
+  function mcqCorrectLabel(q: ActivityQuestion): string {
+    if (!q.correctOptionId) return ''
+    
+    let opts: unknown = q.options
+
+    if (typeof opts === 'string') {
+      try {
+        opts = JSON.parse(opts)
+      } catch {
+        return ''
+      }
+    }
+
+    if (!Array.isArray(opts)) return ''
+
+    type OptionObject = { id?: string; label?: string }
+
+    const correct = (opts as OptionObject[]).find(
+      (o) => typeof o === 'object' && o !== null && o.id === q.correctOptionId
+    )
+
+    return typeof correct?.label === 'string' ? correct.label : ''  
   }
 
   const steps = computed(() => {
@@ -325,6 +350,7 @@
           :question-number="index + 1"
           :total-questions="activityQuestions.length"
           :prompt="q.prompt"
+          :show-results="submitSuccess"
         />
 
         <!-- MCQ -->
@@ -335,10 +361,14 @@
           :total-questions="activityQuestions.length"
           :prompt="q.prompt"
           :options="mcqOptionLabels(q)"
+          :correct-answer="mcqCorrectLabel(q)"
+          :description="q.description ?? undefined"
+          :show-results="submitSuccess"
         />
       </template>
 
       <UButton
+        v-if="!submitSuccess"
         class="rounded-10 max-w-40 text-center bg-brand-500 px-4 py-2 font-semibold text-white hover:bg-brand-600"
         :loading="isSubmitting"
         :disabled="isSubmitting"

@@ -27,9 +27,13 @@
             type: String,
             required: true
         },
-        explanation: {
+        description: {
             type: String,
             default: ''
+        },
+        showResults: { 
+            type: Boolean, 
+            default: false 
         }
     })
 
@@ -47,32 +51,42 @@
     const isCorrect = computed(() => selectedOption.value === props.correctAnswer)  
 
     const selectOption = (option: string) => {
-        if (answered.value) return // Prevent changing answer after selection
+        // Only block changes after results are shown
+        if (props.showResults) return
         selectedOption.value = option
         emit('update:modelValue', option)
     }
 
     const optionState = (option: string) => {
         if (!answered.value) return ''
-        if (option === props.correctAnswer) return 'correct'
-        if (option === selectedOption.value) return 'wrong'
-        return 'dimmed'
+        // After submitting, shows correct/wrong answer
+        if (props.showResults) {
+            if (option === props.correctAnswer) return 'correct'
+            if (option === selectedOption.value) return 'wrong'
+            return 'dimmed'
+        }
+        // Before submitting, marks the one they clicked
+        if (option === selectedOption.value) return 'selected'
+        return ''
     }
 
     const optionClasses = (option: string) => {
         switch (optionState(option)) {
             case 'correct':
-                return 'border-brand-500 bg-pink-50 text-black'
+                return 'border-2 border-brand-500 bg-pink-50 text-black'
             case 'wrong':
                 return 'border-red-500 bg-pink-50 text-black'
             case 'dimmed':
                 return 'border-gray-300 bg-gray-100 text-gray-500'
+            case 'selected':
+                return 'border-brand-500 bg-pink-50 text-black ring-2 ring-brand-500/30'
             default:
-                return 'border-gray-300 hover:border-brand-500 hover:ring-2 hover:ring-brand-500/30'
+                // Hover effect only while the question is still open
+                return props.showResults
+                    ? 'border border-gray-300'
+                    : 'border border-gray-300 hover:border-2 hover:border-brand-500 hover:ring-2 hover:ring-brand-500/30'
         }
     }
-    
-
 </script>
 
 <template>
@@ -89,26 +103,26 @@
                 <button 
                 v-for="(option, index) in options"
                 :key="index"
-                :disabled="answered"
-                class="text-left w-full border rounded-lg hover:border-brand-500 hover:border-2 hover:ring-brand-500/30 px-3 py-2"
+                :disabled="showResults"
+                class="text-left w-full border rounded-lg border px-3 py-2 transition-colors"
                 :class="optionClasses(option)"
                 @click="selectOption(option)">
                     <span>{{ option }}</span>
-
                     <!-- The Icon only appears after answering the questions and submitting-->
-                     <span v-if="answered" class="ml-3 text-lg leading-none">
+                     <span v-if="showResults && answered" class="ml-3 text-lg leading-none">
                         <span v-if="optionState(option) === 'correct'" class="text-brand-500">✓</span>
                         <span v-else-if="optionState(option) === 'wrong'" class="text-red-500">✗</span>
                         <span v-else class="text-gray-500">✗</span>
                      </span>
                 </button>
+                <!-- Feedback only after submitting -->
                 <div
-                    v-if="answered"
+                    v-if="showResults && answered"
                     class="mt-5 rounded-lg border p-3 text-sm font-semibold"
                     :class="isCorrect ? 'border-brand-500 bg-pink-50 text-brand-600' : 'border-red-600 bg-pink-50 text-red-600'"
                 >
-                    <span v-if="isCorrect">You got it!!! {{ explanation }}</span>
-                    <span v-else>Incorrect. The correct answer is: {{ props.correctAnswer }}, because {{ explanation }}</span>
+                    <span v-if="isCorrect">Correct! {{ description }}</span>
+                    <span v-else>Incorrect. The correct answer is: {{ props.correctAnswer }}, because {{ description }}</span>
                 </div>
                 
             </div>
