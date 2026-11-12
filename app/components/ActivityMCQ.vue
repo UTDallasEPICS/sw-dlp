@@ -49,6 +49,9 @@
     
     const answered = computed(() => selectedOption.value !== null)
     const isCorrect = computed(() => selectedOption.value === props.correctAnswer)  
+    const hasCorrectAnswer = computed(() => !!props.correctAnswer)
+    const revealed = computed(() => props.showResults && hasCorrectAnswer.value && answered.value)
+
 
     const selectOption = (option: string) => {
         // Only block changes after results are shown
@@ -60,7 +63,7 @@
     const optionState = (option: string) => {
         if (!answered.value) return ''
         // After submitting, shows correct/wrong answer
-        if (props.showResults) {
+        if (revealed.value) {
             if (option === props.correctAnswer) return 'correct'
             if (option === selectedOption.value) return 'wrong'
             return 'dimmed'
@@ -73,9 +76,9 @@
     const optionClasses = (option: string) => {
         switch (optionState(option)) {
             case 'correct':
-                return 'border-2 border-brand-500 bg-pink-50 text-black'
+                return 'border-2 border-green-500 bg-green-50 text-black'
             case 'wrong':
-                return 'border-red-500 bg-pink-50 text-black'
+                return 'border-red-500 bg-red-50 text-black'
             case 'dimmed':
                 return 'border-gray-300 bg-gray-100 text-gray-500'
             case 'selected':
@@ -109,20 +112,21 @@
                 @click="selectOption(option)">
                     <span>{{ option }}</span>
                     <!-- The Icon only appears after answering the questions and submitting-->
-                     <span v-if="showResults && answered" class="ml-3 text-lg leading-none">
-                        <span v-if="optionState(option) === 'correct'" class="text-brand-500">✓</span>
+                     <span v-if="revealed" class="ml-3 text-lg leading-none">
+                        <span v-if="optionState(option) === 'correct'" class="text-green-500">✓</span>
                         <span v-else-if="optionState(option) === 'wrong'" class="text-red-500">✗</span>
                         <span v-else class="text-gray-500">✗</span>
                      </span>
                 </button>
                 <!-- Feedback only after submitting -->
                 <div
-                    v-if="showResults && answered"
+                    v-if="revealed"
                     class="mt-5 rounded-lg border p-3 text-sm font-semibold"
-                    :class="isCorrect ? 'border-brand-500 bg-pink-50 text-brand-600' : 'border-red-600 bg-pink-50 text-red-600'"
+                    :class="isCorrect ? 'border-green-500 bg-green-50 text-green-600' : 'border-red-600 bg-red-50 text-red-600'"
                 >
                     <span v-if="isCorrect">Correct! {{ description }}</span>
                     <span v-else>Incorrect. The correct answer is: {{ props.correctAnswer }}, because {{ description }}</span>
+                    <span v-if="description">{{ description }}</span>
                 </div>
                 
             </div>
