@@ -76,7 +76,7 @@
 </script>
 
 <template>
-        <div class="rounded-2xl border border-pink-100 bg-white p-6 shadow-[0_0_24px_rgba(224,0,77,0.12)]">
+        <div class="rounded-2xl border border-pink-100 bg-white p-6 shadow-[0_0_24px_rgba(0,0,0,0.20)]">
             <h1 class = "text-lg text-gray-900">
                 <b>Question {{ questionNumber }} of {{ totalQuestions }}:</b>
             </h1>

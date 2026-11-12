@@ -191,11 +191,113 @@
     }
   }
 
-  function onSubmitActivity() {
-    console.log({
-      mcq: mcqAnswers.value,
-      short: shortAnswers.value,
-    })
+
+  const isSubmitting = ref(false)
+  const submitError = ref('')
+  const submitSuccess = ref(false)
+
+  interface ActivitySubmission {
+    questionId: string
+    selectedOptionId: string | null
+    writtenAnswers: string[] | null
+  }
+
+  // finds associated lable for coressponding mcq answer string
+  function getMcqOptionId(
+    question: ActivityQuestion,
+    selectedLabel: string
+  ): string | null {
+    let options: unknown = question.options
+
+    if (typeof options === 'string') {
+      try {
+        options = JSON.parse(options)
+      } catch {
+        return null
+      }
+    }
+
+    if (!Array.isArray(options)) {
+      return null
+    }
+
+    const selected = options.find(
+      (option: unknown) =>
+        typeof option === 'object' &&
+        option !== null &&
+        'label' in option &&
+        option.label === selectedLabel
+    )
+
+    return selected &&
+      typeof selected.id === 'string' ? selected.id : null
+  }
+
+  async function onSubmitActivity() {
+    if (isSubmitting.value) return
+
+    submitError.value = ''
+    submitSuccess.value = false
+
+    const responses: ActivitySubmission[] = []
+
+    for (const question of activityQuestions.value) {
+      if (question.type === 'mcq') {
+        const selectedLabel = mcqAnswers.value[question.key] ?? ''
+
+        const selectedOptionId = getMcqOptionId(question, selectedLabel)
+
+        if (!selectedOptionId) {
+          submitError.value = `Please answer question ${question.key}.`
+          return
+        }
+
+        responses.push({
+          questionId: question.id,
+          selectedOptionId,
+          writtenAnswers: null,
+        })
+      } else {
+        const answers = (
+          shortAnswers.value[question.key] ?? []
+        )
+          .map(answer => answer.trim())
+          .filter(answer => answer.length > 0)
+
+        if (answers.length === 0) {
+          submitError.value = `Please answer question ${question.key}.`
+          return
+        }
+
+        responses.push({
+          questionId: question.id,
+          selectedOptionId: null,
+          writtenAnswers: answers,
+        })
+      }
+    }
+
+    isSubmitting.value = true
+
+    try {
+      await $fetch(
+        `/api/chapters/${slug}/activity-responses`,
+        {
+          method: 'POST',
+          body: { responses },
+        }
+      )
+
+      submitSuccess.value = true
+    } catch (error: unknown) {
+      console.error('Activity submission failed:', error)
+
+      submitError.value =
+        'Unable to save your answers. Please try again.'
+    } finally {
+      // resets loading state
+      isSubmitting.value = false
+    }
   }
 </script>
 
@@ -211,8 +313,8 @@
       </div>
     </div>
 
-    <div v-else-if="activeStep === 'activity' && hasActivity" class="mx-auto max-w-2xl flex flex-col space-y-4">
-      <h1 class="m-5 mb-8 text-2xl font-bold text-brand-500">
+    <div v-else-if="activeStep === 'activity' && hasActivity" class="mx-auto max-w-2xl flex flex-col space-y-10 p-4">
+      <h1 class="my-8 text-2xl lg:text-3xl font-bold text-brand-500">
         {{ activityTitle }}</h1>
 
       <template v-for="(q, index) in activityQuestions" :key="q.id">
@@ -237,11 +339,16 @@
       </template>
 
       <UButton
-        class="rounded-full bg-brand-500 px-4 py-2 font-semibold text-white hover:bg-brand-600"
+        class="rounded-10 max-w-40 text-center bg-brand-500 px-4 py-2 font-semibold text-white hover:bg-brand-600"
+        :loading="isSubmitting"
+        :disabled="isSubmitting"
         @click="onSubmitActivity"
       >
-        Submit
+        Submit Activity
       </UButton>
+      <p v-if="submitError" role="alert" class="text-red-600">
+        {{ submitError }}
+      </p>
     </div>
 
     <div v-else class="mx-auto max-w-6xl px-4 pt-8 pb-32 sm:px-6">
