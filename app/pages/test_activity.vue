@@ -20,6 +20,8 @@ const answers = ref<string[]>([''])
         :total-questions="5"
         prompt="What is your preferred learning style?"
         :options="['Option 1', 'Option 2', 'Option 3', 'Option 4']"
+        correct-answer="Option 2"
+        explanation="Option 2 is the most effective learning style for this topic."
       />
 
     </div>

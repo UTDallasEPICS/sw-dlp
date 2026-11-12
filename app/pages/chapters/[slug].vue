@@ -89,7 +89,7 @@
           shortAnswers.value[q.key] = ['']
         }
         if (q.type === 'mcq' && mcqAnswers.value[q.key] === undefined) {
-          mcqAnswers.value[q.key] = ''
+        mcqAnswers.value[q.key] = ''
         }
       }
     },
