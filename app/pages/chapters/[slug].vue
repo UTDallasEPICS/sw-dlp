@@ -2,6 +2,14 @@
   const route = useRoute()
   const slug = String(route.params.slug)
 
+  interface ActivityQuestion {
+    id: string
+    key: string
+    type: 'mcq' | 'short_answer'
+    prompt: string
+    options?: unknown
+  }
+
   const { data: chapter } = await useAsyncData(`chapter-${slug}`, async () => {
     const chapters = await queryCollection('chapters').all()
 
@@ -81,12 +89,37 @@
           shortAnswers.value[q.key] = ['']
         }
         if (q.type === 'mcq' && mcqAnswers.value[q.key] === undefined) {
-        mcqAnswers.value[q.key] = null
+          mcqAnswers.value[q.key] = ''
         }
       }
     },
     { immediate: true }
   )
+
+  function mcqOptionLabels(q: ActivityQuestion): string[] {
+    let opts: unknown = q.options
+
+    // If Drizzle ever returns a JSON string
+    if (typeof opts === 'string') {
+      try {
+        opts = JSON.parse(opts)
+      } catch {
+        return []
+      }
+    }
+
+    if (!Array.isArray(opts) || opts.length === 0) return []
+
+    // Already labels: ["True", "False"]
+    if (typeof opts[0] === 'string') {
+      return opts as string[]
+    }
+
+    // DB shape: [{ id: "a", label: "True" }, ...]
+    return (opts as { id?: string; label?: string }[])
+      .map((o) => o.label)
+      .filter((label): label is string => typeof label === 'string' && label.length > 0)
+  }
 
   const steps = computed(() => {
     const list: { id: string; icon: string; label: string }[] = []
@@ -158,6 +191,12 @@
     }
   }
 
+  function onSubmitActivity() {
+    console.log({
+      mcq: mcqAnswers.value,
+      short: shortAnswers.value,
+    })
+  }
 </script>
 
 <template>
@@ -187,13 +226,13 @@
         />
 
         <!-- MCQ -->
-        <ActUI_Mcq
+        <ActivityMCQ
           v-else-if="q.type === 'mcq'"
           v-model="mcqAnswers[q.key]"
           :question-number="index + 1"
           :total-questions="activityQuestions.length"
           :prompt="q.prompt"
-          :options="q.options ?? []"
+          :options="mcqOptionLabels(q)"
         />
       </template>
 

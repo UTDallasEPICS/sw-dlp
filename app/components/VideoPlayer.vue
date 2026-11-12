@@ -15,7 +15,7 @@
 </script>
 
 <template>
-  <div class="flex max-w-screen items-center justify-center p-4 lg:justify-end lg:pr-16">
+  <div class="flex max-w-screen items-center justify-center p-4">
     <div
       class="aspect-video w-full max-w-full rounded-[10px] bg-white p-2 shadow-md sm:p-5 md:max-w-3xl"
     >

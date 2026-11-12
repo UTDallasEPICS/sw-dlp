@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import ActUI_MCQ from '~/components/ActUI_MCQ.vue';
+import ActivityMCQ from '~/components/ActivityMCQ.vue';
 
 const answers = ref<string[]>([''])
 </script>
@@ -15,7 +15,7 @@ const answers = ref<string[]>([''])
         prompt="Describe areas where you have further potential."
       />
 
-      <ActUI_MCQ
+      <ActivityMCQ
         :question-number="2"
         :total-questions="5"
         prompt="What is your preferred learning style?"
