@@ -76,29 +76,29 @@ Main categories of coping behaviors detailed in this Chapter are:
 1. Codependency
 2. Unhealthy relationships
 3. Obsessions
-4. Hyper sensitivity
+4. Hyper sensitivity What if you do not know your coping behaviors? Learn more about each and pray for God to reveal areas in your life that need to be healed.
 
-What if you do not know your coping behaviors? Learn more about each and pray for God to reveal areas in your life that need to be healed.
+> *“Then if my people who are called by my name will humble themselves and pray and seek my face and turn from their wicked ways, I will hear from heaven and will forgive their sins and restore their land.”*  
+**— 1 Chronicles 7:14 (NIV)**
 
-> _“Then if my people who are called by my name will humble themselves and pray and seek my face and turn from their wicked ways, I will hear from heaven and will forgive their sins and restore their land.”_  
-> **— 1 Chronicles 7:14 (NIV)**
+Codependency
 
 ### Taken advantage
 
-Do others in the house fail to help cook, clean, or assist with chores around the house? Do you feel exhausted and have to “do” everything? Do you feel overcommitted and underappreciated? Are you hurt because no one seems to know or care how you feel?
-
-This behavior is called **codependency**. Codependents attempt to control others, things and events in lieu of controlling their own feelings. They are afraid of being hurt and rejected by others and they often worry and feel anxious, guilty and afraid. They are loyal and often remain in unhealthy relationships which continue to erode their self-esteem and energy levels. Your life can be different:
+Do others in the house fail to help cook, clean, or assist with chores around the house? Do you feel exhausted and have to “do” everything? Do you feel overcommitted and underappreciated? Are you hurt because no one seems to know or care how you feel? This behavior is called codependency. Codependents attempt to control others, things and events in lieu of controlling their own feelings. They are afraid of being hurt and rejected by others and they often worry and feel anxious, guilty and afraid. They are loyal and often remain in unhealthy relationships which continue to erode their self-esteem and energy levels. Your life can be different:
 
 • God made you a vibrant, strong and loving person. He loves you just as you are and did not make you to be compulsive.\
-\
 • As a woman you often show love to your family by performing daily tasks. Be mindful of your motivation. Are you being fueled by anger, resentment and hurt as you complete daily tasks? If so, find ways to release those emotions.\
-\
 • You have the right to set your own boundaries. Learn how to set boundaries and do not allow others to compromise them. Later in this Chapter we will learn about setting boundaries.\
-\
 • Your self-worth is not based on what others believe of you or the tasks you complete.\
-\
 • If you are feeling overwhelmed, ask for help.\
 • You do not need to be a martyr, miserable and silent.
+
+Answer the following:
+
+Which people in your life take advantage of you?
+
+What tasks do you want them to do for themselves?
 
 ### Overwhelmed ![Scripture Reference](/pink_heart_mug.png)
 
@@ -110,12 +110,18 @@ There is freedom:\
 • God made you a beautiful woman. You have the right to accomplish what you can and cannot without punishment.\
 • Giving our burdens to God will lighten your load and release anxiety.
 
-> _“Come to me, all you who are weary and burdened, and I will give you rest. Take my yoke upon you and learn from me, for I am gentle and humble in heart, and you will find rest for your souls.. For my yoke is easy and my burden is light.”_  
-> **— Matthew 11:28–30 (NIV)**
+> *“Come to me, all you who are weary and burdened, and I will give you rest. Take my yoke upon you and learn from me, for I am gentle and humble in heart, and you will find rest for your souls.. For my yoke is easy and my burden is light.”*  
+**— Matthew 11:28–30 (NIV)**
+
+Answer the following:
+
+What would happen if you didn’t get everything done?
+
+What is the one thing you could stop doing today to ease your burden?
 
 ### Tired ![Testimonial Quote](/broken_mug.png)
 
-> _“I am tired of being a chameleon to fit in and find love and approval. My gift, my life, must not be wasted. My purpose will unfold if I am true to self. I need to stop being afraid.”_
+> *“I am tired of being a chameleon to fit in and find love and approval. My gift, my life, must not be wasted. My purpose will unfold if I am true to self. I need to stop being afraid.”*
 
 ### Personal resources
 
@@ -125,15 +131,10 @@ Sometimes you think that way because you are a Christian. You are doing the righ
 
 Here are some tips:\
 • Pure and simple—Stop it. This is the hardest step to take. You might say, “But I can’t.” “The truth is you can.” If you feel you can’t just stop, then your motivations need to be evaluated.\
-\
 • It is very important to help others in your life, but you must be in a position to do so first. You must first put your oxygen mask on before helping others. Take care of yourself, your family, your tithe first.\
-\
 • You need to be honest as to why you are helping someone. Is your motive an attempt to make yourself “lovable” or indispensable to them in an effort to make them “need” you? Do you feel guilty if you don’t help?\
-\
 • Why do they always need to borrow or take from you? If you say No are they able to survive? Have you ever considered God is teaching them during a time of hardship? Spending time with God daily will help you be able to discern God’s direction for you and how much and to whom you should direct your resources.\
-\
 • By lending them money, are you enabling an alcohol or drug dependency? What are their reoccurring patterns that are unhealthy for them? You are loved just as you are, you do not need to “give” anything away to be deserving of the love of others.\
-\
 • Pray and ask God how you should distribute your finances. It is all his money anyway. Once you allow God to move in your financial realm, you will see his blessings in that area.
 
 ### People pleaser
@@ -148,14 +149,16 @@ You are disappointed in others but feel you can’t let them down. Even if it hu
 
 This is codependent behavior and is not healthy:\
 • Your partner, family or friend is responsible for their own happiness. You believe that if only you could get everything finished, or get things “just right” they would finally be happy. You are making your happiness dependent on their moods or degree of happiness.\
-\
 • You are a beautiful child of God just as you are. You do not need approval from anyone and you are responsible for your own happiness.\
-\
 • Learning that you are not responsible for the happiness of someone else is the place to start. Until you can accept that fact, you will continue to be caught up in this cycle.
+
+What is the worst thing that could happen if you stopped trying to please everyone?
 
 ### Scurry to placate ![Testimonial Quote](/broken_mug.png)
 
-> _“I would drop whatever I was doing and scurry to placate any of his demands. He would be on my heels screaming at me, so I would work hard to just make him stop yelling. It was conditioning. He would scream and his needs would be met. He got the attention and control he desired. I got him to stop yelling. It was a tragic, unhealthy cycle.”_
+> *“I would drop whatever I was doing and scurry to placate any of his demands. He would be on my heels screaming at me, so I would work hard to just make him stop yelling. It was conditioning. He would scream and his needs would be met. He got the attention and control he desired. I got him to stop yelling. It was a tragic, unhealthy cycle.”*
+
+Unhealthy Relationships
 
 ### Magnet for controlling people
 
@@ -166,27 +169,18 @@ It doesn’t have to be that way:\
 • When meeting new people, follow these steps:
 
 1. Pray specifically that God will bring you a healthy mate.
-
 2. Educate yourself on abusive warning signs.
-
 3. Learn to trust your instincts, and no matter how wonderfully you have been “swept off your feet,” take it slow.
-
 4. Learn the signs; heed them, with no exceptions.
-
 5. Do not fool yourself and make excuses when you see concerning behavior.
-
 6. Be ready to walk away from anyone who is potentially abusive or dangerous to you.
-
 7. Conduct a background check.
 
 • For coworkers and friends you need to:
 
 1. Recognize that their behavior with you is unhealthy.
-
 2. Inform them you want the specific item to change.
-
 3. Keep to the facts, do not become emotional.
-
 4. Allow them to respond. If they throw out a sidetrack, return back to the point. Blame and disrespect are their problem.
 
 ### Relationships highs and lows ![Scripture Reference](/pink_heart_mug.png)
@@ -198,19 +192,14 @@ When you are uncertain about what sets off the anger and erratic behavior in ano
 Healthy relationships have changes of emotions too. They are different because they can be tied to past events or consistent behavior patterns. Partners don’t live in fear or try to control the other’s moods; they may be surprised once in a while when they have a bad day or get upset about an issue. Unhealthy people leave you confused and do not take responsibility for maintaining their own highs and lows. When they go out of bounds, they blame and never accept the responsibility. A few tips to consider:
 
 • Your happiness is your responsibility. Ask God to fill you and sustain your joy. His supply has no limits.\
-\
 • You have the ability to make your happiness a constant state not subject to the ups and downs of life or another person’s mood swings.\
-\
 • If you are on their “roller coaster,” you are in their game. Step out of the game to begin healing. This can seem almost impossible at first, but trust in God for help. Turn your focus on him and through prayer ask him to sustain your emotions.\
-\
 • You must build a healthy, safe haven in your heart and mind where you repeat positive words, despite the chaos. This buffer protects your happiness regardless of the mood swings of others.\
-\
 • Evaluate why your happiness is dependent on others.\
-\
 • Construct a safe network of friends, family, church, connect groups.
 
-> _“Humble yourselves, therefore, under God’s mighty hand, that he may lift you up in due time. Cast all your anxiety on him because he cares for you.”_  
-> **— 1 Peter 5:6–7 (NIV)**
+> *“Humble yourselves, therefore, under God’s mighty hand, that he may lift you up in due time. Cast all your anxiety on him because he cares for you.”*  
+**— 1 Peter 5:6–7 (NIV)**
 
 ### Don’t like my partners friends
 
@@ -232,8 +221,6 @@ Have you considered:\
 • When you blame others you give up the control to change and manage your own behavior.\
 • Remove blame from your actions, thoughts and words. When you do this, you are free because you have claimed back control of your emotional state. Change begins in you.
 
-<---next--->
-
 Obsessions
 
 ### Obsessive behaviors ![Scripture Reference](/pink_heart_mug.png)
@@ -243,15 +230,13 @@ What drives your behavior? Is it: fear, food, sex, alcohol, drugs, money, anger,
 Behaviors that are used to fill up holes in our heart can become obsessive. With any obsessive behavior you can be left feeling ashamed, disappointed, and powerless. You may temporarily feel in control, but obsessions can become fixations, consuming you with belief and desire. They can increase negative thoughts and can become harmful. Too much of even a good thing can change its effectiveness. Become self-aware of your behaviors.
 
 • You must find new friends and a new way to have fun or relax! God is big enough to fill those empty spaces inside.\
-\
 • If you are brave enough to admit that you struggle with alcohol or drugs, you are beginning the road to success. The problem with alcohol and drugs is that when you “do it” you don’t see it as a problem. Once you are free, you will be able to look in from the outside and you will be amazed at the dependency and hook it has on you. Even those that say, “I choose to drink. I never get drunk, but I enjoy a little drink each day to take the edge off. I like my wine to unwind after a hard day’s work.” Just try to stop 100% for a couple of weeks and see if you struggle. You might be surprised how many reasons and situations you think you have to drink.\
-\
 • If you surround yourself with individuals that use alcohol, drugs or other addictive behaviors as a habit, you will continue to struggle in that area. Replace the desire to escape into something new. God will show you the way to become free.\
 • Work with the Stronger than Espresso® program in your area to understand how God’s love can replace your hurts with healing.\
 • Pray to God that He will reveal your bad habits.
 
-> _“Direct my footsteps according to your word, let no sin rule over me.”_  
-> **— Psalms 119:133 (NIV)**
+> *“Direct my footsteps according to your word, let no sin rule over me.”*  
+**— Psalms 119:133 (NIV)**
 
 ### Can’t stop contacting them
 
@@ -283,8 +268,8 @@ Trusting God comes first. When you trust Him you can trust yourself. Learning to
 • Trust your gut instincts and listen to your inner wisdom.\
 • You can choose how you spend your time and the decisions you make. If these are good choices for you —it’s okay, if it’s not a good choice for you —don’t do it.
 
-> _“And those who know Your name will put their trust in you; For You, Lord, have not forsaken those who seek You.”_  
-> **— Psalms 9:10 (New King James Version)**
+> *“And those who know Your name will put their trust in you; For You, Lord, have not forsaken those who seek You.”*  
+**— Psalms 9:10 (New King James Version)**
 
 ### Lack of respect
 
@@ -338,8 +323,8 @@ When you are first learning the walk away versus run away, you must expect to ma
 
 This process is normal and must be completed to make it through to the other side. The outcome is well worth it. Keep a journal of what triggers, how you react, and how you would have liked to react. Construct new pathways of behavior so you can choose a different response in the future. Discuss your findings with other group members in your Stronger than Espresso® class to learn new ways to respond to similar choices.
 
-> _“Be anxious for nothing, but in everything by prayer and supplication, with thanksgiving, let your requests be made known to God; 7and the peace of God, which surpasses all understanding, will guard your hearts and minds through Christ Jesus.”_  
-> **— Philippians 4:6,7 (NKJV)**
+> *“Be anxious for nothing, but in everything by prayer and supplication, with thanksgiving, let your requests be made known to God; 7and the peace of God, which surpasses all understanding, will guard your hearts and minds through Christ Jesus.”*  
+**— Philippians 4:6,7 (NKJV)**
 
 ### Blame
 
@@ -353,8 +338,6 @@ You are only responsible for your own actions and not to blame for any abuse:
 • If you need sleep — try to find a way to get some.\
 • If you are stressed — begin praying that God gives you all the strength you need to find your way out of this valley.\
 • Reflect on your God given purpose — try to apply some of those activities which will reduce stress.
-
-<---next--->
 
 ### Feel ashamed ![Scripture Reference](/pink_heart_mug.png)
 
@@ -371,8 +354,8 @@ Once you have been saved by God’s grace, you can let shame go:\
 • Do not spend your energy worrying about what you have done — spend your time and energies identifying the person you want to be.\
 • Decide to either rebuild any relationships you have broken or recognize that they were unhealthy and seek out new ones. Be honest with yourself, make changes and let go of your shame.
 
-> _“For with the heart one believes unto righteousness, and with the mouth confession is made unto salvation. For the Scripture says, Whoever believes on Him will not be put to shame…13 For, whoever calls on the name of the Lord shall be saved.”_  
-> **— Romans 10:9–13 (NKJV)**
+> *“For with the heart one believes unto righteousness, and with the mouth confession is made unto salvation. For the Scripture says, Whoever believes on Him will not be put to shame…13 For, whoever calls on the name of the Lord shall be saved.”*  
+**— Romans 10:9–13 (NKJV)**
 
 ### Introduction to Establishing Boundaries
 
@@ -416,6 +399,50 @@ Building boundaries is a four step process:
 
 Be aware of individuals from your past and begin to communicate to them what behavior is now acceptable or not acceptable to you. If they do not listen or will not change, then they need to remain in your past and you must move beyond them and let them go.
 
+### You have the right ![Learning Activity](/two_hands_mug.png)
+
+I have the Right
+
+• To love\
+• To laugh\
+• To sing\
+• To dance\
+• To giggle\
+• To wiggle\
+• And to be happy I have the Right\
+• To say no\
+• To be alone\
+• To set a boundary\
+• To not be hurt\
+• To worship and walk by faith\
+• To trust those closest to me I have the Right\
+• Because I am lovable!\
+• Because I am great!\
+• Because I am smart!\
+• Because I am absolutely perfect just the way I am.\
+• Because I am a perfect child of God!\
+• Because I love myself just as I am! I have the Right! I have the Right! I have the Right!
+
+### Define your boundaries ![Learning Activity](/two_hands_mug.png)
+
+Step 1. Define how you want to be treated.
+
+Define how you want to be treated. This can be hard for you — that’s okay.
+
+Here are some examples of things you have the right to:\
+• Communicate openly and honestly without fear of being judged or ridiculed.\
+• Live without fear of being pushed, shoved, slapped, kicked or choked.\
+• Share your innermost feelings, dreams, thoughts, failures and successes without fear.\
+• Have your own interests, ideas and friendships.\
+• Have your emotional needs met through affections, kindness, caring, equality and respect.\
+• Share in major and minor decision making with your partner.\
+• Decide how and when to have sex.\
+• Freedom, to be yourself.
+
+Source: Domestic Abuse Shelter, Inc., Your Rights, You Have the Right To.… (Florida Keys, FL).
+
+Now, list rights you want to have:
+
 ### Learn to communicate your rights
 
 Step 2. Learn to Communicate your Rights.
@@ -426,7 +453,7 @@ What exactly does it mean to set up boundaries? Setting up boundaries is simply 
 
 Do you find it difficult to say
 
-> _“No?” Many of us struggle with confrontation in various situations and need to understand why we are unable to say “No.” There is a difference to choosing not to say “No,” versus being unable or so uncomfortable that you cannot. When you accept the horrendous gift your mother-in-law gave you for your wedding, or the fruitcake your coworker gives each year, you may choose to grin and bear it and accept the gift graciously. These situations are different. When your boundaries are trampled, morals violated or personal desires disregarded, you can and should say “No.”_
+> *“No?” Many of us struggle with confrontation in various situations and need to understand why we are unable to say “No.” There is a difference to choosing not to say “No,” versus being unable or so uncomfortable that you cannot. When you accept the horrendous gift your mother-in-law gave you for your wedding, or the fruitcake your coworker gives each year, you may choose to grin and bear it and accept the gift graciously. These situations are different. When your boundaries are trampled, morals violated or personal desires disregarded, you can and should say “No.”*
 
 When you find yourself unable to say “No” to your husband, lover, co-worker, boss, children, neighbor, friend or family member, you lose control over your ability to manage your life.
 
@@ -447,6 +474,31 @@ As simple as this sounds, being able to explain exactly what happened that bothe
 When an event happens we are triggered with an emotional response. If we do not have a healthy way to identify how we feel and share with the other person it sets off coping behaviors. These coping behaviors can become old hurts, habits and hang-ups we have become so accustomed to in our lives.
 
 Using this communication technique takes some getting used to. The best way to use this tool is to write down what you are feeling ahead of time. Sounding out your emotions in a logical frame of mind usually works more effectively on the other party. Many times we have stuffed or ignored our emotions and when we finally do speak our mind it never comes out as good as we planned.
+
+### When are you unable to say no? ![Learning Activity](/two_hands_mug.png)
+
+It is common for abuse survivors to have difficulty saying “No.” This is also a symptom of codependent behavior; an unhealthy coping mechanism.
+
+Commons items where women struggle saying “No”:\
+• Abuse / harassment.\
+• Controlling behaviors.\
+• Doing something you don’t want to do.\
+• Doing favors for others: rides, homework, chores.\
+• Forced to go places you don’t want to go.\
+• Intimate touching that makes you uncomfortable.\
+• Lending money.\
+• Medical procedures.\
+• Sex — unwanted or in an unwanted way.\
+• Spending time with people who treat you badly.\
+• Using alcohol or drugs when others around you use them.
+
+Source: Women in Distress of Broward County, Inc., Emotional Boundaries (Fort Lauderdale, FL:Women In Distress of Broward County, Inc., 2003).
+
+Describe situations in your life where you wish you could say
+
+> *“No.”*
+
+Describe what it would look like if you could take control and say “No” without getting hurt or a negative consequence.
 
 ### Danger saying “No”
 
@@ -482,6 +534,26 @@ Tips to follow:
 
 Sidetracks are attempts to derail the conversation. A sidetrack can include: tears, blame or anger. Individuals can also shut down, blow up, or give intellectual responses. They are natural human responses to avoid the conversation and are very common. If you see a sidetrack stick to the facts. Do not let it change the course of your discussion. At times, you may have to give a break and return to the conversation when the other party is ready to listen.
 
+### Just Say “No” ![Learning Activity](/two_hands_mug.png)
+
+Step 3. Communicate with others when boundaries are crossed.
+
+It can be hard to tell someone when a boundary has been crossed.
+
+How many times should we try to share boundaries with those around us? If we realize that we get the same results two, three and even four times after we have shared we don’t like something; you need to decide if this person is good for you or not.
+
+Describe a circumstance that you are currently avoiding, such as: a nosy family member, a co-worker that continuously bothers you or a neighbor that is always borrowing $20 when you too are struggling financially.
+
+List each circumstance in detail and write a description of what you will say to this person. Remember, you do not need to justify your No.
+
+Here’s an Example: Neighbor:
+
+> *“Can I borrow $20? We don’t get paid until Friday.” You: “No, I am not able to lend you $20.” Neighbor: “Come, on, the baby really needs milk and we will pay you back.” You: (This neighbor has never paid you back in the past. They always have money for cigarettes and alcohol and borrow for their baby’s milk. You have been angered by this practice for months, but when they press you -you always just give in.) “That is a shame but I cannot help you.” Neighbor: “Look I really don’t know what I will do if you don’t help me? It’s for the baby, not me.” (Notice the guilt?). You: “Unfortunately, I can’t help you.”*
+
+Use this area to record scripts saying,
+
+> *“No.”*
+
 ### Characteristics of assertion
 
 Assertiveness is taking responsibility for a relationship and being able to communicate what you want:
@@ -500,11 +572,21 @@ Assertiveness is taking responsibility for a relationship and being able to comm
 
 7. Strive to be able to communicate your feelings and desires without feeling blame, shame or guilt when you say
 
-> _“No.”_
+> *“No.”*
 
 8. Being assertive can be uncomfortable at first, but will get easier with practice.
 
 9. There is a difference between feeling uncomfortable and feeling safe. If you do not believe it is safe for you to speak a different opinion or assert your beliefs than you are in an abusive relationship. Seek professional help first from a local women’s shelter or licensed counselor to ensure your safety is the number one concern.
+
+### Be assertive ![Learning Activity](/two_hands_mug.png)
+
+Aggressive and assertive are not the same. Assertiveness states the facts without being pushy or out of control. When you are new at setting boundaries you may explode with words or emotions because they have been shoved down for years. When you get your voice —you want to shout it out! Be mindful of your tendency to overstate your boundaries at first. Hang in there — it’s a process.
+
+Answer the following questions:\
+• Describe situations where you do not express your feelings.\
+• How do you feel when you do not speak up?\
+• What are the risks if you stood up for yourself?\
+• What actions can you take to communicate to this individual how you wish to be treated?
 
 ### Tread lightly
 
@@ -526,12 +608,11 @@ Keep connected to a mentor, coach, counselor, sponsor, friend, or accountability
 
 ### Overcome self-sabotage
 
-**Step 4. Recognize when you sabotage or violate your own boundaries.**
+Step 4. Recognize when you sabotage or violate your own boundaries.
 
 When you do not respect yourself, others will not respect you. Respect yourself:
 
 1. Take care of yourself. Make sure to eat, exercise, rest, socialize and relax.
-
 2. Surround yourself with positive sounds, sights, and people. Avoid negative influences.
 
 3. Avoid all behaviors, people or substances you have used to medicate your emotional pain in the past.
@@ -547,20 +628,14 @@ When you do not respect yourself, others will not respect you. Respect yourself:
 Being prepared can help you overcome self-sabotaging behaviors. Answer the following questions:
 
 • Taking care of yourself is very important; describe how you will take better care of yourself?\
-\
 • How will you surround yourself with positive sounds, thoughts and people?\
-\
 • What specific negative influences need to be changed?\
-\
 • What are your addictions and obsessive behaviors?\
-\
 • What are new behaviors that you can put in their place?\
 • What self-talk needs to be replaced? List your new self-talk statements or affirmations.\
 • What expectations do you have of yourself? Are they realistic?\
 • Describe the expectations you have of others. Are they meeting your expectations? If not, how would you like them to be?\
-\
 • Describe your destructive behaviors and how you can make better choices.\
-\
 • Share one behavior with the group you want them to hold you accountable to each week. Examples: work on the book you always wanted to write, get in shape, get organized, and do not procrastinate.
 
 ### Practice saying No

@@ -72,13 +72,41 @@ Earlier in this book you read the example of two young girls and their shift in 
 • What impact did your upbringing have on the decay of your self- esteem?\
 • Describe what “glass ceilings” were put on your life?
 
+### What happened? ![Learning Activity](/two_hands_mug.png)
+
+Action versus blame will help you grow beyond the patterns of the past.
+
+Identifying any glass ceilings or descriptive words from your life can help you understand how you define your potential and purpose.
+
+For example, maybe as a young girl you were told that you could not be anything you wanted to be, but were limited in career choice, intelligence or ability. If your parents told you that you were “stupid,” and would never amount to anything, you may have struggled for many years with the burden of disproving that statement. Perhaps you lived up to their limited vision for your life and you have been frustrated and an underachiever all these years.
+
+The best part now is that you are free to believe what you want about yourself! You are not etched in stone and unable to be changed. The messages that you want to change — you can change with dedication and perseverance.
+
+Have no doubt, you have survived an abusive relationship, you are already full of dedication and perseverance and can change anything. You just have to begin. List words to describe you as a child:
+
+| Child Descriptive Word | Emotions it Generates |
+|------------------------|-----------------------|
+| &nbsp;<br>&nbsp; | &nbsp;<br>&nbsp; |
+| &nbsp;<br>&nbsp; | &nbsp;<br>&nbsp; |
+| &nbsp;<br>&nbsp; | &nbsp;<br>&nbsp; |
+| &nbsp;<br>&nbsp; | &nbsp;<br>&nbsp; |
+| &nbsp;<br>&nbsp; | &nbsp;<br>&nbsp; |
+
+How many of your descriptive words were positive? Negative?
+
+This gives you a foundation to know:\
+• Emotions that need to be restored\
+• Memories where you need healing\
+• People in your life that still have control\
+• Focus for your prayers for God to transform your self-belief
+
 ### Coping patterns
 
 Individuals in abusive situations suffer from low self-esteem. If you were able to bottle self-esteem and drink it up quick, you could finally “get out of this thing” you are in. Since that is not possible, you must slowly begin the process of uncovering where the holes in the self-esteem lie and begin to repair the damage done the hard way.
 
 Each step you take now is one you choose. It is human nature to appreciate more the things that are worked for than those given. Each step you take now will teach you more than you ever imagined. Pray for God to help you, He is there with every step you take.
 
-The important question becomes, why is it okay for him to treat you this way? At some point you must recognize that this is not okay. When you accept that you are not to blame, you release yourself from the belief that you have the power to stop it. While you cannot change your partner’s behavior, you **can** decide how to respond to the abuse.
+The important question becomes, why is it okay for him to treat you this way? At some point you must recognize that this is not okay. When you accept that you are not to blame, you release yourself from the belief that you have the power to stop it. While you cannot change your partner’s behavior, you can decide how to respond to the abuse.
 
 When experiencing low self-esteem often you are emotionally paralyzed and unable to take any action. You become so fearful to challenge your thoughts that you cannot make a change.60 Even in an unhappy or unhealthy situation, you are safe and secure with the way “it always goes.” Instead of risking a new behavior, you maintain the comfort of the past.
 
@@ -104,6 +132,39 @@ It would be like treating a rash with topical cream only, when you really need t
 
 Seek the help of a medical doctor to discuss your situation and treatment options that are best for your needs.
 
+### Action inventory ![Learning Activity](/two_hands_mug.png)
+
+As long as we hold onto the past, we cannot grab onto the future. God has blessings in store for you. In that you can trust. Taking actions every day you can begin to restore your self-esteem.
+
+What are ways that we can begin to restore our self-esteem?
+
+### Major Hurt /
+
+| Major Hurt / Memory | Person (s) Involved | Your Feelings? | Action(s) You Will Take Today to Overcome |
+|---------------------|---------------------|----------------|-------------------------------------------|
+| &nbsp;<br>&nbsp; | &nbsp;<br>&nbsp; | &nbsp;<br>&nbsp; | &nbsp;<br>&nbsp; |
+| &nbsp;<br>&nbsp; | &nbsp;<br>&nbsp; | &nbsp;<br>&nbsp; | &nbsp;<br>&nbsp; |
+| &nbsp;<br>&nbsp; | &nbsp;<br>&nbsp; | &nbsp;<br>&nbsp; | &nbsp;<br>&nbsp; |
+| &nbsp;<br>&nbsp; | &nbsp;<br>&nbsp; | &nbsp;<br>&nbsp; | &nbsp;<br>&nbsp; |
+| &nbsp;<br>&nbsp; | &nbsp;<br>&nbsp; | &nbsp;<br>&nbsp; | &nbsp;<br>&nbsp; |
+| &nbsp;<br>&nbsp; | &nbsp;<br>&nbsp; | &nbsp;<br>&nbsp; | &nbsp;<br>&nbsp; |
+| &nbsp;<br>&nbsp; | &nbsp;<br>&nbsp; | &nbsp;<br>&nbsp; | &nbsp;<br>&nbsp; |
+| &nbsp;<br>&nbsp; | &nbsp;<br>&nbsp; | &nbsp;<br>&nbsp; | &nbsp;<br>&nbsp; |
+
+### Good does exist ![Learning Activity](/two_hands_mug.png)
+
+Don’t forget the good that has happened in your life. The GOOD in your life is very important to focus on! Reflect on WHY it was good, and the feelings you experienced then and now as you remember.
+
+To remember and replace is an action. Action requires work, but it is worth it.
+
+• Let it go = release resentment (for you!)\
+• Forgiveness = freedom (for you!)\
+• Stop believing = no more lies (for you)!
+
+Describe the memories, people or events that helped you feel good about yourself.
+
+What pieces of those memories can you use to apply to actions to overcome?
+
 ### Time to enhance
 
 After spending time identifying what erodes self-esteem, now you are ready to begin to learn new ways to enhance your self-esteem.
@@ -114,8 +175,32 @@ You can be assured that the first step to improving your self-esteem is to accep
 
 You can have confidence that He will make a way for you.
 
-> _“However, it is written; ‘no eye has seen, no ear has heard, no mind has conceived what God has prepared for those who love him.”_  
-> **— 1 Corinthians 2:9 (NIV)**
+> *“However, it is written; ‘no eye has seen, no ear has heard, no mind has conceived what God has prepared for those who love him.”*  
+**— 1 Corinthians 2:9 (NIV)**
+
+### I love my…. ![Learning Activity](/two_hands_mug.png)
+
+Loving yourself can be hard work sometimes.
+
+Write 5 things that you absolutely love about yourself:
+
+1. I love my _________________________________________.
+
+2. I love my _________________________________________.
+
+3. I love my _________________________________________.
+
+4. I love my _________________________________________.
+
+5. I love my _________________________________________.
+
+Describe what challenges you had finding five things you love about you?
+
+It is unfortunate, but many women struggle to think of even one item that they like or even love about themselves. If you got five, hats off to you.
+
+If you weren’t able to complete all five, come back to this later. Your goal is to be able to rattle off five things you love about yourself. Then ten great things about you, then 100 awesome things about you!
+
+Love yourself, like God loves you.
 
 ### How to enhance self-esteem?
 
@@ -131,7 +216,21 @@ What are you doing now to feel good about yourself?
 
 Reviewing God’s word is the best way to start your restoration. Understanding what he has in store for you and the blessings he has granted over your life can help. Taking verses and discovering their application to your life is where God can transform your life through the Bible.
 
-Read **Psalms 103:1–6**
+Read Psalms 103:1–6
+
+### Verse
+
+> *“Bless the Lord…and all that is within me.”*  
+**— Psalms 103:1–6 (NKJV)**
+
+| Verse | Psalms 103:1-6 (NKJV) |  |
+|-------|-----------------------|------|
+| 1 | “Bless the Lord…and all that is within me.” | What blessings has God given you? |
+| 2 | ‘”…Forget not all His benefits.” | Describe the benefits to accepting the Lord’s blessings? |
+| 3 | “Who forgives…who heals.” | What iniquities need forgiving in your life? What diseases of yours need healing? |
+| 4 | “Who redeems your life…Who crowns you with loving kindness…” | What does loving kindness and tender mercy look like? |
+| 5 | “…our youth is renewed like the eagles.” | If you could soar like an eagle, where would you go? |
+| 6 | “…justice for all who are oppressed.” | In what areas do you want justice? |
 
 ### Affirmations and self-talk
 
@@ -145,19 +244,30 @@ If the thoughts are negative, rewrite the negative into positive statements and 
 
 You might be saying things like,
 
-> _“I am so stupid.” “Why am I so fat?” “I never do anything right.”_
+> *“I am so stupid.” “Why am I so fat?” “I never do anything right.”*
 
 If you struggle with loving yourself, just begin your new self-talk to say, “God loves me just as I am,” which releases His blessings over you and releases you from the destructive influence of your damaging words.
 
+### Appreciation ![Scripture Reference](/pink_heart_mug.png)
+
+Appreciate all the good things in your life right now. Celebrate your life as it exists now, not only the life you dream about. Even if everything is at the lowest point, you are still alive and were wonderfully made by your Creator. Your life, in whatever state it currently exists, is the fingerprint of God. Keep hope, keep faith and keep your eyes focused on your goals.
+
+> *“Rest in the Lord, and wait patiently for Him; Do not fret…”*  
+**— Psalms 37:7 (NKJV)**
+
+Thank God for 10 things in your life:
+
 ### Associations ![Scripture Reference](/pink_heart_mug.png)
 
-Associate with people that have a positive outlook on life and different interests than what you have been doing in the past. Even if new people seem dorky, strange or weird, it is good to branch out and make new associations at this time. Places to find new groups: public library, local state park nature course, church, local community charity or clean-up day, and other volunteer efforts. Stay clear of“singles” groups at this time as you are developing a love affair with your new self, not another partner. Scripture tells us that it is important for us to select our associates carefully:
+Associate with people that have a positive outlook on life and different interests than what you have been doing in the past. Even if new people seem dorky, strange or weird, it is good to branch out and make new associations at this time. Places to find new groups: public library, local state park nature course, church, local community charity or clean-up day, and other volunteer efforts. Stay clear of
 
-> _“ You used to walk in these ways, in the life you once lived. But now you must rid yourselves of all such things as these: anger, rage, malice, slander, and filthy language from your lips. Do not lie to each other, since you have taken off your old self with its practices and have put on the new self, which is being renewed in knowledge in the image of its Creator.”_
-> — Colossians 3:7–9 (NIV)
+> *
 
-> _“Do not give what is holy to the dogs; nor cast your pearls before swine, lest they trample them under their feet, and turn and tear you in pieces.”_  
-> **— Matthew 7:6**
+> *“singles” groups at this time as you are developing a love affair with your new self, not another partner. Scripture tells us that it is important for us to select our associates carefully: “ You used to walk in these ways, in the life you once lived. But now you must rid yourselves of all such things as these: anger, rage, malice, slander, and filthy language from your lips. Do not lie to each other, since you have taken off your old self with its practices and have put on the new self, which is being renewed in knowledge in the image of its Creator.”*”*  
+— Colossians 3:7–9 (NIV)
+
+> *“Do not give what is holy to the dogs; nor cast your pearls before swine, lest they trample them under their feet, and turn and tear you in pieces.”*  
+**— Matthew 7:6**
 
 ### Get moving
 
@@ -185,15 +295,18 @@ The goal is to offer a diet that provides the fuel you need to heal emotionally,
 
 Finding that you are not alone and sharing your concerns can validate your feelings. When your emotions are validated, you can begin healing and this will boost your self-esteem.
 
-> _“Though one may be overpowered, two can defend themselves. A cord of three strands is not quickly broken.”_  
-> **— Ecclesiastes 4:12 (NIV)**
+> *“Though one may be overpowered, two can defend themselves. A cord of three strands is not quickly broken.”*  
+**— Ecclesiastes 4:12 (NIV)**
 
 Don’t go it alone. Join a Stronger than Espresso® connect group, mentoring or coaching program. If you have joined, we welcome you to our STE Sisterhood.
+
+What are ways you can connect with others?
 
 ### Be still
 
 Learning to be still and have quiet time can be very difficult. God reminds us throughout the Bible to,
-_“…be still and know I am God.”_  
+
+> *“…be still and know I am God.”*  
 **— Psalms 46:10**
 
 You have grown accustomed to “walking on egg shells.” You may be accustomed to consistently looking over your shoulder, sleeping with one eye open, or even shielded others from erupting violence. Learning to have quiet time can be challenging.
@@ -202,20 +315,12 @@ Take heart that in time it will get easier. In the beginning you may experience 
 
 Some other ideas:\
 • Take a bubble bath. Keep the room silent, no phone, TV or radio, to experience quiet serenity. Focus on the water comforting your skin, and how you can release tensions away with your breath. Take caution to ensure you feel safe with doors locked before you begin.\
-\
 • Brew a cup of tea. Focus on the entire process of heating the water, watching it steep, and drinking it, say nothing and do nothing else. Enjoy being in the moment. This is not a time to also sort the daily mail while the water heats up. Concentrate on only the tea.\
-\
 • Pray daily. Spend time with God asking him to reveal items you need to know. This is an active time to seek God.\
-\
 • Meditate. This is a quiet time. Many people pray during this time also. In the beginning it can feel like a curse to be left alone with your own thoughts. It is common to have difficulty lying quietly. You can focus on the in and out rhythm of your breath or repeat one affirmation to keep your mental “noise” at bay. As you mature this quiet time will become easier and you can focus on one thought.\
-\
 • Phone a friend. Connecting with others is important for healing.\
-\
 • If you are a mom, model how to ask and set healthy boundaries. Using clear communication and respect is an important lesson to demonstrate to your kids.\
-\
 • Invite someone to talk a walk. Fresh air can do wonders.
-
-<---next--->
 
 ### Personal Hygiene
 
@@ -229,8 +334,8 @@ Check a local thrift store, church or women’s shelter for low cost or free clo
 
 What you read can transform your spirit.
 
-> _“The lamp of the body is the eye. If therefore your eye is good, your whole body will be full of light. But if your eye is bad, your whole body will be full of darkness. If therefore the light that is in you is darkness, how great is that darkness!”_  
-> **— Matthew 6:22, 23 (NKJV)**
+> *“The lamp of the body is the eye. If therefore your eye is good, your whole body will be full of light. But if your eye is bad, your whole body will be full of darkness. If therefore the light that is in you is darkness, how great is that darkness!”*  
+**— Matthew 6:22, 23 (NKJV)**
 
 Read the Bible book of Psalms. Psalms is an inspirational book written in song and prayer. David’s life was very much like our own: troubled, full of ups and downs, and numerous occasions where he cried out to God for help. There is betrayal, celebration, lamenting, trials and tribulations.
 
@@ -248,7 +353,7 @@ Each of us will identify different items that need to change. Toxins, in whateve
 
 Our pain makes us immobile at times. When you stop working to please others there can be an “uncomfortable” transition. You are not as “busy” as before spending all your time pleasing everyone. Your pendulum can slow to a new tempo.
 
-This change in tempo can leave some voids. You have not been given the pleasure of working on items or projects that <u>you</u> would like to enjoy or do.
+This change in tempo can leave some voids. You have not been given the pleasure of working on items or projects that you would like to enjoy or do.
 
 Make a list of simple projects that you have been putting off. Try to complete them over time to feel a personal sense of accomplishment.
 
@@ -302,11 +407,11 @@ Release your fears and your worries to God and focus on your healing. Your self-
 
 God is not fear. When you feel fear, anxiety or worry, you can be assured it is not of Him. His Word reminds us to not be afraid.
 
-> _“Don’t worry about anything; instead, pray about everything. Tell God what you need, and thank him for all he has done. If you do this you will experience God’s peace, which is far more wonderful than the human mind can understand. His peace will guard your hearts and minds as you live in Christ Jesus.”_  
-> — Philippians 4:6–7 (NLT)
+> *“Don’t worry about anything; instead, pray about everything. Tell God what you need, and thank him for all he has done. If you do this you will experience God’s peace, which is far more wonderful than the human mind can understand. His peace will guard your hearts and minds as you live in Christ Jesus.”*  
+— Philippians 4:6–7 (NLT) Describe things you are afraid of; or worry about?
 
-You can always say, “God did not give me a spirit of fear, but of love, power and a sound mind!” **2 Tim 1:7**. God I give these fears to you. I trust you!
+You can always say, “God did not give me a spirit of fear, but of love, power and a sound mind!” 2 Tim 1:7. God I give these fears to you. I trust you!
 
 You can improve your self-esteem. It will require patience and dedication in order to restore. There is hope!
 
-> _“It has been almost a decade since I was subjected to an abusive relationship, but those years of conditioning have stayed with me. Low self-esteem, fear and anxiety continue to cloud how I perceive myself and my environment.”_
+> *“It has been almost a decade since I was subjected to an abusive relationship, but those years of conditioning have stayed with me. Low self-esteem, fear and anxiety continue to cloud how I perceive myself and my environment.”*

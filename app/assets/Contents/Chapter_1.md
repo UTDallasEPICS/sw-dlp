@@ -58,9 +58,11 @@ The purpose of Chapter 1 is to introduce you to the Stronger than Espresso progr
 
 ### Definition: Espresso
 
-**Espresso** is a complex beverage with three vital parts the heart, body, and crema.1 The crema’ is the reddish brown foam that floats on the top and is the distinguishing part of an authentic espresso. It is what gives each cup life and uniqueness. You are like a complex cup of espresso with a heart, body and your spirit is the crema that gives life and uniqueness.
+Espresso is a complex beverage with three vital parts the heart, body, and crema.1 The crema’ is the reddish brown foam that floats on the top and is the distinguishing part of an authentic espresso. It is what gives each cup life and uniqueness. You are like a complex cup of espresso with a heart, body and your spirit is the crema that gives life and uniqueness.
 
-> _“The key to espresso is to realize that it always has further potential. By changing any one factor you can improve or diminish its potential. Espresso preparation is an art that demands the precision and dedication of science. I have never achieved, nor have ever seen a perfect espresso. A perfect espresso is more of a concept than an actuality. The beauty is that espresso is volatile and difficult. If it were easy we would develop a machine that can brew perfect espresso every time. There are so many factors involved in espresso preparation that only a human mind and passionate heart can begin to understand and control its complexity.”_
+> *“The key to espresso is to realize that it always has further potential. By changing any one factor you can improve or diminish its potential. Espresso preparation is an art that demands the precision and dedication of science. I have never achieved, nor have ever seen a perfect espresso. A perfect espresso is more of a concept than an actuality. The beauty is that espresso is volatile and difficult. If it were easy we would develop a machine that can brew perfect espresso every time. There are so many factors involved in espresso preparation that only a human mind and passionate heart can begin to understand and control its complexity.”*
+
+Source: www.CoffeeResearch.org. Espresso, Making a Perfect Espresso. Copyright ©2007. Reprinted with permission of www.CoffeeResearch.org.
 
 ### Crafting a better you
 
@@ -70,12 +72,28 @@ If you consider the life cycle of a coffee bean. It is picked off the tree. Then
 
 You are much more valuable than a cup of coffee, but this analogy shows us that even in a simple cup of coffee there are many factors in play to craft perfection. You are a complex being and there are many factors that must be taken into consideration. Similarly, the art to crafting a better you must be perfected through similar commitment, dedication, hard work and practice.
 
+### Define a new you ![Learning Activity](/two_hands_mug.png)
+
+Objective: Discover personal areas of opportunity and growth and begin to build relationships with others.
+
+| Espresso Definition | Your Definition |
+|---------------------|-----------------|
+| “The key to espresso is to realize that it always has further potential. | Describe areas where you have further potential? |
+| “By changing any one factor you can improve or diminish its potential.” | What would you change to improve your potential? |
+| “Espresso preparation is an art that demands the precision and dedication of science.” | Identify areas in your life where you demonstrate precision and dedication. Identify areas where you would like to demonstrate these qualities but do not at this time. |
+| “I have never achieved, nor have ever seen a perfect espresso.” | What is the risk if you expect perfection of yourself? |
+| “The beauty is that espresso is volatile and difficult.” | Describe areas in your life where you are volatile and difficult? |
+| “If it were easy we would develop a machine that can brew perfect espresso every time.” | What is the consequence if you try the quick and easy way to make a better you? |
+| There are so many factors involved in espresso preparation that only a human mind and passionate heart can begin to understand and control its complexity.” | Define three areas where you are beautifully complex. |
+
 ### God definition of you ![Scripture Reference](/pink_heart_mug.png)
 
 God made you and has a description of you too.
 
-> _“For you created my inmost being; you knit me together in my mother’s womb. I praise you because I am fearfully and wonderfully made; your works are wonderful, I know that full well.. My frame was not hidden from you when I was made in the secret place. When I was woven together in the depths of the earth, your eyes saw my unformed body. All the days ordained for me were written in your book before one of them came to be.”_  
-> **— Psalms 139:13–16 (NIV)**
+> *“For you created my inmost being; you knit me together in my mother’s womb. I praise you because I am fearfully and wonderfully made; your works are wonderful, I know that full well.. My frame was not hidden from you when I was made in the secret place. When I was woven together in the depths of the earth, your eyes saw my unformed body. All the days ordained for me were written in your book before one of them came to be.”*  
+**— Psalms 139:13–16 (NIV)**
+
+• Describe areas in your life where it is difficult for you to accept that you are fearfully and wonderfully made?
 
 ### How many?
 
@@ -113,7 +131,38 @@ When you finally break free from an abusive relationship, scars remain and new c
 
 Chapter Ten of this workbook has detailed information about the characteristics of each type of abuse. You will learn about each type in detail to understand what you endured and what normal should look like.
 
-<--- Next --->
+### Are you being abused? ![Learning Activity](/two_hands_mug.png)
+
+Physical violence is only one kind of abuse. Answer the following 15 questions; based on your number of “Yes” answers you can better evaluate the severity of your situation:
+
+|  | Question | Yes | No |
+|------|----------|------|------|
+| 1. | Are you blamed whenever things go wrong, cursed or called names? |  |  |
+| 2. | Is free time limited to your partner’s interest only? |  |  |
+| 3. | Do you do more than a fair share of work, paid or unpaid? |  |  |
+| 4. | Is your partner a “nasty” drunk or drug user? |  |  |
+| 5. | Are you made to have unwanted sex after you’ve said “no”? |  |  |
+| 6. | Do you feel you must ask permission to do things? |  |  |
+| 7. | Are you forbidden to use money? Never buy anything for yourself? |  |  |
+| 8. | Are you sometimes punished for misbehaving? |  |  |
+| 9. | Is it impossible to enjoy outside friendships, due to jealousy? |  |  |
+| 10. | In his / her childhood, was your partner or his / her mother abused? |  |  |
+| 11. | Does s/he have “Jekyll & Hyde” personality? |  |  |
+| 12. | Are you the “butt” of humiliating jokes? |  |  |
+| 13. | Is there a scene if you express an opposite opinion? |  |  |
+| 14. | Do you “cover” or make excuses for your partner’s behavior? |  |  |
+| 15. | Do you live in fear of your loved one? |  |  |
+
+Tabulate your score. If you have answered yes to:
+
+| Score | Action |
+|-------|--------|
+| 1 or 2: | Take notice, strive together to improve troubled areas. |
+| 3 or 4: | Seriously examine relationships, seek help from qualified source. |
+| 4 to 6: | Relationship breaking down, ABUSE is the issue. Joint counseling is not appropriate until FEAR ceases. |
+| 7 to 15: | CRISIS INTERVENTION NEEDED! Seek individual help from sources / advocates familiar with abuse issues. Joint counseling is not appropriate. |
+
+Source: Domestic Abuse Shelter, Inc., Are You Sure You’re Not Abused?, (Monroe County, FL: Domestic Abuse Shelter, Inc., 2003).
 
 ### Action
 
@@ -122,11 +171,11 @@ If you have answered “Yes” to 7–15 of the questions, seek help immediately
 > **Please seek the proper care and counseling to support you during this time.**
 > Call 911 or the National Domestic Violence Hotline at **1-800-799-7233** to help find resources in your area.
 
-If you do not have a safe computer to use, then you can go to a local library, fire station, police station or church and ask for information. Check the [Stronger than Espresso website](https://strongerwomen.com/) for resources or call for information.
+If you do not have a safe computer to use, then you can go to a local library, fire station, police station or church and ask for information. Check the www.strongerthanespressso.com site for resources or call for information.
 
 ### Heightened awareness
 
-When you break the cycle, the cycle cannot continue. Understand with an abusive relationship safety is vital. If you are still in your abusive relationship once you react differently the power they have begins to crack. The risks in your situation are very real. Once the control the abuser has over you begins to diminish or change it becomes a very dangerous time for you. Have a heightened awareness of your surroundings and safety. Be smart and safe. In Chapter Ten we learn more about creating a safety plan or visit [Stronger than Espresso website](https://strongerwomen.com/) for more information.
+When you break the cycle, the cycle cannot continue. Understand with an abusive relationship safety is vital. If you are still in your abusive relationship once you react differently the power they have begins to crack. The risks in your situation are very real. Once the control the abuser has over you begins to diminish or change it becomes a very dangerous time for you. Have a heightened awareness of your surroundings and safety. Be smart and safe. In Chapter Ten we learn more about creating a safety plan or visit www.strongerthanespresso.com for more information.
 
 ### Connections ![Scripture Reference](/pink_heart_mug.png)
 
@@ -134,5 +183,5 @@ When you have spent too much time being alone and isolated; connecting with othe
 
 If you are in a STE class share your phone number with individuals that you feel comfortable with to begin connecting and building your support system. Throughout the week you can send encouraging notes to one another or contact each other when you have a difficult problem to face and need help. Seek out women in your church or community as well. If you are online there are other ways to connect with other women; go to www.strongerthanespresso.com for more information.
 
-> _“A person standing alone can be attacked and defeated, but two can stand back-to-back and conquer. Three are even better, for a triple-braided cord is not easily broken.”_  
-> **— Ecclesiastes 4:12 (New Living Translation)**
+> *“A person standing alone can be attacked and defeated, but two can stand back-to-back and conquer. Three are even better, for a triple-braided cord is not easily broken.”*  
+**— Ecclesiastes 4:12 (New Living Translation)**
