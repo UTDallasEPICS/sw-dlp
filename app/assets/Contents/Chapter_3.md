@@ -13,9 +13,42 @@ The purpose of Chapter 3 is to help you identify your emotions, what actions/ re
 
 ### Balanced on the Edge of a Knife ![Testimonial Quote](/broken_mug.png)
 
-> _“I lived balancing on the edge of a knife. It was years of being with abusers that conditioned me to continually taking the blame for everything. I suffered extreme loneliness and would emotionally detach so that my heart would not be touched. I pushed loved ones away for fear that they might see who I really am and not like me. I did not believe that I was worthy of unconditional love and so history kept repeating itself.”_
+> *“I lived balancing on the edge of a knife. It was years of being with abusers that conditioned me to continually taking the blame for everything. I suffered extreme loneliness and would emotionally detach so that my heart would not be touched. I pushed loved ones away for fear that they might see who I really am and not like me. I did not believe that I was worthy of unconditional love and so history kept repeating itself.”*
+
+### Current Feelings ![Learning Activity](/two_hands_mug.png)
+
+Finish the following sentence stems:\
+• My life has become…
+
+_______________________________________________________
+
+• Normal now seems…
+
+________________________________________________________
+
+• I am isolated from …
+
+________________________________________________________
+
+• My safe harbor is …
+
+________________________________________________________
+
+• The first thing I want to change is …
+
+________________________________________________________
+
+### Themes ![Learning Activity](/two_hands_mug.png)
+
+These words are a combination of emotions, actions and the results or impact these feelings can have in your life.
+
+Circle words that describe you:
+
+![Diagram](/chapter_03_p36_fig.png)
 
 ### Figure 2. Emotions, Actions and Results.
+
+Source: Stronger than Espresso, Inc. © 2014.
 
 Review the words you circled.
 
@@ -23,9 +56,40 @@ Some of the words will describe an emotion you feel, an action you perform, or a
 
 Think of this as a process and move from left to right.
 
-| Feeling / Emotion | Action     | Result/Impact                                                     |
-| ----------------- | ---------- | ----------------------------------------------------------------- |
-| Example: Anger    | I shutdown | I live behind a plastic smile and emotionally detach from others. |
+| Feeling / Emotion | Action | Result/Impact |
+|-------------------|--------|---------------|
+| Example: Anger | I shutdown | I live behind a plastic smile and emotionally detach from others. |
+| &nbsp;<br>&nbsp; | &nbsp;<br>&nbsp; | &nbsp;<br>&nbsp; |
+| &nbsp;<br>&nbsp; | &nbsp;<br>&nbsp; | &nbsp;<br>&nbsp; |
+| &nbsp;<br>&nbsp; | &nbsp;<br>&nbsp; | &nbsp;<br>&nbsp; |
+| &nbsp;<br>&nbsp; | &nbsp;<br>&nbsp; | &nbsp;<br>&nbsp; |
+| &nbsp;<br>&nbsp; | &nbsp;<br>&nbsp; | &nbsp;<br>&nbsp; |
+| &nbsp;<br>&nbsp; | &nbsp;<br>&nbsp; | &nbsp;<br>&nbsp; |
+| &nbsp;<br>&nbsp; | &nbsp;<br>&nbsp; | &nbsp;<br>&nbsp; |
+| &nbsp;<br>&nbsp; | &nbsp;<br>&nbsp; | &nbsp;<br>&nbsp; |
+| &nbsp;<br>&nbsp; | &nbsp;<br>&nbsp; | &nbsp;<br>&nbsp; |
+| &nbsp;<br>&nbsp; | &nbsp;<br>&nbsp; | &nbsp;<br>&nbsp; |
+
+### Your 180 ![Learning Activity](/two_hands_mug.png)
+
+The purpose of this table is to help you create 180 degree opposite solutions.
+
+Take any words listed on the chart on the previous page and create what is the new and refreshing opposite emotion, action or result. The opposite is your 180 degree solution. The first one is done for you as an example.
+
+Complete the table for all your circled words to develop your 180 degree solutions:
+
+| 180 Feeling / Emotion | 180 Action | 180 Result |
+|-----------------------|------------|------------|
+| If Anger the 180 =Joy | For Shut down = Open | For Plastic = Be honest |
+| &nbsp;<br>&nbsp; | &nbsp;<br>&nbsp; | &nbsp;<br>&nbsp; |
+| &nbsp;<br>&nbsp; | &nbsp;<br>&nbsp; | &nbsp;<br>&nbsp; |
+| &nbsp;<br>&nbsp; | &nbsp;<br>&nbsp; | &nbsp;<br>&nbsp; |
+| &nbsp;<br>&nbsp; | &nbsp;<br>&nbsp; | &nbsp;<br>&nbsp; |
+| &nbsp;<br>&nbsp; | &nbsp;<br>&nbsp; | &nbsp;<br>&nbsp; |
+| &nbsp;<br>&nbsp; | &nbsp;<br>&nbsp; | &nbsp;<br>&nbsp; |
+| &nbsp;<br>&nbsp; | &nbsp;<br>&nbsp; | &nbsp;<br>&nbsp; |
+| &nbsp;<br>&nbsp; | &nbsp;<br>&nbsp; | &nbsp;<br>&nbsp; |
+| Table 1. Emotions, Actions and Results Comparison. Source: Stronger than Espresso, Inc. © 2014 |  |  |
 
 ### Expect to change ![Scripture Reference](/pink_heart_mug.png)
 
@@ -39,8 +103,8 @@ God’s love can FILL-up areas you have been trying to FEEL-up.
 
 God’s love for us is unending and offers true forgiveness.
 
-> _“Know in all these things we are more than conquerors through him who loved us. For I am convinced that neither death nor life, neither angels nor demons, neither the present nor the future, nor any powers, neither height no depth, nor anything else in all creations, will be able to separate us from the love of God that is in Christ Jesus our Lord.”_  
-> **— Romans 8:37–39 (NIV)**
+> *“Know in all these things we are more than conquerors through him who loved us. For I am convinced that neither death nor life, neither angels nor demons, neither the present nor the future, nor any powers, neither height no depth, nor anything else in all creations, will be able to separate us from the love of God that is in Christ Jesus our Lord.”*  
+**— Romans 8:37–39 (NIV)**
 
 Describe areas you want God to change in your life?
 
@@ -48,10 +112,10 @@ Describe areas you want God to change in your life?
 
 Our hurts are so big and overwhelming at times. There is strength of the almighty God that can carry your burden. Sharing burdens aloud can help you begin to heal.
 
-> _“I can do everything through him who gives me strength.”_  
-> **— Philippians 4:13 (NIV)**
+> *“I can do everything through him who gives me strength.”*  
+**— Philippians 4:13 (NIV)**
 
-> _“Therefore, confess your sins to each other and pray for each so that you may be healed....”_  
-> **— James 5:16 (NIV)**
+> *“Therefore, confess your sins to each other and pray for each so that you may be healed....”*  
+**— James 5:16 (NIV)**
 
 What burdens do you need God to carry right now?

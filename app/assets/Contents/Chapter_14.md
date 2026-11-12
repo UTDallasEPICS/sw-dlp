@@ -62,7 +62,7 @@ The purpose of Chapter 14 is to help you create goals and redefine your vision a
 
 ### Power of Your Soul Ingredient #3
 
-The #3 Ingredient to the Seven Ingredients of Perfection is the Power of Your **Soul**. Your soul is a gift from God. It is unique. There has never been, nor never will be another soul like yours. Your soul should have the freedom to be all God created you to be.
+The #3 Ingredient to the Seven Ingredients of Perfection is the Power of Your Soul. Your soul is a gift from God. It is unique. There has never been, nor never will be another soul like yours. Your soul should have the freedom to be all God created you to be.
 
 ### Definition: Gyroscope
 
@@ -82,7 +82,7 @@ good girlfriend. Honest feedback to help you get better and get on with your lif
 
 ### Girl to Girl Rule #1 ![Scripture Reference](/pink_heart_mug.png)
 
-**Focus on your dreams, spiritual gifting and what you like to do!**
+Focus on your dreams, spiritual gifting and what you like to do!
 
 Get to know yourself. It is time for you to accumulate all of the information that you have gleaned from this book and begin to generate a plan of action. Any good plan states a goal and the baby steps required to meet that goal.
 
@@ -103,13 +103,22 @@ It could be when you are baking bread at Christmas, when you developed a complic
 
 You are wonderfully made and our Creator has given you a special set of traits and characteristics, unique to only you.
 
-These are the actions, activities and skills that you do effortlessly. Search your past and make a list of these moments, describe what you were doing and why you felt so happy. You will begin to see correlations to these memories that can lead you to understand what special strengths you possess.
+These are the actions, activities and skills that you do effortlessly. Search your past and make a list of these moments, describe what you were doing and why you felt so happy. You will begin to see correlations to these memories that can lead you to understand what special strengths you possess. 63
 
-> _“There are different kinds of spiritual gifts, but the same Spirit is the source of them all.”_  
-> **— 1 Corinthians 12:1–12 (NLT)**
+Describe your gifts:
 
-> _“Do not neglect the gift that is in you, which was given to you by prophecy…”_  
-> **— 1 Timothy 4:14 (NKJV)**
+> *“There are different kinds of spiritual gifts, but the same Spirit is the source of them all.”*  
+**— 1 Corinthians 12:1–12 (NLT)**
+
+> *“Do not neglect the gift that is in you, which was given to you by prophecy…”*  
+**— 1 Timothy 4:14 (NKJV)**
+
+Select future pursuits that include these natural strengths allow you to feel complete and whole.
+
+Spending time on getting to know you is the best foundation you can set for your future:
+
+• Describe what action frees you to “play”?\
+• Describe your favorite daily habits or rituals.
 
 Understanding your habits and desires can help you begin to live more comfortably as the new you. Each of you has different ways to learn or complete tasks. There are many correct ways to achieve the same objective.
 
@@ -117,9 +126,126 @@ Imagine the simple task of tying your shoes. Some people make two loops and then
 
 It is also easier to communicate to others your preferences when you have identified them for yourself. For success in a future relationship, it is important for you to establish an individual style now. You will be able to communicate your preferences so they can choose to conform to your needs as much as you will to meet their needs.
 
+• List a consistent group of people in your life that have been stable and loved you unconditionally. What traits do these people share?
+
+If you want this list of people to grow, start to include in your daily affirmations or prayers that this group is being formed -even now for you to access.
+
 • Being alone is not the same as being lonely. Part of the trick when you break off any relationship is to learn to be alone with yourself.
 
 When you are quiet, what sounds do you hear? Do you hear the whispers of God? Do you hear how bad you are? Do you fill your room with noise of TV, radio, friends? Do you drink alcohol to excess? Are you uncomfortable that you have no one to blame anymore?
+
+Describe all of the emotions or fears that you are experiencing right now or are afraid of.
+
+### Girl to Girl Rule #2 ![Learning Activity](/two_hands_mug.png)
+
+Set Your Goals.
+
+Keep your heading by setting your goals and displaying them prominently. You need a constant reminder of what is important and where you are going.
+
+Goal setting is a fantastic way to direct your gyroscope and set new headings. It lets you take baby steps on the daily level, yet shows the path where you are headed. Without goals, you can find yourself a year or two later feeling discouraged because you have not accomplished what you wanted.
+
+If you want in one year to take a trip abroad, then you must make saving money for the trip now a daily or weekly goal. If you want to learn the language before the trip, then you would need to include a language course or foreign language program as part of your steps too.
+
+Tips to set goals:\
+• Write out what you want and note the individual steps necessary to work toward the goal.\
+• Goals are personal. They are yours and not set for others.\
+• Make them realistic. You want to succeed.\
+• Don’t over commit. You can always add to your goals later.\
+• Give them a timeframe: short-term, mid-term, long-term.\
+• Once goals are achieved, create new ones.\
+• Review them often to check progress or adjust as needed.
+
+Discover areas that you want to grow or change. This will give you the foundation to set your initial goals:
+
+Fulfulled
+
+Career Family
+
+Friends
+
+Community
+
+Self -Actualization Wellness
+
+Spiritual
+
+Finances
+
+Figure 11. Goal Discovery Tool. Stronger than Espresso, Inc. © 2014.
+
+1. For each of the eight sections, make a pinpoint mark in the pie based on how fulfilled you feel in that area. If you are very fulfilled in that area, make your mark in the outer area of the pie. If you do not feel fulfilled in any area, make your mark inside the pie near the center.
+
+2. Once done making eight separate dots, connect all the dots with a line. It will look like funky spider legs. You will see which sections you need to work on to become more fulfilled.
+
+3. On the sections that you are not as fulfilled, pause and reflect on how you feel about yourself when you read the topic heading.
+
+4. Create specific goals for those specific areas.
+
+5. Describe any emotions, memories or thoughts that surface.
+
+Begin by setting daily goals that are reasonable and attainable.
+
+Take baby steps and allow yourself success.
+
+Keep the goal list displayed as a constant reminder.
+
+Make sure your goals are: specific, measurable, attainable. Goals should be time specific. Common goal timeframes are:
+
+| Short-term | Mid-term | Long-term |
+|------------|----------|-----------|
+| Daily | 90-day | 5 years |
+| Weekly | 6 months | 10 years |
+| Monthly | 1 year | Beyond |
+
+Once you meet a goal, replace it with a new one. That is how you begin to live a life of growth and development.
+
+As you rewrite your goal list, keep previous lists in a file folder so you can refer back. It is fun several years from now to go back and see what your goals were, the ones you have successfully completed, and others that were replaced with new ones as your life matured.
+
+Write your goals:
+
+Short term —
+
+Mid-term —
+
+Long-term —
+
+### Girl to Girl Rule #3 ![Learning Activity](/two_hands_mug.png)
+
+Take Care of Your Emotional Health.
+
+Making a list of personal rules is important for your emotional health.
+
+Sample Rules for Emotional Health: 64
+
+• I will take care of myself. I will take time to rest, eat well, exercise and spend time with people who I like doing the things I want to do.\
+• I will find the positive in my life experience instead of focusing on the negative.\
+• I will let go of my past.\
+• I will respect myself and take responsibility for my actions.\
+• I will acknowledge and take credit for successes and accomplishments.\
+• I will make time to develop one or two close relationships where I can be honest about my thoughts and feelings.\
+• I will talk positive to myself.\
+• I will remove myself from hurtful or damaging situations.\
+• I will accept that life is about choices and always brings change.\
+• I will have plan for my future.
+
+Make your list of your new personal rules:
+
+Copy this list and post in a visible location so that you will see it often and reinforce your new personal rules.
+
+### Girl to Girl Rule #4 ![Learning Activity](/two_hands_mug.png)
+
+You must learn how to trust God, yourself and others.
+
+You must build the ability to trust your inner self and know that you contain all the pieces of the most beautiful story; the puzzle of your life. This includes paying attention to your needs and wants and knowing when a person or situation is bad for you. By developing this inner trust, you will be able to discern and decide more appropriate behaviors to act upon.
+
+There are physical responses you have to other human beings. Have you ever been around someone who gives you the creeps or gives you bad vibes? Your body is full of eternal wisdom at a cellular level. You experience physical characteristics when someone bad for you is nearby. Your body may react and feel tense, your heart race, throat tighten, jaw clench, hold breathe, or your stomach and intestines may tighten. Your acuteness to hear your body communicating can be deadened if you are filling your body with garbage: noise, bad food, alcohol, cigarettes, stress, or suffer from sleep deprivation.
+
+Earlier in the book was the statement, “When it feels good for you — do it. When it does not feel good — do not do it.” God made your body to work to communicate in a way so you can listen for messages and trust your inner wisdom. Know when something feels good or not to you before saying yes.
+
+• Describe times that you listened to that inner voice or moved away from a situation or person and later found that you were spared from harm.\
+• How did that message come to you and how did you feel?\
+• What were the circumstances that kept you from following your inner wisdom? You did not listen to that wisdom and later said, “I knew better.” “I knew I shouldn’t have done that?”\
+• Describe what it feels like when you know someone is bad for you. What physical symptoms do you experience?
 
 ### External trust
 
@@ -131,8 +257,8 @@ Trust in others for a support system is very different then the trust level requ
 
 Once you let go and let God rule your thoughts, emotions, choices and actions, your life can really begin to grow.
 
-> _“Trust in the Lord with all your heart, And lean not on your own understanding; In all your ways acknowledge Him, And He shall direct your paths.”_  
-> **— Proverbs 3:5,6 (NKJV)**
+> *“Trust in the Lord with all your heart, And lean not on your own understanding; In all your ways acknowledge Him, And He shall direct your paths.”*  
+**— Proverbs 3:5,6 (NKJV)**
 
 ### Trust is earned
 
@@ -158,45 +284,43 @@ When you stop going around pleasing people, you free yourself from that unattain
 
 What things in your life do you need to let go of because it is not your burden anymore?
 
-<---next--->
+List steps you can take to make a change in that area.
 
-### Girl to Girl Rule #6
+### Girl to Girl Rule #6 ![Learning Activity](/two_hands_mug.png)
 
-**Don’t sweat the relapse. Regroup and try again.**
+Don’t sweat the relapse. Regroup and try again.
 
-Addictive behaviors surface. Survivors of trauma often turn to substances to receive relief from their suffering. Should you find  
-yourself turning to alcohol, food, gambling, prescription or illegal  
-drugs or other vices be quick to pull yourself back. Do not feel  
-shamed if you fall down. Pick yourself up, dust off and get back on  
-your road to recovery.
+What if you start to slip back into you old habits?
 
-• Selecting new abusive or unsupportive relationships. Be quick to  
-recognize the people around you and make changes to those  
-relationships if you feel they are abusive or unsupportive. The longer  
-you wait the higher the risk you will begin to slip further into this  
-pattern. Ask the opinion of the few trusted individuals you have  
-close to you, and listen to their wisdom. If they have a bad feeling  
-about someone, do not be blinded by the excitement of a new  
-relationship, be honest with your own instincts and open to the  
-wisdom of friends and family.
+It will happen that you will begin to slip into some old habits. This may cause you to be frustrated or ashamed.
 
-• Self destructive behaviors. If you begin to speak destructively to  
-yourself, to not eat properly, or to not take care of yourself, then  
-action should be taken immediately. Seek help from your therapist, a  
-support group or seek out self-­‐help material on how to turn this  
-behavior around. Be honest about your behavior, do not beat  
-yourself up and wallow in your failure. Make efforts to get back on  
-the right path and try to articulate why you fell back.
+There are several things to consider should you begin to slip back to old behaviors:
 
-Understand this journey is not a straight line. You are crawling from the  
-valley to the mountain and it will not be easy. You can release yourself from  
-shame when you are honest about where you are in your healing process. If  
-you make a mistake, correct it and move on, always keep your eyes on your  
-goals.
+• Know yourself. You already know what you do when things go bad. You might run, get angry, drink, clean, or isolate yourself. Whatever it is, this is your coping mechanism.
+
+Describe a list of your coping mechanisms, and think of ways you can retool them when an incident occurs.
+
+| Coping Mechanisms | New Behavior |
+|-------------------|--------------|
+| &nbsp;<br>&nbsp; | &nbsp;<br>&nbsp; |
+| &nbsp;<br>&nbsp; | &nbsp;<br>&nbsp; |
+| &nbsp;<br>&nbsp; | &nbsp;<br>&nbsp; |
+| &nbsp;<br>&nbsp; | &nbsp;<br>&nbsp; |
+| &nbsp;<br>&nbsp; | &nbsp;<br>&nbsp; |
+
+• Be honest— Lying could become a coping mechanism and a method of survival for you. You have lied to yourself saying things would get better. You probably lied to friends or family about the severity of your abuse so they would not meddle and make things worse. You lied at work because you didn’t want to be turned down for the promotion because of trouble at home. You lied to those critical of you because you stayed.\
+• This circle of lies kept you trapped. Without the truth, you may become dizzy and so mixed up that you had trouble finding your way out. If you hear yourself lying now, even small white lies, recognize that you may be slipping into old patterns.\
+• Addictive behaviors surface. Survivors of trauma often turn to substances to receive relief from their suffering. Should you find yourself turning to alcohol, food, gambling, prescription or illegal drugs or other vices be quick to pull yourself back. Do not feel shamed if you fall down. Pick yourself up, dust off and get back on your road to recovery.\
+• Selecting new abusive or unsupportive relationships. Be quick to recognize the people around you and make changes to those relationships if you feel they are abusive or unsupportive. The longer you wait the higher the risk you will begin to slip further into this pattern. Ask the opinion of the few trusted individuals you have close to you, and listen to their wisdom. If they have a bad feeling about someone, do not be blinded by the excitement of a new relationship, be honest with your own instincts and open to the wisdom of friends and family.\
+• Self destructive behaviors. If you begin to speak destructively to yourself, to not eat properly, or to not take care of yourself, then action should be taken immediately. Seek help from your therapist, a support group or seek out self-help material on how to turn this behavior around. Be honest about your behavior, do not beat yourself up and wallow in your failure. Make efforts to get back on the right path and try to articulate why you fell back.
+
+Understand this journey is not a straight line. You are crawling from the valley to the mountain and it will not be easy. You can release yourself from shame when you are honest about where you are in your healing process. If you make a mistake, correct it and move on, always keep your eyes on your goals.
 
 ### Girl to Girl Rule #7
 
-**Don’t Go it Alone. Let Friends, Family and Support Networks Know They Can Help!**
+Don’t Go it Alone.
+
+Let Friends, Family and Support Networks Know They Can Help!
 
 Much of your emotional growth will be done internally, but it is vital that you build your own support system. Begin to surround yourself with people that you can trust. You should look for new friends that have the habits and values of people you want to have. Start learning something new and it will expose you to new people with a common interest. Join the Stronger than Espresso® connect groups. Go to a local library for a class or join a church for fellowship and activities. Enjoy meeting new people and be mindful of your inner wisdom on how you feel around these new people and situations.
 
@@ -207,15 +331,10 @@ Friends and family may want to help, but may be at a loss as to how to help you 
 How to help a loved one that has experienced trauma? 65
 
 • Ask — Ask if help is needed for mundane tasks, errands or just to lend a hand.\
-\
 • Empower — Aide in establishing routines to bring life back into control.\
-\
 • Listen — When ready, let the survivor talk about the experience to acknowledge, validate and reduce isolation.\
-\
 • Reassure — Affirm you are not to blame for abuse and are not alone.\
-\
 • Research – Offer help finding answers and resources.\
-\
 • Support with patience — There is not pre-determined healing timeline.
 
 ### Girl to Girl Tips
@@ -250,15 +369,19 @@ For centuries people believed that the world was flat and that you would fall of
 
 Creating our goals is the first challenge. The next hurdle is to incorporate our written goals into measurable daily choices. Only when changes to our choices are made, can our lives move in a new direction.
 
+Describe ways you will check back to reach your goals.
+
 ### Stockdale Paradox
 
-James Bond Stockdale was one of the most highly decorated officers in U.S. Navy history. He was shot down in 1965 and a prisoner of war in Vietnam until 1973. During his captivity, he was locked in leg irons and was routinely tortured and beaten. To protect his life, he purposely beat, cut and disfigured himself so that his captors could not use him as propaganda. When asked how he survived, he replied, ‘I never lost faith in the end of the story; I never doubted not only that I would get out, but also that I would prevail in the end and turn the experience into the defining even of my life, which, in retrospect, I would not trade.”
+James Bond Stockdale was one of the most highly decorated officers in U.S. Navy history. He was shot down in 1965 and a prisoner of war in Vietnam until 1973. During his captivity, he was locked in leg irons and was routinely tortured and beaten. To protect his life, he purposely beat, cut and disfigured himself so that his captors could not use him as propaganda. When asked how he survived, he replied, ‘I never lost faith in the end of the story; I never doubted not only that I would get out, but also that I would prevail in the end and turn the experience into the defining even of my life, which, in retrospect, I would not trade.” 66
 
-In Jim Collins’ book, Good to Great, he describes Stockdale’s coping strategy during his eight years in the Vietnamese POW camp as the Stockdale Paradox. The Stockdale Paradox defined, _“Confront the brutal facts…retain unwavering faith that you can and will prevail in the end, regardless of the difficulties, and at the same time, have the discipline to confront the most brutal facts of your current reality, whatever they might be.”_
+In Jim Collins’ book, Good to Great, he describes Stockdale’s coping strategy during his eight years in the Vietnamese POW camp as the Stockdale Paradox. The Stockdale Paradox defined,
+
+> *“Confront the brutal facts…retain unwavering faith that you can and will prevail in the end, regardless of the difficulties, and at the same time, have the discipline to confront the most brutal facts of your current reality, whatever they might be.”*
 
 When Collins interviewed Stockdale and asked who didn’t make it out, Stockdale replied:
 
-_“Oh, that’s easy, the optimists. Oh, they were the ones who said, “We’re going to be out by Christmas.’ And Christmas would come, and Christmas would go. Then they’d say, ‘We’re going to be out by Easter.” And Easter would come, and Easter would go. And then Thanksgiving, and then it would be Christmas again. And they died of a broken heart.”_
+> *“Oh, that’s easy, the optimists. Oh, they were the ones who said, “We’re going to be out by Christmas.’ And Christmas would come, and Christmas would go. Then they’d say, ‘We’re going to be out by Easter.” And Easter would come, and Easter would go. And then Thanksgiving, and then it would be Christmas again. And they died of a broken heart.”*
 
 Stockdale created a tap alphabet so inmates could communicate with one another and break the isolation, and rules to help them deal with the torture and set goals to survive. He was able to create a secret code that allowed him to send messages to his wife, and during the same time, she created The League of American Families of POW's and MIA's in the States, an instrumental organization in assisting prisoners of war. 67 Collins likened the perseverance of Stockdale in surviving the atrocities of war to the same behavior required to grow a company from good to great.68
 
@@ -292,9 +415,7 @@ First, think you can succeed. Second focus on your goal. Third never let the tho
 
 Many professional athletes actively visualize receiving the gold medal or winning first place to reprogram their thoughts and set them apart from those in second place.
 
-When an emotional response is created, it directs behavior. The choices you make will then begin to reflect the outcomes in accordance with your original thoughts. You will become what you think. Start thinking right about yourself so your outcomes will be a fulfillment of your greatest desires!
-
-The Bible teaches us to pray as if we have already received the gift from God. Believe and it shall be so!
+When an emotional response is created, it directs behavior. The choices you make will then begin to reflect the outcomes in accordance with your original thoughts. You will become what you think. Start thinking right about yourself so your outcomes will be a fulfillment of your greatest desires! The Bible teaches us to pray as if we have already received the gift from God. Believe and it shall be so!
 
 ### Power of your Soul and your Mind
 

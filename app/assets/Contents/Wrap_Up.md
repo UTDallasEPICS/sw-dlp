@@ -2,6 +2,8 @@
 title: Wrap Up
 ---
 
+# Wrap Up
+
 Wrap Up
 
 ### You are
@@ -18,12 +20,12 @@ As you move through this healing journey you will need courage and persistence. 
 
 God encourages us to never give up.
 
-> _“God blesses the people who patiently endure testing. Afterward they will receive the crown of life that God has promised to those who love him.”_  
-> **— James 1:12 (NLT)**
+> *“God blesses the people who patiently endure testing. Afterward they will receive the crown of life that God has promised to those who love him.”*  
+**— James 1:12 (NLT)**
 
 ### Your new life ![Scripture Reference](/pink_heart_mug.png)
 
 God shares with us the sweetness of living in his word.
 
-> _“Therefore, laying aside all malice, all deceit, hypocrisy, envy, and all evil speaking, as newborn babes, desire the pure milk of the word, that you may grow thereby, if indeed you have tasted that the Lord is gracious.”_  
-> **— 1 Peter 2:1–3 (NKJV)**
+> *“Therefore, laying aside all malice, all deceit, hypocrisy, envy, and all evil speaking, as newborn babes, desire the pure milk of the word, that you may grow thereby, if indeed you have tasted that the Lord is gracious.”*  
+**— 1 Peter 2:1–3 (NKJV)**

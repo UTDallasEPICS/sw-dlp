@@ -17,7 +17,7 @@
         { id: 'video', icon: 'i-lucide-video', label: 'Video' },
         { id: 'reading', icon: 'i-lucide-book-open', label: 'Reading' },
       ],
-      modelValue: 'reading',
+      modelValue: 'video',
     }
   )
 

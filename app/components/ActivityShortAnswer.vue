@@ -6,10 +6,12 @@
       prompt: string
       initialFields?: number
       maxFields?: number
+      showResults?: boolean
     }>(),
     {
       initialFields: 1,
       maxFields: 5,
+      showResults: false,
     }
   )
 
@@ -24,9 +26,10 @@
 
   const errorMessage = ref('')
 
-  const canDelete = computed(() => model.value.length > 1)
+  const canDelete = computed(() => model.value.length > 1 && !props.showResults)
   
   function addField() {
+    if (props.showResults) return
     if (model.value.length >= props.maxFields) return
 
     const hasEmpty = model.value.some((v) => v.trim().length === 0)
@@ -40,18 +43,20 @@
   }
 
   function deleteField(index: number) {
-    if (model.value.length <= 1) return
+    if (props.showResults || model.value.length <= 1) return
     model.value = model.value.filter((_, i) => i !== index)
     errorMessage.value = ''
   }
 
   function updateField(index: number, value: string) {
+    if (props.showResults) return
     const next = [...model.value]
     next[index] = value
     model.value = next
   }
 
   function onTextareaInput(index: number, event: Event) {
+    if (props.showResults) return
     const el = event.target as HTMLTextAreaElement
     updateField(index, el.value)
 
@@ -62,7 +67,7 @@
 
 <template>
   <div
-    class="rounded-2xl border border-pink-100 bg-white p-6 shadow-[0_0_24px_rgba(224,0,77,0.12)]"
+    class="rounded-2xl border border-pink-100 bg-white p-6 shadow-[0_0_24px_rgba(0,0,0,0.20)]"
   >
     <h3 class="text-lg font-bold text-gray-900">
       Question {{ questionNumber }} of {{ totalQuestions }}:
@@ -85,11 +90,17 @@
           :value="value"
           rows="1"
           placeholder="Write text here"
+          :disabled="showResults"
           class="w-full resize-none overflow-hidden rounded-md border border-gray-300 bg-white px-3 py-2 text-base leading-normal text-gray-900 placeholder:text-gray-400 focus:border-brand-500 focus:outline-none focus:ring-2 focus:ring-brand-500/30"
+          :class="
+            showResults
+              ? 'border-gray-300 bg-gray-100 text-gray-500 cursor-not-allowed'
+              : 'border-gray-300 bg-white text-gray-900 placeholder:text-gray-400 focus:border-brand-500 focus:ring-2 focus:ring-brand-500/30'
+              "
           @input="onTextareaInput(index, $event)"
         />
 
-        <!-- Delete trash icon -->
+        <!-- Delete trash icon when not submitted -->
         <UButton
           v-if="canDelete"
           color="neutral"
@@ -106,7 +117,7 @@
       {{ errorMessage }}
     </p>
 
-    <div class="mt-4 flex items-center justify-between gap-3">
+    <div v-if="!showResults" class="mt-4 flex items-center justify-between gap-3">
       <UButton
         v-if="model.length < maxFields"
         class="rounded-full bg-brand-500 px-4 py-2 text-sm font-semibold text-white hover:bg-brand-600"

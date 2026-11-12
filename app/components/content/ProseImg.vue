@@ -14,6 +14,6 @@
     :src="src"
     :alt="alt"
     class="mx-auto my-8 h-auto rounded-lg"
-    :class="isMarker ? 'inline-block w-8 max-w-8 align-middle' : 'max-w-md'"
+    :class="isMarker ? 'inline-block w-10 max-w-10 align-middle' : 'max-w-md'"
   >
 </template>
