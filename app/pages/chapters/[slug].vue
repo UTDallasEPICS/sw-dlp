@@ -369,7 +369,7 @@
 
       <UButton
         v-if="!submitSuccess"
-        class="rounded-10 max-w-40 text-center bg-brand-500 px-4 py-2 font-semibold text-white hover:bg-brand-600"
+        class="flex w-45 items-center justify-center bg-brand-500 px-3 py-2 text-base font-semibold text-white hover:bg-brand-600"
         :loading="isSubmitting"
         :disabled="isSubmitting"
         @click="onSubmitActivity"
