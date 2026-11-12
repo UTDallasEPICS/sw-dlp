@@ -1,4 +1,6 @@
 <script setup lang="ts">
+  definePageMeta({ key: (route) => route.path })
+
   const route = useRoute()
   const slug = String(route.params.slug)
 
@@ -32,6 +34,20 @@
 
   const chapterTitle = computed(() => chapter.value?.title ?? '')
   const videos = computed(() => chapter.value?.videos ?? [])
+
+  const { data: courseSections } = await useFetch<{ chapters: { slug: string | null }[] }[]>(
+    '/api/course-titles'
+  )
+  const chapterSlugs = computed(() =>
+    (courseSections.value ?? []).flatMap((section) =>
+      section.chapters.flatMap((entry) => (entry.slug ? [entry.slug] : []))
+    )
+  )
+  const chapterIndex = computed(() => chapterSlugs.value.indexOf(slug))
+  const previousChapter = computed(() => chapterSlugs.value[chapterIndex.value - 1])
+  const nextChapter = computed(() =>
+    chapterIndex.value === -1 ? undefined : chapterSlugs.value[chapterIndex.value + 1]
+  )
 
   // ---- Reading pages ----
   type MarkdownNode = string | [string, Record<string, unknown>, ...unknown[]]
@@ -402,6 +418,12 @@
       </article>
     </div>   
 
-    <ChapterFooter v-model="activeStep" :chapter-title="chapterTitle" :steps="steps" />
+    <ChapterFooter
+      v-model="activeStep"
+      :chapter-title="chapterTitle"
+      :steps="steps"
+      :previous-chapter="previousChapter"
+      :next-chapter="nextChapter"
+    />
   </main>
 </template>
