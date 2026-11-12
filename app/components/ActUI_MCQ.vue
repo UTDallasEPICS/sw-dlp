@@ -57,8 +57,8 @@
                 <button 
                 v-for="(option, index) in options"
                 :key="index"
-                class="text-left w-full md:w-auto border border-gray-300 rounded-lg hover:border-brand-500 hover:ring-2 hover:ring-brand-500/30 px-3 py-2"
-                :class="selectedOption === option ? 'bg-brand-500 text-white' : ''"
+                class="text-left w-full md:w-auto border rounded-lg hover:border-brand-500 hover:border-2 hover:ring-brand-500/30 px-3 py-2"
+                :class="selectedOption === option ? 'bg-brand-100 border-brand-500 border-2' : 'border-gray-300'"
                 @click="selectOption(option)">
                     {{ option }}
                 </button>
