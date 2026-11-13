@@ -5,7 +5,8 @@
   const isOpen = ref(false)
 
   const links = [
-    { label: 'Dashboard', to: '/dashboard' },
+    { label: 'Dashboard', to: '/' },
+    { label: 'Admin Dashboard', to: '/adminDashboard' },
     { label: 'Prayer Request', to: '/prayer-request' },
     { label: 'Profile', to: '/profile' },
     { label: 'Contact', to: '/contact' },

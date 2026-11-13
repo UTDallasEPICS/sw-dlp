@@ -23,7 +23,7 @@
             aria-label="Main navigation"
           >
             <NuxtLink
-              to="/dashboard"
+              to="/"
               class="rounded-md px-4 py-2 font-bold whitespace-nowrap text-[#e0004d] hover:bg-gray-100"
             >
               Dashboard
@@ -59,6 +59,12 @@
               class="rounded-md px-4 py-2 font-bold whitespace-nowrap text-[#e0004d] hover:bg-gray-100"
             >
               Prayer Request
+            </NuxtLink>
+            <NuxtLink
+              to="/adminDashboard"
+              class="rounded-md px-4 py-2 font-bold whitespace-nowrap text-[#e0004d] hover:bg-gray-100"
+            >
+              Admin Dashboard
             </NuxtLink>
             <NuxtLink
               to="/profile"

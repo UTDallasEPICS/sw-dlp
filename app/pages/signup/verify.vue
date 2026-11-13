@@ -28,7 +28,7 @@
     if (error) {
       fieldError.value = error.message || 'Something went wrong. Please try again.'
     } else {
-      await navigateTo('/dashboard')
+      await navigateTo('/')
     }
   }
 
