@@ -21,6 +21,8 @@
     "db:push": "drizzle-kit push"
   },
   "dependencies": {
+    "@iconify-json/heroicons": "^1.2.3",
+    "@iconify-json/lucide": "^1.2.155",
     "@nuxt/content": "^3.16.2",
     "@nuxt/image": "2.1.0",
     "@nuxt/ui": "^4.11.0",
