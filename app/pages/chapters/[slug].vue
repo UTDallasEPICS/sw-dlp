@@ -71,6 +71,24 @@
 
   const hasActivity = computed(() => activityMeta.value?.hasActivity === true)
 
+  const { data: progressData } = await useFetch<{
+    completedSteps: string[]
+  }>(`/api/chapters/${slug}/progress`)
+  const completedSteps = ref(progressData.value?.completedSteps ?? [])
+
+  async function completeStep(stepId: string) {
+    if (completedSteps.value.includes(stepId)) return
+    try {
+      await $fetch(`/api/chapters/${slug}/progress`, {
+        method: 'POST',
+        body: { stepId },
+      })
+      completedSteps.value = [...completedSteps.value, stepId]
+    } catch (error) {
+      console.error('Unable to save chapter progress:', error)
+    }
+  }
+
   const { data: activityData } = await useFetch<{
     title: string | null
     questions: ActivityQuestion[]
@@ -210,7 +228,9 @@
       const videoId =
         parsed.hostname === 'youtu.be' ? parsed.pathname.slice(1) : parsed.searchParams.get('v')
 
-      return videoId ? `https://www.youtube.com/embed/${videoId}` : url
+      return videoId
+        ? `https://www.youtube.com/embed/${videoId}?enablejsapi=1`
+        : url
     } catch {
       return url
     }
@@ -320,6 +340,7 @@
       )
 
       submitSuccess.value = true
+      await completeStep('activity')
       await nextTick() // Wait for DOM update before scrolling
       scrollToTop()
     } catch (error: unknown) {
@@ -341,7 +362,11 @@
       <div class="space-y-8">
         <section v-for="video in videos" :key="video.videoUrl" class="space-y-3">
           <h2 class="text-xl font-semibold text-gray-900">{{ video.videoTitle }}</h2>
-          <VideoPlayer :video-url="videoEmbedUrl(video.videoUrl)" :video-title="video.videoTitle" />
+          <VideoPlayer
+            :video-url="videoEmbedUrl(video.videoUrl)"
+            :video-title="video.videoTitle"
+            @interacted="completeStep('video')"
+          />
         </section>
       </div>
     </div>
@@ -399,9 +424,21 @@
           class="prose max-w-none text-gray-900 dark:text-gray-900"
           prose
         />
+        <UButton
+          class="mt-8 bg-brand-500 px-4 py-2 font-semibold text-white hover:bg-brand-600"
+          :disabled="completedSteps.includes(activeStep)"
+          @click="completeStep(activeStep)"
+        >
+          {{ completedSteps.includes(activeStep) ? 'Reading completed' : 'I read this page' }}
+        </UButton>
       </article>
     </div>   
 
-    <ChapterFooter v-model="activeStep" :chapter-title="chapterTitle" :steps="steps" />
+    <ChapterFooter
+      v-model="activeStep"
+      :chapter-title="chapterTitle"
+      :steps="steps"
+      :completed-steps="completedSteps"
+    />
   </main>
 </template>

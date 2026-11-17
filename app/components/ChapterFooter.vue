@@ -11,6 +11,7 @@
       chapterTitle: string
       steps?: Omit<Step, 'status'>[]
       modelValue?: string
+      completedSteps?: string[]
     }>(),
     {
       steps: () => [
@@ -18,14 +19,13 @@
         { id: 'reading', icon: 'i-lucide-book-open', label: 'Reading' },
       ],
       modelValue: 'video',
+      completedSteps: () => [],
     }
   )
 
   const emit = defineEmits<{
     'update:modelValue': [stepId: string]
   }>()
-
-  const completedSteps = ref<string[]>([])
 
   const currentIndex = computed(() => {
     const index = props.steps.findIndex((s) => s.id === props.modelValue)
@@ -38,19 +38,13 @@
     props.steps.map((step, index) => ({
       ...step,
       status:
-        index === currentIndex.value
-          ? 'current'
-          : completedSteps.value.includes(step.id)
+        props.completedSteps.includes(step.id)
             ? 'completed'
+            : index === currentIndex.value
+              ? 'current'
             : 'upcoming',
     }))
   )
-
-  function markDone(stepId: string) {
-    if (!completedSteps.value.includes(stepId)) {
-      completedSteps.value.push(stepId)
-    }
-  }
 
   function goPrevious() {
     const previousStep = props.steps[currentIndex.value - 1]
@@ -60,10 +54,6 @@
   }
 
   function goNext() {
-    const currentStep = props.steps[currentIndex.value]
-    if (currentStep) {
-      markDone(currentStep.id)
-    }
     const nextStep = props.steps[currentIndex.value + 1]
     if (nextStep) {
       emit('update:modelValue', nextStep.id)

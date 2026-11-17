@@ -1,5 +1,11 @@
 import { and, eq } from 'drizzle-orm'
-import { chapter, lesson, userLesson } from '../db/schema'
+import {
+  activity,
+  chapter,
+  chapterVideo,
+  lesson,
+  userLesson,
+} from '../db/schema'
 import { db } from '../utils/db'
 import { requireUser } from '../utils/session'
 
@@ -29,9 +35,41 @@ export default defineEventHandler(async (event) => {
     )
     .orderBy(chapter.name)
 
+  const stepRows = await db
+    .select({
+      chapterId: chapter.id,
+      videoId: chapterVideo.id,
+      activityId: activity.id,
+      lessonName: lesson.name,
+      lessonCompleted: userLesson.completed,
+    })
+    .from(chapter)
+    .leftJoin(chapterVideo, eq(chapterVideo.chapterId, chapter.id))
+    .leftJoin(activity, eq(activity.chapterId, chapter.id))
+    .leftJoin(
+      lesson,
+      eq(lesson.chapterId, chapter.id)
+    )
+    .leftJoin(
+      userLesson,
+      and(
+        eq(userLesson.lessonId, lesson.id),
+        eq(userLesson.userId, currentUser.id)
+      )
+    )
+
   const chapters = new Map<
     string,
-    { id: string; name: string; lessonCount: number; completedLessonCount: number }
+    {
+      id: string
+      name: string
+      lessonCount: number
+      completedLessonCount: number
+      completedStepIds: Set<string>
+      videoIds: Set<string>
+      hasActivity: boolean
+      readingPageCount: number
+    }
   >()
 
   for (const row of rows) {
@@ -43,6 +81,10 @@ export default defineEventHandler(async (event) => {
         name: row.chapterName,
         lessonCount: 0,
         completedLessonCount: 0,
+        completedStepIds: new Set(),
+        videoIds: new Set(),
+        hasActivity: false,
+        readingPageCount: 1,
       }
       chapters.set(row.chapterId, progress)
     }
@@ -55,11 +97,45 @@ export default defineEventHandler(async (event) => {
     }
   }
 
-  return {
-    chapters: Array.from(chapters.values(), ({ id, name, lessonCount, completedLessonCount }) => ({
-      id,
-      name,
-      completed: lessonCount > 0 && completedLessonCount === lessonCount,
-    })),
+  for (const row of stepRows) {
+    const progress = chapters.get(row.chapterId)
+    if (!progress) continue
+    if (row.videoId) progress.videoIds.add(row.videoId)
+    if (row.activityId) progress.hasActivity = true
+    if (row.lessonCompleted && row.lessonName) {
+      progress.completedStepIds.add(row.lessonName)
+    }
   }
+
+  const chapterRows = await db
+    .select({ id: chapter.id, content: chapter.content })
+    .from(chapter)
+  for (const row of chapterRows) {
+    const progress = chapters.get(row.id)
+    if (progress) {
+      progress.readingPageCount = Math.max(1, (row.content.match(/<-{2,}\s*next\s*-{2,}>/gi) ?? []).length + 1)
+    }
+  }
+
+  const chapterProgress = Array.from(chapters.values(), (progress) => {
+    const lessonCompleted =
+      progress.lessonCount > 0 &&
+      progress.completedLessonCount === progress.lessonCount
+    const stepIds = [
+      ...(progress.videoIds.size > 0 ? ['video'] : []),
+      ...Array.from({ length: progress.readingPageCount }, (_, index) => `reading-${index + 1}`),
+      ...(progress.hasActivity ? ['activity'] : []),
+    ]
+    const completedSteps = stepIds.filter((stepId) => progress.completedStepIds.has(stepId))
+    const chapterCompleted = stepIds.length > 0 && completedSteps.length === stepIds.length
+    return {
+      id: progress.id,
+      name: progress.name,
+      completed: chapterCompleted || (progress.lessonCount > 0 && lessonCompleted && stepIds.length === 0),
+      lessonCount: progress.lessonCount,
+      completedLessonCount: progress.completedLessonCount,
+    }
+  })
+
+  return { chapters: chapterProgress }
 })
