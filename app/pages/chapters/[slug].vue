@@ -101,17 +101,77 @@
   const mcqAnswers = ref<Record<string, string>>({})
   const shortAnswers = ref<Record<string, string[]>>({})
 
-  watch(
-    activityQuestions,
-    (qs) => {
-      for (const q of qs) {
-        if (q.type === 'short_answer' && !shortAnswers.value[q.key]) {
-          shortAnswers.value[q.key] = ['']
+  const skipAutosave = ref(false) // move here if you declare it twice, keep only one
+
+  function parseOptions(raw: unknown): { id?: string; label?: string }[] {
+    let opts: unknown = raw
+    if (typeof opts === 'string') {
+      try {
+        opts = JSON.parse(opts)
+      } catch {
+        return []
+      }
+    }
+    if (!Array.isArray(opts)) return []
+    return opts as { id?: string; label?: string }[]
+  }
+
+  function optionLabelForId(question: ActivityQuestion, optionId: string | null): string {
+    if (!optionId) return ''
+    const match = parseOptions(question.options).find((o) => o.id === optionId)
+    return typeof match?.label === 'string' ? match.label : ''
+  }
+
+  async function loadSavedResponses() {
+    if (!activityQuestions.value.length) return
+
+    skipAutosave.value = true
+    try {
+      // empty defaults first
+      for (const q of activityQuestions.value) {
+        if (q.type === 'short_answer') {
+          shortAnswers.value[q.key] = shortAnswers.value[q.key] ?? ['']
         }
-        if (q.type === 'mcq' && mcqAnswers.value[q.key] === undefined) {
-        mcqAnswers.value[q.key] = ''
+        if (q.type === 'mcq') {
+          mcqAnswers.value[q.key] = mcqAnswers.value[q.key] ?? ''
         }
       }
+
+      const data = await $fetch<{
+        responses: {
+          questionId: string
+          key: string
+          type: string
+          selectedOptionId: string | null
+          writtenAnswers: string[] | null
+        }[]
+      }>(`/api/chapters/${slug}/activity-responses`)
+
+      for (const row of data.responses ?? []) {
+        const q = activityQuestions.value.find(
+          (question) => question.id === row.questionId || question.key === row.key
+        )
+        if (!q) continue
+
+        if (q.type === 'mcq') {
+          mcqAnswers.value[q.key] = optionLabelForId(q, row.selectedOptionId)
+        } else if (row.writtenAnswers?.length) {
+          shortAnswers.value[q.key] = [...row.writtenAnswers]
+        }
+      }
+    } catch (e) {
+      console.error('Failed to load responses', e)
+    } finally {
+      await nextTick()
+      skipAutosave.value = false
+    }
+  }
+
+  watch(
+    activityQuestions,
+    async (qs) => {
+      if (!qs.length) return
+      await loadSavedResponses()
     },
     { immediate: true }
   )
@@ -236,18 +296,35 @@
     }
   }
 
-
+  // ---- Saves activities (submit button and autosave) ----
   const isSubmitting = ref(false)
   const submitError = ref('')
   const submitSuccess = ref(false)
+  //const saveStatus = ref('') // autosave only
 
-  interface ActivitySubmission {
-    questionId: string
-    selectedOptionId: string | null
-    writtenAnswers: string[] | null
+  type SaveState = 'idle' | 'saving' | 'saved' | 'error'
+  const saveState = ref<SaveState>('idle')
+  const lastSavedAt = ref<Date | null>(null)
+
+  const saveLabel = computed(() => {
+    if (saveState.value === 'saving') return 'Saving…'
+    if (saveState.value === 'error') return 'Couldn’t save. Trying again soon.'
+    if (saveState.value === 'saved' && lastSavedAt.value) {
+      const time = lastSavedAt.value.toLocaleTimeString([], { hour: 'numeric', minute: '2-digit' })
+      return `Saved at ${time}`
+    }
+    return ''
+  })
+
+  let saveTimer: ReturnType<typeof setTimeout> | null = null
+
+  function scrollToTop() {
+    if (import.meta.client){
+      window.scrollTo({ top: 0, behavior: 'smooth' })
+    }
   }
 
-  // finds associated lable for coressponding mcq answer string
+  // finds associated lable for corresponding mcq answer string
   function getMcqOptionId(
     question: ActivityQuestion,
     selectedLabel: string
@@ -266,41 +343,35 @@
       return null
     }
 
-    const selected = options.find(
-      (option: unknown) =>
-        typeof option === 'object' &&
-        option !== null &&
-        'label' in option &&
-        option.label === selectedLabel
-    )
+    const selected = options.find((option: unknown) => {
+      if (typeof option !== 'object' || option === null) return false
+      const o = option as { id?: string; label?: string }
+      return o.label === selectedLabel || o.id === selectedLabel
+    }) as { id?: string } | undefined
 
-    return selected &&
-      typeof selected.id === 'string' ? selected.id : null
+    return typeof selected?.id === 'string' ? selected.id : null
   }
 
-  function scrollToTop() {
-    if (import.meta.client){
-      window.scrollTo({ top: 0, behavior: 'smooth' })
-    }
+  type ActivitySubmission = {
+    questionId: string
+    selectedOptionId: string | null
+    writtenAnswers: string[] | null
   }
 
-  async function onSubmitActivity() {
-    if (isSubmitting.value) return
-
-    submitError.value = ''
-    submitSuccess.value = false
-
+  function buildResponses(requireAll: boolean): ActivitySubmission[] | null {
     const responses: ActivitySubmission[] = []
 
     for (const question of activityQuestions.value) {
       if (question.type === 'mcq') {
         const selectedLabel = mcqAnswers.value[question.key] ?? ''
-
         const selectedOptionId = getMcqOptionId(question, selectedLabel)
 
         if (!selectedOptionId) {
-          submitError.value = `Please answer question ${question.key}.`
-          return
+          if (requireAll) {
+            submitError.value = `Please answer question ${question.key}.`
+            return null
+          }
+          continue
         }
 
         responses.push({
@@ -309,15 +380,16 @@
           writtenAnswers: null,
         })
       } else {
-        const answers = (
-          shortAnswers.value[question.key] ?? []
-        )
-          .map(answer => answer.trim())
-          .filter(answer => answer.length > 0)
+        const answers = (shortAnswers.value[question.key] ?? [])
+          .map((answer) => answer.trim())
+          .filter((answer) => answer.length > 0)
 
         if (answers.length === 0) {
-          submitError.value = `Please answer question ${question.key}.`
-          return
+          if (requireAll) {
+            submitError.value = `Please answer question ${question.key}.`
+            return null
+          }
+          continue
         }
 
         responses.push({
@@ -328,30 +400,101 @@
       }
     }
 
-    isSubmitting.value = true
+    if (requireAll && responses.length !== activityQuestions.value.length) {
+      submitError.value = 'Please answer all questions before submitting.'
+      return null
+    }
+
+    return responses
+  }
+
+  async function saveToDb(mode: 'autosave' | 'submit', 
+    options?: {silent?: boolean}
+  ) {
+    const silent = options?.silent === true
+
+    // Submit: clear previous messages first (same as your old logic)
+    if (mode === 'submit') {
+      if (isSubmitting.value) return
+      submitError.value = ''
+      submitSuccess.value = false
+    }
+
+    const responses = buildResponses(mode === 'submit')
+
+    if (!responses || responses.length === 0) {
+      // submitError already set when requireAll and something missing
+      return
+    }
+
+    if (mode === 'submit') isSubmitting.value = true
+
+    if (mode === 'autosave' && !silent && activeStep.value === 'activity') {
+      saveState.value = 'saving'
+    }
 
     try {
-      await $fetch(
-        `/api/chapters/${slug}/activity-responses`,
-        {
-          method: 'POST',
-          body: { responses },
-        }
-      )
+      await $fetch(`/api/chapters/${slug}/activity-responses`, {
+        method: 'POST',
+        body: {
+          mode, 
+          responses,
+        },
+      })
 
-      submitSuccess.value = true
-      await completeStep('activity')
-      await nextTick() // Wait for DOM update before scrolling
-      scrollToTop()
+      if (mode === 'submit') {
+        submitSuccess.value = true
+        saveState.value = 'idle'
+        await completeStep('activity')
+        await nextTick()
+        scrollToTop()
+      } else {
+        saveState.value = 'saved'
+        lastSavedAt.value = new Date()
+      }
     } catch (error: unknown) {
-      console.error('Activity submission failed:', error)
-
-      submitError.value =
-        'Unable to save your answers. Please try again.'
+      console.error('Activity save failed:', error)
+      if (mode === 'submit') {
+        submitError.value = 'Unable to save your answers. Please try again.'
+      }
+      if (mode === 'autosave') {
+        saveState.value = 'error'
+        scheduleAutosave() 
+      }
     } finally {
-      // resets loading state
-      isSubmitting.value = false
+      if (mode === 'submit') {
+        isSubmitting.value = false
+      }
     }
+  }
+
+  function scheduleAutosave() {
+    if (submitSuccess.value) return  // never autosave after a successful submit
+    if (skipAutosave.value) return
+    // Only schedule while user is on Activity
+    if (activeStep.value !== 'activity') return
+
+    if (saveTimer) clearTimeout(saveTimer)
+    saveTimer = setTimeout(() => {
+      if (activeStep.value !== 'activity') return
+      saveToDb('autosave').catch(console.error)
+    }, 30_000) // 30 seconds to save
+  }
+
+  watch([mcqAnswers, shortAnswers], () => scheduleAutosave(), { deep: true })
+
+  watch(activeStep, (step, prev) => {
+    if (step === 'activity' && saveState.value === 'error') scheduleAutosave()
+    if (prev === 'activity' && step !== 'activity') {
+      if (saveTimer) clearTimeout(saveTimer)
+      saveToDb('autosave', {silent: true}).catch(console.error)
+    }
+  })
+
+  /** Only submit handler — used by the button */
+  async function onSubmitActivity() {
+    if (saveTimer) clearTimeout(saveTimer)
+    await saveToDb('submit')
   }
 </script>
 
@@ -372,9 +515,21 @@
     </div>
 
     <div v-else-if="activeStep === 'activity' && hasActivity" class="mx-auto max-w-2xl flex flex-col space-y-10 p-4">
-      <h1 class="my-8 text-2xl lg:text-3xl font-bold text-brand-500">
+      <h1 class="mt-8 mb-0 text-2xl lg:text-3xl font-bold text-brand-500">
         {{ activityTitle }}</h1>
 
+      <p
+        role="status"
+        aria-live="polite"
+        class="sticky top-20 z-10 !mt-1 mb-4 h-7 self-end rounded-full bg-white/90 px-3 text-sm leading-7 shadow-sm backdrop-blur"
+        :class="[
+          saveState === 'error' ? 'text-red-600' : 'text-gray-500',
+          saveLabel && !submitSuccess ? '' : 'invisible',
+        ]"
+      >
+        {{ saveLabel }}
+      </p> 
+       
       <template v-for="(q, index) in activityQuestions" :key="q.id">
         <!-- Short Answer -->
         <ActivityShortAnswer
