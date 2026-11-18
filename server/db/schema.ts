@@ -9,7 +9,6 @@ export const user = sqliteTable('user', {
   name: text('name').notNull(),
   email: text('email').notNull().unique(),
   emailVerified: integer('emailVerified', { mode: 'boolean' }).notNull().default(false),
-  image: text('image'),
   createdAt: integer('createdAt', { mode: 'timestamp' })
     .notNull()
     .$defaultFn(() => new Date()),
@@ -18,6 +17,18 @@ export const user = sqliteTable('user', {
     .$defaultFn(() => new Date()),
   phoneNumber: text('phoneNumber').unique(),
   admin: integer('admin', { mode: 'boolean' }).notNull().default(false),
+  blocked: integer('blocked', { mode: 'boolean'}).notNull().default(false),
+})
+
+export const prayerRequest = sqliteTable('prayerRequest', {
+  id: text('id').primaryKey().$defaultFn(() => crypto.randomUUID()),
+  userId: text('userId').notNull().unique().references(() => user.id, {
+      onDelete: 'cascade',
+    }),
+  request: text('request').notNull(),
+  submittedAt: integer('submittedAt', {  mode: 'timestamp', })
+    .notNull()
+    .$defaultFn(() => new Date()),
 })
 
 export const badge = sqliteTable('badge', {
@@ -52,19 +63,33 @@ export const lesson = sqliteTable('lesson', {
     .references(() => chapter.id, { onDelete: 'cascade' }),
 })
 
+export const userLesson = sqliteTable(
+  'userLesson',
+  {
+    id: text('id')
+      .primaryKey()
+      .$defaultFn(() => crypto.randomUUID()),
+    userId: text('userId')
+      .notNull()
+      .references(() => user.id, { onDelete: 'cascade' }),
+    lessonId: text('lessonId')
+      .notNull()
+      .references(() => lesson.id, { onDelete: 'cascade' }),
+    completed: integer('completed', { mode: 'boolean' }).notNull().default(false),
+    completedAt: integer('completedAt', { mode: 'timestamp' }),
+  },
+  (table) => [uniqueIndex('userLesson_userId_lessonId_unique').on(table.userId, table.lessonId)]
+)
+
 export const CourseTitles = sqliteTable('courseTitles', {
-  id: text('id')
-    .primaryKey()
-    .$defaultFn(() => crypto.randomUUID()),
+  id: text('id').primaryKey().$defaultFn(() => crypto.randomUUID()),
   Sections: text('name').notNull(),
   Chapters: text('chapters', { mode: 'json' }).$type<string[]>().notNull(),
   description: text('description'),
 })
 
 export const chapter = sqliteTable('chapter', {
-  id: text('id')
-    .primaryKey()
-    .$defaultFn(() => crypto.randomUUID()),
+  id: text('id').primaryKey().$defaultFn(() => crypto.randomUUID()),
   name: text('name').notNull(),
   slug: text('slug').notNull().unique(),
   description: text('description'),
@@ -72,9 +97,7 @@ export const chapter = sqliteTable('chapter', {
 })
 
 export const chapterVideo = sqliteTable('chapterVideo', {
-  id: text('id')
-    .primaryKey()
-    .$defaultFn(() => crypto.randomUUID()),
+  id: text('id').primaryKey().$defaultFn(() => crypto.randomUUID()),
   chapterId: text('chapterId')
     .notNull()
     .references(() => chapter.id, {
@@ -86,9 +109,7 @@ export const chapterVideo = sqliteTable('chapterVideo', {
 })
 
 export const activity = sqliteTable('activity', {
-  id: text('id')
-    .primaryKey()
-    .$defaultFn(() => crypto.randomUUID()),
+  id: text('id').primaryKey().$defaultFn(() => crypto.randomUUID()),
   chapterId: text('chapter_id')
     .notNull()
     .unique()
@@ -101,9 +122,7 @@ export const activity = sqliteTable('activity', {
 export const activityQuestion = sqliteTable(
   'activity_question',
   {
-    id: text('id')
-      .primaryKey()
-      .$defaultFn(() => crypto.randomUUID()),
+    id: text('id').primaryKey().$defaultFn(() => crypto.randomUUID()),
     activityId: text('activity_id')
       .notNull()
       .references(() => activity.id, {
@@ -133,9 +152,7 @@ export const activityQuestion = sqliteTable(
 export const userQuestionResponse = sqliteTable(
   'user_question_response',
   {
-    id: text('id')
-      .primaryKey()
-      .$defaultFn(() => crypto.randomUUID()),
+    id: text('id').primaryKey().$defaultFn(() => crypto.randomUUID()),
     userId: text('user_id')
       .notNull()
       .references(() => user.id, {
@@ -158,25 +175,6 @@ export const userQuestionResponse = sqliteTable(
     uniqueIndex('user_question_unique')
       .on(table.userId, table.questionId),
   ],
-)
-
-
-export const userLesson = sqliteTable(
-  'userLesson',
-  {
-    id: text('id')
-      .primaryKey()
-      .$defaultFn(() => crypto.randomUUID()),
-    userId: text('userId')
-      .notNull()
-      .references(() => user.id, { onDelete: 'cascade' }),
-    lessonId: text('lessonId')
-      .notNull()
-      .references(() => lesson.id, { onDelete: 'cascade' }),
-    completed: integer('completed', { mode: 'boolean' }).notNull().default(false),
-    completedAt: integer('completedAt', { mode: 'timestamp' }),
-  },
-  (table) => [uniqueIndex('userLesson_userId_lessonId_unique').on(table.userId, table.lessonId)]
 )
 
 export const session = sqliteTable(
@@ -252,6 +250,7 @@ export const verification = sqliteTable(
 export const userRelations = relations(user, ({ many }) => ({
   sessions: many(session),
   accounts: many(account),
+  prayerRequests: many(prayerRequest),
 }))
 
 export const sessionRelations = relations(session, ({ one }) => ({
@@ -262,11 +261,18 @@ export const accountRelations = relations(account, ({ one }) => ({
   user: one(user, { fields: [account.userId], references: [user.id] }),
 }))
 
+export const prayerRequestRelations = relations( prayerRequest, ({ one }) => ({ 
+  user: one(user, { fields: [prayerRequest.userId], references: [user.id] }),
+  })
+)
+
 export const selectUserSchema = createSelectSchema(user)
 export const insertUserSchema = createInsertSchema(user)
 export const selectSessionSchema = createSelectSchema(session)
 export const insertSessionSchema = createInsertSchema(session)
 export const selectAccountSchema = createSelectSchema(account)
+export const selectPrayerRequestSchema = createSelectSchema(prayerRequest)
 export const insertAccountSchema = createInsertSchema(account)
 export const selectVerificationSchema = createSelectSchema(verification)
 export const insertVerificationSchema = createInsertSchema(verification)
+export const insertPrayerRequestSchema = createInsertSchema(prayerRequest)

@@ -3,10 +3,10 @@
 
   const { data: session } = await authClient.useSession(useFetch)
   const isOpen = ref(false)
-
+  // <!-- update to have   v-if="isAdmin"  to test --> for admin dashbaord
   const links = [
     { label: 'Dashboard', to: '/' },
-    { label: 'Admin Dashboard', to: '/adminDashboard' },
+    { label: 'Admin', to: '/adminDashboard' },
     { label: 'Prayer Request', to: '/prayer-request' },
     { label: 'Profile', to: '/profile' },
     { label: 'Contact', to: '/contact' },

@@ -3,6 +3,28 @@
 
   const { data: session } = await authClient.useSession(useFetch)
 
+
+  interface CurrentUser {
+    id: string
+    name: string
+    email: string
+    admin: boolean
+    blocked: boolean
+  }
+
+  const { data: currentUser, refresh: refreshCurrentUser } =
+    await useAsyncData<CurrentUser | null>( 'current-user',
+      async () => {
+        if (!session.value?.user) { return null }
+        return useRequestFetch()<CurrentUser>('/api/users/currentUser')
+      },
+      { watch: [session], default: () => null, }
+    )
+
+  const isAdmin = computed(() =>
+    !!session.value?.user && currentUser.value?.admin === true && currentUser.value?.blocked === false
+  )
+
   async function logout() {
     await authClient.signOut()
     await navigateTo('/auth')
@@ -60,11 +82,12 @@
             >
               Prayer Request
             </NuxtLink>
+    <!-- update to have   v-if="isAdmin"  to test -->
             <NuxtLink
               to="/adminDashboard"
               class="rounded-md px-4 py-2 font-bold whitespace-nowrap text-[#e0004d] hover:bg-gray-100"
             >
-              Admin Dashboard
+              Admin
             </NuxtLink>
             <NuxtLink
               to="/profile"
