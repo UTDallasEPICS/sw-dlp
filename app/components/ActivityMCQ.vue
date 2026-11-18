@@ -1,6 +1,4 @@
 <script setup lang="ts">
-    import {ref} from 'vue'
-
     /* Props for question number, total questions, and prompt used for embedding the variables from the pages folder into the multiple-choice question component.
     This allows for dynamic question rendering based on the page context. */
     const props = defineProps({
@@ -37,18 +35,13 @@
         }
     })
 
-    /* Emits for updating the selected option in the parent component. 
-    This allows for two-way data binding between the multiple-choice question component and its parent. */
+    /* Parent v-model — this is what gets restored from the DB */
+    const model = defineModel<string>({ default: '' })  
 
-    const emit = defineEmits(['update:modelValue'])
-
-    /* Ref for the selected option. 
-    This is used to track which option the user has selected and to apply appropriate styling. */
-
-    const selectedOption = ref<string | null>(null)
-    
-    const answered = computed(() => selectedOption.value !== null)
-    const isCorrect = computed(() => selectedOption.value === props.correctAnswer)  
+    /* Ref for a selected option. 
+    This is used to track which option the user has selected and to apply appropriate styling. */    
+    const answered = computed(() => model.value !== null)
+    const isCorrect = computed(() => model.value === props.correctAnswer)  
     const hasCorrectAnswer = computed(() => !!props.correctAnswer)
     const revealed = computed(() => props.showResults && hasCorrectAnswer.value && answered.value)
 
@@ -56,8 +49,7 @@
     const selectOption = (option: string) => {
         // Only block changes after results are shown
         if (props.showResults) return
-        selectedOption.value = option
-        emit('update:modelValue', option)
+        model.value = option
     }
 
     const optionState = (option: string) => {
@@ -65,11 +57,11 @@
         // After submitting, shows correct/wrong answer
         if (revealed.value) {
             if (option === props.correctAnswer) return 'correct'
-            if (option === selectedOption.value) return 'wrong'
+            if (option === model.value) return 'wrong'
             return 'dimmed'
         }
         // Before submitting, marks the one they clicked
-        if (option === selectedOption.value) return 'selected'
+        if (option === model.value) return 'selected'
         return ''
     }
 

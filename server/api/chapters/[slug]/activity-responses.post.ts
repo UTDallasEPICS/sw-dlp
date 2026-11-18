@@ -16,6 +16,7 @@ const responseSchema = z.object({
 })
 
 const submissionSchema = z.object({
+  mode: z.enum(['autosave', 'submit']).default('submit'),
   responses: z.array(responseSchema).min(1),
 })
 
@@ -46,7 +47,7 @@ export default defineEventHandler(async (event) => {
       statusMessage: 'Invalid submission format',
     })
   }
-  const responses = body.data.responses
+  const { mode, responses } = body.data
 
   const [savedChapter] = await db
     .select({ id: chapter.id })
@@ -82,7 +83,7 @@ export default defineEventHandler(async (event) => {
   const questionMap = new Map(
     questions.map(q => [q.id, q])
   )
-  if (responses.length !== questions.length) {
+  if (mode === 'submit' && responses.length !== questions.length) {
     throw createError({
       statusCode: 400,
       statusMessage: 'All questions must be answered',
@@ -90,58 +91,69 @@ export default defineEventHandler(async (event) => {
   }
 
   const seenIds = new Set<string>()
+  const validResponses: typeof responses = []
 
   // STEP 7: Validate the actual answers
   for (const response of responses) {
     const question = questionMap.get(response.questionId)
 
     if (!question || seenIds.has(response.questionId)) {
-      throw createError({
-        statusCode: 400,
-        statusMessage: 'Invalid or duplicate question',
-      })
+      if (mode === 'submit') {
+        throw createError({
+          statusCode: 400,
+          statusMessage: 'Invalid or duplicate question',
+        })
+      }
+      continue
     }
-
     seenIds.add(response.questionId)
 
     if (question.type === 'mcq') {
-      // Drizzle normally parses JSON-mode columns.
       const options = question.options
+      const ok =
+        Array.isArray(options) &&
+        response.selectedOptionId != null &&
+        options.some((option) => option.id === response.selectedOptionId) &&
+        response.writtenAnswers === null
 
-      if (
-        !Array.isArray(options) || !response.selectedOptionId || !options.some(
-          option => option.id === response.selectedOptionId
-        ) ||
-        response.writtenAnswers !== null
-      ) {
-        throw createError({
-          statusCode: 400,
-          statusMessage: 'Invalid MCQ answer',
-        })
+      if (!ok) {
+        if (mode === 'submit') {
+          throw createError({ statusCode: 400, statusMessage: 'Invalid MCQ answer' })
+        }
+        continue // autosave: skip incomplete MCQ
       }
+      validResponses.push(response)
     } else if (question.type === 'short_answer') {
       const answers = response.writtenAnswers
+      const ok =
+        response.selectedOptionId === null &&
+        Array.isArray(answers) &&
+        answers.length > 0 &&
+        answers.every((answer) => answer.trim().length > 0)
 
-      if (
-        response.selectedOptionId !== null ||
-        !answers || answers.length === 0 ||  !answers.every(answer => answer.trim().length > 0)
-      ) {
-        throw createError({
-          statusCode: 400,
-          statusMessage: 'Invalid written answer',
-        })
+      if (!ok) {
+        if (mode === 'submit') {
+          throw createError({
+            statusCode: 400,
+            statusMessage: 'Invalid written answer',
+          })
+        }
+        continue // autosave: skip empty short answers
       }
-    } else {
-      throw createError({
-        statusCode: 400,
-        statusMessage: 'Unknown question type',
+      validResponses.push({
+        ...response,
+        writtenAnswers: answers!.map((a) => a.trim()),
       })
     }
   }
 
+  if (validResponses.length === 0) {
+    return { success: true, savedCount: 0, mode }
+  }
+
   // save all answers together
   db.transaction(tx => {
-    for (const response of responses) {
+    for (const response of validResponses) {
       tx.insert(userQuestionResponse)
         .values({
           userId,
@@ -167,6 +179,7 @@ export default defineEventHandler(async (event) => {
 
   return {
     success: true,
-    savedCount: responses.length,
+    savedCount: validResponses.length,
+    mode,
   }
 })
