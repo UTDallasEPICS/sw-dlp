@@ -22,14 +22,17 @@ export const user = sqliteTable('user', {
 
 export const prayerRequest = sqliteTable('prayerRequest', {
   id: text('id').primaryKey().$defaultFn(() => crypto.randomUUID()),
-  userId: text('userId').notNull().unique().references(() => user.id, {
+  userId: text('userId').notNull().references(() => user.id, {
       onDelete: 'cascade',
     }),
   request: text('request').notNull(),
   submittedAt: integer('submittedAt', {  mode: 'timestamp', })
     .notNull()
     .$defaultFn(() => new Date()),
-})
+}, (table) => [
+    index('prayerRequest_userId_idx').on(table.userId),
+  ],
+)
 
 export const badge = sqliteTable('badge', {
   id: text('id')

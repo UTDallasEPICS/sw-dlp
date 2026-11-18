@@ -1,4 +1,21 @@
 <script setup lang="ts">
+  import type { TableColumn } from '@nuxt/ui'
+  import type { Row } from '@tanstack/vue-table'
+  import { getExpandedRowModel, } from '@tanstack/vue-table'
+
+  const expanded = ref<Record<string, boolean>>({})
+
+  const columns: TableColumn<UserWithProgress>[] = [
+    { accessorKey: 'name', header: 'User', },
+    { accessorKey: 'email', header: 'Email', },
+    { accessorKey: 'admin', header: 'Role', },
+    { id: 'status', header: 'Status', },
+    { accessorKey: 'hasPrayerRequest', header: 'Prayer Request', },
+    { accessorKey: 'progress', header: 'Progress',},
+    { id: 'expand', header: '', },
+    { id: 'edit', header: ''},
+  ]
+
   interface User {
     id: string
     name: string
@@ -9,9 +26,11 @@
     blocked: boolean
     createdAt: string
     hasPrayerRequest: boolean
+    prayerRequestCount?: number
   }
 
   interface PrayerRequestData {
+    id: string
     request: string
     submittedAt: string
   }
@@ -21,12 +40,14 @@
     completedChapters: number
     totalChapters: number
     progress: number
+    completedChapterNames: string[]
   }
 
   interface UserWithProgress extends User {
     completedChapters: number
     totalChapters: number
     progress: number
+    completedChapterNames: string[]
   }
 
   const { data: users, pending, error, refresh } = await useFetch<User[]>('/api/users')
@@ -36,8 +57,7 @@
   const statusFilter = ref('all')
   const roleFilter = ref('all')
   const prayerFilter = ref('all')
-  const expandedUsers = ref<string[]>([])
-  const prayerRequests = ref<Record<string, PrayerRequestData | null>>({})
+  const prayerRequests = ref<Record<string, PrayerRequestData[]>>({})
   const prayerLoading = ref<string[]>([])
   const prayerErrors = ref<string[]>([])
 
@@ -52,11 +72,6 @@
     { label: 'Admin', value: 'admin' },
     { label: 'User', value: 'user' },
   ]
-  const prayerItems = [
-    { label: 'All Prayer Requests', value: 'all' },
-    { label: 'Prayer Request', value: 'yes' },
-    { label: 'No Prayer Request', value: 'no' },
-  ]
 
   // combine user and userProgress
   const usersWithProgress = computed<UserWithProgress[]>(() => {
@@ -70,6 +85,7 @@
         completedChapters: userProgress?.completedChapters ?? 0,
         totalChapters: userProgress?.totalChapters ?? 0,
         progress: userProgress?.progress ?? 0,
+        completedChapterNames: userProgress?.completedChapterNames ?? [],
       }
     })
   })
@@ -91,7 +107,6 @@
     ]
   })
 
-  // if want to add progress filter change users.value to usersWithProgress.value
   const filteredUsers = computed(() => {
     const q = search.value.trim().toLowerCase()
     return (usersWithProgress.value ?? []).filter(user => {
@@ -108,8 +123,8 @@
     prayerLoading.value.push(userId)
     prayerErrors.value = prayerErrors.value.filter(id => id !== userId)
     try {
-      prayerRequests.value[userId] = await $fetch<PrayerRequestData | null>(
-        `/api/admin/prayer-requests/${encodeURIComponent(userId)}`
+      prayerRequests.value[userId] = await $fetch<PrayerRequestData[]>(
+        `/api/prayer-requests/${encodeURIComponent(userId)}`
       )
     } catch {
       prayerErrors.value.push(userId)
@@ -118,15 +133,28 @@
     }
   }
 
-  async function toggleUser(user: User) {
-    if (expandedUsers.value.includes(user.id)) {
-      expandedUsers.value = expandedUsers.value.filter(id => id !== user.id)
-      return
+  async function handleExpand(
+    user: UserWithProgress,
+    row: Row<UserWithProgress>
+  ) {
+    const willExpand = !row.getIsExpanded()
+
+    row.toggleExpanded()
+
+    if (willExpand && user.hasPrayerRequest && !(user.id in prayerRequests.value)) { 
+      await loadPrayerRequest(user.id) 
     }
-    expandedUsers.value.push(user.id)
-    if (user.hasPrayerRequest && !(user.id in prayerRequests.value)) {
-      await loadPrayerRequest(user.id)
-    }
+  }
+
+  function formatPhoneNumber(phone: string | null): string {
+    if (!phone) return 'Not provided'
+    const digits = phone.replace(/\D/g, '')
+    const normalized =
+      digits.length === 11 && digits.startsWith('1')
+        ? digits.slice(1) : digits
+
+    if (normalized.length !== 10) return phone
+    return `(${normalized.slice(0, 3)}) ${normalized.slice(3, 6)}-${normalized.slice(6)}`
   }
 </script>
 
@@ -176,7 +204,6 @@
           />
         </div>
        </UCard>
-      
     </div>
 
     <UCard class="w-full border-t-4 border-t-[#C8294F]" :ui="{body: '!p-0'}">
@@ -203,64 +230,204 @@
       </div>
 
       <div v-else class="overflow-x-auto">
-        <table class="w-full text-left text-sm">
-          <thead class="w-full bg-[#e0004d]/[0.03] text-gray-700">
-            <tr>
-              <th class="px-4 py-3 font-semibold">User</th>
-              <th class="px-4 py-3 font-semibold">Email</th>
-              <th class="px-4 py-3 font-semibold">Role</th>
-              <th class="px-4 py-3 font-semibold">Status</th>
-              <th class="px-4 py-3 font-semibold">Prayer Request</th>
-              <th class="px-4 py-3 font-semibold">Progress</th>
-            </tr>
-          </thead>
-          <tbody class="divide-y divide-gray-100 dark:divide-gray-800">
-            <tr v-for="user in filteredUsers" :key="user.id">
-              <td class="px-4 py-2.5 font-medium text-gray-900 dark:text-white">{{ user.name }}</td>
-              <td class="px-4 py-2.5 text-gray-500">{{ user.email }}</td>
-              <td class="px-4 py-2.5">
-                <UBadge
-                  :color="error"
-                  variant="subtle"
-                  size="md"
-                  :class="user.admin ? '!bg-purple-100 !text-purple-700 dark:!bg-purple-900/40 dark:!text-purple-300'
-                          : ''"
-                >{{ user.admin ? 'Admin' : 'User' }}</UBadge>
-              </td>
-              <td class="px-4 py-2.5">
-                <div class="flex items-center gap-2">
-                  <UBadge :color="getUserStatus(user) === 'blocked' ? 'error' : getUserStatus(user) === 'verified' ? 'success' : 'warning'" variant="subtle" size="md">
-                    {{ getUserStatus(user) === 'non-verified' ? 'Non-verified' : getUserStatus(user) === 'verified' ? 'Verified' : 'Blocked' }}
-                  </UBadge>
-                </div>
-              </td>
-              <td class="px-4 py-2.5">
-                <UBadge :color="user.hasPrayerRequest ? 'secondary' : 'neutral'" variant="soft" size="md">
-                    {{ user.hasPrayerRequest ? 'Has request' : 'N/A' }}
-                  </UBadge>
-              </td>
-              <td class="px-4 py-3">
-                <div class="flex items-center gap-3">
-                  <UProgress
-                    :model-value="user.progress"
-                    :max="100"
-                    class="w-20"
-                  />
-                  <span class="text-sm text-brand-500">
-                    {{ user.progress }}%
-                  </span>
-                </div>
-              </td>
-              <td class="px-4 py-2.5">
-                <UButton color="neutral" variant="subtle" size="xs">Edit</UButton>
-              </td>
-            </tr>
-            <tr v-if="filteredUsers.length === 0">
-              <td colspan="6" class="py-8 text-center text-gray-500">No users found.</td>
-            </tr>
-          </tbody>
-        </table>
+        <UTable
+          v-model:expanded="expanded"
+          sticky
+          :data="filteredUsers"
+          :columns="columns"
+          :get-row-id="row => row.id"
+          :get-expanded-row-model="getExpandedRowModel()"
+          class="w-full"
+        >
+          <!-- User name -->
+          <template #name-cell="{ row }">
+            <span class="font-medium text-gray-900">
+              {{ row.original.name }}
+            </span>
+          </template>
+
+          <!-- Email -->
+          <template #email-cell="{ row }">
+            <span class="text-gray-500">
+              {{ row.original.email }}
+            </span>
+          </template>
+
+          <!-- Role -->
+          <template #admin-cell="{ row }">
+            <UBadge
+              color="neutral"
+              variant="subtle"
+              size="md"
+              :class="row.original.admin
+                ? 'bg-purple-100! text-purple-700!'
+                : ''"
+            >
+              {{ row.original.admin ? 'Admin' : 'User' }}
+            </UBadge>
+          </template>
+
+          <!-- Status -->
+          <template #status-cell="{ row }">
+            <UBadge
+              :color="getUserStatus(row.original) === 'blocked'
+                ? 'error'
+                : getUserStatus(row.original) === 'verified'
+                  ? 'success'
+                  : 'warning'"
+              variant="subtle"
+              size="md"
+            >
+              {{ getUserStatus(row.original) }}
+            </UBadge>
+          </template>
+
+          <!-- Prayer Request (Shows count if loaded/available) -->
+          <template #hasPrayerRequest-cell="{ row }">
+            <UBadge
+              :color="row.original.hasPrayerRequest ? 'secondary' : 'neutral'"
+              variant="soft"
+              size="md"
+            >
+              {{
+                (prayerRequests[row.original.id]?.length ?? 0) > 0
+                  ? `${prayerRequests[row.original.id]?.length ?? 0} Request(s)`
+                  : row.original.prayerRequestCount
+                    ? `${row.original.prayerRequestCount} Request(s)`
+                    : row.original.hasPrayerRequest
+                      ? 'Has request': 'N/A'
+              }}
+            </UBadge>
+          </template>
+
+          <!-- Progress -->
+          <template #progress-cell="{ row }">
+            <div class="flex items-center gap-3">
+              <UProgress
+                :model-value="row.original.progress"
+                :max="100"
+                class="w-20"
+              />
+              <span class="text-sm text-brand-500">
+                {{ row.original.progress }}%
+              </span>
+            </div>
+          </template>
+
+          <!-- Expand button -->
+          <template #expand-cell="{ row }">
+            <UButton
+              color="neutral"
+              variant="ghost"
+              size="xs"
+              :trailing-icon="row.getIsExpanded()
+                ? 'i-heroicons-chevron-up'
+                : 'i-heroicons-chevron-down'"
+              @click="handleExpand(row.original, row)"
+            >
+              Details
+            </UButton>
+          </template>
+
+          <template #edit-cell>
+            <UButton
+              trailing-icon="i-heroicons-ellipsis-vertical"
+              color="neutral"
+              variant="ghost"
+              size="md"
+              aria-label="Edit user"
+            >Edit</UButton>
+          </template>
+
+          <!-- Expanded cell content with smooth transition wrapper -->
+          <template #expanded="{ row }">
+            <div class="transition-all duration-300 ease-in-out p-5">
+              <div class="grid grid-cols-1 gap-4 lg:grid-cols-2">
+
+                <!-- Account information -->
+                <UCard variant="subtle">
+                  <div class="space-y-3">
+                    <h3 class="font-semibold">Account Information</h3>
+                    <div>
+                      <p class="text-sm text-gray-700">Phone Number</p>
+                      <p class="font-medium">
+                        {{ formatPhoneNumber(row.original.phoneNumber) }}
+                      </p>
+                    </div>
+                    <div>
+                      <p class="text-sm text-gray-500">Account Created</p>
+                      <p class="font-medium">
+                        {{ new Date(row.original.createdAt).toLocaleDateString() }}
+                      </p>
+                    </div>
+                  </div>
+                </UCard>
+
+                <!-- Completed chapters (Fixed to reliably show list) -->
+                <UCard variant="subtle">
+                  <div class="space-y-3">
+                    <h3 class="font-semibold">Completed Chapters</h3>
+                    <ul 
+                      v-if="row.original.completedChapterNames && row.original.completedChapterNames.length > 0" 
+                      class="list-disc list-inside space-y-1 text-sm text-gray-700"
+                    >
+                      <li v-for="(chapterName, index) in row.original.completedChapterNames" :key="index">
+                        {{ chapterName }}
+                      </li>
+                    </ul>
+                    <div v-else class="text-sm text-gray-500">
+                      No chapters completed yet.
+                    </div>
+                  </div>
+                </UCard>
+
+                <!-- Prayer requests -->
+                <UCard variant="subtle" class="lg:col-span-2">
+                  <div class="space-y-3">
+                    <h3 class="font-semibold">Prayer Requests</h3>
+
+                    <p v-if="prayerLoading.includes(row.original.id)">
+                      Loading prayer requests...
+                    </p>
+
+                    <UAlert
+                      v-else-if="prayerErrors.includes(row.original.id)"
+                      color="error"
+                      variant="subtle"
+                      title="Could not load prayer requests"
+                    />
+
+                    <div
+                      v-else-if="prayerRequests[row.original.id]?.length"
+                      class="space-y-3"
+                    >
+                      <div
+                        v-for="request in prayerRequests[row.original.id]"
+                        :key="request.id"
+                        class="rounded-lg border border-default p-4"
+                      >
+                        <p class="whitespace-pre-wrap">
+                          {{ request.request }}
+                        </p>
+                        <p class="mt-2 text-xs text-gray-500">
+                          Submitted:
+                          {{ new Date(request.submittedAt).toLocaleDateString() }}
+                        </p>
+                      </div>
+                    </div>
+
+                    <p v-else class="text-sm text-gray-500">
+                      No prayer requests.
+                    </p>
+                  </div>
+                </UCard>
+
+              </div>
+            </div>
+          </template>
+        </UTable>
       </div>
+
     </UCard>
   </UContainer>
 </template>

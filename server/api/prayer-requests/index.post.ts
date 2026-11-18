@@ -11,21 +11,17 @@ const requestSchema = z.object({
 // create/replace users own prayer request
 export default defineEventHandler(async (event) => {
   const currentUser = requireUser(event)
-  const input = requestSchema.parse(await readBody(event))
+  
+  const body = await readValidatedBody(
+    event,
+    requestSchema.parse
+  )
 
-  const [record] = await db
+  const [createdRequest] = await db
     .insert(prayerRequest)
     .values({
       userId: currentUser.id,
-      request: input.request,
-      submittedAt: new Date(),
-    })
-    .onConflictDoUpdate({
-      target: prayerRequest.userId,
-      set: {
-        request: input.request,
-        submittedAt: new Date(),
-      },
+      request: body.request,
     })
     .returning({
       id: prayerRequest.id,
@@ -33,5 +29,7 @@ export default defineEventHandler(async (event) => {
       submittedAt: prayerRequest.submittedAt,
     })
 
-  return record
+  setResponseStatus(event, 201)
+
+  return createdRequest
 })
