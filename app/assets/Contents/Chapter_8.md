@@ -181,13 +181,13 @@ Child Child
 
 Figure 6. Behavior Interaction Crossover. Source: Stronger than Espresso, Inc. © 2014. In the Parent and Child responses actions or words can translate into accusation, judgment, blame and criticism. This fuels emotion and is what it means to be
 
-> *“hooked.”*
+> _“hooked.”_
 
-| Question in Adult Ego State | Response in Various Ego States |
-|-----------------------------|--------------------------------|
-| “Where are my keys?” | If Adult answers, “On the desk.” If Parent answers, “You are always losing things.” If Child answers, “I hate it when you ask me to find your things. |
+| Question in Adult Ego State     | Response in Various Ego States                                                                                                                               |
+| ------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| “Where are my keys?”            | If Adult answers, “On the desk.” If Parent answers, “You are always losing things.” If Child answers, “I hate it when you ask me to find your things.        |
 | “Why are you drinking so much?” | If Adult answers, “Yes I am. I hate my job right now.” If Parent answers, “Why are you always criticizing me?” If Child answers, “Don’t tell me what to do.” |
-| “Is dinner ready?” | If Adult answers, “Not yet.” If Parent answers, “Why do I have to do everything?” If Child answers, “Quit blaming me.” |
+| “Is dinner ready?”              | If Adult answers, “Not yet.” If Parent answers, “Why do I have to do everything?” If Child answers, “Quit blaming me.”                                       |
 
 ### Back to adult state
 
@@ -195,7 +195,9 @@ You cannot return to the Adult state until the communication lines are cleared. 
 
 If you cannot remain in the Adult state, you will have the same discussion, fight, argument or interaction. This game will replay until you can adapt your behavior and response.
 
-This communication folly perpetuates the games played between two people. To the extent that clear communication may be unable to exist outside this vicious cycle. 14
+This communication folly perpetuates the games played between two people. To the extent that clear communication may be unable to exist outside this vicious cycle.
+
+<--next-->
 
 ### You don’t see them at first
 
@@ -211,7 +213,7 @@ So how do you break the cycle?
 
 The games played go hand in hand with the coping behaviors learned earlier. They perpetuate the games. The most important thing that you can do is to be aware that you are being
 
-> *“hooked.”*
+> _“hooked.”_
 
 Once you identify the source, the scripts can be redesigned and rewritten to bring a new outcome.
 
@@ -245,8 +247,8 @@ You do not have to choose to play the same game. When you recognize game playing
 
 It will take time, practice and prayer. You can do it. With God’s help — you absolutely can do it!
 
-> *“With God all things are possible.”*  
-**— Matthew 19:26**
+> _“With God all things are possible.”_  
+> **— Matthew 19:26**
 
 ### List your hooks ![Learning Activity](/two_hands_mug.png)
 
@@ -268,12 +270,12 @@ Child — “You are driving me crazy with this mess!” Parent — “Why do I 
 
 On the next page identify situations or statements that seem to “hook” you into trouble. Write how it makes you feel and create a response from your Adult ego state.
 
-| The Action or Statement | Your Emotion or Coping Behavior | Your New Adult Response |
-|-------------------------|---------------------------------|-------------------------|
+| The Action or Statement                                                          | Your Emotion or Coping Behavior                                                                                                                                                                                                                         | Your New Adult Response                                                          |
+| -------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------- |
 | Example. Your kids make a mess all over the house and never clean up their toys. | Pick up their toys, yell at them and slam them into a toy box so they know how upset you are. Or you pick toys up without saying a word but seething anger and stuff your frustration down deep. Or you cry and let them know how sad and hurt you are. | Require that they clean up their toys without you having any emotional response. |
-| 1. |  |  |
-| 2. |  |  |
-| 3. |  |  |
+| 1.                                                                               |                                                                                                                                                                                                                                                         |                                                                                  |
+| 2.                                                                               |                                                                                                                                                                                                                                                         |                                                                                  |
+| 3.                                                                               |                                                                                                                                                                                                                                                         |                                                                                  |
 
 ### You can reestablish a new parent ![Scripture Reference](/pink_heart_mug.png)
 
@@ -287,16 +289,16 @@ You carry an understanding of what a Parent should be based on the role models a
 • Your “hurts” of not being loved, fear of abandonment, or criticism received from your parents can be washed clean and no longer control your behavior.\
 • You can be free from your past.
 
-> *“Behold what manner of love the Father has bestowed on us, that we should be called children of God.”*  
-**— 1 John 3:1 (NKJV)**
+> _“Behold what manner of love the Father has bestowed on us, that we should be called children of God.”_  
+> **— 1 John 3:1 (NKJV)**
 
 ### Over time
 
 Over time you will be faced with another difficult situation and your
 
-> *“child” will run out in a rage and ready to have a temper tantrum. When this happens, pause for a moment and recall this visualization exercise. Let your Adult self come into the picture and hold the small child soothing their hurt. This validates your emotions and allows you to then face a problem without having an emotional “melt down.”*
+> _“child” will run out in a rage and ready to have a temper tantrum. When this happens, pause for a moment and recall this visualization exercise. Let your Adult self come into the picture and hold the small child soothing their hurt. This validates your emotions and allows you to then face a problem without having an emotional “melt down.”_
 
-> *“The discovery of the inner child is really the discovery of a portal to the soul. The inner child keeps us human. It never grows up, it only becomes more sensitive and trusting as we learn how to give it the time, care and parenting it so richly deserves.”*
+> _“The discovery of the inner child is really the discovery of a portal to the soul. The inner child keeps us human. It never grows up, it only becomes more sensitive and trusting as we learn how to give it the time, care and parenting it so richly deserves.”_
 
 Source: From the book Embracing Ourselves. Copyright ©1989, by Hal Stone and Sidra Stone. Reprinted with permission of New World Library, Novato, CA. www.newworldlibrary.com.
 
@@ -337,6 +339,8 @@ These are common medical issues that can occur for women that have been impacted
 • Chronic Anxiety\
 • Managing Trauma Symptoms
 
+<--next-->
+
 ### Depression
 
 Depression impacts millions of people each day.
@@ -361,53 +365,53 @@ When you stuff feelings down, tension builds inside. At the foundation of your p
 
 Depression Inventory -Answer the questions with a Yes or No.
 
-|  | Yes | No |
-|------|------|------|
-| 1. Do you criticize yourself frequently? |  |  |
-| 2. Do you think of yourself as weak, a failure, not good enough, unlovable, a loser, etc.? |  |  |
-| 3. Do you feel irritated because of someone’s imperfections or insensitivities? |  |  |
-| 4. Do you sulk when you realize others don’t agree with your views or preferences? |  |  |
-| 5. Do you remain frustrated because of the unfair circumstances you encounter? |  |  |
-| 6. Are you unable to feel compassion for yourself, or grant yourself forgiveness most of the time? Are you cruel to yourself when you make mistakes? |  |  |
-| 7. Do you constantly fail to reach the standards set for yourself? |  |  |
-| 8. Do you lack energy, and have trouble motivating yourself to do things? Do your arms, legs or back feel heavy, achy, and hard to move (not due to injury)? |  |  |
-| 9. Do you promise to do a favor or help someone and then resent the fact that you have too much to do? |  |  |
-| 10. Do you avoid people you need to confront? |  |  |
-| 11. Do you speak in sharp tones? |  |  |
-| 12. Do you have a short fuse? Then condemn yourself for having it? |  |  |
-| 13. Are you described by others as moody or irritable? |  |  |
-| 14. Do you feel hurt when a person fails to recognize your needs or perceptions? |  |  |
-| 15. Do you hold resentments regarding others’ insensitivities? |  |  |
+|                                                                                                                                                              | Yes | No  |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------ | --- | --- |
+| 1. Do you criticize yourself frequently?                                                                                                                     |     |     |
+| 2. Do you think of yourself as weak, a failure, not good enough, unlovable, a loser, etc.?                                                                   |     |     |
+| 3. Do you feel irritated because of someone’s imperfections or insensitivities?                                                                              |     |     |
+| 4. Do you sulk when you realize others don’t agree with your views or preferences?                                                                           |     |     |
+| 5. Do you remain frustrated because of the unfair circumstances you encounter?                                                                               |     |     |
+| 6. Are you unable to feel compassion for yourself, or grant yourself forgiveness most of the time? Are you cruel to yourself when you make mistakes?         |     |     |
+| 7. Do you constantly fail to reach the standards set for yourself?                                                                                           |     |     |
+| 8. Do you lack energy, and have trouble motivating yourself to do things? Do your arms, legs or back feel heavy, achy, and hard to move (not due to injury)? |     |     |
+| 9. Do you promise to do a favor or help someone and then resent the fact that you have too much to do?                                                       |     |     |
+| 10. Do you avoid people you need to confront?                                                                                                                |     |     |
+| 11. Do you speak in sharp tones?                                                                                                                             |     |     |
+| 12. Do you have a short fuse? Then condemn yourself for having it?                                                                                           |     |     |
+| 13. Are you described by others as moody or irritable?                                                                                                       |     |     |
+| 14. Do you feel hurt when a person fails to recognize your needs or perceptions?                                                                             |     |     |
+| 15. Do you hold resentments regarding others’ insensitivities?                                                                                               |     |     |
 
-|  | Yes | No |
-|------|------|------|
-| 16. Do you feel agitated, restless, anxious much of the time? |  |  |
-| 17. Do you believe that things are unlikely to get better? |  |  |
-| 18. Do you think you are eating and sleeping way too much or way too little? |  |  |
-| 19. Do you have regrets about the past that will not fade? |  |  |
-| 20. Do you feel overwhelmed by your life? |  |  |
-| 21. Do you feel emotionally numb? |  |  |
-| 22. Are you frequently tearful; do you frequently feel sad for no apparent reason? |  |  |
-| 23. Have you lost interest in activities you used to enjoy? |  |  |
-| 24. Have you lost interest in sex? |  |  |
-| 25. Are you having trouble concentrating, or making decisions? |  |  |
-| 26. Do you find yourself continually trying to choose behavior to relieve you from your suffering? Such as eating, drinking alcohol, using drugs, having sex, putting yourself in danger, gambling, shopping, pornography or others. |  |  |
-| 27. Are you withdrawing from people when you can? |  |  |
-| 28. Do you wish for death to end your pain; do you think everyone would be better off if you were dead? |  |  |
-| 29. Do you have any of the above experiences regularly with the cycle of your period? In the wintertime? Have you recently given birth? |  |  |
-| 30. Do you worry excessively? Or are called pessimistic? |  |  |
+|                                                                                                                                                                                                                                      | Yes | No  |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | --- | --- |
+| 16. Do you feel agitated, restless, anxious much of the time?                                                                                                                                                                        |     |     |
+| 17. Do you believe that things are unlikely to get better?                                                                                                                                                                           |     |     |
+| 18. Do you think you are eating and sleeping way too much or way too little?                                                                                                                                                         |     |     |
+| 19. Do you have regrets about the past that will not fade?                                                                                                                                                                           |     |     |
+| 20. Do you feel overwhelmed by your life?                                                                                                                                                                                            |     |     |
+| 21. Do you feel emotionally numb?                                                                                                                                                                                                    |     |     |
+| 22. Are you frequently tearful; do you frequently feel sad for no apparent reason?                                                                                                                                                   |     |     |
+| 23. Have you lost interest in activities you used to enjoy?                                                                                                                                                                          |     |     |
+| 24. Have you lost interest in sex?                                                                                                                                                                                                   |     |     |
+| 25. Are you having trouble concentrating, or making decisions?                                                                                                                                                                       |     |     |
+| 26. Do you find yourself continually trying to choose behavior to relieve you from your suffering? Such as eating, drinking alcohol, using drugs, having sex, putting yourself in danger, gambling, shopping, pornography or others. |     |     |
+| 27. Are you withdrawing from people when you can?                                                                                                                                                                                    |     |     |
+| 28. Do you wish for death to end your pain; do you think everyone would be better off if you were dead?                                                                                                                              |     |     |
+| 29. Do you have any of the above experiences regularly with the cycle of your period? In the wintertime? Have you recently given birth?                                                                                              |     |     |
+| 30. Do you worry excessively? Or are called pessimistic?                                                                                                                                                                             |     |     |
 
 ### Adapted from Source: NAMI.org. www.nami.org.
 
 National Alliance on Mental Illness (NAMI).
 
-> *“About Mental Illness: Major Depression,”*
+> _“About Mental Illness: Major Depression,”_
 
 ### Scoring
 
 If you answered
 
-> *“Yes" to two or more of these questions, you may be experiencing some form of depression. Pay close attention to the following questions because “if you catch yourself in one or more of the behaviors, you can be assured that anger is alive within your personality.”*
+> _“Yes" to two or more of these questions, you may be experiencing some form of depression. Pay close attention to the following questions because “if you catch yourself in one or more of the behaviors, you can be assured that anger is alive within your personality.”_
 
 For more information visit National Alliance on Mental Illness (NAMI).
 
@@ -423,8 +427,8 @@ Depression may not be the root cause; you may have signs of a different medical 
 
 If you ever feel in any danger of killing yourself or being killed, immediately call a local crisis line or visit www.suicidehotlines.com.18
 
-> *“Women have to understand that regardless of who does not want us we have to want ourselves. Self-love is the first and hardest rule to stick by. Women need to not abandon themselves in their quest for bliss and love. You can love yourself spiritually, physically, in almost any way anybody else can.”*  
-— Alice Walker, MS Magazine
+> _“Women have to understand that regardless of who does not want us we have to want ourselves. Self-love is the first and hardest rule to stick by. Women need to not abandon themselves in their quest for bliss and love. You can love yourself spiritually, physically, in almost any way anybody else can.”_  
+> — Alice Walker, MS Magazine
 
 ### Addictions
 
@@ -459,7 +463,7 @@ Here’s an example:
 
 Participant
 
-> *“I want to go to the gym but I am too tired after working each day.”*
+> _“I want to go to the gym but I am too tired after working each day.”_
 
 Instructor: Why do you want to go to the gym?
 
@@ -469,29 +473,29 @@ Instructor: When you get off work what keeps you from going?
 
 Participant Answer:
 
-> *“Tired, etc...”*
+> _“Tired, etc...”_
 
 Instructor:
 
-> *“Class what solutions do you see for her?” Class responds, “She could go at a different time of day.” “What do you think of that idea?”*
+> _“Class what solutions do you see for her?” Class responds, “She could go at a different time of day.” “What do you think of that idea?”_
 
 Participant Answer: “Well, I really don’t feel comfortable going?
 
 Instructor:
 
-> *“Tell me more about that.”*
+> _“Tell me more about that.”_
 
 Participant Answer:
 
-> *“There are too many people.”*
+> _“There are too many people.”_
 
 Instructor:
 
-> *“Why do too many people bother you?”*
+> _“Why do too many people bother you?”_
 
 Participant Answer:
 
-> *“I am embarrassed about my body.”*
+> _“I am embarrassed about my body.”_
 
 Instructor: “What do you feel when you are embarrassed?
 
@@ -518,6 +522,8 @@ You wait in line for your coffee, tapping your toes incessantly, agitated becaus
 ### It’s real not just in your head
 
 Premenstrual Syndrome (PMS) and Premenstrual Dysphonic Disorder (PMDD) are very real conditions and must be embraced with love and understanding. If you remain at odds with your body and ignore your monthly cycles, it can be very damaging. Regardless of what jokes can be made, you need to understand that women, namely you, need self-love during this time. Some women may not be affected, others have mild symptoms, but many women become so affected that their daily lives are interrupted with their menses cycle. It is vital that you look at this monthly event as a part of your patterns of behavior. Like it or not, you must embrace your womanhood and understand times when you need to demand more self-love and love from others.
+
+<--next-->
 
 ### Definition: PMS
 
@@ -579,7 +585,7 @@ For more information contact the Office on Women's Health in the Department of H
 
 It is common for people to criticize and say,
 
-> *“Why doesn’t she just leave?”*
+> _“Why doesn’t she just leave?”_
 
 Often victims of domestic abuse have an emotional bond with the abuser and this is identified as Stockholm Syndrome. It can be found in family, romantic and interpersonal relationships, and is a strategy victims’ of abuse use for survival. Once you accept the impact that this bonding can have, you can begin to understand the behavior and why many stay.
 
@@ -598,7 +604,7 @@ Understanding that you may be affected by this Syndrome, may allow you to work t
 
 Everyday life contains stress and there are many ways you can choose to deal with it. Post-Traumatic Stress Disorder (PTSD) is a result of extreme stress and trauma and can be caused by a personal tragedy, accident, war, abuse or violent occurrence. PTSD is diagnosed when trauma escalates the normal reactions to stress into a
 
-> *“super-stress.”*
+> _“super-stress.”_
 
 Despite your best efforts of good stress management, you are still overwhelmed. When you feel threatened by this stress, the terror and horror can be so overwhelming that you lose memory and may even faint. Victims of sexual or physical abuse or an assault may have these symptoms. The world as you knew it has been changed. It no longer is safe, people cannot be trusted, your self-esteem is destroyed; faith and hope are lost. This reaction to stress can remain with you for days, weeks, years or a lifetime. 25
 
@@ -608,7 +614,7 @@ Seeking group or individual therapy selecting a healthy lifestyle, and practicin
 
 Recognizing that you are having this problem is your first step. There are many resources available to assist you. For more information begin with your counselor or review information at the National Center for PTSD. www.ncptsd.va.gov.
 
-> *“The Human Spirit is virtually indestructible and its ability to rise from the ashes remains as long as the body draws breath!” Author, Unknown”*
+> _“The Human Spirit is virtually indestructible and its ability to rise from the ashes remains as long as the body draws breath!” Author, Unknown”_
 
 ### Managing Trauma Symptoms
 
@@ -624,32 +630,32 @@ To be restored ask God to shine His light on your next right step. Learning to t
 
 Do you experience any of the following?
 
-|  | Symptom |
-|------|---------|
-| Agitation |  |
-| Anxiety |  |
-| Cannot concentrate |  |
-| Chest pains or discomfort |  |
-| Chills or hot flashes |  |
-| Compulsive behaviors |  |
-| Detached from self |  |
-| Disconnected to world |  |
-| Dizziness or lightheaded |  |
-| Eating problems |  |
-| Emotionally “shut down” |  |
-| Fear of losing control or going crazy |  |
-| Feeling of impending doom / fear of dying |  |
-| Flashbacks |  |
-| Insomnia |  |
-| Irritability or rage |  |
-| Muscle tension |  |
-| Nausea, diarrhea, constipation, cramping |  |
-| Numbness |  |
-| Palpitations, fast heart rate, pounding heart |  |
-| Shaking or trembling |  |
-| Shortness of breath |  |
-| Terrified |  |
-| Unreality, confused about reality of the truth |  |
+|                                                | Symptom |
+| ---------------------------------------------- | ------- |
+| Agitation                                      |         |
+| Anxiety                                        |         |
+| Cannot concentrate                             |         |
+| Chest pains or discomfort                      |         |
+| Chills or hot flashes                          |         |
+| Compulsive behaviors                           |         |
+| Detached from self                             |         |
+| Disconnected to world                          |         |
+| Dizziness or lightheaded                       |         |
+| Eating problems                                |         |
+| Emotionally “shut down”                        |         |
+| Fear of losing control or going crazy          |         |
+| Feeling of impending doom / fear of dying      |         |
+| Flashbacks                                     |         |
+| Insomnia                                       |         |
+| Irritability or rage                           |         |
+| Muscle tension                                 |         |
+| Nausea, diarrhea, constipation, cramping       |         |
+| Numbness                                       |         |
+| Palpitations, fast heart rate, pounding heart  |         |
+| Shaking or trembling                           |         |
+| Shortness of breath                            |         |
+| Terrified                                      |         |
+| Unreality, confused about reality of the truth |         |
 
 ### Trauma scoring
 
@@ -665,22 +671,22 @@ Right now you are responding with automatic reactions that you created in unheal
 
 2. Write out how you will handle the trauma when it occurs.
 
-|  | “Yes” item(s) from Trauma | New Methods to Handle |
-|------|---------------------------|-----------------------|
-|  | Medical Impact Activity |  |
-| Agitation. My rage and irritability is from not being able to control others. |  | When I feel Agitation, I will take a deep breath and count to 10 slowly. I will be aware of my body responding, jaw clenching, fists forming, heart pounding and practice the principles of A-B-C. I will relax. I will reassure myself that I am okay right now and can handle anything that comes my way. |
-| &nbsp;<br>&nbsp; | &nbsp;<br>&nbsp; | &nbsp;<br>&nbsp; |
-| &nbsp;<br>&nbsp; | &nbsp;<br>&nbsp; | &nbsp;<br>&nbsp; |
-| &nbsp;<br>&nbsp; | &nbsp;<br>&nbsp; | &nbsp;<br>&nbsp; |
+|                                                                               | “Yes” item(s) from Trauma | New Methods to Handle                                                                                                                                                                                                                                                                                       |
+| ----------------------------------------------------------------------------- | ------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|                                                                               | Medical Impact Activity   |                                                                                                                                                                                                                                                                                                             |
+| Agitation. My rage and irritability is from not being able to control others. |                           | When I feel Agitation, I will take a deep breath and count to 10 slowly. I will be aware of my body responding, jaw clenching, fists forming, heart pounding and practice the principles of A-B-C. I will relax. I will reassure myself that I am okay right now and can handle anything that comes my way. |
+| &nbsp;<br>&nbsp;                                                              | &nbsp;<br>&nbsp;          | &nbsp;<br>&nbsp;                                                                                                                                                                                                                                                                                            |
+| &nbsp;<br>&nbsp;                                                              | &nbsp;<br>&nbsp;          | &nbsp;<br>&nbsp;                                                                                                                                                                                                                                                                                            |
+| &nbsp;<br>&nbsp;                                                              | &nbsp;<br>&nbsp;          | &nbsp;<br>&nbsp;                                                                                                                                                                                                                                                                                            |
 
 | “Yes” item(s) from Trauma | New Methods to Handle |
-|---------------------------|-----------------------|
-| Medical Impact Activity |  |
-| &nbsp;<br>&nbsp; | &nbsp;<br>&nbsp; |
-| &nbsp;<br>&nbsp; | &nbsp;<br>&nbsp; |
-| &nbsp;<br>&nbsp; | &nbsp;<br>&nbsp; |
-| &nbsp;<br>&nbsp; | &nbsp;<br>&nbsp; |
-| &nbsp;<br>&nbsp; | &nbsp;<br>&nbsp; |
+| ------------------------- | --------------------- |
+| Medical Impact Activity   |                       |
+| &nbsp;<br>&nbsp;          | &nbsp;<br>&nbsp;      |
+| &nbsp;<br>&nbsp;          | &nbsp;<br>&nbsp;      |
+| &nbsp;<br>&nbsp;          | &nbsp;<br>&nbsp;      |
+| &nbsp;<br>&nbsp;          | &nbsp;<br>&nbsp;      |
+| &nbsp;<br>&nbsp;          | &nbsp;<br>&nbsp;      |
 
 ### Chronic anxiety
 
@@ -690,15 +696,15 @@ Living with chronic anxiety and tension is exhausting. Intensive attempts to peo
 
 Answer the following questions to understand how you may be impacted by chronic anxiety:
 
-|  | Question | YES /NO |
-|------|----------|---------|
-| 1. Do you feel an intense need for approval from others? |  |  |
-| 2. Do you have an intense need for control? |  |  |
-| 3. Are you uncomfortable letting others be in charge of a situation? |  |  |
-| 4. Do you believe that if you are not in control, that you are weak and a failure? |  |  |
-| 5. Do you tend to be a perfectionist and self-critical? |  |  |
-| 6. Do you feel that what you do is never enough or not good enough? |  |  |
-| 7. Do you often criticize your own efforts and feel a constant pressure to achieve? |  |  |
+|                                                                                     | Question | YES /NO |
+| ----------------------------------------------------------------------------------- | -------- | ------- |
+| 1. Do you feel an intense need for approval from others?                            |          |         |
+| 2. Do you have an intense need for control?                                         |          |         |
+| 3. Are you uncomfortable letting others be in charge of a situation?                |          |         |
+| 4. Do you believe that if you are not in control, that you are weak and a failure?  |          |         |
+| 5. Do you tend to be a perfectionist and self-critical?                             |          |         |
+| 6. Do you feel that what you do is never enough or not good enough?                 |          |         |
+| 7. Do you often criticize your own efforts and feel a constant pressure to achieve? |          |         |
 
 Review the answers defined:\
 • Question 1. If yes, you are a people pleaser. You typically put the needs of others before your needs, and this can lead to intense feelings of frustration and, over time, build resentment.
@@ -716,8 +722,8 @@ We have God’s word concerning anxiousness —don’t do it!
 
 What a promise! The peace of God. How comforting, how easy would it be to lean into his chest and listen to his heartbeat?
 
-> *“Be anxious for nothing, but in everything by prayer and supplication, with thanksgiving, let your request be made known to God; and the peace of God, which surpasses all understanding, will guard your hearts and minds through Christ Jesus.”*  
-**— Philippians 4:6,7 (NKJV)**
+> _“Be anxious for nothing, but in everything by prayer and supplication, with thanksgiving, let your request be made known to God; and the peace of God, which surpasses all understanding, will guard your hearts and minds through Christ Jesus.”_  
+> **— Philippians 4:6,7 (NKJV)**
 
 ### What to Do When Symptoms Happen? ![Scripture Reference](/pink_heart_mug.png)
 

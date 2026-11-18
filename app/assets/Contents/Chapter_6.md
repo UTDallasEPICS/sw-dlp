@@ -78,8 +78,8 @@ Main categories of coping behaviors detailed in this Chapter are:
 3. Obsessions
 4. Hyper sensitivity What if you do not know your coping behaviors? Learn more about each and pray for God to reveal areas in your life that need to be healed.
 
-> *“Then if my people who are called by my name will humble themselves and pray and seek my face and turn from their wicked ways, I will hear from heaven and will forgive their sins and restore their land.”*  
-**— 1 Chronicles 7:14 (NIV)**
+> _“Then if my people who are called by my name will humble themselves and pray and seek my face and turn from their wicked ways, I will hear from heaven and will forgive their sins and restore their land.”_  
+> **— 1 Chronicles 7:14 (NIV)**
 
 Codependency
 
@@ -110,8 +110,8 @@ There is freedom:\
 • God made you a beautiful woman. You have the right to accomplish what you can and cannot without punishment.\
 • Giving our burdens to God will lighten your load and release anxiety.
 
-> *“Come to me, all you who are weary and burdened, and I will give you rest. Take my yoke upon you and learn from me, for I am gentle and humble in heart, and you will find rest for your souls.. For my yoke is easy and my burden is light.”*  
-**— Matthew 11:28–30 (NIV)**
+> _“Come to me, all you who are weary and burdened, and I will give you rest. Take my yoke upon you and learn from me, for I am gentle and humble in heart, and you will find rest for your souls.. For my yoke is easy and my burden is light.”_  
+> **— Matthew 11:28–30 (NIV)**
 
 Answer the following:
 
@@ -121,7 +121,7 @@ What is the one thing you could stop doing today to ease your burden?
 
 ### Tired ![Testimonial Quote](/broken_mug.png)
 
-> *“I am tired of being a chameleon to fit in and find love and approval. My gift, my life, must not be wasted. My purpose will unfold if I am true to self. I need to stop being afraid.”*
+> _“I am tired of being a chameleon to fit in and find love and approval. My gift, my life, must not be wasted. My purpose will unfold if I am true to self. I need to stop being afraid.”_
 
 ### Personal resources
 
@@ -156,7 +156,7 @@ What is the worst thing that could happen if you stopped trying to please everyo
 
 ### Scurry to placate ![Testimonial Quote](/broken_mug.png)
 
-> *“I would drop whatever I was doing and scurry to placate any of his demands. He would be on my heels screaming at me, so I would work hard to just make him stop yelling. It was conditioning. He would scream and his needs would be met. He got the attention and control he desired. I got him to stop yelling. It was a tragic, unhealthy cycle.”*
+> _“I would drop whatever I was doing and scurry to placate any of his demands. He would be on my heels screaming at me, so I would work hard to just make him stop yelling. It was conditioning. He would scream and his needs would be met. He got the attention and control he desired. I got him to stop yelling. It was a tragic, unhealthy cycle.”_
 
 Unhealthy Relationships
 
@@ -183,6 +183,8 @@ It doesn’t have to be that way:\
 3. Keep to the facts, do not become emotional.
 4. Allow them to respond. If they throw out a sidetrack, return back to the point. Blame and disrespect are their problem.
 
+<--next-->
+
 ### Relationships highs and lows ![Scripture Reference](/pink_heart_mug.png)
 
 Do your relationships always have highs and lows? Do they start out great, then something happens and you are back where you started, fighting and in another broken relationship.
@@ -198,8 +200,8 @@ Healthy relationships have changes of emotions too. They are different because t
 • Evaluate why your happiness is dependent on others.\
 • Construct a safe network of friends, family, church, connect groups.
 
-> *“Humble yourselves, therefore, under God’s mighty hand, that he may lift you up in due time. Cast all your anxiety on him because he cares for you.”*  
-**— 1 Peter 5:6–7 (NIV)**
+> _“Humble yourselves, therefore, under God’s mighty hand, that he may lift you up in due time. Cast all your anxiety on him because he cares for you.”_  
+> **— 1 Peter 5:6–7 (NIV)**
 
 ### Don’t like my partners friends
 
@@ -235,8 +237,8 @@ Behaviors that are used to fill up holes in our heart can become obsessive. With
 • Work with the Stronger than Espresso® program in your area to understand how God’s love can replace your hurts with healing.\
 • Pray to God that He will reveal your bad habits.
 
-> *“Direct my footsteps according to your word, let no sin rule over me.”*  
-**— Psalms 119:133 (NIV)**
+> _“Direct my footsteps according to your word, let no sin rule over me.”_  
+> **— Psalms 119:133 (NIV)**
 
 ### Can’t stop contacting them
 
@@ -268,8 +270,8 @@ Trusting God comes first. When you trust Him you can trust yourself. Learning to
 • Trust your gut instincts and listen to your inner wisdom.\
 • You can choose how you spend your time and the decisions you make. If these are good choices for you —it’s okay, if it’s not a good choice for you —don’t do it.
 
-> *“And those who know Your name will put their trust in you; For You, Lord, have not forsaken those who seek You.”*  
-**— Psalms 9:10 (New King James Version)**
+> _“And those who know Your name will put their trust in you; For You, Lord, have not forsaken those who seek You.”_  
+> **— Psalms 9:10 (New King James Version)**
 
 ### Lack of respect
 
@@ -323,8 +325,10 @@ When you are first learning the walk away versus run away, you must expect to ma
 
 This process is normal and must be completed to make it through to the other side. The outcome is well worth it. Keep a journal of what triggers, how you react, and how you would have liked to react. Construct new pathways of behavior so you can choose a different response in the future. Discuss your findings with other group members in your Stronger than Espresso® class to learn new ways to respond to similar choices.
 
-> *“Be anxious for nothing, but in everything by prayer and supplication, with thanksgiving, let your requests be made known to God; 7and the peace of God, which surpasses all understanding, will guard your hearts and minds through Christ Jesus.”*  
-**— Philippians 4:6,7 (NKJV)**
+> _“Be anxious for nothing, but in everything by prayer and supplication, with thanksgiving, let your requests be made known to God; 7and the peace of God, which surpasses all understanding, will guard your hearts and minds through Christ Jesus.”_  
+> **— Philippians 4:6,7 (NKJV)**
+
+<--next-->
 
 ### Blame
 
@@ -354,8 +358,8 @@ Once you have been saved by God’s grace, you can let shame go:\
 • Do not spend your energy worrying about what you have done — spend your time and energies identifying the person you want to be.\
 • Decide to either rebuild any relationships you have broken or recognize that they were unhealthy and seek out new ones. Be honest with yourself, make changes and let go of your shame.
 
-> *“For with the heart one believes unto righteousness, and with the mouth confession is made unto salvation. For the Scripture says, Whoever believes on Him will not be put to shame…13 For, whoever calls on the name of the Lord shall be saved.”*  
-**— Romans 10:9–13 (NKJV)**
+> _“For with the heart one believes unto righteousness, and with the mouth confession is made unto salvation. For the Scripture says, Whoever believes on Him will not be put to shame…13 For, whoever calls on the name of the Lord shall be saved.”_  
+> **— Romans 10:9–13 (NKJV)**
 
 ### Introduction to Establishing Boundaries
 
@@ -453,7 +457,7 @@ What exactly does it mean to set up boundaries? Setting up boundaries is simply 
 
 Do you find it difficult to say
 
-> *“No?” Many of us struggle with confrontation in various situations and need to understand why we are unable to say “No.” There is a difference to choosing not to say “No,” versus being unable or so uncomfortable that you cannot. When you accept the horrendous gift your mother-in-law gave you for your wedding, or the fruitcake your coworker gives each year, you may choose to grin and bear it and accept the gift graciously. These situations are different. When your boundaries are trampled, morals violated or personal desires disregarded, you can and should say “No.”*
+> _“No?” Many of us struggle with confrontation in various situations and need to understand why we are unable to say “No.” There is a difference to choosing not to say “No,” versus being unable or so uncomfortable that you cannot. When you accept the horrendous gift your mother-in-law gave you for your wedding, or the fruitcake your coworker gives each year, you may choose to grin and bear it and accept the gift graciously. These situations are different. When your boundaries are trampled, morals violated or personal desires disregarded, you can and should say “No.”_
 
 When you find yourself unable to say “No” to your husband, lover, co-worker, boss, children, neighbor, friend or family member, you lose control over your ability to manage your life.
 
@@ -474,6 +478,8 @@ As simple as this sounds, being able to explain exactly what happened that bothe
 When an event happens we are triggered with an emotional response. If we do not have a healthy way to identify how we feel and share with the other person it sets off coping behaviors. These coping behaviors can become old hurts, habits and hang-ups we have become so accustomed to in our lives.
 
 Using this communication technique takes some getting used to. The best way to use this tool is to write down what you are feeling ahead of time. Sounding out your emotions in a logical frame of mind usually works more effectively on the other party. Many times we have stuffed or ignored our emotions and when we finally do speak our mind it never comes out as good as we planned.
+
+<--next-->
 
 ### When are you unable to say no? ![Learning Activity](/two_hands_mug.png)
 
@@ -496,7 +502,7 @@ Source: Women in Distress of Broward County, Inc., Emotional Boundaries (Fort La
 
 Describe situations in your life where you wish you could say
 
-> *“No.”*
+> _“No.”_
 
 Describe what it would look like if you could take control and say “No” without getting hurt or a negative consequence.
 
@@ -548,11 +554,11 @@ List each circumstance in detail and write a description of what you will say to
 
 Here’s an Example: Neighbor:
 
-> *“Can I borrow $20? We don’t get paid until Friday.” You: “No, I am not able to lend you $20.” Neighbor: “Come, on, the baby really needs milk and we will pay you back.” You: (This neighbor has never paid you back in the past. They always have money for cigarettes and alcohol and borrow for their baby’s milk. You have been angered by this practice for months, but when they press you -you always just give in.) “That is a shame but I cannot help you.” Neighbor: “Look I really don’t know what I will do if you don’t help me? It’s for the baby, not me.” (Notice the guilt?). You: “Unfortunately, I can’t help you.”*
+> _“Can I borrow $20? We don’t get paid until Friday.” You: “No, I am not able to lend you $20.” Neighbor: “Come, on, the baby really needs milk and we will pay you back.” You: (This neighbor has never paid you back in the past. They always have money for cigarettes and alcohol and borrow for their baby’s milk. You have been angered by this practice for months, but when they press you -you always just give in.) “That is a shame but I cannot help you.” Neighbor: “Look I really don’t know what I will do if you don’t help me? It’s for the baby, not me.” (Notice the guilt?). You: “Unfortunately, I can’t help you.”_
 
 Use this area to record scripts saying,
 
-> *“No.”*
+> _“No.”_
 
 ### Characteristics of assertion
 
@@ -572,7 +578,7 @@ Assertiveness is taking responsibility for a relationship and being able to comm
 
 7. Strive to be able to communicate your feelings and desires without feeling blame, shame or guilt when you say
 
-> *“No.”*
+> _“No.”_
 
 8. Being assertive can be uncomfortable at first, but will get easier with practice.
 

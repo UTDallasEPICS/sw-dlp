@@ -73,7 +73,7 @@ You pull open the glass door of your corner coffee shop filling your lungs with 
 
 You order,
 
-> *“Good morning, I will have the usual.”*
+> _“Good morning, I will have the usual.”_
 
 The barista smiles, creates your customized coffee creation and says, “One usual to go.” You grab your “usual” and go about your day.
 
@@ -81,7 +81,7 @@ A “Barista" is one who has acquired some level of expertise in the preparation
 
 They can make endless varieties of drinks, yet they
 
-> *“serve what you order.”*
+> _“serve what you order.”_
 
 ### Try something new
 
@@ -97,7 +97,7 @@ Complete the following questions:\
 
 ### 3-Legged stool ![Testimonial Quote](/broken_mug.png)
 
-> *“For years I sat on a three-legged stool. Partners would kick out one of the legs just when I began to succeed. I continued to fall in love with men that were emotionally, verbally, physically and financially abusive. Why?”*
+> _“For years I sat on a three-legged stool. Partners would kick out one of the legs just when I began to succeed. I continued to fall in love with men that were emotionally, verbally, physically and financially abusive. Why?”_
 
 ### What are my patterns?
 
@@ -109,8 +109,8 @@ You must identify your patterns of behavior. This awareness allows you to correc
 
 For everything God has a time and your time is now!
 
-> *“There is a time for everything, and a season for every activity under heaven: a time to be born and a time to die, a time to plant and a time to uproot, a time to kill and a time to heal, a time to tear down and time to build, a time to weep and a time to laugh, a time to mourn and a time to dance, a time to scatter stones and a time to gather them, a time to embrace and a time to refrain, a time to search and a time to give up, a time to keep and a time to throw away, a time to tear and a time to mend, a time to be silent and a time to speak, a time to love and a time to hate, a time for war and a time for peace.”*  
-**— Ecclesiastes 3:1–8 (NIV)**
+> _“There is a time for everything, and a season for every activity under heaven: a time to be born and a time to die, a time to plant and a time to uproot, a time to kill and a time to heal, a time to tear down and time to build, a time to weep and a time to laugh, a time to mourn and a time to dance, a time to scatter stones and a time to gather them, a time to embrace and a time to refrain, a time to search and a time to give up, a time to keep and a time to throw away, a time to tear and a time to mend, a time to be silent and a time to speak, a time to love and a time to hate, a time for war and a time for peace.”_  
+> **— Ecclesiastes 3:1–8 (NIV)**
 
 • Describe what season you are in right now?\
 • Where do you want to be?\
@@ -120,8 +120,8 @@ Remember, every day YOU have a choice of how you will feel and how you will spen
 
 ### Purpose ![Scripture Reference](/pink_heart_mug.png)
 
-> *“Ask and it will be given to you, seek and you will find; knock and the door will be opened to you. For everyone who asks receives; [she] who seeks finds, and to [her] who knocks, the door will be opened.”*  
-**— Matthew 7:7–8 (New King James Version)**
+> _“Ask and it will be given to you, seek and you will find; knock and the door will be opened to you. For everyone who asks receives; [she] who seeks finds, and to [her] who knocks, the door will be opened.”_  
+> **— Matthew 7:7–8 (New King James Version)**
 
 Have you ever been told God has a purpose for your life? If yes, good for you, but honestly, most of us don’t have a clue what our purpose is.
 
@@ -149,32 +149,34 @@ You are a complex person and have had intense relationships. Unraveling them and
 
 Have you heard yourself saying things like,
 
-> *“Here I go again” or “No matter how hard I try, it’s always my fault.”*
+> _“Here I go again” or “No matter how hard I try, it’s always my fault.”_
 
 Describe the reoccurring statements you often say:
 
 Often when we begin our unhealthy self-talk there are similarities we do not see. When you begin to look at what you are doing, where you are, who you are with and how you feel when these reoccurring statements are going through your head, themes begin to emerge. To identify themes in your statements complete the following table to identify commonalities in people, places and things:
 
-| Statement 1 | Commonalities |
-|-------------|---------------|
-| When I say …. (what) |  |
-| I am usually …(where) |  |
-| I am with… (who) |  |
-| It makes me feel… |  |
+| Statement 1           | Commonalities |
+| --------------------- | ------------- |
+| When I say …. (what)  |               |
+| I am usually …(where) |               |
+| I am with… (who)      |               |
+| It makes me feel…     |               |
 
-| Statement 2 | Commonalities |
-|-------------|---------------|
-| When I say …. |  |
-| I am usually… |  |
-| I am with… |  |
-| It makes me feel… |  |
+| Statement 2       | Commonalities |
+| ----------------- | ------------- |
+| When I say ….     |               |
+| I am usually…     |               |
+| I am with…        |               |
+| It makes me feel… |               |
 
-| Statement 3 | Commonalities |
-|-------------|---------------|
-| When I say …. |  |
-| I am usually… |  |
-| I am with… |  |
-| It makes me feel… |  |
+| Statement 3       | Commonalities |
+| ----------------- | ------------- |
+| When I say ….     |               |
+| I am usually…     |               |
+| I am with…        |               |
+| It makes me feel… |               |
+
+<--next-->
 
 ### Words to avoid
 
@@ -195,14 +197,14 @@ List words you would like to add to have healthier conversations:
 
 Be mindful of the words you say. Your tongue is a powerful tool. It can speak praise or it can speak negativity over your life.
 
-> *“He who guards his mouth and his tongue keeps himself from calamity.”*  
-**— Proverbs 21:23 (New International Version)**
+> _“He who guards his mouth and his tongue keeps himself from calamity.”_  
+> **— Proverbs 21:23 (New International Version)**
 
 Later in this book, in the Seven Measures of Perfection, Ingredient #5 Power of Your Words, we dig deeper into understanding the role of the tongue in your life.
 
 ### Fake appearances ![Testimonial Quote](/broken_mug.png)
 
-> *“I had a college degree, professional career, came from a middle class background. From the outside it looked like I had the world on a platter. Yet, I chose to surround myself with destructive partners.”*
+> _“I had a college degree, professional career, came from a middle class background. From the outside it looked like I had the world on a platter. Yet, I chose to surround myself with destructive partners.”_
 
 ### Identify reoccurring themes ![Learning Activity](/two_hands_mug.png)
 
@@ -246,29 +248,29 @@ Be honest. Be descriptive. When you are done, review your answers and identify a
 
 Review your answers and record commonalities found when answering the previous series of questions. The commonalities are themes you can begin to change:
 
-|  | Emotional Response | People | Activities | Places | Memories |
-|------|--------------------|--------|------------|--------|----------|
-| 1 |  |  |  |  |  |
-| 2 |  |  |  |  |  |
-| 3 |  |  |  |  |  |
-| 4 |  |  |  |  |  |
-| 5 |  |  |  |  |  |
-| 6 |  |  |  |  |  |
-| 7 |  |  |  |  |  |
-| 8 |  |  |  |  |  |
-| 9 |  |  |  |  |  |
-| 10 |  |  |  |  |  |
+|     | Emotional Response | People | Activities | Places | Memories |
+| --- | ------------------ | ------ | ---------- | ------ | -------- |
+| 1   |                    |        |            |        |          |
+| 2   |                    |        |            |        |          |
+| 3   |                    |        |            |        |          |
+| 4   |                    |        |            |        |          |
+| 5   |                    |        |            |        |          |
+| 6   |                    |        |            |        |          |
+| 7   |                    |        |            |        |          |
+| 8   |                    |        |            |        |          |
+| 9   |                    |        |            |        |          |
+| 10  |                    |        |            |        |          |
 
 ### Learn to Redefine ![Learning Activity](/two_hands_mug.png)
 
 Now it is time to build on the initial foundation of self-acceptance and love and create I will statements.
 
-| Situation | Solution |
-|-----------|----------|
+| Situation                                                                             | Solution                                                                                                                                                                                                       |
+| ------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Example: When someone criticizes me in public I will no longer be hurt and withdrawn. | Example: I will say to that person that I do not appreciate being criticized in public. I also choose not to associate with a person that treats me that way. The next time they invite me out, I can decline. |
-| When… | I will… |
-| When… | I will… |
-| When… | I will… |
+| When…                                                                                 | I will…                                                                                                                                                                                                        |
+| When…                                                                                 | I will…                                                                                                                                                                                                        |
+| When…                                                                                 | I will…                                                                                                                                                                                                        |
 
 ### Courage
 
@@ -293,6 +295,8 @@ That’s great if I am falling in love, but what if I am still married or living
 If you are in a current relationship with someone who is abusing you, then you need to seek help. Abusive relationships do not improve without intervention, counseling and the abuser changing. That can occur, but requires a long period of time. As long as you are in the home and in the abusive relationship – you are in danger of the abuse escalating.
 
 Abuse is not okay. It is against the law.
+
+<--next-->
 
 ### Identify relationship trends ![Learning Activity](/two_hands_mug.png)
 
@@ -328,13 +332,13 @@ When the same words pop up in your responses, these emotions and hurts are uniqu
 
 Look for similarities and list them below:
 
-| Relationship name | Courting Style | Emotion | Hurt |
-|-------------------|----------------|---------|------|
-| &nbsp;<br>&nbsp; | &nbsp;<br>&nbsp; | &nbsp;<br>&nbsp; | &nbsp;<br>&nbsp; |
-| &nbsp;<br>&nbsp; | &nbsp;<br>&nbsp; | &nbsp;<br>&nbsp; | &nbsp;<br>&nbsp; |
-| &nbsp;<br>&nbsp; | &nbsp;<br>&nbsp; | &nbsp;<br>&nbsp; | &nbsp;<br>&nbsp; |
-| &nbsp;<br>&nbsp; | &nbsp;<br>&nbsp; | &nbsp;<br>&nbsp; | &nbsp;<br>&nbsp; |
-| &nbsp;<br>&nbsp; | &nbsp;<br>&nbsp; | &nbsp;<br>&nbsp; | &nbsp;<br>&nbsp; |
+| Relationship name | Courting Style   | Emotion          | Hurt             |
+| ----------------- | ---------------- | ---------------- | ---------------- |
+| &nbsp;<br>&nbsp;  | &nbsp;<br>&nbsp; | &nbsp;<br>&nbsp; | &nbsp;<br>&nbsp; |
+| &nbsp;<br>&nbsp;  | &nbsp;<br>&nbsp; | &nbsp;<br>&nbsp; | &nbsp;<br>&nbsp; |
+| &nbsp;<br>&nbsp;  | &nbsp;<br>&nbsp; | &nbsp;<br>&nbsp; | &nbsp;<br>&nbsp; |
+| &nbsp;<br>&nbsp;  | &nbsp;<br>&nbsp; | &nbsp;<br>&nbsp; | &nbsp;<br>&nbsp; |
+| &nbsp;<br>&nbsp;  | &nbsp;<br>&nbsp; | &nbsp;<br>&nbsp; | &nbsp;<br>&nbsp; |
 
 ### Self-check
 
@@ -342,4 +346,4 @@ Ask yourself, why are you drawn to these characteristics? Healthy relationships 
 
 ### Teasing isn’t for everyone ![Testimonial Quote](/broken_mug.png)
 
-> *“One day my husband started teasing me in a way that really hurt my feelings. He began to do this behavior when we were in front of other people. He would pat my head and say, “good girl” especially in front of other women he was trying to impress. I felt like a fool. Like a dog he was patting me on the head. It was demeaning and he would just laugh at me. Even when I asked him to stop, he just said, “I’m only teasing” and continued to do it. I got angry because I already told him and he wasn’t listening. When I tried to describe my hurt, humiliation, anger, or frustration, he did not validate my feelings nor take them seriously. He thought it was funny and tried even harder to get others to laugh when he did it to me.”*
+> _“One day my husband started teasing me in a way that really hurt my feelings. He began to do this behavior when we were in front of other people. He would pat my head and say, “good girl” especially in front of other women he was trying to impress. I felt like a fool. Like a dog he was patting me on the head. It was demeaning and he would just laugh at me. Even when I asked him to stop, he just said, “I’m only teasing” and continued to do it. I got angry because I already told him and he wasn’t listening. When I tried to describe my hurt, humiliation, anger, or frustration, he did not validate my feelings nor take them seriously. He thought it was funny and tried even harder to get others to laugh when he did it to me.”_

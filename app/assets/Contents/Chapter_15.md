@@ -83,11 +83,11 @@ Yes, your tongue!
 
 Throughout this book we discussed the power of the tongue. Two additional scriptures support the importance of keeping a watch over this powerful weapon.
 
-> *“Death and life are in the power of the tongue, And those who love it will eat its fruit.”*  
-**— Proverbs 18:21 (NKJV)**
+> _“Death and life are in the power of the tongue, And those who love it will eat its fruit.”_  
+> **— Proverbs 18:21 (NKJV)**
 
-> *“Even so the tongue is a little member and boasts great things. See how great a forest a little fire kindles!”*  
-**— James 3:5 (NKJV)**
+> _“Even so the tongue is a little member and boasts great things. See how great a forest a little fire kindles!”_  
+> **— James 3:5 (NKJV)**
 
 When has your tongue ever got you into trouble?
 
@@ -102,12 +102,12 @@ Record a list of positive words:
 Ideas: Possible answers: Open, Happy, Alive, Good, Love, Interested, Positive, Strong, Jubilant, Ecstatic. Joyous, sunny, and jubilant. Alive can be rewritten as: impulsive, spirited, and thrilled. Strong can be: dynamic, tenacious, rebellious. 71
 
 | Negative Thought | Positive Statement |
-|------------------|--------------------|
-| &nbsp;<br>&nbsp; | &nbsp;<br>&nbsp; |
-| &nbsp;<br>&nbsp; | &nbsp;<br>&nbsp; |
-| &nbsp;<br>&nbsp; | &nbsp;<br>&nbsp; |
-| &nbsp;<br>&nbsp; | &nbsp;<br>&nbsp; |
-| &nbsp;<br>&nbsp; | &nbsp;<br>&nbsp; |
+| ---------------- | ------------------ |
+| &nbsp;<br>&nbsp; | &nbsp;<br>&nbsp;   |
+| &nbsp;<br>&nbsp; | &nbsp;<br>&nbsp;   |
+| &nbsp;<br>&nbsp; | &nbsp;<br>&nbsp;   |
+| &nbsp;<br>&nbsp; | &nbsp;<br>&nbsp;   |
+| &nbsp;<br>&nbsp; | &nbsp;<br>&nbsp;   |
 
 Over time you can continue to rewrite these thoughts and repeat your positive thoughts to replace the negative ones. This process will take time, but stick to it. The reward will be valuable to improving your self-image.
 
@@ -135,8 +135,8 @@ List statements you say about yourself in a group that you will change.
 
 The requests of your tongue are heard by God.
 
-> *“The preparations of the heart belong to [woman]. But the answer of the tongue is from the Lord.”*  
-**— Proverbs 16:1 (NKJV)**
+> _“The preparations of the heart belong to [woman]. But the answer of the tongue is from the Lord.”_  
+> **— Proverbs 16:1 (NKJV)**
 
 What ideas in your heart do you want God to bless?
 
@@ -164,8 +164,8 @@ When deciding where you want to go, you must first clearly understand what lesso
 
 Often after spending years dedicated to a relationship it is common to feel a huge loss or grief emotions when it ends. The time spent. The regrets. The only ifs can drive you crazy. Remember, God is one of mercy and He has made a promise to you.
 
-> *“I will repay you for the years the locusts have eaten...”*  
-**— Joel 2:25 (NIV)**
+> _“I will repay you for the years the locusts have eaten...”_  
+> **— Joel 2:25 (NIV)**
 
 ### Continued
 
@@ -193,6 +193,8 @@ I CAN:\
 • Be a survivor.\
 • Be tolerant.\
 • Be free from totally sacrificing myself.
+
+<--next-->
 
 ### Continued
 
@@ -229,13 +231,13 @@ Here is sample list to review:\
 
 Now your turn. List the lesson to learn and what steps you will take:
 
-| Lesson | Steps to take to Achieve |
-|--------|--------------------------|
-| &nbsp;<br>&nbsp; | &nbsp;<br>&nbsp; |
-| &nbsp;<br>&nbsp; | &nbsp;<br>&nbsp; |
-| &nbsp;<br>&nbsp; | &nbsp;<br>&nbsp; |
-| &nbsp;<br>&nbsp; | &nbsp;<br>&nbsp; |
-| &nbsp;<br>&nbsp; | &nbsp;<br>&nbsp; |
+| Lesson           | Steps to take to Achieve |
+| ---------------- | ------------------------ |
+| &nbsp;<br>&nbsp; | &nbsp;<br>&nbsp;         |
+| &nbsp;<br>&nbsp; | &nbsp;<br>&nbsp;         |
+| &nbsp;<br>&nbsp; | &nbsp;<br>&nbsp;         |
+| &nbsp;<br>&nbsp; | &nbsp;<br>&nbsp;         |
+| &nbsp;<br>&nbsp; | &nbsp;<br>&nbsp;         |
 
 ### Stay connected Ingredient #7
 
@@ -247,14 +249,14 @@ God is always with you. He is never far. Just call His voice and He will answer 
 
 Review the following three scripture to see what God’s word says about how He will stand by you:
 
-> *“Keep me as the apple of Your eye; Hide me under the shadow of Your wings, From the wicked who oppress me, From my deadly enemies who surround me.”*  
-**— Psalms 17:8 (NKJV)**
+> _“Keep me as the apple of Your eye; Hide me under the shadow of Your wings, From the wicked who oppress me, From my deadly enemies who surround me.”_  
+> **— Psalms 17:8 (NKJV)**
 
-> *“Your word is a lamp to my feet and a light to my path.”*  
-**— Psalms 119:105 (NKJV)**
+> _“Your word is a lamp to my feet and a light to my path.”_  
+> **— Psalms 119:105 (NKJV)**
 
-> *“He who dwells in the secret place of the Most High Shall abide under the shadow of the Almighty…2‘He is my refuge and my fortress; My God, in Him I will trust.’ 3…He shall deliver you from the snare of the fowler and from the perilous pestilence. He shall cover you with His feathers, And under His wings you shall take refuge; His truth shall be your shield and buckler. You shall not be afraid of the terror by night, nor of the arrow that flies by day, Nor of the pestilence that walk in darkness, nor of the destruction that lays waste at noonday…. No evil shall befall you, nor shall any plague come near your dwelling; For he shall give His angels charge over you.. In their hands they shall bear you up…15 He shall call upon Me, and I will answer him. I will be with him in trouble; I will deliver him and honor him With long life I will satisfy him…”*  
-**— Psalms 91:1–16 (NKJV)**
+> _“He who dwells in the secret place of the Most High Shall abide under the shadow of the Almighty…2‘He is my refuge and my fortress; My God, in Him I will trust.’ 3…He shall deliver you from the snare of the fowler and from the perilous pestilence. He shall cover you with His feathers, And under His wings you shall take refuge; His truth shall be your shield and buckler. You shall not be afraid of the terror by night, nor of the arrow that flies by day, Nor of the pestilence that walk in darkness, nor of the destruction that lays waste at noonday…. No evil shall befall you, nor shall any plague come near your dwelling; For he shall give His angels charge over you.. In their hands they shall bear you up…15 He shall call upon Me, and I will answer him. I will be with him in trouble; I will deliver him and honor him With long life I will satisfy him…”_  
+> **— Psalms 91:1–16 (NKJV)**
 
 ### Continued
 
@@ -262,8 +264,8 @@ Review the following three scripture to see what God’s word says about how He 
 
 As you embark on your new journey in life, it is so important to stay connected.
 
-> *“Two people are better off than one, for they can help each other succeed. If one person falls, the other can reach out and help. But someone who falls alone is in real trouble…12 A person standing alone can be attacked and defeated, but two can stand back-to-back and conquer. Three are even better, for a triple-braided cord is not easily broken.”*  
-**— Ecclesiastes 4:9–12 (NIV)**
+> _“Two people are better off than one, for they can help each other succeed. If one person falls, the other can reach out and help. But someone who falls alone is in real trouble…12 A person standing alone can be attacked and defeated, but two can stand back-to-back and conquer. Three are even better, for a triple-braided cord is not easily broken.”_  
+> **— Ecclesiastes 4:9–12 (NIV)**
 
 The three braided cord is you, others and God. When you have that winning relationship in your life, it cannot easily be broken.
 
@@ -299,7 +301,7 @@ For example, say you are developing your spirituality, enjoy your meditation and
 
 It is important to find the areas that are critical: religious preferences, money philosophy, physical characteristics, mannerisms, social and relationships, drug and alcohol use, geographical location, family values, criminal activity, and abusive traits.
 
-### Continued
+<--next-->
 
 ### Check for warning signs
 

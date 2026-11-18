@@ -1,5 +1,5 @@
 ---
-title: Action Plan 
+title: Action Plan
 ---
 
 # Action Plan
@@ -28,24 +28,24 @@ Continued
 
 Identify three areas that you want to commit to improve upon. List the steps you will take to improve in these areas: Topic 1: _______________________________________________________
 
-| Step | Action |
-|------|--------|
-| 1. |  |
-| 2. |  |
-| 3. |  |
+|     | Step | Action |
+| --- | ---- | ------ |
+| 1.  |      |        |     |
+| 2.  |      |        |     |
+| 3.  |      |        |     |
 
 Topic 2: _______________________________________________________
 
-| Step | Action |
-|------|--------|
-| 1. |  |
-| 2. |  |
-| 3. |  |
+|     | Step | Action |
+| --- | ---- | ------ |
+| 1.  |      |        |     |
+| 2.  |      |        |     |
+| 3.  |      |        |     |
 
 Topic 3: _______________________________________________________
 
-| Step | Action |
-|------|--------|
-| 1. |  |
-| 2. |  |
-| 3. |  |
+|     | Step | Action |
+| --- | ---- | ------ |
+| 1.  |      |        |     |
+| 2.  |      |        |     |
+| 3.  |      |        |     |

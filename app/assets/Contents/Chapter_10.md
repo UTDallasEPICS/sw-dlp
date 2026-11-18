@@ -77,7 +77,7 @@ Domestic violence is defined as, “abusive behavior – emotional, psychologica
 
 ### Abuse escalates ![Testimonial Quote](/broken_mug.png)
 
-> *“Years of emotional and verbal abuse finally escalated to physical abuse, and I had to go to the emergency room for treatment.”*
+> _“Years of emotional and verbal abuse finally escalated to physical abuse, and I had to go to the emergency room for treatment.”_
 
 ### Physical abuse
 
@@ -107,7 +107,7 @@ Physical abuse — Indirect
 
 ### Just to cope ![Testimonial Quote](/broken_mug.png)
 
-> *“To cope with the abuse I was experiencing, often my soul would separate from my body. So that I could remove myself from the “machine gun spray” of words. My skin transformed into an empty shell and my inner soul would dissociate to escape from the abuse.”*
+> _“To cope with the abuse I was experiencing, often my soul would separate from my body. So that I could remove myself from the “machine gun spray” of words. My skin transformed into an empty shell and my inner soul would dissociate to escape from the abuse.”_
 
 Unfortunately, instead of removing myself from this situation, by creating a survival technique, I became emotionally numb which perpetuated the abuse. Later, I learned this was how I survived the abuse so I could be free from the blame.
 
@@ -157,9 +157,11 @@ Non-verbal —
 • Punishes by withholding approval, appreciation or affection.\
 • Withholds praise or good feelings from you.
 
+<--next-->
+
 ### Brainwashed ![Testimonial Quote](/broken_mug.png)
 
-> *“Emotional abuse can be compared with intentional brainwashing. Emotional abusers usually leave the victim confused, weak, depressed, angry, and numb with unclear thinking — and yet loyal to their abusers, hoping the abusive behavior will change…Emotional abuse can produce scars that will remain with you for years.” 38”*
+> _“Emotional abuse can be compared with intentional brainwashing. Emotional abusers usually leave the victim confused, weak, depressed, angry, and numb with unclear thinking — and yet loyal to their abusers, hoping the abusive behavior will change…Emotional abuse can produce scars that will remain with you for years.” 38”_
 
 ### Sexual abuse
 
@@ -264,8 +266,8 @@ Healthy relationships are full of love, respect, kindness and a mutual agreement
 
 What love is it supposed to be:
 
-> *“Love is long suffering and kind. Love is not jealous, it does not brag, does not get puffed up, does not behave indecently, does not look for its own interests, does not become provoked. It does not keep account of injury. It does not rejoice over unrighteousness, but rejoices with the truth. It bears all things, believes all things, hopes all things, endures all things. Love never fails…”*  
-**— 1 Corinthians 13:4–8 (NLT)**
+> _“Love is long suffering and kind. Love is not jealous, it does not brag, does not get puffed up, does not behave indecently, does not look for its own interests, does not become provoked. It does not keep account of injury. It does not rejoice over unrighteousness, but rejoices with the truth. It bears all things, believes all things, hopes all things, endures all things. Love never fails…”_  
+> **— 1 Corinthians 13:4–8 (NLT)**
 
 • Describe people, places or events that have made you feel you received this kind of love?\
 • To whom can you show this kind of love?\
@@ -275,24 +277,24 @@ What love is it supposed to be:
 
 Review the comparison of healthy to unhealthy relationships:42
 
-|  | Area |  | Type of Abuse |  | Unhealthy Relationship |  | Healthy Relationships |
-|------|------|------|---------------|------|------------------------|------|-----------------------|
-| Children |  | Emotional |  | Use children to promote guilt, threaten, transfer adult information, elicit fear of their safety. |  | Responsible parenting. Does not use children for abuse or manipulation. Shares parental responsibilities. Positive role model for children. |  |
-| Criticism, Put Downs, Talking Incessantly |  | Emotional |  | Repeated negative criticism, unrealistic expectations cannot be met, always under achieving, disrespectful, no quiet time given for you to rest or think. |  | Honor and respect you in private, and in front of others. Does not make fun of you. Agree on expectations and set mutual goals and understanding. Respects your need for quiet time. |  |
-| Financial |  | Economic and Emotional |  | Prevents you from getting or keeping a job, controls finances, takes your money. |  | Economic partnership. Money decisions are shared. |  |
-| Interrogation |  | Emotional |  | Excessive questioning based on abuser’s fears. Being pulled through the “interrogation funnel.” When they begin they will not let up; keep badgering. |  | Honesty. Questions are based out of interest, no need to manipulate, control or trap. |  |
-| Isolation |  | Emotional |  | Attempts to control what you see, when you go out, who you see, who you talk to, what you read and where you go. Based by jealousy, criticism and fear. |  | Supports your goals, respects your right to your own activities, feelings, friends and opinions. Mutual trust and support. |  |
-| Mental Games |  | Emotional |  | Confusing behavior. Kindness followed by cruelty. Lying and manipulation. Continuous state of chaos. Says that “you are crazy.” Blames you for their actions or for all the problems in relationship. |  | Consistent behavior and expectations. Honest communication. |  |
+|                                           | Area |                        | Type of Abuse |                                                                                                                                                                                                       | Unhealthy Relationship |                                                                                                                                                                                      | Healthy Relationships |
+| ----------------------------------------- | ---- | ---------------------- | ------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | --------------------- |
+| Children                                  |      | Emotional              |               | Use children to promote guilt, threaten, transfer adult information, elicit fear of their safety.                                                                                                     |                        | Responsible parenting. Does not use children for abuse or manipulation. Shares parental responsibilities. Positive role model for children.                                          |                       |
+| Criticism, Put Downs, Talking Incessantly |      | Emotional              |               | Repeated negative criticism, unrealistic expectations cannot be met, always under achieving, disrespectful, no quiet time given for you to rest or think.                                             |                        | Honor and respect you in private, and in front of others. Does not make fun of you. Agree on expectations and set mutual goals and understanding. Respects your need for quiet time. |                       |
+| Financial                                 |      | Economic and Emotional |               | Prevents you from getting or keeping a job, controls finances, takes your money.                                                                                                                      |                        | Economic partnership. Money decisions are shared.                                                                                                                                    |                       |
+| Interrogation                             |      | Emotional              |               | Excessive questioning based on abuser’s fears. Being pulled through the “interrogation funnel.” When they begin they will not let up; keep badgering.                                                 |                        | Honesty. Questions are based out of interest, no need to manipulate, control or trap.                                                                                                |                       |
+| Isolation                                 |      | Emotional              |               | Attempts to control what you see, when you go out, who you see, who you talk to, what you read and where you go. Based by jealousy, criticism and fear.                                               |                        | Supports your goals, respects your right to your own activities, feelings, friends and opinions. Mutual trust and support.                                                           |                       |
+| Mental Games                              |      | Emotional              |               | Confusing behavior. Kindness followed by cruelty. Lying and manipulation. Continuous state of chaos. Says that “you are crazy.” Blames you for their actions or for all the problems in relationship. |                        | Consistent behavior and expectations. Honest communication.                                                                                                                          |                       |
 
-|  | Areas |  | Type of Abuse |  | Unhealthy Relationship |  | Healthy Relationship |
-|------|-------|------|---------------|------|------------------------|------|----------------------|
-| Physical Threats |  | Physical |  | Uses fists, body language, gestures or weapons to encourage or force submissive behavior. |  | Negotiate mutually agreed compromises. No threats necessary. |  |
-| Power and Control |  | Emotional |  | Treats you like a servant. Does not allow you the ability to make choices. |  | Shared responsibility. Work together to distribute work. One party is not more powerful than the other. |  |
-| Pushing or Shoving |  | Physical |  | Pushes or shoves out of frustration, anger or power. |  | No one has the right to push or shove another person. |  |
-| Responsibility |  | Emotional |  | Shifts responsibility to abused. Accuses, blames others, and twists truth. |  | Accepts responsibility for own actions by being truthful when wrong. |  |
-| Sexual |  | Sexual |  | Rape, force inappropriate or unwanted sexual acts. |  | No one has the right to force sexual activity on any other person. |  |
-| Time |  | Emotional |  | Obsessed: Jealousy or stalking. Preoccupied with your thoughts and whereabouts. Neglect: Ignores you. Does not have time or interest in you. |  | Healthy interest in you and your activities. Allows you space and freedom to balance individual and relationship demands. Eager to spend time-sharing your thoughts and interests. |  |
-| Verbal Threats |  | Emotional |  | Make threats to: Hurt you or your family. Leave you. Cut off money. Divorce you or refuse to divorce. Discredit you. Take you back to court. |  | Negotiation, fairness and safety. Compromise with no threats. Reach resolutions to conflict that are good for both parties. |  |
+|                    | Areas |           | Type of Abuse |                                                                                                                                              | Unhealthy Relationship |                                                                                                                                                                                    | Healthy Relationship |
+| ------------------ | ----- | --------- | ------------- | -------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------- |
+| Physical Threats   |       | Physical  |               | Uses fists, body language, gestures or weapons to encourage or force submissive behavior.                                                    |                        | Negotiate mutually agreed compromises. No threats necessary.                                                                                                                       |                      |
+| Power and Control  |       | Emotional |               | Treats you like a servant. Does not allow you the ability to make choices.                                                                   |                        | Shared responsibility. Work together to distribute work. One party is not more powerful than the other.                                                                            |                      |
+| Pushing or Shoving |       | Physical  |               | Pushes or shoves out of frustration, anger or power.                                                                                         |                        | No one has the right to push or shove another person.                                                                                                                              |                      |
+| Responsibility     |       | Emotional |               | Shifts responsibility to abused. Accuses, blames others, and twists truth.                                                                   |                        | Accepts responsibility for own actions by being truthful when wrong.                                                                                                               |                      |
+| Sexual             |       | Sexual    |               | Rape, force inappropriate or unwanted sexual acts.                                                                                           |                        | No one has the right to force sexual activity on any other person.                                                                                                                 |                      |
+| Time               |       | Emotional |               | Obsessed: Jealousy or stalking. Preoccupied with your thoughts and whereabouts. Neglect: Ignores you. Does not have time or interest in you. |                        | Healthy interest in you and your activities. Allows you space and freedom to balance individual and relationship demands. Eager to spend time-sharing your thoughts and interests. |                      |
+| Verbal Threats     |       | Emotional |               | Make threats to: Hurt you or your family. Leave you. Cut off money. Divorce you or refuse to divorce. Discredit you. Take you back to court. |                        | Negotiation, fairness and safety. Compromise with no threats. Reach resolutions to conflict that are good for both parties.                                                        |                      |
 
 ### Table 2. Healthy Relationship Comparison.
 
@@ -378,7 +380,7 @@ The whirlwind romance followed by a roller-coaster relationship is not healthy. 
 
 ### Oh no, not again! ![Testimonial Quote](/broken_mug.png)
 
-> *“Once away from the emotional and physical abuse, I sought support and tried to trust new people. Being raw, weak, and vulnerable, I played right into the hands of another person who was a new type of abuser. This person gained my trust, and then stole financially from me during the time I was trying to rebuild.”*
+> _“Once away from the emotional and physical abuse, I sought support and tried to trust new people. Being raw, weak, and vulnerable, I played right into the hands of another person who was a new type of abuser. This person gained my trust, and then stole financially from me during the time I was trying to rebuild.”_
 
 During those few years it all seemed to make sense why I was giving all my money away to this individual, but it left me financially captive in another bad situation. I found it almost impossible to believe that this individual could be hurting me when I thought I finally built a bond that was safe. It took physically moving away from this person to release me from this situation, and a long time before I could admit that I was used; again!”
 
@@ -439,23 +441,23 @@ If you are considering making a change to a relationship, or have made a recent 
 
 Answer the following questions, Yes or No:
 
-|  | Yes/No |
-|------|--------|
-| 1. Do you have a feeling or intuition that your partner is going to hurt you? |  |
-| 2. Has your partner threatened to commit suicide, kill you, your children, pets or other family member? |  |
-| 3. Does your partner have a history of suicide attempts? |  |
-| 4. Is your partner’s behavior escalating? More reckless, scary or violent? |  |
-| 5. Your partner has weapons and has used them to threaten you or others? |  |
-| 6. Drug or alcohol use is escalating? When under the influence is their behavior more abusive, intense, paranoid, or suspicious? |  |
-| 7. Does your partner harass you stating they know you are going to leave? |  |
-| 8. Are you afraid they will kill you? |  |
-| 9. Are you seriously considering suicide as a way out? |  |
-| 10. Are you fantasizing of your partner being killed or dying knowing then the abuse will stop? |  |
-| 11. Is your partner suffering from delusions or hearing voices? |  |
-| 12. Has your partner just experienced a new significant loss: a death, loss of job, legal trouble, illness? |  |
-| 13. Have you just experienced a new significant loss? |  |
-| 14. Have you been attacked by your partner while pregnant? |  |
-| 15. Your partner has stopped fearing future arrests or legal ramifications from abusive or criminal activity? |  |
+|                                                                                                                                  | Yes/No |
+| -------------------------------------------------------------------------------------------------------------------------------- | ------ |
+| 1. Do you have a feeling or intuition that your partner is going to hurt you?                                                    |        |
+| 2. Has your partner threatened to commit suicide, kill you, your children, pets or other family member?                          |        |
+| 3. Does your partner have a history of suicide attempts?                                                                         |        |
+| 4. Is your partner’s behavior escalating? More reckless, scary or violent?                                                       |        |
+| 5. Your partner has weapons and has used them to threaten you or others?                                                         |        |
+| 6. Drug or alcohol use is escalating? When under the influence is their behavior more abusive, intense, paranoid, or suspicious? |        |
+| 7. Does your partner harass you stating they know you are going to leave?                                                        |        |
+| 8. Are you afraid they will kill you?                                                                                            |        |
+| 9. Are you seriously considering suicide as a way out?                                                                           |        |
+| 10. Are you fantasizing of your partner being killed or dying knowing then the abuse will stop?                                  |        |
+| 11. Is your partner suffering from delusions or hearing voices?                                                                  |        |
+| 12. Has your partner just experienced a new significant loss: a death, loss of job, legal trouble, illness?                      |        |
+| 13. Have you just experienced a new significant loss?                                                                            |        |
+| 14. Have you been attacked by your partner while pregnant?                                                                       |        |
+| 15. Your partner has stopped fearing future arrests or legal ramifications from abusive or criminal activity?                    |        |
 
 Review your answers. The more Yes answers you have, the higher your present danger. Should you have any Yes answers you should take caution and seek out the help and advice from a counselor, therapist, pastor, or visit a women’s shelter in your local area. 46 Take this very seriously and find help with a counselor, women’s shelter, church or talk to a trusted friend. Let someone know your situation.
 
@@ -483,17 +485,17 @@ List important phone numbers and addresses and keep it in a safe place. Include 
 
 9-1-1 National Domestic Violence Hotline
 
-| Emergency | 9-1-1 | National Domestic Violence Hotline | 800-799-SAFE 800-799-7233 |
-|-----------|-------|------------------------------------|---------------------------|
-| Police / Fire | ( ) | Local crisis line or shelter number | ( ) ( ) ( ) |
-| Work | ( ) | Family | ( ) |
-| Supervisor’s cell | ( ) | Family | ( ) |
-| Physician | ( ) | Family | ( ) |
-| Pediatrician | ( ) | Friend | ( ) |
-| Child School | ( ) | Friend | ( ) |
-| Baby Sitter | ( ) | Friend | ( ) |
-| Workmate | ( ) | Workmate | ( ) |
-| Neighbor | ( ) | Neighbor | ( ) |
+| Emergency         | 9-1-1 | National Domestic Violence Hotline  | 800-799-SAFE 800-799-7233 |
+| ----------------- | ----- | ----------------------------------- | ------------------------- |
+| Police / Fire     | ( )   | Local crisis line or shelter number | ( ) ( ) ( )               |
+| Work              | ( )   | Family                              | ( )                       |
+| Supervisor’s cell | ( )   | Family                              | ( )                       |
+| Physician         | ( )   | Family                              | ( )                       |
+| Pediatrician      | ( )   | Friend                              | ( )                       |
+| Child School      | ( )   | Friend                              | ( )                       |
+| Baby Sitter       | ( )   | Friend                              | ( )                       |
+| Workmate          | ( )   | Workmate                            | ( )                       |
+| Neighbor          | ( )   | Neighbor                            | ( )                       |
 
 ### Steps to take
 
@@ -507,15 +509,15 @@ List important phone numbers and addresses and keep it in a safe place. Include 
 • Find a safe place to keep an emergency kit outside of home and car. Keep it either at your work or with a trusted friend.\
 • Recommended items to keep in your Emergency Kit:
 
-| • ID / Passport | • Birth certificate | • ATM card/ checks |
-|-----------------|---------------------|--------------------|
-| • Social security card | • Food stamps, Medicaid card | • Health care ID |
-| • Extra house key | • Extra car key | • Medical records |
-| • School records | • Copies of joint bills / loans | • Proof of partner’s income |
-| • Copies of legal papers / Injunctions | • Car registration | • Prepaid long distance card |
-| • Change of clothes | • Prescriptions | • Personal hygiene (toothpaste, toothbrush, shampoo, lotion) |
-| • Keepsakes, photographs | • Formula / diapers | • Recent photograph and personal information of abuser, auto, work phone, addresses etc. |
-| • Bottled water and non-perishable foods items | • cell phone | • Cash |
+| • ID / Passport                                | • Birth certificate             | • ATM card/ checks                                                                       |
+| ---------------------------------------------- | ------------------------------- | ---------------------------------------------------------------------------------------- |
+| • Social security card                         | • Food stamps, Medicaid card    | • Health care ID                                                                         |
+| • Extra house key                              | • Extra car key                 | • Medical records                                                                        |
+| • School records                               | • Copies of joint bills / loans | • Proof of partner’s income                                                              |
+| • Copies of legal papers / Injunctions         | • Car registration              | • Prepaid long distance card                                                             |
+| • Change of clothes                            | • Prescriptions                 | • Personal hygiene (toothpaste, toothbrush, shampoo, lotion)                             |
+| • Keepsakes, photographs                       | • Formula / diapers             | • Recent photograph and personal information of abuser, auto, work phone, addresses etc. |
+| • Bottled water and non-perishable foods items | • cell phone                    | • Cash                                                                                   |
 
 ### Safety plan at work
 
@@ -580,11 +582,11 @@ Reading Bible verses can be very valuable when you are feeling in trouble, insec
 Read the verses below and describe what the Bible speaks to your heart through the holy spirit.
 
 | Psalms Book | What does this verse speak to you? |
-|-------------|------------------------------------|
-| Psalms 27 |  |
-| Psalms 28 |  |
-| Psalms 37 |  |
-| Psalms 102 |  |
+| ----------- | ---------------------------------- |
+| Psalms 27   |                                    |
+| Psalms 28   |                                    |
+| Psalms 37   |                                    |
+| Psalms 102  |                                    |
 
 Describe how God is with you in trouble?
 
@@ -620,22 +622,22 @@ Abusive relationships have three distinct stages and the honeymoon phase is ofte
 
 Answer the following questions before considering getting back together. 49
 
-|  | Does my Abuser: | YES / NO |
-|------|-----------------|----------|
-| 1. Make me feel safe and secure? |  |  |
-| 2. Make me and my loved ones feel threatened, coerced or frightened? |  |  |
-| 3. Subject me to violence? |  |  |
-| 4. Make me afraid? |  |  |
-| 5. Get angry without becoming abusive or violent? |  |  |
-| 6. Allow me to freely express my anger, disappointment, frustration or opinion without fear? |  |  |
-| 7. Negotiate fairly without accusation and control? |  |  |
-| 8. Let me say “No”. |  |  |
-| 9. Make it clear what he/she is feeling? |  |  |
-| 10. Blame me or make me responsible for their anger or frustration? |  |  |
-| 11. Respect and allow me to make my own decisions? |  |  |
-| 12. Listen to me? |  |  |
-| 13. Let me move about freely, go to work or perform errands without permission? |  |  |
-| 14. Demand reconciliation based on modifications or concession to behavior? Drop legal charges, wants to move back in the house, threatens financial ruin, or damage to kids.. |  |  |
+|                                                                                                                                                                                | Does my Abuser: | YES / NO |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | --------------- | -------- |
+| 1. Make me feel safe and secure?                                                                                                                                               |                 |          |
+| 2. Make me and my loved ones feel threatened, coerced or frightened?                                                                                                           |                 |          |
+| 3. Subject me to violence?                                                                                                                                                     |                 |          |
+| 4. Make me afraid?                                                                                                                                                             |                 |          |
+| 5. Get angry without becoming abusive or violent?                                                                                                                              |                 |          |
+| 6. Allow me to freely express my anger, disappointment, frustration or opinion without fear?                                                                                   |                 |          |
+| 7. Negotiate fairly without accusation and control?                                                                                                                            |                 |          |
+| 8. Let me say “No”.                                                                                                                                                            |                 |          |
+| 9. Make it clear what he/she is feeling?                                                                                                                                       |                 |          |
+| 10. Blame me or make me responsible for their anger or frustration?                                                                                                            |                 |          |
+| 11. Respect and allow me to make my own decisions?                                                                                                                             |                 |          |
+| 12. Listen to me?                                                                                                                                                              |                 |          |
+| 13. Let me move about freely, go to work or perform errands without permission?                                                                                                |                 |          |
+| 14. Demand reconciliation based on modifications or concession to behavior? Drop legal charges, wants to move back in the house, threatens financial ruin, or damage to kids.. |                 |          |
 
 ### Overview
 
@@ -643,7 +645,7 @@ This is just a basic overview of the legal basics. If you have someone who is in
 
 ### Police warning ![Testimonial Quote](/broken_mug.png)
 
-> *“Our case was dismissed when the defense lawyer found a loophole in the charges and we left the courtroom. The female police officer pulled me aside and told me that she spent time around my husband during these proceedings and said, ‘He is crazy. I’ve seen too many things like this and I don’t want you to end up dead somewhere. Buy a gun and learn how to use it. He just isn’t right.”*
+> _“Our case was dismissed when the defense lawyer found a loophole in the charges and we left the courtroom. The female police officer pulled me aside and told me that she spent time around my husband during these proceedings and said, ‘He is crazy. I’ve seen too many things like this and I don’t want you to end up dead somewhere. Buy a gun and learn how to use it. He just isn’t right.”_
 
 ### Legal
 
@@ -655,12 +657,12 @@ If the abuser is ready to change and makes the commitment to do so, these course
 • Domestic Safety Program (D.S.P.) —A six month group counseling and education program for men who batter designed to aide them understand the belief system that supports that behavior.51\
 • Batterer’s Intervention and Prevention Program (BIPP)—This program is much more than anger management. BIPP addresses socio-cultural issues, particularly regarding gender and violence, teaches and develops critical thinking skills, and includes therapeutic topic elements such as empathy, accountability, and communication. Often court ordered.
 
-| is much more than anger management. BIPP | addresses socio-cultural |
-|------------------------------------------|--------------------------|
-| issues, particularly regarding gender and violence, teaches and |  |
-| develops critical thinking skills, and includes therapeutic topic |  |
-| elements such as empathy, accountability, and communication. Often |  |
-| court ordered. |  |
+| is much more than anger management. BIPP                           | addresses socio-cultural |
+| ------------------------------------------------------------------ | ------------------------ |
+| issues, particularly regarding gender and violence, teaches and    |                          |
+| develops critical thinking skills, and includes therapeutic topic  |                          |
+| elements such as empathy, accountability, and communication. Often |                          |
+| court ordered.                                                     |                          |
 
 ### Legal rights
 

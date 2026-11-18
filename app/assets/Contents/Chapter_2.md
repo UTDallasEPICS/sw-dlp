@@ -97,7 +97,7 @@ What steps do you still need to take to overcome its impact on your life?
 
 ### My jolt awake moment ![Testimonial Quote](/broken_mug.png)
 
-> *“My epiphany came as I waited in the small mobile trailer waiting for a free cell phone.”*
+> _“My epiphany came as I waited in the small mobile trailer waiting for a free cell phone.”_
 
 Two weeks prior to this I had been in the emergency room due to being hit in the face by my husband and he had begun to stalk me. I was told that I could get a free cell phone that would call an emergency number if I needed it.
 
@@ -119,40 +119,34 @@ You mean it isn’t my fault?
 
 God hears you. Even in your darkest hour and in difficult times, God listens to your prayers. Answers to your prayers come in God’s timing which is sometimes hard to understand. Over time as you look back it becomes clear what God’s plan was and is for your life.
 
-> *
-
-> *“Praise be to the Lord, for he showed his wonderful love to me when I was in a besieged city. In my alarm I said, ‘I am cut off from your sight!’ Yet you heard my cry for mercy when I called to you for help. Love the Lord, all his saints! The Lord preserves the faithful, but the proud he pays back in full. Be strong and take heart, all you who hope in the Lord.”*”*  
-**— Psalms 31:21–24 (New International Version)**
+> _“Praise be to the Lord, for he showed his wonderful love to me when I was in a besieged city. In my alarm I said, ‘I am cut off from your sight!’ Yet you heard my cry for mercy when I called to you for help. Love the Lord, all his saints! The Lord preserves the faithful, but the proud he pays back in full. Be strong and take heart, all you who hope in the Lord.”_  
+> **— Psalms 31:21–24 (New International Version)**
 
 ### Do not be afraid ![Scripture Reference](/pink_heart_mug.png)
 
 Once we realize we are in an abusive situation or have just survived one; it is normal to be afraid. Carrying that fear everyday will erode your ability to develop. The fear will deteriorate your growth. Releasing that fear is important to becoming Stronger than Espresso!
 
-> *
-
-> *“Moses answered the people, ‘Do not be afraid. Stand firm and you will see the deliverance the Lord will bring you today. The Egyptians you see today you will never see again. The Lord will fight for you; you need only to be still.”*”*  
-**— Exodus 14:13,14 (NIV)**
+> _“Moses answered the people, ‘Do not be afraid. Stand firm and you will see the deliverance the Lord will bring you today. The Egyptians you see today you will never see again. The Lord will fight for you; you need only to be still.”_
+> **— Exodus 14:13,14 (NIV)**
 
 ### Darkness revealed ![Scripture Reference](/pink_heart_mug.png)
 
 It is not surprising that eventually you are jolted awake. God has promised us that all darkness will be revealed. God is the light and his brightness will outshine all others.
 
-> *
+> -
 
-> *“If I say, ‘Surely the darkness will hide me and the light become night around me,’ even the darkness will not be dark to you; the night will shine like the day, for darkness is as light to you.”*”*  
-**— Psalms 139:11 (NIV)**
+> _“If I say, ‘Surely the darkness will hide me and the light become night around me,’ even the darkness will not be dark to you; the night will shine like the day, for darkness is as light to you.”_”*  
+> **— Psalms 139:11 (NIV)**
 
 ### Transform your mind ![Scripture Reference](/pink_heart_mug.png)
 
 Now that you know the truth about your relationship; it is time to change! God helps us know that we can be transformed with the renewing of our mind. That is true freedom to think differently about ourselves and our lives.
 
-> *
+> _“Do not conform any longer to the pattern of this world, but be transformed by the renewing of your mind. Then you will be able to test and approve what God’s will is – his good, pleasing and perfect will.”_
+> **— Romans 12:2 (NIV)**
 
-> *“Do not conform any longer to the pattern of this world, but be transformed by the renewing of your mind. Then you will be able to test and approve what God’s will is – his good, pleasing and perfect will.”*”*  
-**— Romans 12:2 (NIV)**
-
-> *“[She demolishes] arguments and every pretension that sets itself up against the knowledge of God, and [she takes] every thought captive to the obedience of Christ.”*  
-**— 2 Corinthians 10:5 (NIV)**
+> _“[She demolishes] arguments and every pretension that sets itself up against the knowledge of God, and [she takes] every thought captive to the obedience of Christ.”_  
+> **— 2 Corinthians 10:5 (NIV)**
 
 ### Impact
 
@@ -164,12 +158,12 @@ What are three things you can begin today to apply this truth in your life?
 
 Describe how each scripture impacts you and list ways you can demonstrate the scripture’s truth in your life.
 
-| Scripture | Impact on You | Ways the Scripture Applies in Your Life |
-|-----------|---------------|-----------------------------------------|
-| Psalms 31:21–24 (NIV) |  |  |
-| Exodus 14:13, 14 (NIV) |  |  |
-| Psalms 139:11 (NIV) |  |  |
-| Romans 12:2 (NIV) |  |  |
+| Scripture              | Impact on You | Ways the Scripture Applies in Your Life |
+| ---------------------- | ------------- | --------------------------------------- |
+| Psalms 31:21–24 (NIV)  |               |                                         |
+| Exodus 14:13, 14 (NIV) |               |                                         |
+| Psalms 139:11 (NIV)    |               |                                         |
+| Romans 12:2 (NIV)      |               |                                         |
 
 ### Ready, Set, Go
 

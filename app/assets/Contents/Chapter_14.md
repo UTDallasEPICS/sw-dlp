@@ -107,11 +107,11 @@ These are the actions, activities and skills that you do effortlessly. Search yo
 
 Describe your gifts:
 
-> *“There are different kinds of spiritual gifts, but the same Spirit is the source of them all.”*  
-**— 1 Corinthians 12:1–12 (NLT)**
+> _“There are different kinds of spiritual gifts, but the same Spirit is the source of them all.”_  
+> **— 1 Corinthians 12:1–12 (NLT)**
 
-> *“Do not neglect the gift that is in you, which was given to you by prophecy…”*  
-**— 1 Timothy 4:14 (NKJV)**
+> _“Do not neglect the gift that is in you, which was given to you by prophecy…”_  
+> **— 1 Timothy 4:14 (NKJV)**
 
 Select future pursuits that include these natural strengths allow you to feel complete and whole.
 
@@ -192,10 +192,10 @@ Keep the goal list displayed as a constant reminder.
 Make sure your goals are: specific, measurable, attainable. Goals should be time specific. Common goal timeframes are:
 
 | Short-term | Mid-term | Long-term |
-|------------|----------|-----------|
-| Daily | 90-day | 5 years |
-| Weekly | 6 months | 10 years |
-| Monthly | 1 year | Beyond |
+| ---------- | -------- | --------- |
+| Daily      | 90-day   | 5 years   |
+| Weekly     | 6 months | 10 years  |
+| Monthly    | 1 year   | Beyond    |
 
 Once you meet a goal, replace it with a new one. That is how you begin to live a life of growth and development.
 
@@ -208,6 +208,8 @@ Short term —
 Mid-term —
 
 Long-term —
+
+<--next-->
 
 ### Girl to Girl Rule #3 ![Learning Activity](/two_hands_mug.png)
 
@@ -257,8 +259,8 @@ Trust in others for a support system is very different then the trust level requ
 
 Once you let go and let God rule your thoughts, emotions, choices and actions, your life can really begin to grow.
 
-> *“Trust in the Lord with all your heart, And lean not on your own understanding; In all your ways acknowledge Him, And He shall direct your paths.”*  
-**— Proverbs 3:5,6 (NKJV)**
+> _“Trust in the Lord with all your heart, And lean not on your own understanding; In all your ways acknowledge Him, And He shall direct your paths.”_  
+> **— Proverbs 3:5,6 (NKJV)**
 
 ### Trust is earned
 
@@ -300,13 +302,13 @@ There are several things to consider should you begin to slip back to old behavi
 
 Describe a list of your coping mechanisms, and think of ways you can retool them when an incident occurs.
 
-| Coping Mechanisms | New Behavior |
-|-------------------|--------------|
-| &nbsp;<br>&nbsp; | &nbsp;<br>&nbsp; |
-| &nbsp;<br>&nbsp; | &nbsp;<br>&nbsp; |
-| &nbsp;<br>&nbsp; | &nbsp;<br>&nbsp; |
-| &nbsp;<br>&nbsp; | &nbsp;<br>&nbsp; |
-| &nbsp;<br>&nbsp; | &nbsp;<br>&nbsp; |
+| Coping Mechanisms | New Behavior     |
+| ----------------- | ---------------- |
+| &nbsp;<br>&nbsp;  | &nbsp;<br>&nbsp; |
+| &nbsp;<br>&nbsp;  | &nbsp;<br>&nbsp; |
+| &nbsp;<br>&nbsp;  | &nbsp;<br>&nbsp; |
+| &nbsp;<br>&nbsp;  | &nbsp;<br>&nbsp; |
+| &nbsp;<br>&nbsp;  | &nbsp;<br>&nbsp; |
 
 • Be honest— Lying could become a coping mechanism and a method of survival for you. You have lied to yourself saying things would get better. You probably lied to friends or family about the severity of your abuse so they would not meddle and make things worse. You lied at work because you didn’t want to be turned down for the promotion because of trouble at home. You lied to those critical of you because you stayed.\
 • This circle of lies kept you trapped. Without the truth, you may become dizzy and so mixed up that you had trouble finding your way out. If you hear yourself lying now, even small white lies, recognize that you may be slipping into old patterns.\
@@ -315,6 +317,8 @@ Describe a list of your coping mechanisms, and think of ways you can retool them
 • Self destructive behaviors. If you begin to speak destructively to yourself, to not eat properly, or to not take care of yourself, then action should be taken immediately. Seek help from your therapist, a support group or seek out self-help material on how to turn this behavior around. Be honest about your behavior, do not beat yourself up and wallow in your failure. Make efforts to get back on the right path and try to articulate why you fell back.
 
 Understand this journey is not a straight line. You are crawling from the valley to the mountain and it will not be easy. You can release yourself from shame when you are honest about where you are in your healing process. If you make a mistake, correct it and move on, always keep your eyes on your goals.
+
+<--next-->
 
 ### Girl to Girl Rule #7
 
@@ -373,15 +377,15 @@ Describe ways you will check back to reach your goals.
 
 ### Stockdale Paradox
 
-James Bond Stockdale was one of the most highly decorated officers in U.S. Navy history. He was shot down in 1965 and a prisoner of war in Vietnam until 1973. During his captivity, he was locked in leg irons and was routinely tortured and beaten. To protect his life, he purposely beat, cut and disfigured himself so that his captors could not use him as propaganda. When asked how he survived, he replied, ‘I never lost faith in the end of the story; I never doubted not only that I would get out, but also that I would prevail in the end and turn the experience into the defining even of my life, which, in retrospect, I would not trade.” 66
+James Bond Stockdale was one of the most highly decorated officers in U.S. Navy history. He was shot down in 1965 and a prisoner of war in Vietnam until 1973. During his captivity, he was locked in leg irons and was routinely tortured and beaten. To protect his life, he purposely beat, cut and disfigured himself so that his captors could not use him as propaganda. When asked how he survived, he replied, ‘I never lost faith in the end of the story; I never doubted not only that I would get out, but also that I would prevail in the end and turn the experience into the defining even of my life, which, in retrospect, I would not trade.”
 
 In Jim Collins’ book, Good to Great, he describes Stockdale’s coping strategy during his eight years in the Vietnamese POW camp as the Stockdale Paradox. The Stockdale Paradox defined,
 
-> *“Confront the brutal facts…retain unwavering faith that you can and will prevail in the end, regardless of the difficulties, and at the same time, have the discipline to confront the most brutal facts of your current reality, whatever they might be.”*
+> _“Confront the brutal facts…retain unwavering faith that you can and will prevail in the end, regardless of the difficulties, and at the same time, have the discipline to confront the most brutal facts of your current reality, whatever they might be.”_
 
 When Collins interviewed Stockdale and asked who didn’t make it out, Stockdale replied:
 
-> *“Oh, that’s easy, the optimists. Oh, they were the ones who said, “We’re going to be out by Christmas.’ And Christmas would come, and Christmas would go. Then they’d say, ‘We’re going to be out by Easter.” And Easter would come, and Easter would go. And then Thanksgiving, and then it would be Christmas again. And they died of a broken heart.”*
+> _“Oh, that’s easy, the optimists. Oh, they were the ones who said, “We’re going to be out by Christmas.’ And Christmas would come, and Christmas would go. Then they’d say, ‘We’re going to be out by Easter.” And Easter would come, and Easter would go. And then Thanksgiving, and then it would be Christmas again. And they died of a broken heart.”_
 
 Stockdale created a tap alphabet so inmates could communicate with one another and break the isolation, and rules to help them deal with the torture and set goals to survive. He was able to create a secret code that allowed him to send messages to his wife, and during the same time, she created The League of American Families of POW's and MIA's in the States, an instrumental organization in assisting prisoners of war. 67 Collins likened the perseverance of Stockdale in surviving the atrocities of war to the same behavior required to grow a company from good to great.68
 

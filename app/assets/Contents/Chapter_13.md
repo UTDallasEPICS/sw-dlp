@@ -89,22 +89,22 @@ Behind every story is a survivor. You have a powerful testimony to share.
 
 You had the worst boss in the world. You could do anything — had to do everything. You have handled intense pressure, and simultaneously protected others around you. You endured unbearable situations and still rose from the ashes. Yes you are Stronger than Espresso!
 
-> *“And they overcame him because of the blood of the Lamb and because of the word of their testimony, and they did not love their life even when faced with death.”*  
-— Revelations 12:11 (NIV)
+> _“And they overcame him because of the blood of the Lamb and because of the word of their testimony, and they did not love their life even when faced with death.”_  
+> — Revelations 12:11 (NIV)
 
 ### Coffee is power
 
 As you come to the most active part of the Stronger than Espresso® journey, you need to understand the keys ingredients to perfection:
 
-| Key Ingredient | Power that makes it possible |
-|----------------|------------------------------|
-| 1. Someone created the coffee plant and designed the beans to be produced for consumption. | God |
-| 2. Physical components that are required: body, water, coffee pot. | Body |
-| 3. Passion to brew a perfect cup of java. | Soul |
-| 4. Must possess the mental know how to mix each ingredient. | Mind |
-| 5. Use as a tool for conversation with others and part of a daily habits. | Words |
-| 6. Experience on how to brew, what portions and how you like it to taste. | Lessons |
-| 7. Who you share it with and an opportunity to meet with others. | Relationships |
+| Key Ingredient                                                                             | Power that makes it possible |
+| ------------------------------------------------------------------------------------------ | ---------------------------- |
+| 1. Someone created the coffee plant and designed the beans to be produced for consumption. | God                          |
+| 2. Physical components that are required: body, water, coffee pot.                         | Body                         |
+| 3. Passion to brew a perfect cup of java.                                                  | Soul                         |
+| 4. Must possess the mental know how to mix each ingredient.                                | Mind                         |
+| 5. Use as a tool for conversation with others and part of a daily habits.                  | Words                        |
+| 6. Experience on how to brew, what portions and how you like it to taste.                  | Lessons                      |
+| 7. Who you share it with and an opportunity to meet with others.                           | Relationships                |
 
 ### Your seven key ingredients
 
@@ -142,17 +142,17 @@ Looking upward instead of inward allows you to focus on a greater power.
 
 Throughout this book we have shared numerous scriptures from the Bible that describe God’s strength for us in times of trouble.
 
-> *“For in the time of trouble He shall hide me in His pavilion; In the secret place of His tabernacle He shall hide me; He shall set me high upon a rock.”*  
-**— Psalms 27:5 (NKJV)**
+> _“For in the time of trouble He shall hide me in His pavilion; In the secret place of His tabernacle He shall hide me; He shall set me high upon a rock.”_  
+> **— Psalms 27:5 (NKJV)**
 
-> *“The steps of a good man are ordered by the Lord, And He delights in his way. Though he fall he shall not be utterly cast down; For the Lord upholds him with His hand.”*  
-— Psalms 37:23,24 (NKJV)
+> _“The steps of a good man are ordered by the Lord, And He delights in his way. Though he fall he shall not be utterly cast down; For the Lord upholds him with His hand.”_  
+> — Psalms 37:23,24 (NKJV)
 
-> *“The Lord is my strength and my shield; My heart trusted in Him, and I am helped; Therefore my heart greatly rejoices, And with my song I will praise Him.”*  
-**— Psalms 28:7 (NKJV)**
+> _“The Lord is my strength and my shield; My heart trusted in Him, and I am helped; Therefore my heart greatly rejoices, And with my song I will praise Him.”_  
+> **— Psalms 28:7 (NKJV)**
 
-> *“I am holding you by your right hand – I, the Lord your God. And I say to you, ‘Do not be afraid. I am here to help you…”*  
-**— Isaiah 42:13 (NLT)**
+> _“I am holding you by your right hand – I, the Lord your God. And I say to you, ‘Do not be afraid. I am here to help you…”_  
+> **— Isaiah 42:13 (NLT)**
 
 Which scripture is your favorite? Why?
 
@@ -168,12 +168,12 @@ This concept, though widely debated as to its exact definition, existence and va
 
 Everyone has a measure of faith. At times in our lives we desire spiritual pathways even if we don’t know why or exactly what we are looking for. This is your measure of faith yearning to be filled with God’s great love. In order for God to lead your life, you have to accept Him in your life.
 
-> *“For I say, through the grace given to me, to everyone who is among you, not to think of himself more highly than he ought to think, but to think soberly, as God has dealt to each one a measure of faith.”*  
-**— Romans 12:3 (NKJV)**
+> _“For I say, through the grace given to me, to everyone who is among you, not to think of himself more highly than he ought to think, but to think soberly, as God has dealt to each one a measure of faith.”_  
+> **— Romans 12:3 (NKJV)**
 
 ### Tried it all ![Testimonial Quote](/broken_mug.png)
 
-> *“I tried everything alcohol, drugs, exercise, journaling, angel cards, praying, daily journals, mediation, yoga, reading spiritual books by the dozen and even took a trip to China to touch the largest Buddhist statue in the world to fill this desire. I finally accepted Jesus into my heart. It was awkward at first but over the years I have been amazed by the blessings he has put into my new life, my new family, my new spiritual growth beyond my dreams. Now I can’t imagine my life without Christ at the core.”*
+> _“I tried everything alcohol, drugs, exercise, journaling, angel cards, praying, daily journals, mediation, yoga, reading spiritual books by the dozen and even took a trip to China to touch the largest Buddhist statue in the world to fill this desire. I finally accepted Jesus into my heart. It was awkward at first but over the years I have been amazed by the blessings he has put into my new life, my new family, my new spiritual growth beyond my dreams. Now I can’t imagine my life without Christ at the core.”_
 
 ### God never stops loving you ![Scripture Reference](/pink_heart_mug.png)
 
@@ -181,17 +181,17 @@ God’s love is unbelievable! He loves you just as you are. He loves you for wha
 
 When you are able to embrace yourself and love yourself like God loves you, an amazing transformation occurs and you are energized with the power of faith!
 
-> *“I was also blameless before Him, And I kept myself from my iniquity.”*  
-**— Psalms 18:23 (NLT)**
+> _“I was also blameless before Him, And I kept myself from my iniquity.”_  
+> **— Psalms 18:23 (NLT)**
 
-> *“I knew you before I formed you in your mother’s womb. Before you were born I set you apart and appointed you as my prophet to the nations.”*  
-**— Jeremiah 1:5 (NLT)**
+> _“I knew you before I formed you in your mother’s womb. Before you were born I set you apart and appointed you as my prophet to the nations.”_  
+> **— Jeremiah 1:5 (NLT)**
 
-> *“Not even a sparrow, worth only half a penny, can fall to the ground without your Father knowing it. And the very hairs on your head are all numbered. So don’t be afraid; you are more valuable to him than a whole flock of sparrows.”*  
-**— Matthew 10:29 (NLT)**
+> _“Not even a sparrow, worth only half a penny, can fall to the ground without your Father knowing it. And the very hairs on your head are all numbered. So don’t be afraid; you are more valuable to him than a whole flock of sparrows.”_  
+> **— Matthew 10:29 (NLT)**
 
-> *“Long ago, even before he made the world, God loved us and chose us in Christ to be holy and without fault in his eyes.”*  
-**— Ephesians 1:4 (NLT)**
+> _“Long ago, even before he made the world, God loved us and chose us in Christ to be holy and without fault in his eyes.”_  
+> **— Ephesians 1:4 (NLT)**
 
 Which scripture is your favorite? Why?
 
@@ -203,22 +203,22 @@ Describe the burdens you are carrying right now?
 
 When you awaken the spiritual part of you there is a transformation that occurs. When you “give it to God” you are released from the burden you carry around. By trusting in God you set aside fear. Grab hold of the hand of the Almighty and follow the pathway of joy, understanding and freedom.
 
-> *“…How can you say the Lord does not see your troubles? He never grows faint or weary. No one can measure the depths of his understanding. He gives power to those who are tired and worn out; he offers strength to the weak. Even youths will become exhausted, and young men will give up. But those who wait on the Lord will find new strength. They will fly high on the wings like eagles. They will run and not grow weary. They will walk and not faint.”*  
-**— Isaiah 40:27–31 (NLT)**
+> _“…How can you say the Lord does not see your troubles? He never grows faint or weary. No one can measure the depths of his understanding. He gives power to those who are tired and worn out; he offers strength to the weak. Even youths will become exhausted, and young men will give up. But those who wait on the Lord will find new strength. They will fly high on the wings like eagles. They will run and not grow weary. They will walk and not faint.”_  
+> **— Isaiah 40:27–31 (NLT)**
 
-> *“The Lord is my shepherd; I have everything I need. He lets me rest in green meadows; he leads me beside peaceful streams. He renews my strength. He guides me along right paths, bringing honor to his name. Even when I walk through the dark valley of death, I will not be afraid, for you are close beside me. Your rod and your staff protect and comfort me. You prepare a feast for me in the presence of my enemies. You welcome me as a guest, anointing my head with oil. My cup overflows with blessings. Surely your goodness and unfailing love will pursue me all the days of my life, and I will live in the house of the Lord forever.” — Psalms (NLT)”*
+> _“The Lord is my shepherd; I have everything I need. He lets me rest in green meadows; he leads me beside peaceful streams. He renews my strength. He guides me along right paths, bringing honor to his name. Even when I walk through the dark valley of death, I will not be afraid, for you are close beside me. Your rod and your staff protect and comfort me. You prepare a feast for me in the presence of my enemies. You welcome me as a guest, anointing my head with oil. My cup overflows with blessings. Surely your goodness and unfailing love will pursue me all the days of my life, and I will live in the house of the Lord forever.” — Psalms (NLT)”_
 
-> *“I look up to the mountains — does my help come from there? My help comes from the Lord, who made the heavens and the earth! He will not let you stumble and fall; the one who watches over you will not sleep. Indeed, he watches over Israel never tires and never sleeps. The Lord himself watches over you! The Lord stands beside you as your protective shade. The sun will not hurt you by day, not the moon at night. The Lord keeps you from all evil and preserves your life. The Lord keeps watch over you as you come and go, both now and forever.”*  
-**— Psalms 121:1–8 (NLT)**
+> _“I look up to the mountains — does my help come from there? My help comes from the Lord, who made the heavens and the earth! He will not let you stumble and fall; the one who watches over you will not sleep. Indeed, he watches over Israel never tires and never sleeps. The Lord himself watches over you! The Lord stands beside you as your protective shade. The sun will not hurt you by day, not the moon at night. The Lord keeps you from all evil and preserves your life. The Lord keeps watch over you as you come and go, both now and forever.”_  
+> **— Psalms 121:1–8 (NLT)**
 
-> *“The Lord is close to all who call on him, yes, to all who call on him sincerely.”*  
-**— Psalms 145:18 (NLT)**
+> _“The Lord is close to all who call on him, yes, to all who call on him sincerely.”_  
+> **— Psalms 145:18 (NLT)**
 
-> *“Then Jesus said, ‘Come to me, all of you who are weary and carry heavy burdens, and I will give you rest. Take my yoke upon you. Let me teach you, because I am humble and gentle, and you will find rest for your souls. For my yoke fits perfectly, and the burden I give you is light.”*  
-**— Matthew 11:28–30 (NLT)**
+> _“Then Jesus said, ‘Come to me, all of you who are weary and carry heavy burdens, and I will give you rest. Take my yoke upon you. Let me teach you, because I am humble and gentle, and you will find rest for your souls. For my yoke fits perfectly, and the burden I give you is light.”_  
+> **— Matthew 11:28–30 (NLT)**
 
-> *“Don’t put your confidence in powerful people; there is no help for you there. When their breathing stops, they return to the earth, and in a moment all their plans come to an end. But happy are those who have the God of Israel as their helper, whose hope is in the Lord their God. He is the one who made heaven and earth, the sea, and everything in them. He is the one who keeps every promise forever, who gives justice to the oppressed and food to the hungry. The Lord frees the prisoners. The Lord opens the eyes of the blind. The Lord lifts the burdens of those bent beneath their loads. The Lord loves the righteous. The Lord protects the foreigners among us. He cares for the orphans and widows, but he frustrates the plans of the wicked. The Lord will reign forever. O Jerusalem, your God is King in every generation! Praise the Lord.”*  
-**— Psalms 146:3–10 (NLT)**
+> _“Don’t put your confidence in powerful people; there is no help for you there. When their breathing stops, they return to the earth, and in a moment all their plans come to an end. But happy are those who have the God of Israel as their helper, whose hope is in the Lord their God. He is the one who made heaven and earth, the sea, and everything in them. He is the one who keeps every promise forever, who gives justice to the oppressed and food to the hungry. The Lord frees the prisoners. The Lord opens the eyes of the blind. The Lord lifts the burdens of those bent beneath their loads. The Lord loves the righteous. The Lord protects the foreigners among us. He cares for the orphans and widows, but he frustrates the plans of the wicked. The Lord will reign forever. O Jerusalem, your God is King in every generation! Praise the Lord.”_  
+> **— Psalms 146:3–10 (NLT)**
 
 1. Of the six scriptures you just reviewed, which scripture did you connect with the most and why?
 
@@ -241,8 +241,10 @@ With this security of love:\
 • Make better choices of moral content.\
 • Trust your inner voice and spiritual wisdom.
 
-> *“Can anything ever separate us from Christ’s love? Does it mean he no longer loves us if we have trouble or calamity, or are persecuted, or are hungry or cold or in danger or threatened with death? (As the Scriptures say, ‘For your sake we are killed every day we are being slaughtered like sheep.’) No, despite all these things, overwhelming victory is ours through Christ, who loved us. And I am convinced that nothing can ever separate us from his love. Neither death nor life, neither angels nor demons, neither our fears for today nor our worries about tomorrow – not even the powers of hell can separate us from God’s love. No power in the sky above or in the earth below – indeed, nothing in all creation will ever be able to separate us from the love of God that is revealed in Christ Jesus our Lord.”*  
-**— Romans 8:35–39 (NLT)**
+> _“Can anything ever separate us from Christ’s love? Does it mean he no longer loves us if we have trouble or calamity, or are persecuted, or are hungry or cold or in danger or threatened with death? (As the Scriptures say, ‘For your sake we are killed every day we are being slaughtered like sheep.’) No, despite all these things, overwhelming victory is ours through Christ, who loved us. And I am convinced that nothing can ever separate us from his love. Neither death nor life, neither angels nor demons, neither our fears for today nor our worries about tomorrow – not even the powers of hell can separate us from God’s love. No power in the sky above or in the earth below – indeed, nothing in all creation will ever be able to separate us from the love of God that is revealed in Christ Jesus our Lord.”_  
+> **— Romans 8:35–39 (NLT)**
+
+<--next-->
 
 ### Glorious shifts ![Scripture Reference](/pink_heart_mug.png)
 
@@ -269,26 +271,26 @@ When you are afraid, remember, that you will never be alone. God’s love does n
 A few prayer tips:\
 • Pray often and plan to spend time with God daily. This allows you to have more time to
 
-> *“hear” Him through the power of the Holy Spirit.\
-• Thank God for the blessings in your life. God never wastes a hurt so your hardship could be a blessing in disguise.\
-• God will hear your prayers. “Now this is the confidence that we have in Him, that if we ask anything according to His will, He hears us.”*  
-**— 1 John 5:14 (NKJV)**
+> _“hear” Him through the power of the Holy Spirit.\
+> • Thank God for the blessings in your life. God never wastes a hurt so your hardship could be a blessing in disguise.\
+> • God will hear your prayers. “Now this is the confidence that we have in Him, that if we ask anything according to His will, He hears us.”_  
+> **— 1 John 5:14 (NKJV)**
 
 • God operates in his own time. Patience is a key to wait for answered prayer.
 
-> *“Rest in the Lord, and wait patiently for Him; Do not fret…”*  
-**— Psalms 37:7 (NKJV)**
+> _“Rest in the Lord, and wait patiently for Him; Do not fret…”_  
+> **— Psalms 37:7 (NKJV)**
 
 • Pray with other Christians:
 
-> *“Again I say to you that if two of you agree on earth concerning anything that they ask, it will be done for them by My Father in heaven. For when two or three are gathered together in My name, I am there in the midst of them.”*  
-**— Matthew 18:19–20 (NKJV)**
+> _“Again I say to you that if two of you agree on earth concerning anything that they ask, it will be done for them by My Father in heaven. For when two or three are gathered together in My name, I am there in the midst of them.”_  
+> **— Matthew 18:19–20 (NKJV)**
 
-> *“Pray over him, anointing him with oil in the name of the Lord…pray for one another, that you may be healed.”*  
-**— James 5:13–16 (NKJV)**
+> _“Pray over him, anointing him with oil in the name of the Lord…pray for one another, that you may be healed.”_  
+> **— James 5:13–16 (NKJV)**
 
-> *“Pray for us; for we are confident that we have a good conscience, in all things desiring to live honorably.”*  
-**— Hebrews 13:18 (NKJV)**
+> _“Pray for us; for we are confident that we have a good conscience, in all things desiring to live honorably.”_  
+> **— Hebrews 13:18 (NKJV)**
 
 ### Action
 
@@ -308,20 +310,20 @@ One of the first things we worry about when we wake up is what we are going to w
 
 Have you ever considered what God’s word says about what you should wear?
 
-> *“Therefore, as the elect of God, holy and beloved, put on tender mercies, kindness, humility, meekness, longsuffering; bearing with one another, and forgiving one another, if anyone has a complaint against another; even as Christ forgave you, so you also must do. But above all these things put on love, which is the bond of perfection.”*  
-**— Colossians 3:12–14 (NKJV)**
+> _“Therefore, as the elect of God, holy and beloved, put on tender mercies, kindness, humility, meekness, longsuffering; bearing with one another, and forgiving one another, if anyone has a complaint against another; even as Christ forgave you, so you also must do. But above all these things put on love, which is the bond of perfection.”_  
+> **— Colossians 3:12–14 (NKJV)**
 
-> *“Stand therefore, having girded your waist with truth, having put on the breastplate of righteousness, and having shod your feet with the preparation of the gospel of peace; above all, taking the shield of faith with which you will be able to quench all the fiery darts of the wicked one. And take the helmet of salvation, and the sword of the Spirit, which is the word of God.”*  
-**— Ephesians 6:14–17 (NKJV)**
+> _“Stand therefore, having girded your waist with truth, having put on the breastplate of righteousness, and having shod your feet with the preparation of the gospel of peace; above all, taking the shield of faith with which you will be able to quench all the fiery darts of the wicked one. And take the helmet of salvation, and the sword of the Spirit, which is the word of God.”_  
+> **— Ephesians 6:14–17 (NKJV)**
 
-> *“It is God who arms me with strength and makes my way perfect.”*  
-**— Psalms 18:32 (NKJV)**
+> _“It is God who arms me with strength and makes my way perfect.”_  
+> **— Psalms 18:32 (NKJV)**
 
-> *“The night is far spent, the day is at hand. Therefore, let us cast off works of darkness, and let us put on the armor of light…14 put on the Lord Jesus Christ….”*  
-**— Romans 13:12, 14 (NKJV)**
+> _“The night is far spent, the day is at hand. Therefore, let us cast off works of darkness, and let us put on the armor of light…14 put on the Lord Jesus Christ….”_  
+> **— Romans 13:12, 14 (NKJV)**
 
-> *“She is clothed with strength and dignity, and she laughs without fear of the future.”*  
-**— Proverbs 31:25 (NKJV)**
+> _“She is clothed with strength and dignity, and she laughs without fear of the future.”_  
+> **— Proverbs 31:25 (NKJV)**
 
 • Describe new items that you will wear?\
 • What are the benefits to include these in your wardrobe?
@@ -364,7 +366,7 @@ Your mouth should enjoy what you bring into your body for nourishment:
 
 When under extreme stress and trauma, the body can hold tension in the muscles and in the cells. As you begin to renew your life, cleansing each part of the physical body is very important. Water provides oxygen to the cells and is vital for life removing body toxins out of the body. Use this simple but life sustaining liquid to the fullest. When you drink a glass of water be mindful and say positive affirmations to yourself as you drink.
 
-> *“I cleanse my body now and am restored and refreshed.”*
+> _“I cleanse my body now and am restored and refreshed.”_
 
 • Make sure to eat healthy meals every day. When experiencing a stressful situation, sometimes you do not remember the last time you ate. Stop abusing your body this way. Decide on three healthy meals per day or perhaps six smaller meals each day and stick to that program.\
 • Enjoy going to the grocery store again and notice the varieties of unique fruits and vegetables, legumes, whole grains, breads, meats and other products you may have never noticed before.\
@@ -378,6 +380,8 @@ Remove the toxins —This has been preached throughout this book and is vital to
 • Drugs — Illegal or legal/prescription drugs can be a problem. If you are doing illegal drugs, please quit and find a new method of comfort. There are local centers that can help you with any drug problem you need assistance with; just ask. Doctors can also prescribe prescription drugs which can be highly beneficial as part of a trauma treatment program or pain management program. However, their usage should be short lived as they become like candy to your soul. You are trying to create new coping skills, and while drugs can be vital to your success in the beginning, you must learn to trust yourself to be competent on your own.
 
 What are your favorite tastes?
+
+<--next-->
 
 ### Touch
 
