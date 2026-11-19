@@ -19,7 +19,7 @@ export default defineEventHandler(async (event) => {
     const { chapters } = await getChapterProgress(currentUser.id)
 
     const completedChapters = chapters.filter(chapter => chapter.completed).length
-    const completedChaptersNames = chapters.filter(chapter => chapter.completed)
+    const completedChapterNames = chapters.filter(chapter => chapter.completed)
         .map(chapter => chapter.name)
 
     const totalChapters = chapters.length
@@ -30,7 +30,7 @@ export default defineEventHandler(async (event) => {
       totalChapters,
       progress: totalChapters > 0
         ? Math.round( (completedChapters / totalChapters) * 100) : 0,
-      completedChaptersNames,
+      completedChapterNames,
     })
   }
 

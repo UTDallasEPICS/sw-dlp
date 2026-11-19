@@ -17,6 +17,7 @@ export default defineEventHandler(async (event) => {
       admin: user.admin,
       blocked: user.blocked,
       createdAt: user.createdAt,
+      updatedAt: user.updatedAt,
       prayerRequestCount: sql<number>`count(${prayerRequest.id})`.mapWith(Number),
     })
     .from(user)

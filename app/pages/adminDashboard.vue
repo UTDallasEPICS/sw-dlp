@@ -3,17 +3,15 @@
   import type { Row } from '@tanstack/vue-table'
   import { getExpandedRowModel, } from '@tanstack/vue-table'
 
-  const expanded = ref<Record<string, boolean>>({})
-
   const columns: TableColumn<UserWithProgress>[] = [
-    { accessorKey: 'name', header: 'User', },
-    { accessorKey: 'email', header: 'Email', },
-    { accessorKey: 'admin', header: 'Role', },
-    { id: 'status', header: 'Status', },
-    { accessorKey: 'hasPrayerRequest', header: 'Prayer Request', },
-    { accessorKey: 'progress', header: 'Progress',},
-    { id: 'expand', header: '', },
-    { id: 'edit', header: ''},
+    { accessorKey: 'name', header: 'User', meta: { class: { th: 'bg-brand-500/5', td: ''} }},
+    { accessorKey: 'email', header: 'Email', meta: { class: { th: 'bg-brand-500/5', td: ''} }},
+    { accessorKey: 'admin', header: 'Role', meta: { class: { th: 'bg-brand-500/5', td: ''} }},
+    { id: 'status', header: 'Status', meta: { class: { th: 'bg-brand-500/5', td: ''} }},
+    { accessorKey: 'hasPrayerRequest', header: 'Prayer Request', meta: { class: { th: 'bg-brand-500/5', td: ''} }},
+    { accessorKey: 'progress', header: 'Progress', meta: { class: { th: 'bg-brand-500/5', td: ''} }},
+    { id: 'expand', header: '',  meta: { class: { th: 'bg-brand-500/5', td: ''} }},
+    { id: 'edit', header: '', meta: { class: { th: 'bg-brand-500/5', td: ''} }},
   ]
 
   interface User {
@@ -25,6 +23,7 @@
     admin: boolean
     blocked: boolean
     createdAt: string
+    updatedAt: string
     hasPrayerRequest: boolean
     prayerRequestCount?: number
   }
@@ -60,6 +59,8 @@
   const prayerRequests = ref<Record<string, PrayerRequestData[]>>({})
   const prayerLoading = ref<string[]>([])
   const prayerErrors = ref<string[]>([])
+  const expanded = ref<Record<string, boolean>>({})
+  const closingRows = ref<string[]>([])
 
   const statusItems = [
     { label: 'All Statuses', value: 'all' },
@@ -207,6 +208,7 @@
       admin: form.role === 'admin',
       blocked: form.status === 'blocked',
       createdAt: new Date().toISOString(),
+      updatedAt: new Date().toISOString(),
       hasPrayerRequest: false,
     }
     users.value = [...(users.value ?? []), newUser]
@@ -228,10 +230,10 @@
   const filteredUsers = computed(() => {
     const q = search.value.trim().toLowerCase()
     const looksLikePhone = /^[\d\s()+-]+$/.test(q)
-    const phoneQuery = looksLikePhone ? normalizePhone(q) : ''
+    const phoneQuery = looksLikePhone ? formatPhoneNumber(q) : ''
 
     return (usersWithProgress.value ?? []).filter(user => {
-      const matchesSearch = !q || user.name.toLowerCase().includes(q) || user.email.toLowerCase().includes(q) || (phoneQuery !== '' && normalizePhone(user.phoneNumber).includes(phoneQuery)) //|| user.completedChapterNames.some(c => c.toLowerCase().includes(q))
+      const matchesSearch = !q || user.name.toLowerCase().includes(q) || user.email.toLowerCase().includes(q) || (phoneQuery !== '' && formatPhoneNumber(user.phoneNumber).includes(phoneQuery)) //|| user.completedChapterNames.some(c => c.toLowerCase().includes(q))
       const matchesStatus = statusFilter.value === 'all' || getUserStatus(user) === statusFilter.value
       const matchesRole = roleFilter.value === 'all' || (roleFilter.value === 'admin' ? user.admin : !user.admin)
       const matchesPrayer = prayerFilter.value === 'all' || (prayerFilter.value === 'yes' ? user.hasPrayerRequest : !user.hasPrayerRequest)
@@ -254,17 +256,30 @@
     }
   }
 
-  async function handleExpand(
-    user: UserWithProgress,
-    row: Row<UserWithProgress>
-  ) {
-    const willExpand = !row.getIsExpanded()
+  async function handleExpand( user: UserWithProgress, row: Row<UserWithProgress> ) {
+    const userId = user.id
 
-    row.toggleExpanded()
+    if (closingRows.value.includes(userId)) return
 
-    if (willExpand && user.hasPrayerRequest && !(user.id in prayerRequests.value)) { 
-      await loadPrayerRequest(user.id) 
+    // closing transition
+    if (row.getIsExpanded()) {
+      closingRows.value.push(userId)
+      return
     }
+    // Open expanded row
+    row.toggleExpanded(true)
+
+    if ( user.hasPrayerRequest && !(userId in prayerRequests.value) ) {
+      await loadPrayerRequest(userId)
+    }
+  }
+
+  function finishCollapse(row: Row<UserWithProgress>) {
+    row.toggleExpanded(false)
+
+    closingRows.value = closingRows.value.filter(
+      id => id !== row.original.id
+    )
   }
 
   function formatPhoneNumber(phone: string | null): string {
@@ -278,9 +293,18 @@
     return `(${normalized.slice(0, 3)}) ${normalized.slice(3, 6)}-${normalized.slice(6)}`
   }
 
-  function normalizePhone(value: string | null | undefined): string {
-    const digits = (value ?? '').replace(/\D/g, '')
-    return digits.length === 11 && digits.startsWith('1') ? digits.slice(1) : digits
+  function formatDateTime(dateInput: string | Date | null | undefined): string {
+    if (!dateInput) return 'N/A'
+    const date = new Date(dateInput)
+    if (Number.isNaN(date.getTime())) return 'N/A'
+
+    return date.toLocaleString([], {
+      year: 'numeric',
+      month: 'short',
+      day: 'numeric',
+      hour: 'numeric',
+      minute: '2-digit',
+    })
   }
 </script>
 
@@ -425,12 +449,8 @@
               size="md"
             >
               {{
-                (prayerRequests[row.original.id]?.length ?? 0) > 0
-                  ? `${prayerRequests[row.original.id]?.length ?? 0} Request(s)`
-                  : row.original.prayerRequestCount
-                    ? `${row.original.prayerRequestCount} Request(s)`
-                    : row.original.hasPrayerRequest
-                      ? 'Has request': 'N/A'
+                (prayerRequests[row.original.id]?.length ?? 0) > 1 ? `${prayerRequests[row.original.id]?.length ?? 0} Requests`
+                  : row.original.prayerRequestCount === 1 ? `1 Request` : 'None'
               }}
             </UBadge>
           </template>
@@ -456,8 +476,8 @@
               variant="ghost"
               size="xs"
               :trailing-icon="row.getIsExpanded()
-                ? 'i-heroicons-chevron-up'
-                : 'i-heroicons-chevron-down'"
+                ? 'i-heroicons-chevron-down'
+                : 'i-heroicons-chevron-up'"
               @click="handleExpand(row.original, row)"
             >
               Details
@@ -481,51 +501,92 @@
           </template>
 
           <!-- Expanded cell content with smooth transition wrapper -->
-          <template #expanded="{ row }">
-            <div class="transition-all duration-300 ease-in-out p-5">
-              <div class="grid grid-cols-1 gap-4 lg:grid-cols-2">
-
-                <!-- Account information -->
-                <UCard variant="subtle">
-                  <div class="space-y-3">
-                    <h3 class="font-semibold">Account Information</h3>
-                    <div>
-                      <p class="text-sm text-gray-700">Phone Number</p>
-                      <p class="font-medium">
+          <template #expanded="{ row }" class="flex flex-col">
+            <Transition
+              appear
+              enter-active-class="transition-all duration-100 ease-out"
+              enter-from-class="opacity-0 -translate-y-3"
+              enter-to-class="opacity-100 translate-y-0"
+              leave-active-class="transition-all duration-100 ease-in"
+              leave-from-class="opacity-100 translate-y-0"
+              leave-to-class="opacity-0 -translate-y-3"
+              @after-leave="finishCollapse(row)"
+            >
+              <div v-if="!closingRows.includes(row.original.id)" class="flex-row p-2">
+                <div class="w-full flex flex-row gap-10">
+                  <!-- Phone number -->
+                  <div class="flex flex-1 items-center gap-4 rounded-lg bg-neutral-100 outline-1 outline-neutral-200 p-4">
+                    <UIcon
+                      name="i-heroicons-phone"
+                      class="size-6 shrink-0 text-brand-500"
+                    />
+                    <div class="flex flex-col gap-1">
+                      <span class="text-xs text-gray-500">
+                        Phone Number
+                      </span>
+                      <span class="text-sm font-medium text-gray-900">
                         {{ formatPhoneNumber(row.original.phoneNumber) }}
-                      </p>
-                    </div>
-                    <div>
-                      <p class="text-sm text-gray-500">Account Created</p>
-                      <p class="font-medium">
-                        {{ new Date(row.original.createdAt).toLocaleDateString() }}
-                      </p>
+                      </span>
                     </div>
                   </div>
-                </UCard>
 
-                <!-- Completed chapters (Fixed to reliably show list) -->
-                <UCard variant="subtle">
-                  <div class="space-y-3">
+                  <!-- Account creation date -->
+                  <div class="flex flex-1 items-center gap-4 rounded-lg bg-neutral-100 outline-1 outline-neutral-200 p-4">
+                    <UIcon
+                      name="i-heroicons-calendar"
+                      class="size-6 shrink-0 text-brand-500"
+                    />
+                    <div class="flex flex-col gap-1">
+                      <span class="text-xs text-gray-500">
+                        Created Account
+                      </span>
+
+                      <span class="text-sm font-medium text-gray-900">
+                        {{ formatDateTime(row.original.createdAt) }}
+                      </span>
+                    </div>
+                  </div>
+
+                  <!-- User last updated-->
+                  <div class="flex flex-1 items-center gap-4 rounded-lg bg-neutral-100 outline-1 outline-neutral-200 p-4">
+                      <UIcon
+                        name="i-heroicons-calendar-days"
+                        class="size-6 shrink-0 text-brand-500"
+                      />
+                      <div class="flex flex-col gap-1">
+                        <span class="text-xs text-gray-500">
+                          Last Updated
+                        </span>
+
+                        <span class="text-sm font-medium text-gray-900">
+                          {{ formatDateTime(row.original.updatedAt) }}
+                        </span>
+                      </div>
+                    </div>
+                </div>
+
+                <!-- Completed chapters -->
+                <UCard variant="subtle" class="my-4">
+                  <div class="space-y-3 text-black">
                     <h3 class="font-semibold">Completed Chapters</h3>
                     <ul 
-                      v-if="row.original.completedChapterNames && row.original.completedChapterNames.length > 0" 
-                      class="list-disc list-inside space-y-1 text-sm text-gray-700"
+                      v-if="row.original.completedChapterNames.length > 0" 
+                      class="list-disc list-inside space-y-1 px-4 text-sm text-gray-700"
                     >
                       <li v-for="(chapterName, index) in row.original.completedChapterNames" :key="index">
                         {{ chapterName }}
                       </li>
                     </ul>
-                    <div v-else class="text-sm text-gray-500">
-                      No chapters completed yet.
+                    <div v-else class="text-sm text-gray-500 px-4">
+                      No completed chapters.
                     </div>
                   </div>
                 </UCard>
 
                 <!-- Prayer requests -->
-                <UCard variant="subtle" class="lg:col-span-2">
+                <UCard variant="outline" class="lg:col-span-2">
                   <div class="space-y-3">
-                    <h3 class="font-semibold">Prayer Requests</h3>
+                    <h3 class="font-semibold text-black">Prayer Requests</h3>
 
                     <p v-if="prayerLoading.includes(row.original.id)">
                       Loading prayer requests...
@@ -540,31 +601,31 @@
 
                     <div
                       v-else-if="prayerRequests[row.original.id]?.length"
-                      class="space-y-3"
+                      class="space-y-3 bg-neutral-100"
                     >
                       <div
                         v-for="request in prayerRequests[row.original.id]"
                         :key="request.id"
-                        class="rounded-lg border border-default p-4"
+                        class="rounded-lg border border-default p-4 text-black"
                       >
                         <p class="whitespace-pre-wrap">
                           {{ request.request }}
                         </p>
                         <p class="mt-2 text-xs text-gray-500">
                           Submitted:
-                          {{ new Date(request.submittedAt).toLocaleDateString() }}
+                          {{ formatDateTime(request.submittedAt) }}
                         </p>
                       </div>
                     </div>
 
-                    <p v-else class="text-sm text-gray-500">
+                    <p v-else class="text-sm text-gray-500 px-4">
                       No prayer requests.
                     </p>
                   </div>
                 </UCard>
 
               </div>
-            </div>
+            </Transition>
           </template>
         </UTable>
       </div>
