@@ -1,5 +1,5 @@
 <script setup lang="ts">
-  import type { TableColumn } from '@nuxt/ui'
+  import type { TableColumn, FormError } from '@nuxt/ui'
   import type { Row } from '@tanstack/vue-table'
   import { getExpandedRowModel, } from '@tanstack/vue-table'
 
@@ -96,6 +96,62 @@
     return user.emailVerified ? 'verified' : 'non-verified'
   }
 
+  // adding User modal for "Add User" button
+  const addOpen = ref(false)
+
+  const form = reactive({
+    name: '',
+    email: '',
+    phoneNumber: '',
+    role: undefined as 'admin' | 'user' | undefined,
+    status: undefined as UserStatus | undefined
+  })
+
+  const roleOptions = roleItems.filter(i => i.value !== 'all')
+  const statusOptions = statusItems.filter(i => i.value !== 'all')
+
+  function validate(state: typeof form): FormError[] {
+    const errors: FormError[] = []
+    if (!state.name.trim()) errors.push({name: 'name', message: 'Name is required'})
+
+    if (!/^\S+@\S+\.\S+$/.test(state.email.trim())) {
+      errors.push({ name: 'email', message: 'Enter a valid email' })
+    } else if ((users.value ?? []).some(u => u.email.toLowerCase() === state.email.trim().toLowerCase())) {
+      errors.push({ name: 'email', message: 'A user with this email already exists' })
+    }
+
+    if (state.phoneNumber.replace(/\D/g, '').length < 10) {
+      errors.push({ name: 'phoneNumber', message: 'Enter a 10-digit phone number' })
+    }
+    if (!state.role) errors.push({ name: 'role', message: 'Select a role' })
+    if (!state.status) errors.push({ name: 'status', message: 'Select a status' })
+    return errors
+  }
+
+  function resetForm() {
+    Object.assign(form, { name: '', email: '', phoneNumber: '', role: undefined, status: undefined })
+  }
+
+  // Clears the form whenever the modal closes (Cancel, X, or after submit)
+  watch(addOpen, open => { if (!open) resetForm() })
+
+  function addUser() {
+    const newUser: User = {
+      id: crypto.randomUUID(),
+      name: form.name.trim(),
+      email: form.email.trim(),
+      phoneNumber: form.phoneNumber.trim(),
+      emailVerified: form.status === 'verified',
+      admin: form.role === 'admin',
+      blocked: form.status === 'blocked',
+      createdAt: new Date().toISOString(),
+      hasPrayerRequest: false,
+    }
+    users.value = [...(users.value ?? []), newUser]
+    addOpen.value = false
+  }
+
+
   const stats = computed(() => {
     const list = users.value ?? []
     return [
@@ -163,7 +219,12 @@
     <div class="flex flex-col justify-between">
       <div class="mb-8 flex items-center justify-between">
         <h1 class="border-l-4 border-[#c8294f] pl-3 text-2xl font-bold">Admin Dashboard</h1>
-        <UButton icon="i-heroicons-plus-20-solid" label="Add User" class="bg-[#C8294F] hover:bg-[#a82142]" />
+        <UButton 
+          icon="i-heroicons-plus-20-solid" 
+          label="Add User" 
+          class="bg-[#C8294F] hover:bg-[#a82142]" 
+          @click="addOpen = true"
+          />
       </div>
 
       <!-- Stats cards -->
@@ -427,7 +488,47 @@
           </template>
         </UTable>
       </div>
-
     </UCard>
+    <UModal
+      v-model:open="addOpen"
+      title="Add User"
+      description="Fill in every field to add a new user."
+    >
+      <template #body>
+        <UForm id="add-user-form" :state="form" :validate="validate" class="space-y-4" @submit="addUser">
+          <UFormField label="Name" name="name" required>
+            <UInput v-model="form.name" placeholder="Full name" class="w-full" />
+          </UFormField>
+        
+          <UFormField label="Email" name="email" required>
+            <UInput v-model="form.email" type="email" placeholder="name@example.com" class="w-full" />
+          </UFormField>
+        
+          <UFormField label="Phone Number" name="phoneNumber" required>
+            <UInput v-model="form.phoneNumber" type="tel" placeholder="(555) 123-4567" class="w-full" />
+          </UFormField>
+        
+          <UFormField label="Role" name="role" required>
+            <USelect v-model="form.role" :items="roleOptions" placeholder="Select a role" class="w-full" />
+          </UFormField>
+        
+          <UFormField label="Status" name="status" required>
+            <USelect v-model="form.status" :items="statusOptions" placeholder="Select a status" class="w-full" />
+          </UFormField>
+        </UForm>
+      </template>
+    
+      <template #footer>
+        <div class="flex w-full justify-start gap-2">
+          <UButton
+            type="submit"
+            form="add-user-form"
+            label="Submit"
+            class="bg-[#C8294F] hover:bg-[#a82142]"
+          />
+          <UButton color="neutral" variant="ghost" label="Cancel" @click="addOpen = false" />
+        </div>
+      </template>
+    </UModal>
   </UContainer>
 </template>
