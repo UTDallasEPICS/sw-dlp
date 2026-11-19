@@ -217,7 +217,7 @@
   const stats = computed(() => {
     const list = users.value ?? []
     return [
-      { label: 'Total Users', value: list.length, icon: 'i-heroicons-users-20-solid', text: 'text-rose-600', bg: 'bg-rose-100' },
+      { label: 'Total Users', value: list.length, icon: 'i-heroicons-users-20-solid', text: 'text-pink-600', bg: 'bg-pink-100' },
       { label: 'Admins', value: list.filter(u => u.admin).length, icon: 'i-heroicons-user-group-20-solid', text: 'text-purple-600', bg: 'bg-purple-100' },
       { label: 'Verified', value: list.filter(u => getUserStatus(u) === 'verified').length, icon: 'i-heroicons-user-circle-20-solid', text: 'text-green-600', bg: 'bg-green-100' },
       { label: 'Non-verified', value: list.filter(u => getUserStatus(u) === 'non-verified').length, icon: 'i-heroicons-clock-20-solid', text: 'text-amber-600', bg: 'bg-amber-100' },
@@ -298,8 +298,12 @@
       </div>
 
       <!-- Stats cards -->
-      <div class="mb-6 grid grid-cols-2 gap-4 lg:grid-cols-4">
-        <UCard v-for="s in stats" :key="s.label">
+      <div class="mb-6 grid grid-cols-2 gap-4 lg:grid-cols-6">
+        <UCard 
+          v-for="(s, i) in stats" 
+          :key="s.label"
+          :class="i < 2 ? 'lg:col-span-3' : 'lg:col-span-2'"
+        >
           <div class="flex items-center justify-between">
             <div>
               <p class="text-sm text-gray-500">{{ s.label }}</p>
