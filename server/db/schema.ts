@@ -34,6 +34,21 @@ export const prayerRequest = sqliteTable('prayerRequest', {
   ],
 )
 
+export const adminNote = sqliteTable(
+  'adminNote',
+  {
+    id: text('id').primaryKey().$defaultFn(() => crypto.randomUUID()),
+    userId: text('userId')
+      .notNull()
+      .references(() => user.id, { onDelete: 'cascade' }),
+    authorId: text('authorId').references(() => user.id, { onDelete: 'set null' }),
+    note: text('note').notNull(),
+    createdAt: integer('createdAt', { mode: 'timestamp' }).notNull().$defaultFn(() => new Date()),
+    updatedAt: integer('updatedAt', { mode: 'timestamp' }).notNull().$defaultFn(() => new Date()),
+  },
+  (table) => [index('adminNote_userId_idx').on(table.userId)]
+)
+
 export const badge = sqliteTable('badge', {
   id: text('id')
     .primaryKey()

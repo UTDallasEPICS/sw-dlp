@@ -1,10 +1,11 @@
 import { db } from '../../utils/db'
 import { user, prayerRequest } from '../../db/schema'
 import { eq, sql } from 'drizzle-orm'
-//import { requireAdmin } from '../../utils/session.ts'
+import { requireAdmin } from '../../utils/session.ts'
 
 // await requireAdmin(event) add back to test admin
 export default defineEventHandler(async (event) => {
+    await requireAdmin(event)
 
   // combine user data w/ prayer request data
   const rows = await db

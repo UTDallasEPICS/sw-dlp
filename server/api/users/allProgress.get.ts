@@ -5,9 +5,7 @@ import { getChapterProgress } from '~~/server/utils/chapterProgress'
 
 // for admin: get ALL users progress percentage by chapter
 export default defineEventHandler(async (event) => {
-  /* take off later when actuallly implementing admin thing
     await requireAdmin(event)
-  */
 
   const users = await db
     .select({ id: user.id })

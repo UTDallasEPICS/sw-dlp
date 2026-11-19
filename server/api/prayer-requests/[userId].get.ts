@@ -5,9 +5,8 @@ import { requireAdmin } from '~~/server/utils/session'
 
 // gets prayer-request user data for admin
 export default defineEventHandler(async (event) => {
-  /* ADD back to enforce admin requirement
   await requireAdmin(event)
-*/
+
   const userId = getRouterParam(event, 'userId')
 
   if (!userId) {

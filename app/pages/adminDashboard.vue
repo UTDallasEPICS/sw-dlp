@@ -306,6 +306,10 @@
       minute: '2-digit',
     })
   }
+
+  function canManagePrivateFieldsFor(rowUser: { admin: boolean }) {
+    return rowUser.admin === false
+  }
 </script>
 
 <template>
@@ -584,7 +588,10 @@
                 </UCard>
 
                 <!-- Prayer requests -->
-                <UCard variant="outline" class="lg:col-span-2">
+                <UCard 
+                  v-if="canManagePrivateFieldsFor(row.original)"
+                  variant="outline" 
+                  class="lg:col-span-2">
                   <div class="space-y-3">
                     <h3 class="font-semibold text-black">Prayer Requests</h3>
 
@@ -624,6 +631,12 @@
                   </div>
                 </UCard>
 
+                <!-- Notes for users only (never on other admins) -->
+                <AdminNotes
+                  v-if="canManagePrivateFieldsFor(row.original)"
+                  :user-id="row.original.id"
+                  :user-name="row.original.name"
+                />
               </div>
             </Transition>
           </template>
