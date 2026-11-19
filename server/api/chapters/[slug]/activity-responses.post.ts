@@ -1,10 +1,14 @@
 import { db } from '../../../utils/db'
-import { eq } from 'drizzle-orm'
+import { and, eq } from 'drizzle-orm'
+import { queryCollection } from '@nuxt/content/nitro'
 import { z } from 'zod'
+import { chapterSlugFromPath, scrolledReadingStep, splitReadingPages } from '#shared/utils/readingPages'
 import {
   chapter,
   activity,
   activityQuestion,
+  lesson,
+  userLesson,
   userQuestionResponse,
 } from '~~/server/db/schema'
 
@@ -71,6 +75,34 @@ export default defineEventHandler(async (event) => {
       statusCode: 404,
       statusMessage: 'Activity not found',
     })
+  }
+
+  if (mode === 'submit') {
+    const chapters = await queryCollection(event, 'chapters').select('path', 'body').all()
+    const content = chapters.find((entry) => chapterSlugFromPath(entry.path) === slug)
+    if (!content) {
+      throw createError({ statusCode: 404, statusMessage: 'Chapter reading content not found' })
+    }
+
+    const completed = await db
+      .select({ stepId: lesson.name })
+      .from(lesson)
+      .innerJoin(userLesson, and(
+        eq(userLesson.lessonId, lesson.id),
+        eq(userLesson.userId, userId),
+        eq(userLesson.completed, true),
+      ))
+      .where(eq(lesson.chapterId, savedChapter.id))
+    const completedSteps = new Set(completed.map(({ stepId }) => stepId))
+    const readingsComplete = splitReadingPages(content.body).every((_, index) =>
+      completedSteps.has(scrolledReadingStep(`reading-${index + 1}`))
+    )
+    if (!readingsComplete) {
+      throw createError({
+        statusCode: 409,
+        statusMessage: 'Complete all reading pages before submitting this activity',
+      })
+    }
   }
 
   // load the valid questions

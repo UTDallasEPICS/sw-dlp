@@ -1,5 +1,6 @@
 import { and, eq } from 'drizzle-orm'
 import { z } from 'zod'
+import { scrolledReadingStep } from '#shared/utils/readingPages'
 import {
   activity,
   activityQuestion,
@@ -13,6 +14,7 @@ import { requireUser } from '~~/server/utils/session'
 
 const bodySchema = z.object({
   stepId: z.string().regex(/^(video|reading-\d+|activity)$/),
+  reachedBottom: z.literal(true).optional(),
 })
 
 export default defineEventHandler(async (event) => {
@@ -38,6 +40,10 @@ export default defineEventHandler(async (event) => {
   }
 
   const stepId = body.data.stepId
+  if (stepId.startsWith('reading-') && !body.data.reachedBottom) {
+    throw createError({ statusCode: 400, statusMessage: 'Scroll to the bottom to complete this reading page' })
+  }
+  const storedStepId = scrolledReadingStep(stepId)
   const validStep =
     stepId === 'video'
       ? Boolean(
@@ -67,7 +73,7 @@ export default defineEventHandler(async (event) => {
     .from(lesson)
     .where(and(
       eq(lesson.chapterId, savedChapter.id),
-      eq(lesson.name, stepId)
+      eq(lesson.name, storedStepId)
     ))
     .get()
 
@@ -76,7 +82,7 @@ export default defineEventHandler(async (event) => {
       .insert(lesson)
       .values({
         chapterId: savedChapter.id,
-        name: stepId,
+        name: storedStepId,
         type: stepId.split('-')[0] ?? stepId,
       })
       .returning({ id: lesson.id })

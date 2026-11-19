@@ -1,8 +1,8 @@
 import { requireUser } from '~~/server/utils/session'
-import { getChapterProgress } from '~~/server/utils/chapterProgress'
+import { getChapterProgress, getReadingPageCounts } from '~~/server/utils/chapterProgress'
 
 export default defineEventHandler(async (event) => {
   const currentUser = requireUser(event)
 
-  return getChapterProgress(currentUser.id)
+  return getChapterProgress(currentUser.id, await getReadingPageCounts(event))
 })

@@ -1,4 +1,5 @@
 import { and, eq } from 'drizzle-orm'
+import { visibleProgressStep } from '#shared/utils/readingPages'
 import { chapter, lesson, userLesson } from '~~/server/db/schema'
 import { db } from '~~/server/utils/db'
 import { requireUser } from '~~/server/utils/session'
@@ -33,5 +34,8 @@ export default defineEventHandler(async (event) => {
       eq(lesson.chapterId, savedChapter.id)
     )
 
-  return { completedSteps: completedSteps.map(({ stepId }) => stepId) }
+  return {
+    completedSteps: completedSteps.map(({ stepId }) => visibleProgressStep(stepId))
+      .filter((stepId) => stepId !== undefined),
+  }
 })

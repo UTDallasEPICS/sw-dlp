@@ -1,4 +1,7 @@
 import { and, eq } from 'drizzle-orm'
+import { queryCollection } from '@nuxt/content/nitro'
+import type { H3Event } from 'h3'
+import { chapterSlugFromPath, scrolledReadingStep, splitReadingPages, visibleProgressStep } from '#shared/utils/readingPages'
 import {
   activity,
   chapter,
@@ -12,12 +15,22 @@ const hasLessonIdColumn = (
     db.$client.prepare('PRAGMA table_info(userLesson)').all() as Array<{ name: string }>
   ).some((column) => column.name === 'lessonId')
 
-export async function getChapterProgress(userId: string) {
+export async function getReadingPageCounts(event: H3Event) {
+  return new Map(
+    (await queryCollection(event, 'chapters').select('path', 'body').all()).map((entry) => [
+      chapterSlugFromPath(entry.path), splitReadingPages(entry.body).length,
+    ] as const)
+  )
+}
+
+export async function getChapterProgress(userId: string, readingPageCounts: ReadonlyMap<string, number>) {
     const rows = await db
         .select({
         chapterId: chapter.id,
         chapterName: chapter.name,
+        chapterSlug: chapter.slug,
         lessonId: lesson.id,
+        lessonName: lesson.name,
         completed: userLesson.completed,
         })
         .from(chapter)
@@ -79,12 +92,12 @@ export async function getChapterProgress(userId: string) {
         completedStepIds: new Set(),
         videoIds: new Set(),
         hasActivity: false,
-        readingPageCount: 1,
+        readingPageCount: readingPageCounts.get(chapterSlugFromPath(row.chapterSlug)) ?? 1,
       }
       chapters.set(row.chapterId, progress)
     }
 
-    if (row.lessonId) {
+    if (row.lessonId && row.lessonName && visibleProgressStep(row.lessonName) !== undefined) {
       progress.lessonCount += 1
       if (row.completed) {
         progress.completedLessonCount += 1
@@ -102,23 +115,13 @@ export async function getChapterProgress(userId: string) {
     }
   }
 
-  const chapterRows = await db
-    .select({ id: chapter.id, content: chapter.content })
-    .from(chapter)
-  for (const row of chapterRows) {
-    const progress = chapters.get(row.id)
-    if (progress) {
-      progress.readingPageCount = Math.max(1, (row.content.match(/<-{2,}\s*next\s*-{2,}>/gi) ?? []).length + 1)
-    }
-  }
-
   const chapterProgress = Array.from(chapters.values(), (progress) => {
     const lessonCompleted =
       progress.lessonCount > 0 &&
       progress.completedLessonCount === progress.lessonCount
     const stepIds = [
       ...(progress.videoIds.size > 0 ? ['video'] : []),
-      ...Array.from({ length: progress.readingPageCount }, (_, index) => `reading-${index + 1}`),
+      ...Array.from({ length: progress.readingPageCount }, (_, index) => scrolledReadingStep(`reading-${index + 1}`)),
       ...(progress.hasActivity ? ['activity'] : []),
     ]
     const completedSteps = stepIds.filter((stepId) => progress.completedStepIds.has(stepId))
