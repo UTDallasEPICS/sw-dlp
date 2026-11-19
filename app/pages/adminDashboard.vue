@@ -227,8 +227,11 @@
 
   const filteredUsers = computed(() => {
     const q = search.value.trim().toLowerCase()
+    const looksLikePhone = /^[\d\s()+-]+$/.test(q)
+    const phoneQuery = looksLikePhone ? normalizePhone(q) : ''
+
     return (usersWithProgress.value ?? []).filter(user => {
-      const matchesSearch = !q || user.name.toLowerCase().includes(q) || user.email.toLowerCase().includes(q)
+      const matchesSearch = !q || user.name.toLowerCase().includes(q) || user.email.toLowerCase().includes(q) || (phoneQuery !== '' && normalizePhone(user.phoneNumber).includes(phoneQuery)) || user.completedChapterNames.some(c => c.toLowerCase().includes(q))
       const matchesStatus = statusFilter.value === 'all' || getUserStatus(user) === statusFilter.value
       const matchesRole = roleFilter.value === 'all' || (roleFilter.value === 'admin' ? user.admin : !user.admin)
       const matchesPrayer = prayerFilter.value === 'all' || (prayerFilter.value === 'yes' ? user.hasPrayerRequest : !user.hasPrayerRequest)
@@ -274,6 +277,11 @@
     if (normalized.length !== 10) return phone
     return `(${normalized.slice(0, 3)}) ${normalized.slice(3, 6)}-${normalized.slice(6)}`
   }
+
+  function normalizePhone(value: string | null | undefined): string {
+    const digits = (value ?? '').replace(/\D/g, '')
+    return digits.length === 11 && digits.startsWith('1') ? digits.slice(1) : digits
+  }
 </script>
 
 <template>
@@ -309,7 +317,7 @@
         <div class="flex flex-col gap-3 md:flex-row">
           <UInput
             v-model="search"
-            placeholder="Search by name, email, or chapter"
+            placeholder="Search by name, email, phone number, or chapter"
             icon="i-heroicons-magnifying-glass-20-solid"
             class="flex-1 border-[#f3f3f5]"
           />
