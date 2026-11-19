@@ -231,7 +231,7 @@
     const phoneQuery = looksLikePhone ? normalizePhone(q) : ''
 
     return (usersWithProgress.value ?? []).filter(user => {
-      const matchesSearch = !q || user.name.toLowerCase().includes(q) || user.email.toLowerCase().includes(q) || (phoneQuery !== '' && normalizePhone(user.phoneNumber).includes(phoneQuery)) || user.completedChapterNames.some(c => c.toLowerCase().includes(q))
+      const matchesSearch = !q || user.name.toLowerCase().includes(q) || user.email.toLowerCase().includes(q) || (phoneQuery !== '' && normalizePhone(user.phoneNumber).includes(phoneQuery)) //|| user.completedChapterNames.some(c => c.toLowerCase().includes(q))
       const matchesStatus = statusFilter.value === 'all' || getUserStatus(user) === statusFilter.value
       const matchesRole = roleFilter.value === 'all' || (roleFilter.value === 'admin' ? user.admin : !user.admin)
       const matchesPrayer = prayerFilter.value === 'all' || (prayerFilter.value === 'yes' ? user.hasPrayerRequest : !user.hasPrayerRequest)
@@ -317,7 +317,7 @@
         <div class="flex flex-col gap-3 md:flex-row">
           <UInput
             v-model="search"
-            placeholder="Search by name, email, phone number, or chapter"
+            placeholder="Search by name, email, or phone number"
             icon="i-heroicons-magnifying-glass-20-solid"
             class="flex-1 border-[#f3f3f5]"
           />
