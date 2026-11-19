@@ -1,6 +1,17 @@
 <script setup lang="ts">
+  definePageMeta({ key: (route) => route.path })
+
   const route = useRoute()
   const slug = String(route.params.slug)
+
+  const { data: courseSections } = await useFetch('/api/course-titles')
+  const nextChapterSlug = computed(() => {
+    const chapters = (courseSections.value ?? [])
+      .flatMap((section) => section.chapters)
+      .filter((chapter) => chapter.slug)
+    const currentIndex = chapters.findIndex((chapter) => chapter.slug === slug)
+    return currentIndex >= 0 ? chapters[currentIndex + 1]?.slug : undefined
+  })
 
   interface ActivityQuestion {
     id: string
@@ -461,6 +472,7 @@
         saveState.value = 'error'
         scheduleAutosave() 
       }
+      return false
     } finally {
       if (mode === 'submit') {
         isSubmitting.value = false
@@ -496,6 +508,28 @@
     if (saveTimer) clearTimeout(saveTimer)
     await saveToDb('submit')
   }
+
+  const isChangingChapter = ref(false)
+
+  async function goToNextChapter() {
+    const nextSlug = nextChapterSlug.value
+    if (!nextSlug || isSubmitting.value || isChangingChapter.value) return
+
+    isChangingChapter.value = true
+    try {
+      if (activeStep.value === 'activity' && !completedSteps.value.includes('activity')) {
+        if (saveTimer) clearTimeout(saveTimer)
+        if ((await saveToDb('autosave')) === false) return
+      }
+      await navigateTo(`/chapters/${nextSlug}`)
+    } finally {
+      isChangingChapter.value = false
+    }
+  }
+
+  onBeforeUnmount(() => {
+    if (saveTimer) clearTimeout(saveTimer)
+  })
 </script>
 
 <template>
@@ -594,6 +628,8 @@
       :chapter-title="chapterTitle"
       :steps="steps"
       :completed-steps="completedSteps"
+      :has-next-chapter="Boolean(nextChapterSlug) && !isSubmitting && !isChangingChapter"
+      @next-chapter="goToNextChapter"
     />
   </main>
 </template>

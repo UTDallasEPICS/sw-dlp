@@ -12,6 +12,7 @@
       steps?: Omit<Step, 'status'>[]
       modelValue?: string
       completedSteps?: string[]
+      hasNextChapter?: boolean
     }>(),
     {
       steps: () => [
@@ -25,6 +26,7 @@
 
   const emit = defineEmits<{
     'update:modelValue': [stepId: string]
+    'next-chapter': []
   }>()
 
   const currentIndex = computed(() => {
@@ -57,6 +59,8 @@
     const nextStep = props.steps[currentIndex.value + 1]
     if (nextStep) {
       emit('update:modelValue', nextStep.id)
+    } else if (props.hasNextChapter) {
+      emit('next-chapter')
     }
   }
 
@@ -104,8 +108,8 @@
       <button
         type="button"
         class="border-brand-500 text-brand-500 hover:bg-brand-50 flex h-10 w-10 items-center justify-center rounded-full border-2 transition"
-        aria-label="Next"
-        :disabled="isLast"
+        :aria-label="isLast ? 'Next chapter' : 'Next step'"
+        :disabled="isLast && !hasNextChapter"
         @click="goNext"
       >
         <UIcon name="i-lucide-arrow-right" class="h-7 w-7" />
