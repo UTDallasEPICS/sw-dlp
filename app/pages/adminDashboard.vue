@@ -102,35 +102,59 @@
   const roleChoices = roleItems.filter(i => i.value !== 'all')
   const statusChoices = statusItems.filter(i => i.value !== 'all')
 
-  function updateUser(id: string, change: {role?: string; status?: UserStatus}){
+  const updatingUsers = ref<string[]>([])
+
+  async function updateUser(
+    id: string,
+    change: {
+      role?: 'admin' | 'user'
+      status?: UserStatus
+    }
+  ) {
     const target = (users.value ?? []).find(u => u.id === id)
     if (!target) return
 
-    users.value = (users.value ?? []).map(u => {
-      if (u.id !== id) return u
-      const next = { ...u }
-      
-      if (change.role) next.admin = change.role === 'admin'
-      
-      if (change.status) {
-        next.blocked = change.status === 'blocked'
-        // Blocking leaves emailVerified alone, so unblocking can restore the real state
-        if (change.status !== 'blocked') next.emailVerified = change.status === 'verified'
-      }
-      return next
-    })
+    // Prevent duplicate requests for the same user
+    if (updatingUsers.value.includes(id)) return
 
-    toast.add({
-      title: change.role ? 'Role updated' : 'Status Updated',
-      description: `${target.name} is now ${change.role ?? change.status}.`,
-      icon: 'i-lucide-check-circle',
-      color: 'success',
-    })
+    updatingUsers.value.push(id)
+
+    try {
+      await $fetch(`/api/users/${encodeURIComponent(id)}`, {
+        method: 'PATCH',
+        body: change,
+      })
+
+      // Get the updated user data from the database
+      await refresh()
+
+      toast.add({
+        title: change.role ? 'Role updated' : 'Status updated',
+        description: `${target.name} is now ${change.role ?? change.status}.`,
+        icon: 'i-lucide-check-circle',
+        color: 'success',
+      })
+    } catch (error: any) {
+      toast.add({
+        title: 'Update failed',
+        description:
+          error.data?.statusMessage ??
+          error.statusMessage ??
+          'Could not update the user.',
+        icon: 'i-lucide-circle-alert',
+        color: 'error',
+      })
+    } finally {
+      updatingUsers.value = updatingUsers.value.filter(
+        userId => userId !== id
+      )
+    }
   }
 
   function getRowItems(user: User): DropdownMenuItem[][] {
     const currentRole = user.admin ? 'admin' : 'user'
     const currentStatus = getUserStatus(user)
+    const isUpdating = updatingUsers.value.includes(user.id)
 
     return [
       [{ type: 'label', label: 'Edit user' }],
@@ -142,7 +166,10 @@
             label: o.label,
             type: 'checkbox' as const,
             checked: currentRole === o.value,
-            onSelect: () => updateUser(user.id, { role: o.value }),
+            disabled: isUpdating,
+            onSelect: () => updateUser(user.id, {
+              role: o.value as 'admin' | 'user',
+            }),
           })),
         },
         {
@@ -152,7 +179,10 @@
             label: o.label,
             type: 'checkbox' as const,
             checked: currentStatus === o.value,
-            onSelect: () => updateUser(user.id, { status: o.value as UserStatus }),
+            disabled: isUpdating,
+            onSelect: () => updateUser(user.id, {
+              status: o.value as UserStatus,
+            }),
           })),
         },
       ],
@@ -198,22 +228,49 @@
   // Clears the form whenever the modal closes (Cancel, X, or after submit)
   watch(addOpen, open => { if (!open) resetForm() })
 
-  function addUser() {
-    const newUser: User = {
-      id: crypto.randomUUID(),
-      name: form.name.trim(),
-      email: form.email.trim(),
-      phoneNumber: form.phoneNumber.trim(),
-      emailVerified: form.status === 'verified',
-      admin: form.role === 'admin',
-      blocked: form.status === 'blocked',
-      createdAt: new Date().toISOString(),
-      updatedAt: new Date().toISOString(),
-      hasPrayerRequest: false,
-    }
-    users.value = [...(users.value ?? []), newUser]
+  const addingUser = ref(false)
+
+async function addUser() {
+  if (addingUser.value) return
+
+  addingUser.value = true
+
+  try {
+    await $fetch('/api/users/insert', {
+      method: 'POST',
+      body: {
+        name: form.name.trim(),
+        email: form.email.trim(),
+        phoneNumber: form.phoneNumber.trim(),
+        role: form.role,
+        status: form.status,
+      },
+    })
+
+    // Reload users from the database
+    await refresh()
+
+    // Close modal after successful creation
     addOpen.value = false
+
+    toast.add({
+      title: 'User created',
+      description: 'The user was successfully added to the database.',
+      color: 'success',
+    })
+  } catch (error: any) {
+    toast.add({
+      title: 'Could not create user',
+      description:
+        error.data?.statusMessage ??
+        error.statusMessage ??
+        'An unexpected error occurred.',
+      color: 'error',
+    })
+  } finally {
+    addingUser.value = false
   }
+}
 
 
   const stats = computed(() => {
@@ -448,12 +505,12 @@
           <!-- Prayer Request (Shows count if loaded/available) -->
           <template #hasPrayerRequest-cell="{ row }">
             <UBadge
-              :color="row.original.hasPrayerRequest ? 'secondary' : 'neutral'"
+              :color="(row.original.hasPrayerRequest && !row.original.admin) ? 'secondary' : 'neutral'"
               variant="soft"
               size="md"
             >
               {{
-                (prayerRequests[row.original.id]?.length ?? 0) > 1 ? `${prayerRequests[row.original.id]?.length ?? 0} Requests`
+                row.original.admin? 'N/A' : (prayerRequests[row.original.id]?.length ?? 0) > 1 ? `${prayerRequests[row.original.id]?.length ?? 0} Requests`
                   : row.original.prayerRequestCount === 1 ? `1 Request` : 'None'
               }}
             </UBadge>
@@ -678,6 +735,8 @@
             type="submit"
             form="add-user-form"
             label="Submit"
+            :loading="addingUser"
+            :disable="addingUser"
             class="bg-[#C8294F] hover:bg-[#a82142]"
           />
           <UButton color="neutral" variant="ghost" label="Cancel" @click="addOpen = false" />
