@@ -1,5 +1,5 @@
 <script setup lang="ts">
-  import type { TableColumn, FormError } from '@nuxt/ui'
+  import type { TableColumn, FormError, DropdownMenuItem } from '@nuxt/ui'
   import type { Row } from '@tanstack/vue-table'
   import { getExpandedRowModel, } from '@tanstack/vue-table'
 
@@ -94,6 +94,68 @@
   function getUserStatus(user: User): UserStatus {
     if (user.blocked) return 'blocked'
     return user.emailVerified ? 'verified' : 'non-verified'
+  }
+
+  const toast = useToast()
+
+  const roleChoices = roleItems.filter(i => i.value !== 'all')
+  const statusChoices = statusItems.filter(i => i.value !== 'all')
+
+  function updateUser(id: string, change: {role?: string; status?: UserStatus}){
+    const target = (users.value ?? []).find(u => u.id === id)
+    if (!target) return
+
+    users.value = (users.value ?? []).map(u => {
+      if (u.id !== id) return u
+      const next = { ...u }
+      
+      if (change.role) next.admin = change.role === 'admin'
+      
+      if (change.status) {
+        next.blocked = change.status === 'blocked'
+        // Blocking leaves emailVerified alone, so unblocking can restore the real state
+        if (change.status !== 'blocked') next.emailVerified = change.status === 'verified'
+      }
+      return next
+    })
+
+    toast.add({
+      title: change.role ? 'Role updated' : 'Status Updated',
+      description: `${target.name} is now ${change.role ?? change.status}.`,
+      icon: 'i-lucide-check-circle',
+      color: 'success',
+    })
+  }
+
+  function getRowItems(user: User): DropdownMenuItem[][] {
+    const currentRole = user.admin ? 'admin' : 'user'
+    const currentStatus = getUserStatus(user)
+
+    return [
+      [{ type: 'label', label: 'Edit user' }],
+      [
+        {
+          label: 'Role',
+          icon: 'i-lucide-shield',
+          children: roleChoices.map(o => ({
+            label: o.label,
+            type: 'checkbox' as const,
+            checked: currentRole === o.value,
+            onSelect: () => updateUser(user.id, { role: o.value }),
+          })),
+        },
+        {
+          label: 'Status',
+          icon: 'i-lucide-circle-dot',
+          children: statusChoices.map(o => ({
+            label: o.label,
+            type: 'checkbox' as const,
+            checked: currentStatus === o.value,
+            onSelect: () => updateUser(user.id, { status: o.value as UserStatus }),
+          })),
+        },
+      ],
+    ]
   }
 
   // adding User modal for "Add User" button
@@ -390,14 +452,20 @@
             </UButton>
           </template>
 
-          <template #edit-cell>
-            <UButton
-              trailing-icon="i-heroicons-ellipsis-vertical"
-              color="neutral"
-              variant="ghost"
-              size="md"
-              aria-label="Edit user"
-            >Edit</UButton>
+          <template #edit-cell="{row}">
+            <UDropdownMenu
+              :items="getRowItems(row.original)"
+              :content="{align: 'end'}"
+              :ui="{ content: 'w-48'}"
+            >
+              <UButton
+                trailing-icon="i-heroicons-ellipsis-vertical"
+                color="neutral"
+                variant="ghost"
+                size="md"
+                aria-label="Edit user"
+              >Edit</UButton>
+            </UDropdownMenu>
           </template>
 
           <!-- Expanded cell content with smooth transition wrapper -->
