@@ -73,8 +73,6 @@ The #5 Ingredient to the Seven Ingredients of Perfection is the Power of Your Wo
 
 Redefining and respecting the power of your words is vital to your healing process. You communicate internally and externally with your words. Your internal words are your self-talk; and the external words are the words you use in public. To begin to direct your self-image in the way that you desire, you must recognize the importance of your words. Self-talk is the thoughts you think, the mutterings under your breath, and the utterances you speak when you are alone. These messages are what you have learned about yourself from your family, friends, school, and the socialization of your society. These beliefs will include influences of religion, culture, financial status, racial prejudice and stigmas specific to our society.70 Impressions of self are added to this compilation in a “tape” that repeats when feeling down and self-esteem is low. Unfortunately, this mental exercise is extremely damaging and is very difficult to pause, stop, and erase. The goal with this section is to record new tapes and replace the old worn-out, obsolete versions. The difficulty with self-talk is that it is not based in reality and it does not matter if it is real or untrue. To replace this self-talk, begin with carrying a small notepad in your purse. Every time you notice that you are thinking a negative thought, write it down. Get with a trusted friend and ask them if this thought is true or untrue. Then begin the process of rewriting each statement from positive to negative.
 
-### Continued
-
 ### You have a small but mighty weapon ![Scripture Reference](/pink_heart_mug.png)
 
 You have a small but mighty powerful weapon. What can build, destroy, edify, and damage relationships in one swift move?
@@ -93,8 +91,6 @@ When has your tongue ever got you into trouble?
 
 What are things you say that you want to change?
 
-### Continued
-
 ### Power of positive words ![Learning Activity](/two_hands_mug.png)
 
 Record a list of positive words:
@@ -112,8 +108,6 @@ Ideas: Possible answers: Open, Happy, Alive, Good, Love, Interested, Positive, S
 Over time you can continue to rewrite these thoughts and repeat your positive thoughts to replace the negative ones. This process will take time, but stick to it. The reward will be valuable to improving your self-image.
 
 It is choice!
-
-### Continued
 
 ### Your words in a group
 
@@ -140,8 +134,6 @@ The requests of your tongue are heard by God.
 
 What ideas in your heart do you want God to bless?
 
-### Continued
-
 ### Power of Your Lessons Ingredient #6
 
 The #6 Ingredient to the Seven Ingredients of Perfection is the Power of Your Lessons. Your lessons have power.
@@ -167,8 +159,6 @@ Often after spending years dedicated to a relationship it is common to feel a hu
 > _“I will repay you for the years the locusts have eaten...”_  
 > **— Joel 2:25 (NIV)**
 
-### Continued
-
 ### I CAN Lessons ![Learning Activity](/two_hands_mug.png)
 
 Below is a list of the lessons that an abusive relationship can teach you.
@@ -193,10 +183,6 @@ I CAN:\
 • Be a survivor.\
 • Be tolerant.\
 • Be free from totally sacrificing myself.
-
-<--next-->
-
-### Continued
 
 As we emerge from our transformational processes we begin to see ourselves in a different light. Recently, have you learned new things about yourself that are wonderful, exciting and need to be celebrated?
 
@@ -227,8 +213,6 @@ Here is sample list to review:\
 • Stop the automatic protective walls that come up.\
 • Stop the destructive self talk.
 
-### Continued
-
 Now your turn. List the lesson to learn and what steps you will take:
 
 | Lesson           | Steps to take to Achieve |
@@ -238,6 +222,8 @@ Now your turn. List the lesson to learn and what steps you will take:
 | &nbsp;<br>&nbsp; | &nbsp;<br>&nbsp;         |
 | &nbsp;<br>&nbsp; | &nbsp;<br>&nbsp;         |
 | &nbsp;<br>&nbsp; | &nbsp;<br>&nbsp;         |
+
+<--next-->
 
 ### Stay connected Ingredient #7
 
@@ -257,8 +243,6 @@ Review the following three scripture to see what God’s word says about how He 
 
 > _“He who dwells in the secret place of the Most High Shall abide under the shadow of the Almighty…2‘He is my refuge and my fortress; My God, in Him I will trust.’ 3…He shall deliver you from the snare of the fowler and from the perilous pestilence. He shall cover you with His feathers, And under His wings you shall take refuge; His truth shall be your shield and buckler. You shall not be afraid of the terror by night, nor of the arrow that flies by day, Nor of the pestilence that walk in darkness, nor of the destruction that lays waste at noonday…. No evil shall befall you, nor shall any plague come near your dwelling; For he shall give His angels charge over you.. In their hands they shall bear you up…15 He shall call upon Me, and I will answer him. I will be with him in trouble; I will deliver him and honor him With long life I will satisfy him…”_  
 > **— Psalms 91:1–16 (NKJV)**
-
-### Continued
 
 ### Stay connected
 
@@ -283,8 +267,6 @@ What areas do you feel called to serve others?
 
 At some point in time, you will begin to think about starting a new relationship. In order to ensure that you will find a healthy partner you must first identify what you want. Create a healthy relationship inventory to identify what you and what God has defined for your next partner.
 
-### Continued
-
 ### Perfect mate
 
 Pretend that you had a perfect world and could have a perfect relationship.
@@ -300,8 +282,6 @@ When you evaluate and meet new people, see how close they come to your important
 For example, say you are developing your spirituality, enjoy your meditation and time for quiet reflection and prayer. Meeting someone who has the same sensitivity to spiritual wellness is important. Rather, if you meet someone who is critical and not supportive of you in those areas, it would be wise to find another candidate.
 
 It is important to find the areas that are critical: religious preferences, money philosophy, physical characteristics, mannerisms, social and relationships, drug and alcohol use, geographical location, family values, criminal activity, and abusive traits.
-
-<--next-->
 
 ### Check for warning signs
 
@@ -328,8 +308,6 @@ The following is a sample checklist to review when you meet new people:
 
 If you are comfortable with your responses, that is good. If there are areas that concern you, then you need to dig deeper. Ask God to give you guidance in this decision.
 
-### Continued
-
 ### The Whirlwind
 
 At the beginning of a new relationship, often you become so enthralled in love that you lose your ability to see the forest through the trees. Remember our discussions about the inner child? Their true self will not be exposed until it is safe to do so. The adult ego state will test the waters first, so you may not be see all their behavior yet. You want to ensure that you allow enough time to pass so that you can observe all their behaviors.
@@ -342,8 +320,6 @@ When a relationship begins to solidify and becomes more serious, you have the ri
 • You can also check any criminal history by logging on to the County Court website where they live and searching the case history for civil or criminal actions.\
 • You can ask to see their driver’s license, financial records, credit report or resume. This may be uncomfortable for both of you to request, but if you are getting serious, you should review that information.\
 • Search for them on the internet. See what you find about them.
-
-### Continued
 
 ### Girl to Girl Advice
 
@@ -370,8 +346,6 @@ Red Flag Tips:
 9. Requires you accommodate them all the time. Ask yourself, what would happen if someone else changed for you instead of you doing all the changing to accommodate them? Spend time determining how rigid their views and opinions are.
 
 10. Be wary of the “carrot.” Like a horse that follows a carrot, you may have a tendency to focus on the illusion and hope that they can make all your dreams come true. This “bait” can mislead you, cloud your judgment, and leave you vulnerable. Make sure that have mutual respect as the basis for the relationship.
-
-### Continued
 
 11. Are you serving or helping so they will love you? Make sure that when you say, “I’ll help” you really understand your motivation. You can set a precedence that keeps you constantly “serving” to meet their needs because it is comfortable for you to do so. You do not need to serve another to receive love. Mutually healthy relationships work to meet the needs of both partners.
 

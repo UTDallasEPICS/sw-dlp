@@ -142,8 +142,6 @@ What is God revealing to you that need to change?
 
 Women need to understand the depth of God’s love for them. Many of you still feel worthless, invisible, not good enough and you struggle with accepting they are worthy. When a woman finally starts believing she is worthy of God’s love she has the a key to unlock her full Stronger than Espresso potential!
 
-<--next-->
-
 ### God’s Promise ![Scripture Reference](/pink_heart_mug.png)
 
 He who began a good work in you should complete that work until the finish.

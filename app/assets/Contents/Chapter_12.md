@@ -202,8 +202,6 @@ If you weren’t able to complete all five, come back to this later. Your goal i
 
 Love yourself, like God loves you.
 
-<--next-->
-
 ### How to enhance self-esteem?
 
 There are many ways that you can enhance self-esteem and thousands of good sources of information for ideas. You can go to the local bookstore, library and internet and find ideas for ways to enhance your self-esteem. There is a wealth of resources at your fingertips ready to be drunk up by you.
@@ -213,6 +211,8 @@ Many advise to make mealtime special, display your personal belongings, or make 
 There are self-esteem changes that you can put into place in your heart and mind at the beginning. As you grow away from this relationship, you will be able to feel comfortable in your own skin. Slowly you will be able to expand to include all of the tips that are made available to you. Do what you can now and grow taking baby steps toward your goals.
 
 What are you doing now to feel good about yourself?
+
+<--next-->
 
 ### Identify God’s blessing over your life ![Scripture Reference](/pink_heart_mug.png)
 

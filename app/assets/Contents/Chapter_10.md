@@ -65,7 +65,7 @@ Chapter 10 helps you know how to identify abuse, categorize behaviors into types
 
 ### Where does it occur?
 
-Domestic violence has many forms, including physical violence, sexual domination, emotional trauma, social isolation or economic restrictions. 33
+Domestic violence has many forms, including physical violence, sexual domination, emotional trauma, social isolation or economic restrictions.
 
 Domestic violence occurs in all cultures, ethnicities, races, religions, and in all socioeconomic levels.
 
@@ -73,7 +73,7 @@ Victims of domestic violence can be both men and women, and can occur in same-se
 
 ### Definition: Domestic abuse
 
-Domestic violence is defined as, “abusive behavior – emotional, psychological, physical, or sexual – that one person in an intimate relationship uses in order to control the other.” 34
+Domestic violence is defined as, “abusive behavior – emotional, psychological, physical, or sexual – that one person in an intimate relationship uses in order to control the other.”
 
 ### Abuse escalates ![Testimonial Quote](/broken_mug.png)
 
@@ -123,7 +123,7 @@ The abuser uses tactics of blame, criticism, intimidation and verbal harassment 
 
 Some victims have described that they have felt their life force was being “sucked up” or “drained away” by their abuser.
 
-Emotional abuse can be Verbal or Non-verbal: 37
+Emotional abuse can be Verbal or Non-verbal:
 
 Verbal —
 
@@ -157,15 +157,13 @@ Non-verbal —
 • Punishes by withholding approval, appreciation or affection.\
 • Withholds praise or good feelings from you.
 
-<--next-->
-
 ### Brainwashed ![Testimonial Quote](/broken_mug.png)
 
 > _“Emotional abuse can be compared with intentional brainwashing. Emotional abusers usually leave the victim confused, weak, depressed, angry, and numb with unclear thinking — and yet loyal to their abusers, hoping the abusive behavior will change…Emotional abuse can produce scars that will remain with you for years.” 38”_
 
 ### Sexual abuse
 
-Signs of Sexual abuse: 39
+Signs of Sexual abuse:
 
 • Harasses you about having an affair.\
 • Stalks you during your daily activities.\
@@ -187,7 +185,7 @@ Signs of Sexual abuse: 39
 
 ### Social abuse
 
-Signs of Social abuse: 40
+Signs of Social abuse:
 
 • Restricts your ability to work or volunteer for social interaction.\
 • Limits contact with your family or friends.\
@@ -201,7 +199,7 @@ Signs of Social abuse: 40
 
 ### Financial abuse
 
-Financial abuse signs: 41
+Financial abuse signs:
 
 • Provides 100% or the majority of the income for the household and uses that fact to control, intimidate or manipulate.\
 • Restricts you from working.\
@@ -239,6 +237,8 @@ Even if you are physically separated from the abuser, you may still feel they ar
 1. Recognizing the behavior you endured as abusive is important. Their incorrect behavior allows you to be free from guilt. You did not cause it. You cannot do anything better to make it improve.
 
 2. Start connecting with people: Stronger than Espresso®, church activities or individuals with similar interests.
+
+<--next-->
 
 ### Identify commonalities
 
@@ -436,6 +436,8 @@ The abuser has an intense desire to control. The victim helps the abuser continu
 ### Safety Plan
 
 If you are considering making a change to a relationship, or have made a recent change in the past, you should have a safety plan. No matter how long you have been out of the relationship there is always a need for safety. All women should have emergency contact and resource numbers.
+
+<--next-->
 
 ### Danger assessment ![Learning Activity](/two_hands_mug.png)
 

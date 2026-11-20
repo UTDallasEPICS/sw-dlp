@@ -197,8 +197,6 @@ If you cannot remain in the Adult state, you will have the same discussion, figh
 
 This communication folly perpetuates the games played between two people. To the extent that clear communication may be unable to exist outside this vicious cycle.
 
-<--next-->
-
 ### You don’t see them at first
 
 These events are not random and have been programmed into your behavior over years of experience and practice.
@@ -226,6 +224,8 @@ Regardless of what ego state your partner demonstrates, you can choose which ego
 Games are played in all relationships. When you are confronted with an argument, action or statement that “gets to you” how you react can make you play the game, or diffuse it. The next time that you are confronted with a situation that makes you uncomfortable, angry or sad, you have a choice on whether to let it “hook” you or not.
 
 You will feel uncomfortable to do this at first. With God’s help you will learn that he is in control and you can establish new pathways.
+
+<--next-->
 
 ### Impact with an abusive relationship
 
@@ -339,8 +339,6 @@ These are common medical issues that can occur for women that have been impacted
 • Chronic Anxiety\
 • Managing Trauma Symptoms
 
-<--next-->
-
 ### Depression
 
 Depression impacts millions of people each day.
@@ -365,26 +363,23 @@ When you stuff feelings down, tension builds inside. At the foundation of your p
 
 Depression Inventory -Answer the questions with a Yes or No.
 
-|                                                                                                                                                              | Yes | No  |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------ | --- | --- |
-| 1. Do you criticize yourself frequently?                                                                                                                     |     |     |
-| 2. Do you think of yourself as weak, a failure, not good enough, unlovable, a loser, etc.?                                                                   |     |     |
-| 3. Do you feel irritated because of someone’s imperfections or insensitivities?                                                                              |     |     |
-| 4. Do you sulk when you realize others don’t agree with your views or preferences?                                                                           |     |     |
-| 5. Do you remain frustrated because of the unfair circumstances you encounter?                                                                               |     |     |
-| 6. Are you unable to feel compassion for yourself, or grant yourself forgiveness most of the time? Are you cruel to yourself when you make mistakes?         |     |     |
-| 7. Do you constantly fail to reach the standards set for yourself?                                                                                           |     |     |
-| 8. Do you lack energy, and have trouble motivating yourself to do things? Do your arms, legs or back feel heavy, achy, and hard to move (not due to injury)? |     |     |
-| 9. Do you promise to do a favor or help someone and then resent the fact that you have too much to do?                                                       |     |     |
-| 10. Do you avoid people you need to confront?                                                                                                                |     |     |
-| 11. Do you speak in sharp tones?                                                                                                                             |     |     |
-| 12. Do you have a short fuse? Then condemn yourself for having it?                                                                                           |     |     |
-| 13. Are you described by others as moody or irritable?                                                                                                       |     |     |
-| 14. Do you feel hurt when a person fails to recognize your needs or perceptions?                                                                             |     |     |
-| 15. Do you hold resentments regarding others’ insensitivities?                                                                                               |     |     |
-
 |                                                                                                                                                                                                                                      | Yes | No  |
 | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | --- | --- |
+| 1. Do you criticize yourself frequently?                                                                                                                                                                                             |     |     |
+| 2. Do you think of yourself as weak, a failure, not good enough, unlovable, a loser, etc.?                                                                                                                                           |     |     |
+| 3. Do you feel irritated because of someone’s imperfections or insensitivities?                                                                                                                                                      |     |     |
+| 4. Do you sulk when you realize others don’t agree with your views or preferences?                                                                                                                                                   |     |     |
+| 5. Do you remain frustrated because of the unfair circumstances you encounter?                                                                                                                                                       |     |     |
+| 6. Are you unable to feel compassion for yourself, or grant yourself forgiveness most of the time? Are you cruel to yourself when you make mistakes?                                                                                 |     |     |
+| 7. Do you constantly fail to reach the standards set for yourself?                                                                                                                                                                   |     |     |
+| 8. Do you lack energy, and have trouble motivating yourself to do things? Do your arms, legs or back feel heavy, achy, and hard to move (not due to injury)?                                                                         |     |     |
+| 9. Do you promise to do a favor or help someone and then resent the fact that you have too much to do?                                                                                                                               |     |     |
+| 10. Do you avoid people you need to confront?                                                                                                                                                                                        |     |     |
+| 11. Do you speak in sharp tones?                                                                                                                                                                                                     |     |     |
+| 12. Do you have a short fuse? Then condemn yourself for having it?                                                                                                                                                                   |     |     |
+| 13. Are you described by others as moody or irritable?                                                                                                                                                                               |     |     |
+| 14. Do you feel hurt when a person fails to recognize your needs or perceptions?                                                                                                                                                     |     |     |
+| 15. Do you hold resentments regarding others’ insensitivities?                                                                                                                                                                       |     |     |
 | 16. Do you feel agitated, restless, anxious much of the time?                                                                                                                                                                        |     |     |
 | 17. Do you believe that things are unlikely to get better?                                                                                                                                                                           |     |     |
 | 18. Do you think you are eating and sleeping way too much or way too little?                                                                                                                                                         |     |     |
@@ -414,6 +409,8 @@ If you answered
 > _“Yes" to two or more of these questions, you may be experiencing some form of depression. Pay close attention to the following questions because “if you catch yourself in one or more of the behaviors, you can be assured that anger is alive within your personality.”_
 
 For more information visit National Alliance on Mental Illness (NAMI).
+
+<--next-->
 
 ### Get help ![Testimonial Quote](/broken_mug.png)
 
@@ -523,8 +520,6 @@ You wait in line for your coffee, tapping your toes incessantly, agitated becaus
 
 Premenstrual Syndrome (PMS) and Premenstrual Dysphonic Disorder (PMDD) are very real conditions and must be embraced with love and understanding. If you remain at odds with your body and ignore your monthly cycles, it can be very damaging. Regardless of what jokes can be made, you need to understand that women, namely you, need self-love during this time. Some women may not be affected, others have mild symptoms, but many women become so affected that their daily lives are interrupted with their menses cycle. It is vital that you look at this monthly event as a part of your patterns of behavior. Like it or not, you must embrace your womanhood and understand times when you need to demand more self-love and love from others.
 
-<--next-->
-
 ### Definition: PMS
 
 Premenstrual syndrome (PMS) is a group of symptoms related to the menstrual cycle. PMS symptoms occur in the week or two weeks before your period (menstruation or monthly bleeding). The symptoms usually go away after your period starts. PMS may interfere with your normal activities at home, school, or work. Menopause, when monthly periods stop, brings an end to PMS.
@@ -625,6 +620,8 @@ When traumatic events happen it may be months or years before you are able to ge
 Your treatment plan will be based on the breadth of your impact and whether or not your symptoms originate from a medical condition or from your trauma. 27
 
 To be restored ask God to shine His light on your next right step. Learning to trust his guidance will help you receive his blessings. Dedicate to working the Stronger than Espresso® program, connect with other woman and break the patterns of your past.
+
+<--next-->
 
 ### Trauma medical impact ![Learning Activity](/two_hands_mug.png)
 

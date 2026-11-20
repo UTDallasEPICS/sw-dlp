@@ -183,8 +183,6 @@ It doesn’t have to be that way:\
 3. Keep to the facts, do not become emotional.
 4. Allow them to respond. If they throw out a sidetrack, return back to the point. Blame and disrespect are their problem.
 
-<--next-->
-
 ### Relationships highs and lows ![Scripture Reference](/pink_heart_mug.png)
 
 Do your relationships always have highs and lows? Do they start out great, then something happens and you are back where you started, fighting and in another broken relationship.
@@ -223,7 +221,7 @@ Have you considered:\
 • When you blame others you give up the control to change and manage your own behavior.\
 • Remove blame from your actions, thoughts and words. When you do this, you are free because you have claimed back control of your emotional state. Change begins in you.
 
-Obsessions
+<--next-->
 
 ### Obsessive behaviors ![Scripture Reference](/pink_heart_mug.png)
 
@@ -328,8 +326,6 @@ This process is normal and must be completed to make it through to the other sid
 > _“Be anxious for nothing, but in everything by prayer and supplication, with thanksgiving, let your requests be made known to God; 7and the peace of God, which surpasses all understanding, will guard your hearts and minds through Christ Jesus.”_  
 > **— Philippians 4:6,7 (NKJV)**
 
-<--next-->
-
 ### Blame
 
 Do you describe your partner’s behavior as childish, mean, vulgar, inappropriate, humiliating, embarrassing, hurtful, and painful? Do you try to justify their behaviors by stating how factors such as: sleep deprivation, alcohol, or stress contributed to their lack of self-control?
@@ -378,6 +374,8 @@ Expect some resistance to change. However, if you make these adjustments and you
 ### Don’t quit
 
 To reap the full result, you must commit to stay the course no matter what. You have the power to choose how you expect to be treated by others. This change does not happen overnight, but you transform over an extended period of time.
+
+<--next-->
 
 ### About you
 
@@ -478,8 +476,6 @@ As simple as this sounds, being able to explain exactly what happened that bothe
 When an event happens we are triggered with an emotional response. If we do not have a healthy way to identify how we feel and share with the other person it sets off coping behaviors. These coping behaviors can become old hurts, habits and hang-ups we have become so accustomed to in our lives.
 
 Using this communication technique takes some getting used to. The best way to use this tool is to write down what you are feeling ahead of time. Sounding out your emotions in a logical frame of mind usually works more effectively on the other party. Many times we have stuffed or ignored our emotions and when we finally do speak our mind it never comes out as good as we planned.
-
-<--next-->
 
 ### When are you unable to say no? ![Learning Activity](/two_hands_mug.png)
 
