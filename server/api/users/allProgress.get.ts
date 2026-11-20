@@ -1,7 +1,7 @@
 import { db } from '~~/server/utils/db'
 import { user } from '~~/server/db/schema'
 import { requireAdmin } from '~~/server/utils/session'
-import { getChapterProgress } from '~~/server/utils/chapterProgress'
+import { getChapterProgress, getReadingPageCounts } from '~~/server/utils/chapterProgress'
 
 // for admin: get ALL users progress percentage by chapter
 export default defineEventHandler(async (event) => {
@@ -12,9 +12,10 @@ export default defineEventHandler(async (event) => {
     .from(user)
 
   const results = []
+  const readingPageCounts = await getReadingPageCounts(event)
 
   for (const currentUser of users) {
-    const { chapters } = await getChapterProgress(currentUser.id)
+    const { chapters } = await getChapterProgress(currentUser.id, readingPageCounts)
 
     const completedChapters = chapters.filter(chapter => chapter.completed).length
     const completedChapterNames = chapters.filter(chapter => chapter.completed)

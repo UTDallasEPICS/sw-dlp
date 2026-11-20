@@ -1,17 +1,12 @@
-<script setup lang="ts">
+<script setup lang='ts'>
+  import { chapterSlugFromPath, splitReadingPages } from '#shared/utils/readingPages'
+
   definePageMeta({ key: (route) => route.path })
 
   const route = useRoute()
   const slug = String(route.params.slug)
 
   const { data: courseSections } = await useFetch('/api/course-titles')
-  const nextChapterSlug = computed(() => {
-    const chapters = (courseSections.value ?? [])
-      .flatMap((section) => section.chapters)
-      .filter((chapter) => chapter.slug)
-    const currentIndex = chapters.findIndex((chapter) => chapter.slug === slug)
-    return currentIndex >= 0 ? chapters[currentIndex + 1]?.slug : undefined
-  })
 
   interface ActivityQuestion {
     id: string
@@ -23,16 +18,14 @@
     description?: string
   }
 
-  const { data: chapter } = await useAsyncData(`chapter-${slug}`, async () => {
+  const { data: chapterData } = await useAsyncData(`chapter-${slug}`, async () => {
     const chapters = await queryCollection('chapters').all()
-
-    return chapters.find((candidate) => {
-      const filename = candidate.path.split('/').pop() ?? ''
-      const filenameSlug = filename.replace(/\.md$/, '').replaceAll('_', '-').toLowerCase()
-
-      return filenameSlug === slug
-    })
+    return {
+      chapter: chapters.find((candidate) => chapterSlugFromPath(candidate.path) === slug),
+      availableSlugs: chapters.map((candidate) => chapterSlugFromPath(candidate.path)),
+    }
   })
+  const chapter = computed(() => chapterData.value?.chapter)
 
   if (!chapter.value) {
     throw createError({
@@ -44,35 +37,30 @@
   const chapterTitle = computed(() => chapter.value?.title ?? '')
   const videos = computed(() => chapter.value?.videos ?? [])
 
-  // ---- Reading pages ----
-  type MarkdownNode = string | [string, Record<string, unknown>, ...unknown[]]
+  const courseSlugs = computed(() => {
+    const available = new Set(chapterData.value?.availableSlugs)
+    const slugs = (courseSections.value ?? []).flatMap((section) =>
+      section.chapters.flatMap(({ slug }) => slug && available.has(slug) ? [slug] : [])
+    )
 
-  function nodeText(node: unknown): string {
-    if (typeof node === 'string') return node
-    if (Array.isArray(node)) return node.slice(2).map(nodeText).join('')
-    return ''
-  }
-
-  // Page Breaks indicated in the markdown files 
-  const PAGE_BREAK = /^\s*<-{2,}\s*next\s*-{2,}>\s*$/i
-
-  const readingPages = computed<MarkdownNode[][]>(() => {
-    const body = chapter.value?.body as { value?: MarkdownNode[] } | undefined
-    const nodes = body?.value ?? []
- 
-    const pages: MarkdownNode[][] = [[]]
-    for (const node of nodes) {
-      if (PAGE_BREAK.test(nodeText(node))) {
-        pages.push([])
-      } else {
-        pages[pages.length - 1]!.push(node)
-      }
+    const firstChapter = slugs.indexOf('chapter-1')
+    if (firstChapter >= 0 && available.has('section-1-overview') && !slugs.includes('section-1-overview')) {
+      slugs.splice(firstChapter, 0, 'section-1-overview')
     }
- 
-    const nonEmpty = pages.filter((page) => page.length > 0)
-    return nonEmpty.length > 0 ? nonEmpty : [[]]
+    for (const closingPage of ['wrap-up', 'action-plan']) {
+      if (available.has(closingPage) && !slugs.includes(closingPage)) slugs.push(closingPage)
+    }
+    return slugs
   })
- 
+  const chapterIndex = computed(() => courseSlugs.value.indexOf(slug))
+  const previousChapterSlug = computed(() => courseSlugs.value[chapterIndex.value - 1])
+  const nextChapterSlug = computed(() => chapterIndex.value >= 0
+    ? courseSlugs.value[chapterIndex.value + 1]
+    : undefined)
+
+  // ---- Reading pages ----
+  const readingPages = computed(() => splitReadingPages(chapter.value?.body))
+
   const readingPageCount = computed(() => readingPages.value.length)
 
   // ---- Activity ----
@@ -86,13 +74,17 @@
     completedSteps: string[]
   }>(`/api/chapters/${slug}/progress`)
   const completedSteps = ref(progressData.value?.completedSteps ?? [])
+  const completedReadingCount = computed(() =>
+    readingPages.value.filter((_, index) => completedSteps.value.includes(`reading-${index + 1}`)).length
+  )
+  const readingsComplete = computed(() => completedReadingCount.value === readingPageCount.value)
 
-  async function completeStep(stepId: string) {
+  async function completeStep(stepId: string, reachedBottom = false) {
     if (completedSteps.value.includes(stepId)) return
     try {
       await $fetch(`/api/chapters/${slug}/progress`, {
         method: 'POST',
-        body: { stepId },
+        body: reachedBottom ? { stepId, reachedBottom } : { stepId },
       })
       completedSteps.value = [...completedSteps.value, stepId]
     } catch (error) {
@@ -265,7 +257,50 @@
   })
 
   /* First available step — never "video" if there is no video */
-  const activeStep = ref(steps.value[0]?.id ?? 'reading-1')
+  const initialStep = route.query.step === 'last' ? steps.value.at(-1) : steps.value[0]
+  const activeStep = ref(initialStep?.id ?? 'reading-1')
+  const readingEnd = ref<HTMLElement | null>(null)
+  const readingSaves = reactive(new Set<string>())
+  const readingSaveError = ref<string>()
+  const readingIncomplete = computed(
+    () => activeStep.value.startsWith('reading-') && !completedSteps.value.includes(activeStep.value)
+  )
+
+  async function completeReading(stepId: string) {
+    if (completedSteps.value.includes(stepId) || readingSaves.has(stepId)) return
+
+    readingSaves.add(stepId)
+    readingSaveError.value = undefined
+    await completeStep(stepId, true)
+    readingSaves.delete(stepId)
+    if (!completedSteps.value.includes(stepId)) readingSaveError.value = stepId
+  }
+
+  watch([readingEnd, activeStep], ([end, stepId], _, onCleanup) => {
+    if (!end || !readingIncomplete.value) return
+
+    const scroller = document.scrollingElement
+    if (!scroller) return
+    let lastScrollTop = scroller.scrollTop
+
+    function checkReadingEnd() {
+      if (!scroller) return
+      const scrollTop = scroller.scrollTop
+      const scrolledDown = scrollTop > lastScrollTop
+      lastScrollTop = scrollTop
+
+      if (!scrolledDown) return
+      if (readingEnd.value !== end || activeStep.value !== stepId || !readingIncomplete.value) return
+      if (readingSaveError.value === stepId) return
+
+      if (scroller.scrollHeight - scrollTop - scroller.clientHeight <= 2) {
+        void completeReading(stepId)
+      }
+    }
+
+    window.addEventListener('scroll', checkReadingEnd, { passive: true })
+    onCleanup(() => window.removeEventListener('scroll', checkReadingEnd))
+  }, { flush: 'post' })
 
   // If steps change, keep activeStep valid
   watch(
@@ -505,15 +540,15 @@
 
   /** Only submit handler — used by the button */
   async function onSubmitActivity() {
+    if (!readingsComplete.value) return
     if (saveTimer) clearTimeout(saveTimer)
     await saveToDb('submit')
   }
 
   const isChangingChapter = ref(false)
 
-  async function goToNextChapter() {
-    const nextSlug = nextChapterSlug.value
-    if (!nextSlug || isSubmitting.value || isChangingChapter.value) return
+  async function goToChapter(targetSlug: string | null | undefined, openLastStep = false) {
+    if (!targetSlug || isSubmitting.value || isChangingChapter.value) return
 
     isChangingChapter.value = true
     try {
@@ -521,7 +556,10 @@
         if (saveTimer) clearTimeout(saveTimer)
         if ((await saveToDb('autosave')) === false) return
       }
-      await navigateTo(`/chapters/${nextSlug}`)
+      await navigateTo({
+        path: `/chapters/${targetSlug}`,
+        query: openLastStep ? { step: 'last' } : undefined,
+      })
     } finally {
       isChangingChapter.value = false
     }
@@ -593,11 +631,17 @@
         v-if="!submitSuccess"
         class="flex w-45 items-center justify-center bg-brand-500 px-3 py-2 text-base font-semibold text-white hover:bg-brand-600"
         :loading="isSubmitting"
-        :disabled="isSubmitting"
+        :disabled="isSubmitting || !readingsComplete"
         @click="onSubmitActivity"
       >
         Submit Activity
       </UButton>
+      <p v-if="!submitSuccess" class="text-sm text-gray-600" aria-live="polite">
+        {{ completedReadingCount }} of {{ readingPageCount }} reading pages completed.
+        <template v-if="!readingsComplete">
+          Scroll to the bottom of the remaining pages before submitting.
+        </template>
+      </p>
       <p v-if="submitError" role="alert" class="text-red-600">
         {{ submitError }}
       </p>
@@ -613,13 +657,18 @@
           class="prose max-w-none text-gray-900 dark:text-gray-900"
           prose
         />
-        <UButton
-          class="mt-8 bg-brand-500 px-4 py-2 font-semibold text-white hover:bg-brand-600"
-          :disabled="completedSteps.includes(activeStep)"
-          @click="completeStep(activeStep)"
-        >
-          {{ completedSteps.includes(activeStep) ? 'Reading completed' : 'I read this page' }}
-        </UButton>
+        <div :key="activeStep" ref="readingEnd" aria-live="polite">
+          <UButton
+            class="mt-8 bg-brand-500 px-4 py-2 font-semibold text-white hover:bg-brand-600"
+            :disabled="readingSaveError !== activeStep"
+            @click="completeReading(activeStep)"
+          >
+            <template v-if="!readingIncomplete">Reading completed</template>
+            <template v-else-if="readingSaveError === activeStep">Retry saving progress</template>
+            <template v-else-if="readingSaves.has(activeStep)">Saving reading progress…</template>
+            <template v-else>Scroll to finish reading</template>
+          </UButton>
+        </div>
       </article>
     </div>   
 
@@ -628,8 +677,10 @@
       :chapter-title="chapterTitle"
       :steps="steps"
       :completed-steps="completedSteps"
+      :has-previous-chapter="Boolean(previousChapterSlug) && !isSubmitting && !isChangingChapter"
       :has-next-chapter="Boolean(nextChapterSlug) && !isSubmitting && !isChangingChapter"
-      @next-chapter="goToNextChapter"
+      @previous-chapter="goToChapter(previousChapterSlug, true)"
+      @next-chapter="goToChapter(nextChapterSlug)"
     />
   </main>
 </template>

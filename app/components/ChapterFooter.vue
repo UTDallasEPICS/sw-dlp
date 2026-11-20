@@ -13,6 +13,7 @@
       modelValue?: string
       completedSteps?: string[]
       hasNextChapter?: boolean
+      hasPreviousChapter?: boolean
     }>(),
     {
       steps: () => [
@@ -27,6 +28,7 @@
   const emit = defineEmits<{
     'update:modelValue': [stepId: string]
     'next-chapter': []
+    'previous-chapter': []
   }>()
 
   const currentIndex = computed(() => {
@@ -52,6 +54,8 @@
     const previousStep = props.steps[currentIndex.value - 1]
     if (previousStep) {
       emit('update:modelValue', previousStep.id)
+    } else if (props.hasPreviousChapter) {
+      emit('previous-chapter')
     }
   }
 
@@ -75,8 +79,8 @@
       <button
         type="button"
         class="border-brand-500 text-brand-500 hover:bg-brand-50 flex h-10 w-10 items-center justify-center rounded-full border-2 transition"
-        aria-label="Previous"
-        :disabled="currentIndex === 0"
+        :aria-label="currentIndex === 0 ? 'Previous chapter' : 'Previous step'"
+        :disabled="currentIndex === 0 && !hasPreviousChapter"
         @click="goPrevious"
       >
         <UIcon name="i-lucide-arrow-left" class="h-7 w-7" />

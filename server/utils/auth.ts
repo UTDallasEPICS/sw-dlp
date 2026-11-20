@@ -18,6 +18,12 @@ function accountNotFound() {
   })
 }
 
+function accountBlocked() {
+  return new APIError('FORBIDDEN', {
+    message: 'Your account has been blocked. Please contact an administrator to un-block.',
+  })
+}
+
 const transporter = nodemailer.createTransport({
   host: env.EMAIL_HOST,
   port: 587,
@@ -51,11 +57,30 @@ export const auth = betterAuth({
         })
       }
       if (!isSignup && !existingUser) throw accountNotFound()
+      
+      if (existingUser) {
+        const row = await db.query.user.findFirst({
+          where: (u, {eq}) => eq(u.email, email.data),
+          columns: {blocked: true}
+        })
+        if (row?.blocked) throw accountBlocked()
+      }
 
       return { context: { body: { ...ctx.body, email: email.data } } }
     }),
   },
   databaseHooks: {
+    session: {
+      create: {
+        before: async (session) => {
+          const row = await db.query.user.findFirst({
+            where: (u, {eq}) => eq(u.id, session.userId),
+            columns: {blocked: true}
+          })
+          if (row?.blocked) throw accountBlocked()
+        }
+      }
+    },
     user: {
       create: {
         before: async (user, ctx) => {
