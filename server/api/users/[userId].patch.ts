@@ -1,7 +1,7 @@
 import { z } from 'zod'
 import { eq } from 'drizzle-orm'
 import { db } from '~~/server/utils/db'
-import { user } from '~~/server/db/schema'
+import { user, session as sessionTable} from '~~/server/db/schema'
 import { requireAdmin } from '~~/server/utils/session'
 
 const updateUserSchema = z.object({
@@ -14,7 +14,8 @@ const updateUserSchema = z.object({
 
 // Admin can updater a user's role & status
 export default defineEventHandler(async (event) => {
-  await requireAdmin(event)
+  const admin = await requireAdmin(event)
+  const adminId = admin.id
 
   const userId = getRouterParam(event, 'userId')
 
@@ -29,6 +30,13 @@ export default defineEventHandler(async (event) => {
     event,
     updateUserSchema.parse
   )
+
+  if (userId === adminId && (input.status === 'blocked' || input.role === 'user')){
+    throw createError({
+      statusCode: 400,
+      statusMessage: 'You cannot block or demote your own account'
+    })
+  }
 
   const existingUser = await db.query.user.findFirst({
     where: eq(user.id, userId),
@@ -70,6 +78,10 @@ export default defineEventHandler(async (event) => {
       emailVerified: user.emailVerified,
       updatedAt: user.updatedAt,
     })
+
+    if (input.status === 'blocked'){
+      await db.delete(sessionTable).where(eq(sessionTable.userId, userId))
+    }
 
   return updatedUser
 })
