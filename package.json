@@ -28,6 +28,7 @@
     "@nuxt/ui": "^4.11.0",
     "@tanstack/vue-table": "^8.21.3",
     "@types/nodemailer": "^8.0.1",
+    "@vite-pwa/nuxt": "^2.0.4",
     "better-auth": "1.6.23",
     "dotenv": "^17.4.2",
     "file-type": "^22.0.2",
