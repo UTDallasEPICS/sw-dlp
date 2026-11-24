@@ -14,6 +14,8 @@ export default defineEventHandler(async (event) => {
       email: user.email,
       admin: user.admin,
       blocked: user.blocked,
+      createdAt: user.createdAt,
+      updatedAt: user.updatedAt,
     })
     .from(user)
     .where(eq(user.id, currentUser.id))
