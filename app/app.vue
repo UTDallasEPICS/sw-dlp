@@ -39,7 +39,7 @@
           <UContainer
             class="relative grid h-16 grid-cols-[minmax(0,1fr)_auto_minmax(0,1fr)] items-center gap-2 px-4 sm:px-6 lg:px-8"
           >
-            <HamburgerMenu class="absolute left-4 lg:hidden" />
+            <HamburgerMenu :is-admin="isAdmin" class="absolute left-4 lg:hidden" />
 
             <nav
               class="hidden min-w-0 items-center gap-1 justify-self-start lg:flex"

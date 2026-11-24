@@ -1,17 +1,24 @@
 <script setup lang="ts">
   import { authClient } from '../utils/auth-client'
 
+  const props = defineProps<{ isAdmin?: boolean }>()
+
   const { data: session } = await authClient.useSession(useFetch)
   const isOpen = ref(false)
-  // <!-- update to have   v-if="isAdmin"  to test --> for admin dashbaord
+
   const links = [
     { label: 'Dashboard', to: '/' },
-    { label: 'Admin', to: '/adminDashboard' },
-    { label: 'Prayer Request', to: '/prayer-request' },
-    { label: 'Profile', to: '/profile' },
+    { label: 'Admin', to: '/adminDashboard', adminOnly: true },
     { label: 'Contact', to: '/contact' },
     { label: 'Resources', to: '/resources' },
+    { label: 'Prayer Request', to: '/prayer-request' },
+    { label: 'Profile', to: '/profile' },
   ]
+
+  // admin-only links are hidden from everyone who isn't an admin
+  const visibleLinks = computed(() =>
+    links.filter((link) => !link.adminOnly || props.isAdmin)
+  )
 
   function closeMenu() {
     isOpen.value = false
@@ -64,7 +71,7 @@
           class="fixed inset-x-0 top-16 bottom-0 z-40 bg-white p-6 lg:hidden"
         >
           <NuxtLink
-            v-for="link in links"
+            v-for="link in visibleLinks"
             :key="link.to"
             :to="link.to"
             class="block rounded-md px-3 py-4 text-center text-xl font-bold hover:bg-gray-100"
