@@ -15,6 +15,12 @@
     phoneNumber: z.string().trim().min(7, 'Enter a valid phone number'),
   })
 
+  const dateFormatter = new Intl.DateTimeFormat('en-US', {
+    month: 'long',
+    day: 'numeric',
+    year: 'numeric',
+  })
+
   const {
     data: profile,
     status,
@@ -50,6 +56,10 @@
 
     copySavedProfile()
     isEditing.value = true
+  }
+
+  function formatDate(value: string) {
+    return dateFormatter.format(new Date(value))
   }
 
   function cancelEditing() {
@@ -127,88 +137,132 @@
   <section class="min-h-[calc(100vh-4rem)] bg-gray-100 px-4 py-10 sm:px-6">
     <UContainer>
       <div class="mx-auto max-w-4xl">
-        <h1 class="mb-6 text-lg font-semibold text-[#e0004d]">Your profile</h1>
+        <div class="mb-6 flex items-center justify-between">
+          <h1 class="text-lg font-semibold text-[#e0004d]">Your profile</h1>
+          <UButton
+            v-if="profile && !isEditing"
+            type="button"
+            color="neutral"
+            variant="ghost"
+            icon="i-lucide-pencil"
+            class="hidden lg:inline-flex"
+            @click="startEditing"
+          >
+            Edit
+          </UButton>
+        </div>
 
         <p v-if="status === 'pending'">Loading profile…</p>
         <p v-else-if="error">Could not load your profile. Please try again.</p>
 
-        <UForm
-          v-else
-          :schema="profileSchema"
-          :state="draft"
-          class="mx-auto max-w-md space-y-5"
-          @submit="saveProfile"
-        >
-          <UFormField label="Name" name="name">
-            <UInput
-              v-model="draft.name"
-              :readonly="!isEditing"
-              class="w-full"
-              @focus="startEditing"
-            />
-          </UFormField>
+        <div v-else-if="profile">
+          <nav class="mx-auto max-w-md space-y-3 lg:hidden" aria-label="Profile fields">
+            <NuxtLink
+              to="/profile-edit/name"
+              class="flex min-h-16 items-center justify-between rounded-lg border border-gray-200 bg-white px-4 py-3 text-left hover:border-[#e0004d]"
+            >
+              <span class="min-w-0">
+                <span class="block text-sm text-gray-500">Name</span>
+                <span class="block truncate">{{ profile.name }}</span>
+              </span>
+              <UIcon name="i-lucide-chevron-right" class="size-5 shrink-0 text-gray-500" aria-hidden="true" />
+            </NuxtLink>
 
-          <UFormField label="Email" name="email">
-            <UInput
-              v-model="draft.email"
-              :readonly="!isEditing || awaitingEmailVerification"
-              class="w-full"
-              @focus="startEditing"
-            />
-          </UFormField>
+            <NuxtLink
+              to="/profile-edit/email"
+              class="flex min-h-16 items-center justify-between rounded-lg border border-gray-200 bg-white px-4 py-3 text-left hover:border-[#e0004d]"
+            >
+              <span class="min-w-0">
+                <span class="block text-sm text-gray-500">Email</span>
+                <span class="block truncate">{{ profile.email }}</span>
+              </span>
+              <UIcon name="i-lucide-chevron-right" class="size-5 shrink-0 text-gray-500" aria-hidden="true" />
+            </NuxtLink>
 
-          <UFormField label="Phone Number" name="phoneNumber">
-            <UInput
-              v-model="draft.phoneNumber"
-              :readonly="!isEditing"
-              class="w-full"
-              @focus="startEditing"
-            />
-          </UFormField>
+            <NuxtLink
+              to="/profile-edit/phoneNumber"
+              class="flex min-h-16 items-center justify-between rounded-lg border border-gray-200 bg-white px-4 py-3 text-left hover:border-[#e0004d]"
+            >
+              <span class="min-w-0">
+                <span class="block text-sm text-gray-500">Phone Number</span>
+                <span class="block truncate">{{ profile.phoneNumber || 'Not provided' }}</span>
+              </span>
+              <UIcon name="i-lucide-chevron-right" class="size-5 shrink-0 text-gray-500" aria-hidden="true" />
+            </NuxtLink>
+          </nav>
 
-          <UFormField
-            v-if="awaitingEmailVerification"
-            label="Email verification code"
-            name="emailOtp"
-            :error="emailOtpError"
+          <UForm
+            :schema="profileSchema"
+            :state="draft"
+            class="mx-auto hidden max-w-md space-y-5 lg:block"
+            @submit="saveProfile"
           >
-            <UInput
-              v-model="emailOtp"
-              inputmode="numeric"
-              autocomplete="one-time-code"
-              class="w-full"
-            />
-            <p class="mt-1 text-sm text-gray-500">
-              Enter the code sent to your new email address.
+            <UFormField label="Name" name="name">
+              <UInput v-model="draft.name" :readonly="!isEditing" class="w-full" />
+            </UFormField>
+
+            <UFormField label="Email" name="email">
+              <UInput
+                v-model="draft.email"
+                :readonly="!isEditing || awaitingEmailVerification"
+                class="w-full"
+              />
+            </UFormField>
+
+            <UFormField label="Phone Number" name="phoneNumber">
+              <UInput v-model="draft.phoneNumber" :readonly="!isEditing" class="w-full" />
+            </UFormField>
+
+            <UFormField
+              v-if="awaitingEmailVerification"
+              label="Email verification code"
+              name="emailOtp"
+              :error="emailOtpError"
+            >
+              <UInput
+                v-model="emailOtp"
+                inputmode="numeric"
+                autocomplete="one-time-code"
+                class="w-full"
+              />
+              <p class="mt-1 text-sm text-gray-500">
+                Enter the code sent to your new email address.
+              </p>
+            </UFormField>
+
+            <p v-if="submitError" role="alert" class="text-sm text-red-600">
+              {{ submitError }}
             </p>
-          </UFormField>
 
-          <p v-if="submitError" role="alert" class="text-sm text-red-600">
-            {{ submitError }}
-          </p>
+            <div v-if="isEditing" class="grid grid-cols-2 gap-4">
+              <UButton
+                type="button"
+                color="primary"
+                variant="outline"
+                class="w-full justify-center rounded-md"
+                :disabled="isSaving"
+                @click="cancelEditing"
+              >
+                Cancel
+              </UButton>
 
-          <div v-if="isEditing" class="grid grid-cols-2 gap-4">
-            <UButton
-              type="button"
-              color="primary"
-              variant="outline"
-              class="w-full justify-center rounded-md"
-              :disabled="isSaving"
-              @click="cancelEditing"
-            >
-              Cancel
-            </UButton>
+              <UButton
+                type="submit"
+                color="primary"
+                class="w-full justify-center rounded-md"
+                :loading="isSaving"
+              >
+                Submit
+              </UButton>
+            </div>
+          </UForm>
 
-            <UButton
-              type="submit"
-              color="primary"
-              class="w-full justify-center rounded-md"
-              :loading="isSaving"
-            >
-              Submit
-            </UButton>
+          <div class="mt-6 text-center text-xs text-gray-400">
+            <p>Account created on {{ formatDate(profile.createdAt) }}</p>
+            <p>Account last updated on {{ formatDate(profile.updatedAt) }}</p>
           </div>
-        </UForm>
+        </div>
+        <p v-else>Profile data is unavailable. Please try again.</p>
       </div>
     </UContainer>
   </section>
