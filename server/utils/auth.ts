@@ -109,6 +109,7 @@ export const auth = betterAuth({
   },
   plugins: [
     emailOTP({
+      changeEmail: { enabled: true },
       async sendVerificationOTP({ email, otp }) {
         await transporter.sendMail({
           from: env.EMAIL_FROM,
