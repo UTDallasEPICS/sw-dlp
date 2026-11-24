@@ -4,10 +4,12 @@ import { user } from '~~/server/db/schema'
 import { db } from '~~/server/utils/db'
 import { requireUser } from '~~/server/utils/session'
 
-const updateProfileSchema = z.object({
-  name: z.string().trim().min(1, 'Name is required'),
-  phoneNumber: z.string().trim().min(7, 'Enter a valid phone number'),
-}).strict()
+const updateProfileSchema = z
+  .object({
+    name: z.string().trim().min(1, 'Name is required'),
+    phoneNumber: z.string().trim().min(7, 'Enter a valid phone number'),
+  })
+  .strict()
 
 export default defineEventHandler(async (event) => {
   const currentUser = requireUser(event)

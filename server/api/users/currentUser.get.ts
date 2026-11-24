@@ -17,6 +17,8 @@ export default defineEventHandler(async (event) => {
       phoneNumber: user.phoneNumber,
       createdAt: user.createdAt,
       updatedAt: user.updatedAt,
+      createdAt: user.createdAt,
+      updatedAt: user.updatedAt,
     })
     .from(user)
     .where(eq(user.id, currentUser.id))
