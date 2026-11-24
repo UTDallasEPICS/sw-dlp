@@ -4,6 +4,14 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: ['@nuxt/ui', '@nuxt/image', '@nuxt/eslint', '@nuxt/content', '@vite-pwa/nuxt'],
   css: ['~/assets/css/main.css'],
+  app: {
+    head: {
+      link: [
+        // Required for iPhone / iPad "Add to Home Screen" icon
+        { rel: 'apple-touch-icon', href: '/apple-touch-icon.png' },
+      ],
+    },
+  },
   // Prettier owns formatting; ESLint handles logic only (no stylistic rules).
   eslint: {
     config: {
@@ -32,7 +40,7 @@ export default defineNuxtConfig({
       display: 'standalone',
       icons: [
         {
-          src: '/logo_not_name.png',
+          src: '/apple-touch-icon.png',
           sizes: '192x192',
           type: 'image/png',
         },
@@ -40,10 +48,11 @@ export default defineNuxtConfig({
           src: '/pink_heart_mug.png',
           sizes: '512x512',
           type: 'image/png',
+          purpose: 'any maskable',
         },
       ],
     },
-    generateSW: {
+    workbox: {
       globStrict: false,
       navigateFallback: undefined,
       globPatterns: ['**/*.{js,css,html,png,svg,ico}'],
