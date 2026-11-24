@@ -49,9 +49,7 @@ export default defineEventHandler(async (event) => {
     })
   }
 
-  const updates: Partial<typeof user.$inferInsert> = {
-    updatedAt: new Date(),
-  }
+  const updates: Partial<typeof user.$inferInsert> = {}
 
   if (input.role !== undefined) {
     updates.admin = input.role === 'admin'
@@ -76,7 +74,6 @@ export default defineEventHandler(async (event) => {
       admin: user.admin,
       blocked: user.blocked,
       emailVerified: user.emailVerified,
-      updatedAt: user.updatedAt,
     })
 
     if (input.status === 'blocked'){
