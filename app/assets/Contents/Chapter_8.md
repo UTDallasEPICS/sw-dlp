@@ -225,8 +225,6 @@ Games are played in all relationships. When you are confronted with an argument,
 
 You will feel uncomfortable to do this at first. With God’s help you will learn that he is in control and you can establish new pathways.
 
-<--next-->
-
 ### Impact with an abusive relationship
 
 The challenge with an abusive relationship is that the same relationship rules do not always apply. Abusive cycles continue because the abuser blames others and there are complex emotional games that are played.
@@ -249,6 +247,8 @@ It will take time, practice and prayer. You can do it. With God’s help — you
 
 > _“With God all things are possible.”_  
 > **— Matthew 19:26**
+
+<--next-->
 
 ### List your hooks ![Learning Activity](/two_hands_mug.png)
 
@@ -410,8 +410,6 @@ If you answered
 
 For more information visit National Alliance on Mental Illness (NAMI).
 
-<--next-->
-
 ### Get help ![Testimonial Quote](/broken_mug.png)
 
 Don’t be ashamed. Get the help you need.
@@ -437,6 +435,8 @@ It is a vicious cycle:\
 • The more pain you cover-up the more you need to mask your pain.
 
 Recognize that every time you choose a dangerous behavior is one more time YOU choose and take responsibility for specific outcomes.
+
+<--next-->
 
 ### Evaluation of where you are emotionally ![Learning Activity](/two_hands_mug.png)
 
@@ -620,8 +620,6 @@ When traumatic events happen it may be months or years before you are able to ge
 Your treatment plan will be based on the breadth of your impact and whether or not your symptoms originate from a medical condition or from your trauma. 27
 
 To be restored ask God to shine His light on your next right step. Learning to trust his guidance will help you receive his blessings. Dedicate to working the Stronger than Espresso® program, connect with other woman and break the patterns of your past.
-
-<--next-->
 
 ### Trauma medical impact ![Learning Activity](/two_hands_mug.png)
 
