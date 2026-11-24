@@ -32,80 +32,82 @@
 </script>
 
 <template>
-  <UApp>
-    <div class="bg-surface flex min-h-screen flex-col text-gray-900">
-      <header class="sticky top-0 z-50 border-b border-gray-200 bg-white/75 backdrop-blur-md">
-        <UContainer
-          class="relative grid h-16 grid-cols-[minmax(0,1fr)_auto_minmax(0,1fr)] items-center gap-2 px-4 sm:px-6 lg:px-8"
-        >
-          <HamburgerMenu class="absolute left-4 lg:hidden" />
-
-          <nav
-            class="hidden min-w-0 items-center gap-1 justify-self-start lg:flex"
-            aria-label="Main navigation"
+  <VitePwaManifest/>
+    <UApp>
+      <div class="bg-surface flex min-h-screen flex-col text-gray-900">
+        <header class="sticky top-0 z-50 border-b border-gray-200 bg-white/75 backdrop-blur-md">
+          <UContainer
+            class="relative grid h-16 grid-cols-[minmax(0,1fr)_auto_minmax(0,1fr)] items-center gap-2 px-4 sm:px-6 lg:px-8"
           >
-            <NuxtLink
-              to="/"
-              class="rounded-md px-4 py-2 font-bold whitespace-nowrap text-[#e0004d] hover:bg-gray-100"
-            >
-              Dashboard
-            </NuxtLink>
-            <NuxtLink
-              to="/contact"
-              class="rounded-md px-4 py-2 font-bold whitespace-nowrap text-[#e0004d] hover:bg-gray-100"
-            >
-              Contact
-            </NuxtLink>
-            <NuxtLink
-              to="/resources"
-              class="rounded-md px-4 py-2 font-bold whitespace-nowrap text-[#e0004d] hover:bg-gray-100"
-            >
-              Resources
-            </NuxtLink>
-          </nav>
+            <HamburgerMenu class="absolute left-4 lg:hidden" />
 
-          <NuxtLink to="/" class="relative h-16 w-48 justify-self-center overflow-hidden">
-            <img
-              src="/logo.png"
-              alt="Stronger Women"
-              class="absolute top-1/2 left-1/2 h-52 w-52 max-w-none -translate-x-1/2 -translate-y-1/2"
-            />
-          </NuxtLink>
+            <nav
+              class="hidden min-w-0 items-center gap-1 justify-self-start lg:flex"
+              aria-label="Main navigation"
+            >
+              <NuxtLink
+                to="/"
+                class="rounded-md px-4 py-2 font-bold whitespace-nowrap text-[#e0004d] hover:bg-gray-100"
+              >
+                Dashboard
+              </NuxtLink>
+              <NuxtLink
+                to="/contact"
+                class="rounded-md px-4 py-2 font-bold whitespace-nowrap text-[#e0004d] hover:bg-gray-100"
+              >
+                Contact
+              </NuxtLink>
+              <NuxtLink
+                to="/resources"
+                class="rounded-md px-4 py-2 font-bold whitespace-nowrap text-[#e0004d] hover:bg-gray-100"
+              >
+                Resources
+              </NuxtLink>
+            </nav>
 
-          <nav
-            class="hidden min-w-0 items-center gap-1 justify-self-end lg:flex"
-            aria-label="Account navigation"
-          >
-            <NuxtLink
-              to="/prayer-request"
-              class="rounded-md px-4 py-2 font-bold whitespace-nowrap text-[#e0004d] hover:bg-gray-100"
-            >
-              Prayer Request
+            <NuxtLink to="/" class="relative h-16 w-48 justify-self-center overflow-hidden">
+              <img
+                src="/logo.png"
+                alt="Stronger Women"
+                class="absolute top-1/2 left-1/2 h-52 w-52 max-w-none -translate-x-1/2 -translate-y-1/2"
+              />
             </NuxtLink>
-    <!-- update to have   v-if="isAdmin"  to test -->
-            <NuxtLink
-              to="/adminDashboard"
-              class="rounded-md px-4 py-2 font-bold whitespace-nowrap text-[#e0004d] hover:bg-gray-100"
+
+            <nav
+              class="hidden min-w-0 items-center gap-1 justify-self-end lg:flex"
+              aria-label="Account navigation"
             >
-              Admin
-            </NuxtLink>
-            <NuxtLink
-              to="/profile"
-              class="rounded-md px-4 py-2 font-bold whitespace-nowrap text-[#e0004d] hover:bg-gray-100"
-            >
-              Profile
-            </NuxtLink>
-            <button
-              v-if="session"
-              type="button"
-              class="rounded-md px-4 py-2 font-bold whitespace-nowrap text-[#e0004d] hover:bg-gray-100"
-              @click="logout"
-            >
-              Logout
-            </button>
-          </nav>
-        </UContainer>
-      </header>
+              <NuxtLink
+                to="/prayer-request"
+                class="rounded-md px-4 py-2 font-bold whitespace-nowrap text-[#e0004d] hover:bg-gray-100"
+              >
+                Prayer Request
+              </NuxtLink>
+              
+              <NuxtLink
+                v-if="isAdmin"
+                to="/adminDashboard"
+                class="rounded-md px-4 py-2 font-bold whitespace-nowrap text-[#e0004d] hover:bg-gray-100"
+              >
+                Admin
+              </NuxtLink>
+              <NuxtLink
+                to="/profile"
+                class="rounded-md px-4 py-2 font-bold whitespace-nowrap text-[#e0004d] hover:bg-gray-100"
+              >
+                Profile
+              </NuxtLink>
+              <button
+                v-if="session"
+                type="button"
+                class="rounded-md px-4 py-2 font-bold whitespace-nowrap text-[#e0004d] hover:bg-gray-100"
+                @click="logout"
+              >
+                Logout
+              </button>
+            </nav>
+          </UContainer>
+        </header>
 
       <main class="flex-1">
         <NuxtPage />
