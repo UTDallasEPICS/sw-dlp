@@ -3,6 +3,7 @@ import { and, eq } from 'drizzle-orm'
 import { queryCollection } from '@nuxt/content/nitro'
 import { z } from 'zod'
 import { chapterSlugFromPath, scrolledReadingStep, splitReadingPages } from '#shared/utils/readingPages'
+import { saveChapterStep } from '~~/server/utils/saveChapterStep'
 import {
   chapter,
   activity,
@@ -207,6 +208,7 @@ export default defineEventHandler(async (event) => {
         })
         .run()
     }
+    if (mode === 'submit') saveChapterStep(tx, savedChapter.id, userId, 'activity')
   })
 
   return {

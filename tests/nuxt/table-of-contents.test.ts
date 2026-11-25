@@ -79,6 +79,17 @@ describe('content course catalogue', () => {
     expect(wrapper.get('li').classes()).toContain('text-gray-700')
   })
 
+  it.each([true, false])('colors a numbered chapter using its earned badge state (%s)', async (badgeEarned) => {
+    fetchProgress.mockReturnValue({
+      data: ref({
+        chapters: [{ slug: 'chapter-1', name: 'Database title', completed: !badgeEarned, badgeEarned }],
+      }),
+      error: ref(null),
+    })
+    const wrapper = await mountCatalogue()
+    expect(wrapper.get('li').classes()).toContain(badgeEarned ? 'text-brand-500' : 'text-gray-700')
+  })
+
   it('offers a retry when fetching fails', async () => {
     const refresh = vi.fn()
     fetchCatalogue.mockReturnValue({

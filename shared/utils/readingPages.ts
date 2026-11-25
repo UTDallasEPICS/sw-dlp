@@ -18,7 +18,7 @@ export function scrolledReadingStep(stepId: string): string {
 }
 
 export function visibleProgressStep(stepId: string): string | undefined {
-  if (/^reading-\d+$/.test(stepId)) return undefined
+  if (/^reading-(?:visit-)?\d+$/.test(stepId)) return undefined
   return stepId.replace(/^reading-scroll-(\d+)$/, 'reading-$1')
 }
 

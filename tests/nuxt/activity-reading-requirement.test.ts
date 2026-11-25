@@ -8,7 +8,7 @@ import { visibleProgressStep } from '../../shared/utils/readingPages'
 
 const { request, progress, route, navigate } = vi.hoisted(() => ({
   request: vi.fn(),
-  progress: { steps: [] as string[] },
+  progress: { steps: [] as string[], hasActivity: true },
   route: { params: { slug: 'chapter-1' }, query: {} as { step?: string } },
   navigate: vi.fn(),
 }))
@@ -25,7 +25,7 @@ mockNuxtImport('useAsyncData', () => () => ({
   }),
 }))
 mockNuxtImport('useFetch', () => (url: string) => ({
-  data: ref(url.endsWith('/activity-exists') ? { hasActivity: true }
+  data: ref(url.endsWith('/activity-exists') ? { hasActivity: progress.hasActivity }
     : url.endsWith('/progress') ? { completedSteps: progress.steps.map(visibleProgressStep).filter(Boolean) }
     : url === '/api/course-titles' ? [{ chapters: [{ slug: 'introduction' }, { slug: 'chapter-1' }] }]
     : null),
@@ -87,5 +87,28 @@ it('starts on the final step when arriving from the next chapter', async () => {
   } finally {
     wrapper.unmount()
     delete route.query.step
+  }
+})
+
+it('records reaching the final page of a chapter without a quiz', async () => {
+  progress.hasActivity = false
+  progress.steps = []
+  request.mockReset()
+  const scroll = vi.spyOn(window, 'scrollTo').mockImplementation(() => {})
+  const wrapper = mount({ components: { ChapterPage }, template: '<Suspense><ChapterPage /></Suspense>' })
+  try {
+    await flushPromises()
+    expect(request).not.toHaveBeenCalled()
+    await wrapper.get('button[aria-label="Next step"]').trigger('click')
+    await flushPromises()
+    expect(request).toHaveBeenCalledExactlyOnceWith('/api/chapters/chapter-1/progress', {
+      method: 'POST',
+      body: { stepId: 'reading-visit-2' },
+    })
+    expect(wrapper.text()).toContain('Scroll to finish reading')
+  } finally {
+    wrapper.unmount()
+    scroll.mockRestore()
+    progress.hasActivity = true
   }
 })

@@ -4,6 +4,7 @@
   definePageMeta({ key: (route) => route.path })
 
   const route = useRoute()
+  const nuxtApp = tryUseNuxtApp()
   const slug = String(route.params.slug)
 
   const { data: courseSections } = await useFetch('/api/course-titles')
@@ -87,6 +88,7 @@
         body: reachedBottom ? { stepId, reachedBottom } : { stepId },
       })
       completedSteps.value = [...completedSteps.value, stepId]
+      void nuxtApp?.runWithContext(() => refreshNuxtData('course-progress'))
     } catch (error) {
       console.error('Unable to save chapter progress:', error)
     }
@@ -259,6 +261,12 @@
   /* First available step — never "video" if there is no video */
   const initialStep = route.query.step === 'last' ? steps.value.at(-1) : steps.value[0]
   const activeStep = ref(initialStep?.id ?? 'reading-1')
+  watch([activeStep, activityMeta], ([step, meta]) => {
+    if (import.meta.client && /^chapter-(?:[1-9]|1[0-5])$/.test(slug) &&
+        meta?.hasActivity === false && step === `reading-${readingPageCount.value}`) {
+      void completeStep(`reading-visit-${readingPageCount.value}`)
+    }
+  }, { immediate: true, flush: 'post' })
   const readingEnd = ref<HTMLElement | null>(null)
   const readingSaves = reactive(new Set<string>())
   const readingSaveError = ref<string>()
@@ -491,7 +499,10 @@
       if (mode === 'submit') {
         submitSuccess.value = true
         saveState.value = 'idle'
-        await completeStep('activity')
+        if (!completedSteps.value.includes('activity')) {
+          completedSteps.value = [...completedSteps.value, 'activity']
+        }
+        void nuxtApp?.runWithContext(() => refreshNuxtData('course-progress'))
         await nextTick()
         scrollToTop()
       } else {

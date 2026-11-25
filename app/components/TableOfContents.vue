@@ -12,7 +12,7 @@
   }
 
   const { data, status, error, refresh } = await useFetch<Section[]>('/api/course-titles')
-  const { data: chapterProgress, error: progressError } = await useFetch('/api/userlessons')
+  const { data: chapterProgress, error: progressError } = await useFetch('/api/userlessons', { key: 'course-progress' })
   const bookSections = computed(() => data.value ?? [])
 
   const normalizeTitle = (title: string): string =>
@@ -26,6 +26,10 @@
   const isChapterComplete = (chapter: Chapter): boolean => {
     const progress = chapterProgress.value?.chapters
     if (!progress || progressError.value) return false
+    const bySlug = progress.find((entry) => entry.slug === chapter.slug)
+    if (bySlug) {
+      return /^chapter-(?:[1-9]|1[0-5])$/.test(bySlug.slug) ? bySlug.badgeEarned : bySlug.completed
+    }
     const match = progress.find(
       (entry) => normalizeTitle(entry.name) === normalizeTitle(chapter.title)
     )
