@@ -58,8 +58,18 @@
     isEditing.value = true
   }
 
-  function formatDate(value: string) {
-    return dateFormatter.format(new Date(value))
+  function formatDate(dateInput: string | Date | null | undefined): string {
+    if (!dateInput) return 'N/A'
+    const date = new Date(dateInput)
+    if (Number.isNaN(date.getTime())) return 'N/A'
+
+    return date.toLocaleString([], {
+      year: 'numeric',
+      month: 'short',
+      day: 'numeric',
+      hour: 'numeric',
+      minute: '2-digit',
+    })
   }
 
   function cancelEditing() {
@@ -72,8 +82,13 @@
   }
 
   async function saveProfile() {
-    if (!profile.value) {
-      submitError.value = 'Profile data is unavailable.'
+    if(!profile.value) {
+      submitError.value = 'Profile data is unavailable'
+      return
+    }
+
+    if(!hasChanges.value && !awaitingEmailVerification.value) {
+      cancelEditing()
       return
     }
 
@@ -121,9 +136,10 @@
       copySavedProfile()
       isEditing.value = false
     } catch (error) {
-      submitError.value = error instanceof Error
-        ? error.message
-        : 'Could not save your profile. Please try again.'
+      submitError.value = getApiErrorMessage(
+        error,
+        'Could not save your profile. Please try again.'
+      )
     } finally {
       isSaving.value = false
     }
@@ -132,16 +148,67 @@
   watch(profile, () => {
     if (!isEditing.value) copySavedProfile()
   }, { immediate: true })
+
+  function getApiErrorMessage(error: unknown, fallback: string): string {
+    const apiError = error as {
+      data?: {
+        statusMessage?: string
+        message?: string
+      }
+      statusMessage?: string
+      message?: string
+    }
+
+    return (
+      apiError.data?.statusMessage ||
+      apiError.data?.message ||
+      apiError.statusMessage ||
+      apiError.message ||
+      fallback
+    )
+  }
+
+  const hasChanges = computed(() => {
+    const savedProfile = profile.value
+
+    if (!savedProfile) return false
+
+    const nameChanged =
+      draft.name.trim() !== savedProfile.name
+
+    const emailChanged =
+      draft.email.trim().toLowerCase() !==
+      savedProfile.email.toLowerCase()
+
+    const phoneChanged =
+      draft.phoneNumber.replace(/\D/g, '') !==
+      (savedProfile.phoneNumber ?? '').replace(/\D/g, '')
+
+    return nameChanged || emailChanged || phoneChanged
+  })
+
+  function formatPhoneNumber(phone: string | null): string {
+    if (!phone) return 'Not provided'
+    const digits = phone.replace(/\D/g, '')
+    const normalized =
+      digits.length === 11 && digits.startsWith('1')
+        ? digits.slice(1) : digits
+
+    if (normalized.length !== 10) return phone
+    return `(${normalized.slice(0, 3)}) ${normalized.slice(3, 6)}-${normalized.slice(6)}`
+  }
 </script>
+
 <template>
-  <section class="min-h-[calc(100vh-4rem)] bg-gray-100 px-4 py-10 sm:px-6">
+  <section class="max-w-3xl  mx-auto px-4 py-8 sm:px-6">
     <UContainer>
       <div class="mx-auto max-w-4xl">
-        <div class="mb-6 flex items-center justify-between">
-          <h1 class="text-lg font-semibold text-[#e0004d]">Your profile</h1>
+        <div class="mb-8 flex flex-row items-center justify-between">
+          <h1 class="text-3xl font-semibold text-[#e0004d]">Your Profile</h1>
           <UButton
             v-if="profile && !isEditing"
             type="button"
+            size="md"
             color="neutral"
             variant="ghost"
             icon="i-lucide-pencil"
@@ -156,10 +223,16 @@
         <p v-else-if="error">Could not load your profile. Please try again.</p>
 
         <div v-else-if="profile">
-          <nav class="mx-auto max-w-md space-y-3 lg:hidden" aria-label="Profile fields">
+          <div class="flex flex-col text-center text-base mb-4 text-gray-400">
+            <p>Account created on {{ formatDate(profile.createdAt) }}</p>
+            <p>Account last updated on {{ formatDate(profile.updatedAt) }}</p>
+          </div>
+
+          <!-- Mobile view -->
+          <nav class="mx-auto max-w-md space-y-8 lg:hidden" aria-label="Profile fields">
             <NuxtLink
               to="/profile-edit/name"
-              class="flex min-h-16 items-center justify-between rounded-lg border border-gray-200 bg-white px-4 py-3 text-left hover:border-[#e0004d]"
+              class="flex min-h-16 items-center justify-between rounded-lg border border-gray-200 bg-white px-4 py-2 text-left hover:border-[#e0004d]"
             >
               <span class="min-w-0">
                 <span class="block text-sm text-gray-500">Name</span>
@@ -170,7 +243,7 @@
 
             <NuxtLink
               to="/profile-edit/email"
-              class="flex min-h-16 items-center justify-between rounded-lg border border-gray-200 bg-white px-4 py-3 text-left hover:border-[#e0004d]"
+              class="flex min-h-16 items-center justify-between rounded-lg border border-gray-200 bg-white px-4 py-2 text-left hover:border-[#e0004d]"
             >
               <span class="min-w-0">
                 <span class="block text-sm text-gray-500">Email</span>
@@ -181,85 +254,109 @@
 
             <NuxtLink
               to="/profile-edit/phoneNumber"
-              class="flex min-h-16 items-center justify-between rounded-lg border border-gray-200 bg-white px-4 py-3 text-left hover:border-[#e0004d]"
+              class="flex min-h-16 items-center justify-between rounded-lg border border-gray-200 bg-white px-4 py-2 text-left hover:border-[#e0004d]"
             >
               <span class="min-w-0">
                 <span class="block text-sm text-gray-500">Phone Number</span>
-                <span class="block truncate">{{ profile.phoneNumber || 'Not provided' }}</span>
+                <span class="block truncate">{{ formatPhoneNumber(profile.phoneNumber) || 'Not provided' }}</span>
               </span>
               <UIcon name="i-lucide-chevron-right" class="size-5 shrink-0 text-gray-500" aria-hidden="true" />
             </NuxtLink>
           </nav>
 
-          <UForm
-            :schema="profileSchema"
-            :state="draft"
-            class="mx-auto hidden max-w-md space-y-5 lg:block"
-            @submit="saveProfile"
-          >
-            <UFormField label="Name" name="name">
-              <UInput v-model="draft.name" :readonly="!isEditing" class="w-full" />
-            </UFormField>
+          <!-- Desktop view -->
+          <div class="mx-auto hidden max-w-lg lg:block">
+            <!-- display mode -->
+            <div v-if="!isEditing" class="space-y-6">
+              <div class="flex flex-col gap-2">
+                <p class="text-md text-gray-500">Name</p>
+                <p class="text-md font-medium bg-white rounded-sm p-2 outline-1 outline-neutral-200">
+                  {{ profile?.name || 'N/A' }}
+                </p>
+              </div>
 
-            <UFormField label="Email" name="email">
-              <UInput
-                v-model="draft.email"
-                :readonly="!isEditing || awaitingEmailVerification"
-                class="w-full"
-              />
-            </UFormField>
+              <div class="flex flex-col gap-2">
+                <p class="text-md text-gray-500">Email</p>
+                <p class="text-md font-medium bg-white rounded-sm p-2 outline-1 outline-neutral-200">
+                  {{ profile?.email || 'N/A' }}
+                </p>
+              </div>
 
-            <UFormField label="Phone Number" name="phoneNumber">
-              <UInput v-model="draft.phoneNumber" :readonly="!isEditing" class="w-full" />
-            </UFormField>
-
-            <UFormField
-              v-if="awaitingEmailVerification"
-              label="Email verification code"
-              name="emailOtp"
-              :error="emailOtpError"
-            >
-              <UInput
-                v-model="emailOtp"
-                inputmode="numeric"
-                autocomplete="one-time-code"
-                class="w-full"
-              />
-              <p class="mt-1 text-sm text-gray-500">
-                Enter the code sent to your new email address.
-              </p>
-            </UFormField>
-
-            <p v-if="submitError" role="alert" class="text-sm text-red-600">
-              {{ submitError }}
-            </p>
-
-            <div v-if="isEditing" class="grid grid-cols-2 gap-4">
-              <UButton
-                type="button"
-                color="primary"
-                variant="outline"
-                class="w-full justify-center rounded-md"
-                :disabled="isSaving"
-                @click="cancelEditing"
-              >
-                Cancel
-              </UButton>
-
-              <UButton
-                type="submit"
-                color="primary"
-                class="w-full justify-center rounded-md"
-                :loading="isSaving"
-              >
-                Submit
-              </UButton>
+              <div class="flex flex-col gap-2">
+                <p class="text-md text-gray-500">Phone Number</p>
+                <p class="text-md font-medium bg-white rounded-sm p-2 outline-1 outline-neutral-200">
+                  {{ formatPhoneNumber(profile?.phoneNumber) || 'N/A' }}
+                </p>
+              </div>
             </div>
-          </UForm>
+            <!-- editing form-->
+            <UForm
+              v-else
+              :schema="profileSchema"
+              :state="draft"
+              @submit="saveProfile"
+              class="space-y-6"
+            >
+              <UFormField label="Name" name="name" size="xl">
+                <UInput v-model="draft.name" :readonly="!isEditing" class="w-full" />
+              </UFormField>
 
-          <div class="mt-6 text-center text-xs text-gray-400">
-            <p>Account created on {{ formatDate(profile.createdAt) }}</p>
-            <p>Account last updated on {{ formatDate(profile.updatedAt) }}</p>
+              <UFormField label="Email" name="email" size="xl">
+                <UInput
+                  v-model="draft.email"
+                  :readonly="!isEditing || awaitingEmailVerification"
+                  class="w-full"
+                />
+              </UFormField>
+
+              <UFormField label="Phone Number" name="phoneNumber" size="xl">
+                <UInput v-model="draft.phoneNumber" :readonly="!isEditing" class="w-full" />
+              </UFormField>
+
+              <UFormField
+                v-if="awaitingEmailVerification"
+                label="Email verification code"
+                name="emailOtp"
+                :error="emailOtpError"
+              >
+                <UInput
+                  v-model="emailOtp"
+                  inputmode="numeric"
+                  autocomplete="one-time-code"
+                  class="w-full"
+                />
+                <p class="mt-1 text-sm text-gray-500">
+                  Enter the code sent to your new email address.
+                </p>
+              </UFormField>
+
+              <p v-if="submitError" role="alert" class="text-sm text-red-600">
+                {{ submitError }}
+              </p>
+
+              <div v-if="isEditing" class="grid grid-cols-2 gap-4">
+                <UButton
+                  type="button"
+                  color="primary"
+                  variant="outline"
+                  class="w-full justify-center rounded-md"
+                  :disabled="isSaving"
+                  @click="cancelEditing"
+                >
+                  Cancel
+                </UButton>
+
+                <UButton
+                  type="submit"
+                  color="primary"
+                  :disabled="isSaving || (!hasChanges && !awaitingEmailVerification)"
+                  class="w-full justify-center rounded-md"
+                  :loading="isSaving"
+                >
+                  Save
+                </UButton>
+              </div>
+            </UForm>
           </div>
         </div>
         <p v-else>Profile data is unavailable. Please try again.</p>

@@ -78,6 +78,11 @@
       return
     }
 
+    if (!hasChanges.value) {
+      cancelEdit()
+      return
+    }
+
     isSaving.value = true
 
     try {
@@ -120,8 +125,10 @@
       await refreshProfile()
       await navigateTo('/profile')
     } catch (error) {
-      const message =
-        error instanceof Error ? error.message : 'Could not save this field. Please try again.'
+      const message = getApiErrorMessage(
+        error,
+        'Could not save this field. Please try again.'
+      )
 
       if (field.value === 'email' && awaitingEmailVerification.value) {
         emailOtpError.value = message
@@ -132,23 +139,75 @@
       isSaving.value = false
     }
   }
+
+  function getApiErrorMessage(error: unknown, fallback: string): string {
+    const apiError = error as {
+      data?: {
+        statusMessage?: string
+        message?: string
+      }
+      statusMessage?: string
+      message?: string
+    }
+
+    return (
+      apiError.data?.statusMessage ||
+      apiError.data?.message ||
+      apiError.statusMessage ||
+      apiError.message ||
+      fallback
+    )
+  }
+
+  const hasChanges = computed(() => {
+  const savedProfile = profile.value
+  const selectedField = field.value
+
+  if (!savedProfile || !selectedField) return false
+
+  if (selectedField === 'phoneNumber') {
+    return (
+      form.value.replace(/\D/g, '') !==
+      (savedProfile.phoneNumber ?? '').replace(/\D/g, '')
+    )
+  }
+
+  if (selectedField === 'email') {
+    return (
+      form.value.trim().toLowerCase() !==
+      savedProfile.email.toLowerCase()
+    )
+  }
+
+  return form.value.trim() !== savedProfile.name
+})
 </script>
 
 <template>
-  <section class="min-h-[calc(100vh-4rem)] bg-gray-100 px-4 py-10 sm:px-6">
+  <section class="max-w-2xl mx-auto px-4 py-10 sm:px-6">
     <UContainer>
-      <div class="mx-auto max-w-md">
-        <h1 class="mb-6 text-lg font-semibold text-[#e0004d]">
+      <div class="space-y-4">
+        <UButton 
+          icon="heroicons-chevron-left" 
+          color="neutral" 
+          variant="ghost"
+          :disabled="isSaving"
+          @click="cancelEdit"
+        >
+          Back
+        </UButton>
+        <h1 class="mb-6 px-2 text-xl font-semibold text-[#e0004d]">
           Edit {{ fieldLabel.toLowerCase() }}
         </h1>
 
         <p v-if="status === 'pending'">Loading profile…</p>
         <p v-else-if="error">Could not load your profile. Please try again.</p>
 
-        <UForm v-else :schema="formSchema" :state="form" class="space-y-5" @submit="submitEdit">
+        <UForm v-else :schema="formSchema" :state="form" class="space-y-5 mx-4" @submit="submitEdit">
           <UFormField :label="fieldLabel" name="value" :error="fieldError || undefined">
             <UInput
               v-model="form.value"
+              size="lg"
               :type="inputType"
               :readonly="awaitingEmailVerification"
               autocomplete="off"
@@ -160,6 +219,7 @@
             v-if="awaitingEmailVerification"
             label="Email verification code"
             name="emailOtp"
+            size="lg"
             :error="emailOtpError || undefined"
           >
             <UInput
@@ -171,27 +231,15 @@
             <p class="mt-1 text-sm text-gray-500">Enter the code sent to your new email address.</p>
           </UFormField>
 
-          <div class="grid grid-cols-2 gap-4">
-            <UButton
-              type="button"
-              color="primary"
-              variant="outline"
-              class="w-full justify-center rounded-md"
-              :disabled="isSaving"
-              @click="cancelEdit"
-            >
-              Cancel
-            </UButton>
-
-            <UButton
-              type="submit"
-              color="primary"
-              class="w-full justify-center rounded-md"
-              :loading="isSaving"
-            >
-              Submit
-            </UButton>
-          </div>
+          <UButton
+            type="submit"
+            color="primary"
+            class="w-full justify-center rounded-md mt-4"
+            :loading="isSaving"
+            :disabled="isSaving || (!hasChanges && !awaitingEmailVerification)"
+          >
+            Save
+          </UButton>
         </UForm>
       </div>
     </UContainer>

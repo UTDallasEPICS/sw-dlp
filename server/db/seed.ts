@@ -22,7 +22,7 @@ async function main() {
       .values({
         email: 'seeded-user@email.com',
         name: 'Sample Seeded User',
-        phoneNumber: '+10000000000',
+        phoneNumber: '0000000000',
       })
       .returning()
     console.log({ user: created })
