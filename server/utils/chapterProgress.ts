@@ -71,6 +71,7 @@ export async function getChapterProgress(userId: string, readingPageCounts: Read
     {
       id: string
       name: string
+      slug: string
       lessonCount: number
       completedLessonCount: number
       completedStepIds: Set<string>
@@ -87,6 +88,7 @@ export async function getChapterProgress(userId: string, readingPageCounts: Read
       progress = {
         id: row.chapterId,
         name: row.chapterName,
+        slug: chapterSlugFromPath(row.chapterSlug),
         lessonCount: 0,
         completedLessonCount: 0,
         completedStepIds: new Set(),
@@ -129,6 +131,11 @@ export async function getChapterProgress(userId: string, readingPageCounts: Read
     return {
       id: progress.id,
       name: progress.name,
+      slug: progress.slug,
+      badgeEarned: progress.hasActivity
+        ? progress.completedStepIds.has('activity')
+        : progress.completedStepIds.has(`reading-visit-${progress.readingPageCount}`) ||
+          progress.completedStepIds.has(scrolledReadingStep(`reading-${progress.readingPageCount}`)),
       completed: chapterCompleted || (progress.lessonCount > 0 && lessonCompleted && stepIds.length === 0),
       lessonCount: progress.lessonCount,
       completedLessonCount: progress.completedLessonCount,

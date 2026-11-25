@@ -1,19 +1,17 @@
-import { and, eq } from 'drizzle-orm'
+import { eq } from 'drizzle-orm'
 import { z } from 'zod'
 import { scrolledReadingStep } from '#shared/utils/readingPages'
 import {
-  activity,
-  activityQuestion,
   chapter,
   chapterVideo,
-  lesson,
-  userLesson,
 } from '~~/server/db/schema'
+import { getReadingPageCounts } from '~~/server/utils/chapterProgress'
 import { db } from '~~/server/utils/db'
+import { saveChapterStep } from '~~/server/utils/saveChapterStep'
 import { requireUser } from '~~/server/utils/session'
 
 const bodySchema = z.object({
-  stepId: z.string().regex(/^(video|reading-\d+|activity)$/),
+  stepId: z.string().regex(/^(video|reading-\d+|reading-visit-\d+)$/),
   reachedBottom: z.literal(true).optional(),
 })
 
@@ -40,7 +38,7 @@ export default defineEventHandler(async (event) => {
   }
 
   const stepId = body.data.stepId
-  if (stepId.startsWith('reading-') && !body.data.reachedBottom) {
+  if (/^reading-\d+$/.test(stepId) && !body.data.reachedBottom) {
     throw createError({ statusCode: 400, statusMessage: 'Scroll to the bottom to complete this reading page' })
   }
   const storedStepId = scrolledReadingStep(stepId)
@@ -53,55 +51,15 @@ export default defineEventHandler(async (event) => {
             .where(eq(chapterVideo.chapterId, savedChapter.id))
             .get()
         )
-      : stepId === 'activity'
-        ? Boolean(
-            await db
-              .select({ id: activityQuestion.id })
-              .from(activity)
-              .innerJoin(activityQuestion, eq(activityQuestion.activityId, activity.id))
-              .where(eq(activity.chapterId, savedChapter.id))
-              .get()
-          )
+      : stepId.startsWith('reading-visit-')
+        ? stepId === `reading-visit-${(await getReadingPageCounts(event)).get(slug)}`
         : true
 
   if (!validStep) {
     throw createError({ statusCode: 400, statusMessage: 'Step is not available in this chapter' })
   }
 
-  let savedLesson = await db
-    .select({ id: lesson.id })
-    .from(lesson)
-    .where(and(
-      eq(lesson.chapterId, savedChapter.id),
-      eq(lesson.name, storedStepId)
-    ))
-    .get()
-
-  if (!savedLesson) {
-    savedLesson = await db
-      .insert(lesson)
-      .values({
-        chapterId: savedChapter.id,
-        name: storedStepId,
-        type: stepId.split('-')[0] ?? stepId,
-      })
-      .returning({ id: lesson.id })
-      .get()
-  }
-
-  await db
-    .insert(userLesson)
-    .values({
-      userId: user.id,
-      lessonId: savedLesson.id,
-      completed: true,
-      completedAt: new Date(),
-    })
-    .onConflictDoUpdate({
-      target: [userLesson.userId, userLesson.lessonId],
-      set: { completed: true, completedAt: new Date() },
-    })
-    .run()
+  db.transaction((tx) => saveChapterStep(tx, savedChapter.id, user.id, storedStepId))
 
   return { success: true, stepId }
 })
