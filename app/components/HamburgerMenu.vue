@@ -79,6 +79,7 @@
           >
             {{ link.label }}
           </NuxtLink>
+          <InstallInstructions mobile-menu />
           <button
             v-if="session"
             type="button"
