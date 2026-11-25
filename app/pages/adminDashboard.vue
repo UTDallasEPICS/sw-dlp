@@ -4,7 +4,7 @@
   import type { Row } from '@tanstack/vue-table'
   import { getExpandedRowModel, } from '@tanstack/vue-table'
 
-  definePageMeta({ middleware: 'admin' })
+  definePageMeta({ middleware: 'admin', colorMode: 'light'})
 
   const columns: TableColumn<UserWithProgress>[] = [
     { accessorKey: 'name', header: 'User', meta: { class: { th: 'bg-brand-500/5', td: ''} }},
