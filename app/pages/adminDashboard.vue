@@ -1,5 +1,6 @@
 <script setup lang="ts">
-  import type { TableColumn, FormError, DropdownMenuItem } from '@nuxt/ui'
+  import type { TableColumn, } from '@nuxt/ui'
+  import type {FormError, DropdownMenuItem} from '@nuxt/ui'
   import type { Row } from '@tanstack/vue-table'
   import { getExpandedRowModel, } from '@tanstack/vue-table'
 
