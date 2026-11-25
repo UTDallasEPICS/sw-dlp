@@ -56,15 +56,17 @@
       </p>
 
       <!-- Admins can look at this page but not submit -->
-      <UAlert
+      <div
         v-if="isAdmin"
-        class="mt-5"
-        color="neutral"
-        variant="subtle"
-        icon="i-lucide-info"
-        title="Prayer requests are for users only"
-        description="Admins can view this page, but can’t submit prayer requests."
-      />
+        role="status"
+        class="border-brand-500 text-brand-600 mt-5 flex items-start gap-3 rounded-lg border bg-pink-50 p-4"
+      >
+        <UIcon name="i-lucide-info" class="mt-0.5 h-5 w-5 shrink-0" />
+        <div>
+          <p class="font-semibold">Prayer requests are for users only</p>
+          <p class="mt-1 text-sm">Admins can view this page, but can’t submit prayer requests.</p>
+        </div>
+      </div>
 
       <form class="mt-5 max-w-2xl space-y-4" @submit.prevent="submitRequest">
         <textarea

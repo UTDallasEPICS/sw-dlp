@@ -4,6 +4,10 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: ['@nuxt/ui', '@nuxt/image', '@nuxt/eslint', '@nuxt/content', '@vite-pwa/nuxt'],
   css: ['~/assets/css/main.css'],
+  colorMode: {
+    preference: 'light',
+    fallback: 'light',
+  },
   app: {
     head: {
       link: [
