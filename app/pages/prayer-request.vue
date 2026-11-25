@@ -1,6 +1,9 @@
 <script setup lang="ts">
   useHead({ title: 'Prayer Request | Stronger Women' })
 
+  const { data: currentUser } = useNuxtData<{ admin: boolean } | null>('current-user')
+  const isAdmin = computed(() => currentUser.value?.admin === true)
+
   const text = ref('')
   const isSubmitting = ref(false)
   const error = ref('')
@@ -11,6 +14,7 @@
   >('/api/prayer-requests')
 
   async function submitRequest() {
+    if (isAdmin.value) return // the form is disabled for admins
     error.value = ''
     success.value = ''
     const request = text.value.trim()
@@ -51,17 +55,31 @@
         Share what you would like a prayer for. You can submit more than one request.
       </p>
 
+      <!-- Admins can look at this page but not submit -->
+      <UAlert
+        v-if="isAdmin"
+        class="mt-5"
+        color="neutral"
+        variant="subtle"
+        icon="i-lucide-info"
+        title="Prayer requests are for users only"
+        description="Admins can view this page, but can’t submit prayer requests."
+      />
+
       <form class="mt-5 max-w-2xl space-y-4" @submit.prevent="submitRequest">
         <textarea
           v-model="text"
           rows="5"
-          class="w-full rounded-lg border border-gray-300 px-3 py-2 text-gray-900 focus:border-brand-500 focus:outline-none focus:ring-2 focus:ring-brand-500/30"
+          :disabled="isAdmin"
+          class="w-full rounded-lg border border-gray-300 px-3 py-2 text-gray-900 focus:border-brand-500 focus:outline-none focus:ring-2 
+          focus:ring-brand-500/30 disabled:cursor-not-allowed disabled:bg-gray-100 disabled:text-gray-500"
           placeholder="Write your prayer request here..."
         />
         <p v-if="error" class="text-sm text-red-600">{{ error }}</p>
         <p v-if="success" class="text-sm text-green-600">{{ success }}</p>
         <UButton
           type="submit"
+          :disabled="isAdmin"
           :loading="isSubmitting"
           class="rounded-full bg-brand-500 px-6 py-3 font-semibold text-white hover:bg-brand-600"
         >
@@ -69,7 +87,7 @@
         </UButton>
       </form>
 
-      <section class="mt-12 max-w-2xl">
+      <section v-if="!isAdmin || requests?.length" class="mt-12 max-w-2xl">
         <h2 class="text-[22px] font-semibold text-gray-900">Your requests</h2>
         <p v-if="pending" class="mt-4 text-gray-500">Loading...</p>
         <ul v-else-if="requests?.length" class="mt-4 space-y-3">
