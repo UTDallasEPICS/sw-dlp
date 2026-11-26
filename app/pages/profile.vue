@@ -12,7 +12,12 @@
   const profileSchema = z.object({
     name: z.string().trim().min(1, 'Name is required'),
     email: z.string().trim().email('Enter a valid email address'),
-    phoneNumber: z.string().trim().min(7, 'Enter a valid phone number'),
+    phoneNumber: z
+      .string()
+      .trim()
+      .refine((val) => val === '' || val.length>= 7, {
+        message: 'Enter a valid phone number'
+      }),
   })
 
   const dateFormatter = new Intl.DateTimeFormat('en-US', {
@@ -47,7 +52,7 @@
     Object.assign(draft, {
       name: saved.name,
       email: saved.email,
-      phoneNumber: saved.phoneNumber ?? '',
+      phoneNumber: saved.phoneNumber,
     })
   }
 
@@ -128,7 +133,7 @@
         method: 'PATCH',
         body: {
           name: draft.name,
-          phoneNumber: draft.phoneNumber,
+          phoneNumber: draft.phoneNumber === '' ? null : draft.phoneNumber,
         },
       })
 
@@ -188,7 +193,7 @@
   })
 
   function formatPhoneNumber(phone: string | null): string {
-    if (!phone) return 'Not provided'
+    if (!phone) return 'None'
     const digits = phone.replace(/\D/g, '')
     const normalized =
       digits.length === 11 && digits.startsWith('1')
@@ -214,6 +219,7 @@
             icon="i-lucide-pencil"
             class="hidden lg:inline-flex"
             @click="startEditing"
+            data-testid="edit-button"
           >
             Edit
           </UButton>
@@ -232,6 +238,7 @@
           <nav class="mx-auto max-w-md space-y-8 lg:hidden" aria-label="Profile fields">
             <NuxtLink
               to="/profile-edit/name"
+              data-testid="mobile-edit-name"
               class="flex min-h-16 items-center justify-between rounded-lg border border-gray-200 bg-white px-4 py-2 text-left hover:border-[#e0004d]"
             >
               <span class="min-w-0">
@@ -243,6 +250,7 @@
 
             <NuxtLink
               to="/profile-edit/email"
+              data-testid="mobile-edit-email"
               class="flex min-h-16 items-center justify-between rounded-lg border border-gray-200 bg-white px-4 py-2 text-left hover:border-[#e0004d]"
             >
               <span class="min-w-0">
@@ -254,6 +262,7 @@
 
             <NuxtLink
               to="/profile-edit/phoneNumber"
+              data-testid="mobile-edit-phone"
               class="flex min-h-16 items-center justify-between rounded-lg border border-gray-200 bg-white px-4 py-2 text-left hover:border-[#e0004d]"
             >
               <span class="min-w-0">
@@ -297,8 +306,8 @@
               @submit="saveProfile"
               class="space-y-6"
             >
-              <UFormField label="Name" name="name" size="xl">
-                <UInput v-model="draft.name" :readonly="!isEditing" class="w-full" />
+              <UFormField  label="Name"  name="name"  size="xl">
+                <UInput v-model="draft.name" :readonly="!isEditing" class="w-full" data-testid="name-input" />
               </UFormField>
 
               <UFormField label="Email" name="email" size="xl">
@@ -306,11 +315,12 @@
                   v-model="draft.email"
                   :readonly="!isEditing || awaitingEmailVerification"
                   class="w-full"
+                  data-testid="email-input"
                 />
               </UFormField>
 
               <UFormField label="Phone Number" name="phoneNumber" size="xl">
-                <UInput v-model="draft.phoneNumber" :readonly="!isEditing" class="w-full" />
+                <UInput v-model="draft.phoneNumber" :readonly="!isEditing" class="w-full" data-testid="phone-input"/>
               </UFormField>
 
               <UFormField
@@ -324,6 +334,7 @@
                   inputmode="numeric"
                   autocomplete="one-time-code"
                   class="w-full"
+                  data-testid="otp-input"
                 />
                 <p class="mt-1 text-sm text-gray-500">
                   Enter the code sent to your new email address.
@@ -342,6 +353,7 @@
                   class="w-full justify-center rounded-md"
                   :disabled="isSaving"
                   @click="cancelEditing"
+                  data-testid="cancel-button"
                 >
                   Cancel
                 </UButton>
@@ -352,6 +364,7 @@
                   :disabled="isSaving || (!hasChanges && !awaitingEmailVerification)"
                   class="w-full justify-center rounded-md"
                   :loading="isSaving"
+                  data-testid="save-button"
                 >
                   Save
                 </UButton>

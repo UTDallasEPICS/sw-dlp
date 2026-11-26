@@ -1,11 +1,12 @@
 import { betterAuth } from 'better-auth'
-import { APIError, createAuthMiddleware } from 'better-auth/api'
+import { APIError, changeEmail, createAuthMiddleware } from 'better-auth/api'
 import { drizzleAdapter } from 'better-auth/adapters/drizzle'
 import { db } from './db'
 import { env } from './env'
 import { emailOTP } from 'better-auth/plugins/email-otp'
 import nodemailer from 'nodemailer'
 import { z } from 'zod'
+import { user } from '~~/server/db/schema'
 
 const signupDetails = z.object({
   name: z.string().trim().min(1),
@@ -40,6 +41,34 @@ export const auth = betterAuth({
   }),
   hooks: {
     before: createAuthMiddleware(async (ctx) => {
+      // Prevent changing an email address that is already registered
+      if (ctx.path === '/email-otp/request-email-change') {
+        const email = z.string().trim().toLowerCase().email().safeParse(ctx.body?.newEmail)
+
+        if (!email.success) {
+          throw new APIError('BAD_REQUEST', {
+            message: 'Invalid email address.',
+          })
+        }
+
+        const existingUser = await ctx.context.internalAdapter.findUserByEmail(email.data)
+
+        if (existingUser) {
+          throw new APIError('CONFLICT', {
+            message: 'This email address is already in use.',
+          })
+        }
+
+        return {
+          context: {
+            body: {
+              ...ctx.body,
+              newEmail: email.data,
+            },
+          },
+        }
+      }
+      // signin logic
       const isCodeRequest = ctx.path === '/email-otp/send-verification-otp'
         && ctx.body?.type === 'sign-in'
       if (!isCodeRequest && ctx.path !== '/sign-in/email-otp') return

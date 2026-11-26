@@ -42,7 +42,14 @@
     }
 
     if (field.value === 'phoneNumber') {
-      return z.object({ value: z.string().trim().min(7, 'Enter a valid phone number') })
+      return z.object({ 
+        value: z
+          .string()
+          .trim()
+          .refine((val) => val === '' || val.length>= 7, {
+            message: 'Enter a valid phone number'
+          }),
+      })
     }
 
     return z.object({ value: z.string().min(1, 'Invalid profile field') })
@@ -117,7 +124,7 @@
           body: {
             name: field.value === 'name' ? form.value : profile.value.name,
             phoneNumber:
-              field.value === 'phoneNumber' ? form.value : (profile.value.phoneNumber ?? ''),
+              field.value === 'phoneNumber' ? (form.value.trim() || null) : (profile.value.phoneNumber ?? null),
           },
         })
       }
@@ -193,6 +200,7 @@
           variant="ghost"
           :disabled="isSaving"
           @click="cancelEdit"
+          data-testid="back-button"
         >
           Back
         </UButton>
@@ -212,6 +220,7 @@
               :readonly="awaitingEmailVerification"
               autocomplete="off"
               class="w-full"
+              data-testid="field-input"
             />
           </UFormField>
 
@@ -227,6 +236,7 @@
               inputmode="numeric"
               autocomplete="one-time-code"
               class="w-full"
+              data-testid="otp-input"
             />
             <p class="mt-1 text-sm text-gray-500">Enter the code sent to your new email address.</p>
           </UFormField>
@@ -237,6 +247,7 @@
             class="w-full justify-center rounded-md mt-4"
             :loading="isSaving"
             :disabled="isSaving || (!hasChanges && !awaitingEmailVerification)"
+            data-testid="save-button"
           >
             Save
           </UButton>
