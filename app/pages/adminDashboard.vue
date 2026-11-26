@@ -316,6 +316,25 @@ async function addUser() {
     }
   }
 
+  const mobileExpanded = ref<string[]>([])
+
+  async function toggleMobile(user: UserWithProgress) {
+    if (mobileExpanded.value.includes(user.id)) {
+      mobileExpanded.value = mobileExpanded.value.filter(id => id !== user.id)
+      return
+    }
+    mobileExpanded.value.push(user.id)
+    if (user.hasPrayerRequest && !(user.id in prayerRequests.value)) {
+      await loadPrayerRequest(user.id)
+    }
+  }
+
+  function prayerLabel(user: UserWithProgress) {
+    if (user.admin) return 'N/A'
+    const n = prayerRequests.value[user.id]?.length ?? user.prayerRequestCount ?? 0
+    return n > 1 ? `${n} Requests` : n === 1 ? '1 Request' : 'None'
+  }
+
   async function handleExpand( user: UserWithProgress, row: Row<UserWithProgress> ) {
     const userId = user.id
 
@@ -417,13 +436,13 @@ async function addUser() {
             v-model="statusFilter"
             :items="statusItems"
             placeholder="Filter by status"
-            class="w-44"
+            class="w-full md:w-44"
           />
           <USelect
             v-model="roleFilter"
             :items="roleItems"
             placeholder="Filter by role"
-            class="w-36"
+            class="w-full md:w-36"
           />
         </div>
        </UCard>
@@ -452,255 +471,381 @@ async function addUser() {
         />
       </div>
 
-      <div v-else class="overflow-x-auto">
-        <UTable
-          v-model:expanded="expanded"
-          sticky
-          :data="filteredUsers"
-          :columns="columns"
-          :get-row-id="row => row.id"
-          :get-expanded-row-model="getExpandedRowModel()"
-          class="w-full"
-        >
-          <!-- User name -->
-          <template #name-cell="{ row }">
-            <span class="font-medium text-gray-900">
-              {{ row.original.name }}
-            </span>
-          </template>
-
-          <!-- Email -->
-          <template #email-cell="{ row }">
-            <span class="text-gray-500">
-              {{ row.original.email }}
-            </span>
-          </template>
-
-          <!-- Role -->
-          <template #admin-cell="{ row }">
-            <UBadge
-              color="neutral"
-              variant="subtle"
-              size="md"
-              :class="row.original.admin
-                ? 'bg-purple-100! text-purple-700!'
-                : ''"
-            >
-              {{ row.original.admin ? 'Admin' : 'User' }}
-            </UBadge>
-          </template>
-
-          <!-- Status -->
-          <template #status-cell="{ row }">
-            <UBadge
-              :color="getUserStatus(row.original) === 'blocked'
-                ? 'error'
-                : getUserStatus(row.original) === 'verified'
-                  ? 'success'
-                  : 'warning'"
-              variant="subtle"
-              size="md"
-            >
-              {{ getUserStatus(row.original) }}
-            </UBadge>
-          </template>
-
-          <!-- Prayer Request (Shows count if loaded/available) -->
-          <template #hasPrayerRequest-cell="{ row }">
-            <UBadge
-              :color="(row.original.hasPrayerRequest && !row.original.admin) ? 'secondary' : 'neutral'"
-              variant="soft"
-              size="md"
-            >
-              {{
-                row.original.admin? 'N/A' : (prayerRequests[row.original.id]?.length ?? 0) > 1 ? `${prayerRequests[row.original.id]?.length ?? 0} Requests`
-                  : row.original.prayerRequestCount === 1 ? `1 Request` : 'None'
-              }}
-            </UBadge>
-          </template>
-
-          <!-- Progress -->
-          <template #progress-cell="{ row }">
-            <div class="flex items-center gap-3">
-              <UProgress
-                :model-value="row.original.progress"
-                :max="100"
-                class="w-20"
-              />
-              <span class="text-sm text-brand-500">
-                {{ row.original.progress }}%
+      <div v-else>
+        <div class="hidden overflow-x-auto lg:block">
+          <UTable
+            v-model:expanded="expanded"
+            sticky
+            :data="filteredUsers"
+            :columns="columns"
+            :get-row-id="row => row.id"
+            :get-expanded-row-model="getExpandedRowModel()"
+            class="w-full"
+          >
+            <!-- User name -->
+            <template #name-cell="{ row }">
+              <span class="font-medium text-gray-900">
+                {{ row.original.name }}
               </span>
-            </div>
-          </template>
+            </template>
 
-          <!-- Expand button -->
-          <template #expand-cell="{ row }">
-            <UButton
-              color="neutral"
-              variant="ghost"
-              size="xs"
-              :trailing-icon="row.getIsExpanded()
-                ? 'i-heroicons-chevron-down'
-                : 'i-heroicons-chevron-up'"
-              @click="handleExpand(row.original, row)"
-            >
-              Details
-            </UButton>
-          </template>
+            <!-- Email -->
+            <template #email-cell="{ row }">
+              <span class="text-gray-500">
+                {{ row.original.email }}
+              </span>
+            </template>
 
-          <template #edit-cell="{row}">
-            <UDropdownMenu
-              :items="getRowItems(row.original)"
-              :content="{align: 'end'}"
-              :ui="{ content: 'w-48'}"
-            >
+            <!-- Role -->
+            <template #admin-cell="{ row }">
+              <UBadge
+                color="neutral"
+                variant="subtle"
+                size="md"
+                :class="row.original.admin
+                  ? 'bg-purple-100! text-purple-700!'
+                  : ''"
+              >
+                {{ row.original.admin ? 'Admin' : 'User' }}
+              </UBadge>
+            </template>
+
+            <!-- Status -->
+            <template #status-cell="{ row }">
+              <UBadge
+                :color="getUserStatus(row.original) === 'blocked'
+                  ? 'error'
+                  : getUserStatus(row.original) === 'verified'
+                    ? 'success'
+                    : 'warning'"
+                variant="subtle"
+                size="md"
+              >
+                {{ getUserStatus(row.original) }}
+              </UBadge>
+            </template>
+
+            <!-- Prayer Request (Shows count if loaded/available) -->
+            <template #hasPrayerRequest-cell="{ row }">
+              <UBadge
+                :color="(row.original.hasPrayerRequest && !row.original.admin) ? 'secondary' : 'neutral'"
+                variant="soft"
+                size="md"
+              >
+                {{
+                  row.original.admin? 'N/A' : (prayerRequests[row.original.id]?.length ?? 0) > 1 ? `${prayerRequests[row.original.id]?.length ?? 0} Requests`
+                    : row.original.prayerRequestCount === 1 ? `1 Request` : 'None'
+                }}
+              </UBadge>
+            </template>
+
+            <!-- Progress -->
+            <template #progress-cell="{ row }">
+              <div class="flex items-center gap-3">
+                <UProgress
+                  :model-value="row.original.progress"
+                  :max="100"
+                  class="w-20"
+                />
+                <span class="text-sm text-brand-500">
+                  {{ row.original.progress }}%
+                </span>
+              </div>
+            </template>
+
+            <!-- Expand button -->
+            <template #expand-cell="{ row }">
               <UButton
-                trailing-icon="i-heroicons-ellipsis-vertical"
                 color="neutral"
                 variant="ghost"
-                size="md"
-                aria-label="Edit user"
-              >Edit</UButton>
-            </UDropdownMenu>
-          </template>
+                size="xs"
+                :trailing-icon="row.getIsExpanded()
+                  ? 'i-heroicons-chevron-down'
+                  : 'i-heroicons-chevron-up'"
+                @click="handleExpand(row.original, row)"
+              >
+                Details
+              </UButton>
+            </template>
 
-          <!-- Expanded cell content with smooth transition wrapper -->
-          <template #expanded="{ row }" class="flex flex-col">
-            <Transition
-              appear
-              enter-active-class="transition-all duration-100 ease-out"
-              enter-from-class="opacity-0 -translate-y-3"
-              enter-to-class="opacity-100 translate-y-0"
-              leave-active-class="transition-all duration-100 ease-in"
-              leave-from-class="opacity-100 translate-y-0"
-              leave-to-class="opacity-0 -translate-y-3"
-              @after-leave="finishCollapse(row)"
-            >
-              <div v-if="!closingRows.includes(row.original.id)" class="flex-row p-2">
-                <div class="w-full flex flex-row gap-10">
-                  <!-- Phone number -->
-                  <div class="flex flex-1 items-center gap-4 rounded-lg bg-neutral-100 outline-1 outline-neutral-200 p-4">
-                    <UIcon
-                      name="i-heroicons-phone"
-                      class="size-6 shrink-0 text-brand-500"
-                    />
-                    <div class="flex flex-col gap-1">
-                      <span class="text-xs text-gray-500">
-                        Phone Number
-                      </span>
-                      <span class="text-sm font-medium text-gray-900">
-                        {{ formatPhoneNumber(row.original.phoneNumber) }}
-                      </span>
-                    </div>
-                  </div>
+            <template #edit-cell="{row}">
+              <UDropdownMenu
+                :items="getRowItems(row.original)"
+                :content="{align: 'end'}"
+                :ui="{ content: 'w-48'}"
+              >
+                <UButton
+                  trailing-icon="i-heroicons-ellipsis-vertical"
+                  color="neutral"
+                  variant="ghost"
+                  size="md"
+                  aria-label="Edit user"
+                >Edit</UButton>
+              </UDropdownMenu>
+            </template>
 
-                  <!-- Account creation date -->
-                  <div class="flex flex-1 items-center gap-4 rounded-lg bg-neutral-100 outline-1 outline-neutral-200 p-4">
-                    <UIcon
-                      name="i-heroicons-calendar"
-                      class="size-6 shrink-0 text-brand-500"
-                    />
-                    <div class="flex flex-col gap-1">
-                      <span class="text-xs text-gray-500">
-                        Created Account
-                      </span>
-
-                      <span class="text-sm font-medium text-gray-900">
-                        {{ formatDateTime(row.original.createdAt) }}
-                      </span>
-                    </div>
-                  </div>
-
-                  <!-- User last updated-->
-                  <div class="flex flex-1 items-center gap-4 rounded-lg bg-neutral-100 outline-1 outline-neutral-200 p-4">
+            <!-- Expanded cell content with smooth transition wrapper -->
+            <template #expanded="{ row }" class="flex flex-col">
+              <Transition
+                appear
+                enter-active-class="transition-all duration-100 ease-out"
+                enter-from-class="opacity-0 -translate-y-3"
+                enter-to-class="opacity-100 translate-y-0"
+                leave-active-class="transition-all duration-100 ease-in"
+                leave-from-class="opacity-100 translate-y-0"
+                leave-to-class="opacity-0 -translate-y-3"
+                @after-leave="finishCollapse(row)"
+              >
+                <div v-if="!closingRows.includes(row.original.id)" class="flex-row p-2">
+                  <div class="flex w-full flex-col gap-3 lg:flex-row lg:gap-10">
+                    <!-- Phone number -->
+                    <div class="flex flex-1 items-center gap-4 rounded-lg bg-neutral-100 outline-1 outline-neutral-200 p-4">
                       <UIcon
-                        name="i-heroicons-calendar-days"
+                        name="i-heroicons-phone"
                         class="size-6 shrink-0 text-brand-500"
                       />
                       <div class="flex flex-col gap-1">
                         <span class="text-xs text-gray-500">
-                          Last Updated
+                          Phone Number
+                        </span>
+                        <span class="text-sm font-medium text-gray-900">
+                          {{ formatPhoneNumber(row.original.phoneNumber) }}
+                        </span>
+                      </div>
+                    </div>
+
+                    <!-- Account creation date -->
+                    <div class="flex flex-1 items-center gap-4 rounded-lg bg-neutral-100 outline-1 outline-neutral-200 p-4">
+                      <UIcon
+                        name="i-heroicons-calendar"
+                        class="size-6 shrink-0 text-brand-500"
+                      />
+                      <div class="flex flex-col gap-1">
+                        <span class="text-xs text-gray-500">
+                          Created Account
                         </span>
 
                         <span class="text-sm font-medium text-gray-900">
-                          {{ formatDateTime(row.original.updatedAt) }}
+                          {{ formatDateTime(row.original.createdAt) }}
                         </span>
                       </div>
                     </div>
-                </div>
 
-                <!-- Completed chapters -->
-                <UCard variant="subtle" class="my-4">
-                  <div class="space-y-3 text-black">
-                    <h3 class="font-semibold">Completed Chapters</h3>
-                    <ul 
-                      v-if="row.original.completedChapterNames.length > 0" 
-                      class="list-disc list-inside space-y-1 px-4 text-sm text-gray-700"
-                    >
-                      <li v-for="(chapterName, index) in row.original.completedChapterNames" :key="index">
-                        {{ chapterName }}
-                      </li>
-                    </ul>
-                    <div v-else class="text-sm text-gray-500 px-4">
-                      No completed chapters.
-                    </div>
+                    <!-- User last updated-->
+                    <div class="flex flex-1 items-center gap-4 rounded-lg bg-neutral-100 outline-1 outline-neutral-200 p-4">
+                        <UIcon
+                          name="i-heroicons-calendar-days"
+                          class="size-6 shrink-0 text-brand-500"
+                        />
+                        <div class="flex flex-col gap-1">
+                          <span class="text-xs text-gray-500">
+                            Last Updated
+                          </span>
+
+                          <span class="text-sm font-medium text-gray-900">
+                            {{ formatDateTime(row.original.updatedAt) }}
+                          </span>
+                        </div>
+                      </div>
                   </div>
-                </UCard>
 
-                <!-- Prayer requests -->
-                <UCard 
-                  v-if="canManagePrivateFieldsFor(row.original)"
-                  variant="outline" 
-                  class="lg:col-span-2">
-                  <div class="space-y-3">
-                    <h3 class="font-semibold text-black">Prayer Requests</h3>
-
-                    <p v-if="prayerLoading.includes(row.original.id)">
-                      Loading prayer requests...
-                    </p>
-
-                    <UAlert
-                      v-else-if="prayerErrors.includes(row.original.id)"
-                      color="error"
-                      variant="subtle"
-                      title="Could not load prayer requests"
-                    />
-
-                    <div
-                      v-else-if="prayerRequests[row.original.id]?.length"
-                      class="space-y-3 bg-neutral-100"
-                    >
-                      <div
-                        v-for="request in prayerRequests[row.original.id]"
-                        :key="request.id"
-                        class="rounded-lg border border-default p-4 text-black"
+                  <!-- Completed chapters -->
+                  <UCard variant="subtle" class="my-4">
+                    <div class="space-y-3 text-black">
+                      <h3 class="font-semibold">Completed Chapters</h3>
+                      <ul 
+                        v-if="row.original.completedChapterNames.length > 0" 
+                        class="list-disc list-inside space-y-1 px-4 text-sm text-gray-700"
                       >
-                        <p class="whitespace-pre-wrap">
-                          {{ request.request }}
-                        </p>
-                        <p class="mt-2 text-xs text-gray-500">
-                          Submitted:
-                          {{ formatDateTime(request.submittedAt) }}
-                        </p>
+                        <li v-for="(chapterName, index) in row.original.completedChapterNames" :key="index">
+                          {{ chapterName }}
+                        </li>
+                      </ul>
+                      <div v-else class="text-sm text-gray-500 px-4">
+                        No completed chapters.
                       </div>
                     </div>
+                  </UCard>
 
-                    <p v-else class="text-sm text-gray-500 px-4">
-                      No prayer requests.
-                    </p>
-                  </div>
-                </UCard>
+                  <!-- Prayer requests -->
+                  <UCard 
+                    v-if="canManagePrivateFieldsFor(row.original)"
+                    variant="outline" 
+                    class="lg:col-span-2">
+                    <div class="space-y-3">
+                      <h3 class="font-semibold text-black">Prayer Requests</h3>
 
-                <!-- Notes for users only (never on other admins) -->
-                <AdminNotes
-                  v-if="canManagePrivateFieldsFor(row.original)"
-                  :user-id="row.original.id"
-                  :user-name="row.original.name"
-                />
+                      <p v-if="prayerLoading.includes(row.original.id)">
+                        Loading prayer requests...
+                      </p>
+
+                      <UAlert
+                        v-else-if="prayerErrors.includes(row.original.id)"
+                        color="error"
+                        variant="subtle"
+                        title="Could not load prayer requests"
+                      />
+
+                      <div
+                        v-else-if="prayerRequests[row.original.id]?.length"
+                        class="space-y-3 bg-neutral-100"
+                      >
+                        <div
+                          v-for="request in prayerRequests[row.original.id]"
+                          :key="request.id"
+                          class="rounded-lg border border-default p-4 text-black"
+                        >
+                          <p class="whitespace-pre-wrap">
+                            {{ request.request }}
+                          </p>
+                          <p class="mt-2 text-xs text-gray-500">
+                            Submitted:
+                            {{ formatDateTime(request.submittedAt) }}
+                          </p>
+                        </div>
+                      </div>
+
+                      <p v-else class="text-sm text-gray-500 px-4">
+                        No prayer requests.
+                      </p>
+                    </div>
+                  </UCard>
+
+                  <!-- Notes for users only (never on other admins) -->
+                  <AdminNotes
+                    v-if="canManagePrivateFieldsFor(row.original)"
+                    :user-id="row.original.id"
+                    :user-name="row.original.name"
+                  />
+                </div>
+              </Transition>
+            </template>
+          </UTable>
+        </div>
+
+        <!-- Mobile view -->
+        <div class="divide-y divide-gray-100 lg:hidden">
+          <div v-for="user in filteredUsers" :key="user.id" class="space-y-3 p-4">
+            <div class="flex items-start justify-between gap-2">
+              <div class="min-w-0">
+                <p class="font-medium text-gray-900">{{ user.name }}</p>
+                <p class="text-sm break-all text-gray-500">{{ user.email }}</p>
               </div>
-            </Transition>
-          </template>
-        </UTable>
+              <UDropdownMenu :items="getRowItems(user)" :content="{ align: 'end' }" :ui="{ content: 'w-48' }">
+                <UButton icon="i-heroicons-ellipsis-vertical" color="neutral" variant="ghost" aria-label="Edit user" />
+              </UDropdownMenu>
+            </div>
+          
+            <dl class="grid grid-cols-[auto_1fr] items-center gap-x-6 gap-y-2 text-sm">
+              <dt class="text-gray-500">Role</dt>
+              <dd>
+                <UBadge color="neutral" variant="subtle" :class="user.admin ? 'bg-purple-100! text-purple-700!' : ''">
+                  {{ user.admin ? 'Admin' : 'User' }}
+                </UBadge>
+              </dd>
+            
+              <dt class="text-gray-500">Status</dt>
+              <dd>
+                <UBadge
+                  :color="getUserStatus(user) === 'blocked' ? 'error' : getUserStatus(user) === 'verified' ? 'success' : 'warning'"
+                  variant="subtle"
+                >{{ getUserStatus(user) }}</UBadge>
+              </dd>
+            
+              <dt class="text-gray-500">Prayer Request</dt>
+              <dd>
+                <UBadge :color="user.hasPrayerRequest && !user.admin ? 'secondary' : 'neutral'" variant="soft">
+                  {{ prayerLabel(user) }}
+                </UBadge>
+              </dd>
+            
+              <dt class="text-gray-500">Progress</dt>
+              <dd class="flex items-center gap-3">
+                <UProgress :model-value="user.progress" :max="100" class="w-full max-w-40" />
+                <span class="text-brand-500">{{ user.progress }}%</span>
+              </dd>
+            </dl>
+          
+            <UButton
+              color="neutral"
+              variant="ghost"
+              size="xs"
+              :trailing-icon="mobileExpanded.includes(user.id) ? 'i-heroicons-chevron-down' : 'i-heroicons-chevron-up'"
+              @click="toggleMobile(user)"
+            >Details</UButton>
+          
+            <!-- Details (same content as the #expanded slot) -->
+            <div v-if="mobileExpanded.includes(user.id)" class="space-y-3">
+              <div class="flex flex-col gap-3">
+                <div class="flex items-center gap-4 rounded-lg bg-neutral-100 p-4 outline-1 outline-neutral-200">
+                  <UIcon name="i-heroicons-phone" class="size-6 shrink-0 text-brand-500" />
+                  <div class="flex min-w-0 flex-col gap-1">
+                    <span class="text-xs text-gray-500">Phone Number</span>
+                    <span class="text-sm font-medium break-words text-gray-900">{{ formatPhoneNumber(user.phoneNumber) }}</span>
+                  </div>
+                </div>
+              
+                <div class="flex items-center gap-4 rounded-lg bg-neutral-100 p-4 outline-1 outline-neutral-200">
+                  <UIcon name="i-heroicons-calendar" class="size-6 shrink-0 text-brand-500" />
+                  <div class="flex min-w-0 flex-col gap-1">
+                    <span class="text-xs text-gray-500">Created Account</span>
+                    <span class="text-sm font-medium break-words text-gray-900">{{ formatDateTime(user.createdAt) }}</span>
+                  </div>
+                </div>
+              
+                <div class="flex items-center gap-4 rounded-lg bg-neutral-100 p-4 outline-1 outline-neutral-200">
+                  <UIcon name="i-heroicons-calendar-days" class="size-6 shrink-0 text-brand-500" />
+                  <div class="flex min-w-0 flex-col gap-1">
+                    <span class="text-xs text-gray-500">Last Updated</span>
+                    <span class="text-sm font-medium break-words text-gray-900">{{ formatDateTime(user.updatedAt) }}</span>
+                  </div>
+                </div>
+              </div>
+            
+              <UCard variant="subtle">
+                <div class="space-y-3 text-black">
+                  <h3 class="font-semibold">Completed Chapters</h3>
+                  <ul v-if="user.completedChapterNames.length > 0" class="list-inside list-disc space-y-1 px-4 text-sm text-gray-700">
+                    <li v-for="(chapterName, index) in user.completedChapterNames" :key="index">{{ chapterName }}</li>
+                  </ul>
+                  <div v-else class="px-4 text-sm text-gray-500">No completed chapters.</div>
+                </div>
+              </UCard>
+            
+              <UCard v-if="canManagePrivateFieldsFor(user)" variant="outline">
+                <div class="space-y-3">
+                  <h3 class="font-semibold text-black">Prayer Requests</h3>
+                  <p v-if="prayerLoading.includes(user.id)">Loading prayer requests...</p>
+                  <UAlert
+                    v-else-if="prayerErrors.includes(user.id)"
+                    color="error"
+                    variant="subtle"
+                    title="Could not load prayer requests"
+                  />
+                  <div v-else-if="prayerRequests[user.id]?.length" class="space-y-3 bg-neutral-100">
+                    <div
+                      v-for="request in prayerRequests[user.id]"
+                      :key="request.id"
+                      class="rounded-lg border border-default p-4 text-black"
+                    >
+                      <p class="whitespace-pre-wrap">{{ request.request }}</p>
+                      <p class="mt-2 text-xs text-gray-500">Submitted: {{ formatDateTime(request.submittedAt) }}</p>
+                    </div>
+                  </div>
+                  <p v-else class="px-4 text-sm text-gray-500">No prayer requests.</p>
+                </div>
+              </UCard>
+            
+              <AdminNotes
+                v-if="canManagePrivateFieldsFor(user)"
+                :user-id="user.id"
+                :user-name="user.name"
+              />
+            </div>
+          </div>
+        
+          <p v-if="filteredUsers.length === 0" class="py-8 text-center text-gray-500">No users found.</p>
+        </div>
       </div>
     </UCard>
     <UModal
