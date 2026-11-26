@@ -46,7 +46,7 @@
   <Teleport to="body">
     <UModal
       v-model:open="isOpen"
-      title="Install Stronger Women"
+      title="Install Stronger Women App"
       description="Choose your device and browser below for installation instructions."
       scrollable
       :ui="{

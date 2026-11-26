@@ -724,7 +724,7 @@ async function addUser() {
         </div>
 
         <!-- Mobile view -->
-        <div class="divide-y divide-gray-100 lg:hidden">
+        <div class="divide-y divide-gray-200 lg:hidden">
           <div v-for="user in filteredUsers" :key="user.id" class="space-y-3 p-4">
             <div class="flex items-start justify-between gap-2">
               <div class="min-w-0">
